@@ -67,8 +67,8 @@ module wishbone_bus(
 			wishbone_we_o <= `WriteDisable;
 			wishbone_select_o <= `WB_SELECT_ZERO;
 		end else begin
-			// if (wishbone_ack_i == `False_v) begin
-			if (if_ack == `False_v) begin
+			if (wishbone_ack_i == `False_v) begin
+			end else if (if_ack == `False_v) begin
 				wishbone_data_o <= `ZeroWord;
 				wishbone_addr_o <= mmu_addr_i;
 				wishbone_we_o <= `WriteDisable;
@@ -110,8 +110,8 @@ module wishbone_bus(
 			tlb_write_o <= `False_v;
 			tlb_addr_o <= `ZeroWord;
 		end else begin
-			// if (wishbone_ack_i == `False_v) begin
-			if (if_ack == `False_v) begin
+			if (wishbone_ack_i == `False_v) begin
+			end else if (if_ack == `False_v) begin
 				tlb_ce <= `ChipEnable;
 				tlb_write_o <= `False_v;
 				tlb_addr_o <= if_addr_i;
@@ -138,13 +138,13 @@ module wishbone_bus(
 			memr_ack <= `True_v;
 		end else begin
 			if (wishbone_ack_i == `True_v) begin
-				case (state[3:0])
+				case (state)
 					4'b1001: begin
 						memr_ack <= `True_v;
 					end
 					4'b1011: begin
 						memw_ack <= `True_v;
-						if_ack <= `False_v;
+						// if_ack <= `False_v;
 						if (stall_i == 6'b000111) begin
 							if_cancel = `True_v;
 						end else begin
@@ -153,7 +153,7 @@ module wishbone_bus(
 					end
 					4'b1101: begin
 						memr_ack <= `True_v;
-						if_ack <= `False_v;
+						// if_ack <= `False_v;
 						if (stall_i == 6'b000111) begin
 							if_cancel = `True_v;
 						end else begin
@@ -173,6 +173,9 @@ module wishbone_bus(
 							memw_ack <= `True_v;
 							memr_ack <= `False_v;
 						end
+					end
+					4'b1111: begin
+						if_ack <= `False_v;
 					end
 					default: begin
 						if (stall_i == 6'b000111) begin
@@ -197,7 +200,7 @@ module wishbone_bus(
 		if (wishbone_ack_i == `False_v) begin
 			stall_req_mem <= `Stop;
 		end else begin
-			case (state[3:0])
+			case (state)
 				4'b0000: stall_req_mem <= `NoStop;
 				4'b0001: stall_req_mem <= `NoStop;
 				4'b0010: stall_req_mem <= `NoStop;
@@ -209,9 +212,9 @@ module wishbone_bus(
 				4'b1000: stall_req_mem <= `NoStop;
 				4'b1001: stall_req_mem <= `Stop;
 				4'b1010: stall_req_mem <= `NoStop;
-				4'b1011: stall_req_mem <= `NoStop;
+				4'b1011: stall_req_mem <= `Stop;
 				4'b1100: stall_req_mem <= `NoStop;
-				4'b1101: stall_req_mem <= `NoStop;
+				4'b1101: stall_req_mem <= `Stop;
 				4'b1110: stall_req_mem <= `Stop;
 				4'b1111: stall_req_mem <= `NoStop;
 			endcase

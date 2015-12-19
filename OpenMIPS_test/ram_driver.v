@@ -45,10 +45,53 @@ module ram_driver (
 	reg base_ack;
 	assign ack = ram_selector ? extra_ack : base_ack;
 
-	always @ (posedge clk) begin
+	always @ (*) begin
 		if (rst == `RstEnable) begin
 			base_ack <= 1'b1;
 		end
+		if (ram_selector == 1'b0) begin			//base
+			case (base_state)
+				IDLE: begin
+					base_ack <= 1'b1;
+					if(enable == 1'b1) begin
+						if (read_enable == 1'b1) begin
+							base_ack <= 1'b1;
+						end else if (write_enable == 1'b1) begin
+							base_ack <= 1'b0;
+						end
+					end
+				end
+				WRITE1: begin
+					base_ack <= 1'b1;
+				end
+			endcase
+		end
+	end
+
+	always @ (*) begin
+		if (rst == `RstEnable) begin
+			extra_ack <= 1'b1;
+		end
+		if (ram_selector == 1'b1) begin			//extra
+			case (extra_state)
+				IDLE: begin
+					extra_ack <= 1'b1;
+					if (enable == 1'b1) begin
+						if (read_enable == 1'b1) begin
+							extra_ack <= 1'b1;
+						end else if (write_enable == 1'b1) begin
+							extra_ack <= 1'b0;
+						end
+					end
+				end
+				WRITE1: begin
+					extra_ack <= 1'b1;
+				end
+			endcase
+		end
+	end
+
+	always @ (posedge clk) begin
 		if (ram_selector == 1'b0) begin			//base
 			case (base_state)
 				IDLE: begin
@@ -57,17 +100,14 @@ module ram_driver (
 					baseram_we <= 1'b1;
 					baseram_addr <= addr[`DataMemNumLog2-2:0];
 					// base_data_out <= baseram_data;
-					base_ack <= 1'b1;
 					if(enable == 1'b1) begin
 						if (read_enable == 1'b1) begin
-							base_ack <= 1'b1;
 							baseram_ce <= 1'b0;
 							baseram_oe <= 1'b0;
 							baseram_we <= 1'b1;
 							baseram_addr <= addr[`DataMemNumLog2-2:0];
 							// base_data_out <= baseram_data;
 						end else if (write_enable == 1'b1) begin
-							base_ack <= 1'b0;
 							baseram_ce <= 1'b0;
 							baseram_oe <= 1'b1;
 							baseram_we <= 1'b0;
@@ -84,7 +124,6 @@ module ram_driver (
 					baseram_ce <= 1'b1;
 					baseram_we <= 1'b1;
 					baseram_oe <= 1'b1;
-					base_ack <= 1'b1;
 					base_state <= IDLE;
 				end
 			endcase
@@ -92,9 +131,6 @@ module ram_driver (
 	end
 
 	always @ (posedge clk) begin
-		if (rst == `RstEnable) begin
-			extra_ack <= 1'b1;
-		end
 		if (ram_selector == 1'b1) begin			//extra
 			case (extra_state)
 				IDLE: begin
@@ -103,17 +139,14 @@ module ram_driver (
 					extram_we <= 1'b1;
 					extram_addr <= addr[`DataMemNumLog2-2:0];
 					//extra_data_out <= extram_data;
-					extra_ack <= 1'b1;
 					if (enable == 1'b1) begin
 						if (read_enable == 1'b1) begin
-							extra_ack <= 1'b1;
 							extram_ce <= 1'b0;
 							extram_oe <= 1'b0;
 							extram_we <= 1'b1;
 							extram_addr <= addr[`DataMemNumLog2-2:0];
 							//extra_data_out <= extram_data;
 						end else if (write_enable == 1'b1) begin
-							extra_ack <= 1'b0;
 							extram_ce <= 1'b0;
 							extram_oe <= 1'b1;
 							extram_we <= 1'b0;
@@ -130,7 +163,6 @@ module ram_driver (
 					extram_ce <= 1'b1;
 					extram_we <= 1'b1;
 					extram_oe <= 1'b1;
-					extra_ack <= 1'b1;
 					extra_state <= IDLE;
 				end
 			endcase
