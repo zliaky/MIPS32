@@ -1,0 +1,30 @@
+`include "defines.v"
+module flash (
+	input clk,
+	input rst,
+
+	input [`WB_AddrBus] bus_addr_i,
+	input [`WB_DataBus] bus_data_i,
+	output [`WB_DataBus] bus_data_o,
+	input bus_select_i,
+	input bus_we_i,
+	output bus_ack_o,
+
+	output [`FlashAddrBus] flash_addr, 
+	inout [`FlashDataBus] flash_data, 
+	output [`FlashCtrlBus] flash_ctl
+	);
+
+	wire[`FlashDataBus] output_data;
+
+	assign bus_data_o = {{16{1'b0}}, output_data};
+
+	flash_driver flash_driver0(
+		.clk(clk), .addr({2'b00, bus_addr_i[21:2]}), .data_in(bus_data_i[`FlashDataBus]), 
+		.data_out(output_data), .enable_erase(1'b0), 
+		.enable_read(!bus_we_i), .enable_write(bus_we_i),
+		.flash_ctl(flash_ctl), .flash_addr(flash_addr), .flash_data(flash_data), 
+		.ack(bus_ack_o)
+	);
+
+endmodule
