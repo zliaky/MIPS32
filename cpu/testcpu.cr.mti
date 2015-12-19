@@ -85,6 +85,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	wishbone_bus
 
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/data_ram.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/data_ram.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module data_ram
+
+Top level modules:
+	data_ram
+
 } {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/hilo_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/hilo_reg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module hilo_reg

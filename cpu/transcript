@@ -464,3 +464,79 @@ restart
 # Loading work.data_ram(fast)
 run -all
 # Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of data_ram.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of data_ram.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+add wave -position 5  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[2]
+# Compile of data_ram.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
