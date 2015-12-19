@@ -1,0 +1,461 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\programming\modeltech64_10.1c\examples
+T_opt
+V^LmR8`[DTUgjS71EM@>9V0
+Z1 04 20 4 work openmips_min_sopc_tb fast 0
+=6-0c84dc65e838-5673de1f-3d3-230c
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OL;O;10.1c;51
+Z4 dE:\programming\modeltech64_10.1c\examples
+T_opt1
+V5TfJOe=9:5YNlXZU[8AUe2
+R1
+=27-0c84dc65e838-567475fb-174-d48
+R2
+n@_opt1
+R3
+R4
+T_opt2
+VzXJ_Pz4FEBT^SgF:IUAE`2
+R1
+=28-208984ee51e2-567504d4-1e0-910
+R2
+n@_opt2
+R3
+vcp0_reg
+I7oOk0;<3J@VokD5Y7UHHz1
+Vo>dZkd2J2PeVJX6<kY?WO0
+Z5 dC:\Users\Administrator-\Desktop\cpu
+w1449213334
+8C:/Users/Administrator-/Desktop/cpu/cp0_reg.v
+FC:/Users/Administrator-/Desktop/cpu/cp0_reg.v
+L0 2
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 gF=_7nbk>5oO5ohjf>`ZB1
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/cp0_reg.v|
+!s108 1450506300.477000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/cp0_reg.v|
+!i10b 1
+!s85 0
+vctrl
+I`>=J^>fV>KbH@MMXIVMFF1
+VzO:g?QL_Z2IJ_dmH`Yick2
+R5
+w1450408746
+8C:/Users/Administrator-/Desktop/cpu/ctrl.v
+FC:/Users/Administrator-/Desktop/cpu/ctrl.v
+L0 2
+R6
+r1
+31
+R7
+!s100 aRRJMz9X6J>jb0aK6QI?[0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/ctrl.v|
+!s108 1450506300.696000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/ctrl.v|
+!i10b 1
+!s85 0
+vdata_ram
+IeRDT7`_;L9QO4>95[J_VL1
+Vibjkj^i[hP;_fAPh]jQXP3
+R5
+w1450509517
+8C:/Users/Administrator-/Desktop/cpu/data_ram.v
+FC:/Users/Administrator-/Desktop/cpu/data_ram.v
+Finput.v
+L0 3
+R6
+r1
+31
+R7
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/data_ram.v|
+!i10b 1
+!s100 T^13JcgWJS47m^YB^F<JG3
+!s85 0
+!s108 1450509522.511000
+!s107 input.v|defines.v|C:/Users/Administrator-/Desktop/cpu/data_ram.v|
+vdigseg
+I7i:`WbZh<NZ93P;WkI@Cg2
+V]eoZYZBTg5nY7eJU_5i]l3
+Z8 dD:\Users\huang\Desktop\cpu
+Z9 w1449288096
+8D:/Users/huang/Desktop/cpu/digseg.v
+FD:/Users/huang/Desktop/cpu/digseg.v
+L0 2
+R6
+r1
+31
+R7
+!s100 TN38d;K[n_=WgM6DUL?g52
+!s90 -reportprogress|300|-work|work|-vopt|D:/Users/huang/Desktop/cpu/digseg.v|
+!s108 1450469539.874000
+!s107 defines.v|D:/Users/huang/Desktop/cpu/digseg.v|
+!i10b 1
+!s85 0
+vdigseg_driver
+I1kh?CM9_T[KlF4BY@NY@o2
+VH_aFWQ_gz[VOd8S=k;2bA0
+R8
+R9
+8D:/Users/huang/Desktop/cpu/digseg_driver.v
+FD:/Users/huang/Desktop/cpu/digseg_driver.v
+L0 2
+R6
+r1
+31
+R7
+!s100 g=Yn5XfPRJSj]HYLk;;gW1
+!s90 -reportprogress|300|-work|work|-vopt|D:/Users/huang/Desktop/cpu/digseg_driver.v|
+!s108 1450469540.040000
+!s107 defines.v|D:/Users/huang/Desktop/cpu/digseg_driver.v|
+!i10b 1
+!s85 0
+vex
+I4l[XJGd2ZhCAY2;^;NhLX0
+VDzT6JXU3[;fa6oBg<Ejg:3
+R5
+w1449213951
+8C:/Users/Administrator-/Desktop/cpu/ex.v
+FC:/Users/Administrator-/Desktop/cpu/ex.v
+L0 2
+R6
+r1
+31
+R7
+!s100 S<Gh2<<_kM3jo`AoRncnP1
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/ex.v|
+!s108 1450506301.180000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/ex.v|
+!i10b 1
+!s85 0
+vex_mem
+IgVfeVhE1oJPIe1;k5f3]c3
+VBPIhPMzzk;M1__9D5]CS?2
+R5
+w1449213147
+8C:/Users/Administrator-/Desktop/cpu/ex_mem.v
+FC:/Users/Administrator-/Desktop/cpu/ex_mem.v
+L0 2
+R6
+r1
+31
+R7
+!s100 8MBKh0Hd9_=m66Y3PS1Me0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/ex_mem.v|
+!s108 1450506301.352000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/ex_mem.v|
+!i10b 1
+!s85 0
+vflash
+I>R2D9Ti<6mW=`]b7QjzgY1
+VQ1f@JVjPEL<E8:YFC@7z53
+R8
+w1449234310
+8D:/Users/huang/Desktop/cpu/flash.v
+FD:/Users/huang/Desktop/cpu/flash.v
+L0 2
+R6
+r1
+31
+R7
+!s100 KjEH[l_MGH]VFP`nk4MlQ3
+!s90 -reportprogress|300|-work|work|-vopt|D:/Users/huang/Desktop/cpu/flash.v|
+!s108 1450469541.306000
+!s107 defines.v|D:/Users/huang/Desktop/cpu/flash.v|
+!i10b 1
+!s85 0
+vflash_driver
+ID[L_^T:;DL??N0=Zh2lc22
+V1LlmKlWin4W@]lW`FAHVE0
+R8
+w1449232057
+8D:/Users/huang/Desktop/cpu/flash_driver.v
+FD:/Users/huang/Desktop/cpu/flash_driver.v
+L0 2
+R6
+r1
+31
+R7
+!s100 KbRnSC^Z3eD46VBlTB1kN3
+!s90 -reportprogress|300|-work|work|-vopt|D:/Users/huang/Desktop/cpu/flash_driver.v|
+!s108 1450469541.485000
+!s107 defines.v|D:/Users/huang/Desktop/cpu/flash_driver.v|
+!i10b 1
+!s85 0
+vhilo_reg
+I`VBI;5MX=nJR4h1Rc`2>N0
+V^8YfHOj6?D4ha@2?A<4Nj3
+R5
+w1447853842
+8C:/Users/Administrator-/Desktop/cpu/hilo_reg.v
+FC:/Users/Administrator-/Desktop/cpu/hilo_reg.v
+L0 2
+R6
+r1
+31
+R7
+!s100 Iz;a9Y@SUPFa5H:jCgD0e3
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/hilo_reg.v|
+!s108 1450506301.555000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/hilo_reg.v|
+!i10b 1
+!s85 0
+vid
+ImMH:X72I;ZC^[HZ^1l5RH3
+Vfc_jjJ5o>bQ8HhQV3lI[K3
+R5
+w1450346804
+8C:/Users/Administrator-/Desktop/cpu/id.v
+FC:/Users/Administrator-/Desktop/cpu/id.v
+L0 2
+R6
+r1
+31
+R7
+!s100 Je1EKc]U6EnI^HicNgd>`0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/id.v|
+!s108 1450506301.743000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/id.v|
+!i10b 1
+!s85 0
+vid_ex
+I[c9j]7kgeM]_]jC[akdGE0
+VQ8bZ`R4`mM2TJ:S2bQR<W0
+R5
+w1449105173
+8C:/Users/Administrator-/Desktop/cpu/id_ex.v
+FC:/Users/Administrator-/Desktop/cpu/id_ex.v
+L0 2
+R6
+r1
+31
+R7
+!s100 ^WY>N?nXEZd:Q]j@dmj:21
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/id_ex.v|
+!s108 1450506301.961000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/id_ex.v|
+!i10b 1
+!s85 0
+vif_id
+ILVKPJ7>2?anFH>eeXXF:`3
+VeH9l^SH>9f[S3Uef3]3:V0
+R5
+w1450008494
+8C:/Users/Administrator-/Desktop/cpu/if_id.v
+FC:/Users/Administrator-/Desktop/cpu/if_id.v
+L0 3
+R6
+r1
+31
+R7
+!s100 ]J^ijdaVHne?5g3_iL0Pc2
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/if_id.v|
+!s108 1450506302.102000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/if_id.v|
+!i10b 1
+!s85 0
+vinst_rom
+I7?2?VJc?zn?AoIY^6GGNC3
+VgX7XJlealh@C`b@f=Y70Q0
+R8
+w1449144133
+8D:/Users/huang/Desktop/cpu/inst_rom.v
+FD:/Users/huang/Desktop/cpu/inst_rom.v
+L0 2
+R6
+r1
+31
+R7
+!s100 i??UN[=GU36OLnWa:NE9P1
+!s90 -reportprogress|300|-work|work|-vopt|D:/Users/huang/Desktop/cpu/inst_rom.v|
+!s108 1450469542.690000
+!s107 defines.v|D:/Users/huang/Desktop/cpu/inst_rom.v|
+!i10b 1
+!s85 0
+vmem
+IaFa:[D9JQ5k7Zm6SzUj;=2
+V`1j=]=>bHVk`UQbB[GN:^0
+R5
+w1450181728
+8C:/Users/Administrator-/Desktop/cpu/mem.v
+FC:/Users/Administrator-/Desktop/cpu/mem.v
+L0 2
+R6
+r1
+31
+R7
+!s100 UJWFOBG2`[7E]4dKoQB5l3
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/mem.v|
+!s108 1450509462.727000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/mem.v|
+!i10b 1
+!s85 0
+vmem_wb
+I[lQ^MbRBbnEkQ[Lc`V1UK0
+V7[W=VSUomUmXQzM4igOm:0
+R5
+w1450106126
+8C:/Users/Administrator-/Desktop/cpu/mem_wb.v
+FC:/Users/Administrator-/Desktop/cpu/mem_wb.v
+L0 2
+R6
+r1
+31
+R7
+!s100 OSVozik0B=ThCofQWJfjC2
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/mem_wb.v|
+!s108 1450506302.524000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/mem_wb.v|
+!i10b 1
+!s85 0
+vmmu
+I@XfCaE5^6j^818Cj63Hbd2
+V01fEz>eEMmJTIn9jJ=2NN2
+R5
+w1449821136
+8C:/Users/Administrator-/Desktop/cpu/mmu.v
+FC:/Users/Administrator-/Desktop/cpu/mmu.v
+L0 2
+R6
+r1
+31
+R7
+!s100 ALaFcMl;ZA[QS:n5Zo44E0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/mmu.v|
+!s108 1450506302.711000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/mmu.v|
+!i10b 1
+!s85 0
+vopenmips
+IGDV9aiNK^d3lU06bNOLdC0
+V::=hUDkB0dSo?m4IcB;K@0
+R5
+w1450460574
+8C:/Users/Administrator-/Desktop/cpu/openmips.v
+FC:/Users/Administrator-/Desktop/cpu/openmips.v
+L0 2
+R6
+r1
+31
+R7
+!s100 elnoCAW?lEb@KUhaaeZfM1
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/openmips.v|
+!s108 1450506302.899000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/openmips.v|
+!i10b 1
+!s85 0
+vopenmips_min_sopc
+IW[3CVSloB[0YVJ;<IN65]2
+V>oQnH]7^FROW0cG3a6B;63
+R5
+w1450251958
+8C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v
+FC:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v
+L0 2
+R6
+r1
+31
+R7
+!s100 Bk]ODElA6kHjLTLRYG9a01
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v|
+!s108 1450506303.040000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v|
+!i10b 1
+!s85 0
+vopenmips_min_sopc_tb
+I];We3oCUz5KBQ`eSSR[oM1
+VjAlLFJz2iV<GeaoLO:T?d1
+R5
+w1450185436
+8C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v
+FC:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v
+L0 5
+R6
+r1
+31
+R7
+!s100 WNGgb69cXEKUVNmYZ<nRk0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v|
+!s108 1450506303.211000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v|
+!i10b 1
+!s85 0
+vpc_reg
+I5A?;?l^41<aA3OBVm>FS82
+Vd2_i[8L:1YO9cj;zf?6kk1
+R5
+w1450011902
+8C:/Users/Administrator-/Desktop/cpu/pc_reg.v
+FC:/Users/Administrator-/Desktop/cpu/pc_reg.v
+L0 3
+R6
+r1
+31
+R7
+!s100 @E48XE7kUg@mNb??<=7KJ3
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/pc_reg.v|
+!s108 1450506303.383000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/pc_reg.v|
+!i10b 1
+!s85 0
+vregfile
+IUCAX;5_i91h_d_O5[T]KK1
+VCc88GW:H2:IP]GcGWTbBo0
+R5
+w1450407749
+8C:/Users/Administrator-/Desktop/cpu/regfile.v
+FC:/Users/Administrator-/Desktop/cpu/regfile.v
+L0 3
+R6
+r1
+31
+R7
+!s100 d@EbhNdWLcMEUAjC[2?ka0
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/regfile.v|
+!s108 1450506303.602000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/regfile.v|
+!i10b 1
+!s85 0
+vtlb
+IddjX_88AFlf[Fe^kKNiS71
+V2JP8Zd]hgjLn>D6_6@C:X3
+R5
+w1449821278
+8C:/Users/Administrator-/Desktop/cpu/tlb.v
+FC:/Users/Administrator-/Desktop/cpu/tlb.v
+L0 3
+R6
+r1
+31
+R7
+!s100 R_Y@COi^1ZNK3]0PQcC9R1
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/tlb.v|
+!s108 1450506303.899000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/tlb.v|
+!i10b 1
+!s85 0
+vwishbone_bus
+IbE3SKm<COCX^KIN^VE3WT2
+V4c6zUDImGE=X2e>CQA0gQ1
+R5
+w1450507940
+8C:/Users/Administrator-/Desktop/cpu/wishbone_bus.v
+FC:/Users/Administrator-/Desktop/cpu/wishbone_bus.v
+L0 3
+R6
+r1
+31
+R7
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/Administrator-/Desktop/cpu/wishbone_bus.v|
+!s100 7T2aUcaibi@?dK6N]<=No0
+!s108 1450507943.309000
+!s107 defines.v|C:/Users/Administrator-/Desktop/cpu/wishbone_bus.v|
+!i10b 1
+!s85 0

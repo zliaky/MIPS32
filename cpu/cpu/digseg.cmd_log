@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Administrator-/Desktop/cpu/cpu/digseg.xst" -ofn "C:/Users/Administrator-/Desktop/cpu/cpu/digseg.syr" 
