@@ -8,32 +8,12 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# OpenFile C:/Users/Administrator-/Desktop/cpu/testcpu.mpf 
+# OpenFile C:/Users/Administrator-/Documents/git/MIPS32/cpu/testcpu.mpf 
 # Loading project testcpu
-# Compile of cp0_reg.v was successful.
-# Compile of ctrl.v was successful.
 # Compile of data_ram.v was successful.
-# Compile of defines.v was successful.
-# Compile of ex.v was successful.
-# Compile of ex_mem.v was successful.
-# Compile of hilo_reg.v was successful.
-# Compile of id.v was successful.
-# Compile of id_ex.v was successful.
-# Compile of if_id.v was successful.
-# Compile of mem.v was successful.
-# Compile of mem_wb.v was successful.
-# Compile of mmu.v was successful.
-# Compile of openmips.v was successful.
-# Compile of openmips_min_sopc.v was successful.
-# Compile of openmips_min_sopc_tb.v was successful.
-# Compile of pc_reg.v was successful.
-# Compile of regfile.v was successful.
-# Compile of tlb.v was successful.
-# Compile of wishbone_bus.v was successful.
-# 20 compiles, 0 failed with no errors. 
 vsim -voptargs=+acc work.openmips_min_sopc_tb
 # vsim -voptargs=+acc work.openmips_min_sopc_tb 
-# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
 # Loading work.openmips_min_sopc_tb(fast)
 # Loading work.openmips_min_sopc(fast)
@@ -59,10 +39,10 @@ add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/c
 # 
 #           File in use by: huang  Hostname: HUANG-PC  ProcessID: 8972
 # 
-#           Attempting to use alternate WLF file "./wlftavra7f".
+#           Attempting to use alternate WLF file "./wlfte4f086".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftavra7f
+#           Using alternate file: ./wlfte4f086
 # 
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/rst
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/pc_reg0/pc
@@ -70,664 +50,18 @@ add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/i
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[1]
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[3]
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/state
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_data_latch
-add wave -position 7  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_data_i
-add wave -position 8  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_data_o
-add wave -position 7  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_addr_o
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/addr
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_i
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/if_ack
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/we
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 12  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_o
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/ce
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/ce
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/state
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[5]
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[64]
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[65]
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 17  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[6]
-add wave -position 16  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/stall_i
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 16  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_ack_i
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of data_ram.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of pc_reg.v was successful.
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of data_ram.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of cp0_reg.v was successful.
-# Compile of ctrl.v was successful.
-# Compile of data_ram.v was successful.
-# Compile of defines.v was successful.
-# Compile of ex.v was successful.
-# Compile of ex_mem.v was successful.
-# Compile of hilo_reg.v was successful.
-# Compile of id.v was successful.
-# Compile of id_ex.v was successful.
-# Compile of if_id.v was successful.
-# Compile of mem.v was successful.
-# Compile of mem_wb.v was successful.
-# Compile of mmu.v was successful.
-# Compile of openmips.v was successful.
-# Compile of openmips_min_sopc.v was successful.
-# Compile of openmips_min_sopc_tb.v was successful.
-# Compile of pc_reg.v was successful.
-# Compile of regfile.v was successful.
-# Compile of tlb.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-# Compile of wishbone_bus.v was successful.
-# 20 compiles, 0 failed with no errors. 
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 12  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_data_latch
-# Causality operation skipped due to absense of debug database file
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of cp0_reg.v was successful.
-# Compile of ctrl.v was successful.
-# Compile of data_ram.v was successful.
-# Compile of defines.v was successful.
-# Compile of ex.v was successful.
-# Compile of ex_mem.v was successful.
-# Compile of hilo_reg.v was successful.
-# Compile of id.v was successful.
-# Compile of id_ex.v was successful.
-# Compile of if_id.v was successful.
-# Compile of mem.v was successful.
-# Compile of mem_wb.v was successful.
-# Compile of mmu.v was successful.
-# Compile of openmips.v was successful.
-# Compile of openmips_min_sopc.v was successful.
-# Compile of openmips_min_sopc_tb.v was successful.
-# Compile of pc_reg.v was successful.
-# Compile of regfile.v was successful.
-# Compile of tlb.v was successful.
-# Compile of wishbone_bus.v was successful.
-# 20 compiles, 0 failed with no errors. 
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 14  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/flag
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-# Compile of wishbone_bus.v was successful.
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 7  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/mem_data_o
-add wave -position 7  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_data_i
-restart
-# Loading work.openmips_min_sopc_tb(fast)
-# Loading work.openmips_min_sopc(fast)
-# Loading work.openmips(fast)
-# Loading work.pc_reg(fast)
-# Loading work.if_id(fast)
-# Loading work.id(fast)
-# Loading work.regfile(fast)
-# Loading work.id_ex(fast)
-# Loading work.ex(fast)
-# Loading work.ex_mem(fast)
-# Loading work.mem(fast)
-# Loading work.mem_wb(fast)
-# Loading work.hilo_reg(fast)
-# Loading work.ctrl(fast)
-# Loading work.cp0_reg(fast)
-# Loading work.mmu(fast)
-# Loading work.tlb(fast)
-# Loading work.wishbone_bus(fast)
-# Loading work.data_ram(fast)
-run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
-add wave -position 9  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/mem_addr_i
-add wave -position 8  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_addr_o
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/addr
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_o
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[64]
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[65]
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[66]
 add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/state
-add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/we
-# Compile of mem.v was successful.
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+add wave -position 13  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[67]
+add wave -position 14  sim:/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem[68]
 # Compile of data_ram.v was successful.
 restart
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -752,7 +86,334 @@ restart
 # Loading work.wishbone_bus(fast)
 # Loading work.data_ram(fast)
 run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of data_ram.v was successful.
+restart
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Causality operation skipped due to absense of debug database file
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/mem_data_o
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/mem_data_i
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v failed with 1 errors.
+restart
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+add wave -position end  sim:/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/wishbone_bus0/wishbone_ack_i
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of wishbone_bus.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of data_ram.v was successful.
+# Compile of wishbone_bus.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
 # Compile of data_ram.v was successful.
 restart
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -777,4 +438,29 @@ restart
 # Loading work.wishbone_bus(fast)
 # Loading work.data_ram(fast)
 run -all
-# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v line 20
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20
+# Compile of data_ram.v was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.openmips_min_sopc_tb(fast)
+# Loading work.openmips_min_sopc(fast)
+# Loading work.openmips(fast)
+# Loading work.pc_reg(fast)
+# Loading work.if_id(fast)
+# Loading work.id(fast)
+# Loading work.regfile(fast)
+# Loading work.id_ex(fast)
+# Loading work.ex(fast)
+# Loading work.ex_mem(fast)
+# Loading work.mem(fast)
+# Loading work.mem_wb(fast)
+# Loading work.hilo_reg(fast)
+# Loading work.ctrl(fast)
+# Loading work.cp0_reg(fast)
+# Loading work.mmu(fast)
+# Loading work.tlb(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.data_ram(fast)
+run -all
+# Break in Module openmips_min_sopc_tb at C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v line 20

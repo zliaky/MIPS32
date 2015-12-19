@@ -55,9 +55,10 @@ module data_ram(
 					IDLE: begin
 						if (we == `WriteEnable) begin
 							state <= WRITE;
-						end else begin
-							data_o <= data_mem[addr[`DataMemNumLog2+1:2]];
 						end
+						// end else begin
+							data_o <= data_mem[addr[`DataMemNumLog2+1:2]];
+						// end
 					end
 					WRITE: begin
 						data_mem[addr[`DataMemNumLog2+1:2]] <= data_i;
@@ -67,5 +68,35 @@ module data_ram(
 			end
 		end
 	end
+
+
+	// always @ (posedge clk) begin
+	// 	if (rst == `RstEnable) begin
+	// 		ack <= 1'b1;
+	// 		data_o <= `ZeroWord;
+	// 	end else begin
+	// 		if (ce == `ChipDisable) begin
+	// 			ack <= 1'b1;
+	// 			data_o <= `ZeroWord;
+	// 		end else begin
+	// 			case (state)
+	// 				IDLE: begin
+	// 					ack <= 1'b1;
+	// 					if (we == `WriteEnable) begin
+	// 						ack <= 1'b0;
+	// 						state <= WRITE;
+	// 					end else begin
+	// 						data_o <= data_mem[addr[`DataMemNumLog2+1:2]];
+	// 					end
+	// 				end
+	// 				WRITE: begin
+	// 					data_mem[addr[`DataMemNumLog2+1:2]] <= data_i;
+	// 					ack <= 1'b1;
+	// 					state <= IDLE;
+	// 				end
+	// 			endcase
+	// 		end
+	// 	end
+	// end
 
 endmodule

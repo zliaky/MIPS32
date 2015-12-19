@@ -147,7 +147,7 @@ module wishbone_bus(
 					end
 					4'b1011: begin
 						memw_ack <= `True_v;
-						if_ack <= `False_v;
+						// if_ack <= `False_v;
 						if (stall_i == 6'b000111) begin
 							if_cancel = `True_v;
 						end else begin
@@ -156,7 +156,7 @@ module wishbone_bus(
 					end
 					4'b1101: begin
 						memr_ack <= `True_v;
-						if_ack <= `False_v;
+						// if_ack <= `False_v;
 						if (stall_i == 6'b000111) begin
 							if_cancel = `True_v;
 						end else begin
@@ -176,6 +176,9 @@ module wishbone_bus(
 							memw_ack <= `True_v;
 							memr_ack <= `False_v;
 						end
+					end
+					4'b1111: begin
+						if_ack <= `False_v;
 					end
 					default: begin
 						if (stall_i == 6'b000111) begin
@@ -212,117 +215,117 @@ module wishbone_bus(
 				4'b1000: stall_req_mem <= `NoStop;
 				4'b1001: stall_req_mem <= `Stop;
 				4'b1010: stall_req_mem <= `NoStop;
-				4'b1011: stall_req_mem <= `NoStop;
+				4'b1011: stall_req_mem <= `Stop;
 				4'b1100: stall_req_mem <= `NoStop;
-				4'b1101: stall_req_mem <= `NoStop;
+				4'b1101: stall_req_mem <= `Stop;
 				4'b1110: stall_req_mem <= `Stop;
 				4'b1111: stall_req_mem <= `NoStop;
 			endcase
 		end
 	end
 
-	// always @ (*) begin
-	// 	if (rst == `RstEnable) begin
-	// 		if_data_o <= `ZeroWord;
-	// 		mem_data_o <= `ZeroWord;
-	// 	end else begin
-	// 		if (wishbone_ack_i == `True_v) begin
-	// 			if (if_ack <= `False_v && if_cancel == `False_v) begin
-	// 				if_data_o <= wishbone_data_i;
-	// 			end else begin
-	// 				mem_data_o <= wishbone_data_i;
-	// 			end
-	// 		end
-	// 	end
-	// end
-
-	always @(*) begin
+	always @ (*) begin
 		if (rst == `RstEnable) begin
 			if_data_o <= `ZeroWord;
 			mem_data_o <= `ZeroWord;
 		end else begin
-			case (state)
-				4'b0110: begin
-					if (if_cancel == `False_v) begin
-						if_data_o <= wishbone_data_latch;
-					end
-				end
-				4'b1110: begin
-					if (if_cancel == `False_v) begin
-						if_data_o <= wishbone_data_latch;
-					end
-				end
-				default: begin
-					if (if_ack == `True_v) begin
-						mem_data_o <= wishbone_data_i;
-					end
-				end
-			endcase
-		end
-	end
-
-	always @(*) begin
-		if (rst == `RstEnable) begin
-		end else begin
 			if (wishbone_ack_i == `True_v) begin
-				case (state)
-					4'b0110: begin
-						if (if_cancel == `False_v) begin
-							if (flag == 1'b0) begin
-								wishbone_data_latch <= wishbone_data_i;
-							end
-						end
-					end
-					4'b1101: begin
-						if (if_cancel == `False_v) begin
-							wishbone_data_latch <= wishbone_data_i;
-						end
-					end
-					4'b1011: begin
-						if (if_cancel == `False_v && flag == 1'b0) begin
-							wishbone_data_latch <= wishbone_data_i;
-						end
-					end
-					4'b1001: begin
-						if (if_cancel == `False_v) begin
-							wishbone_data_latch <= wishbone_data_i;
-						end
-					end
-				endcase	
+				if (if_ack <= `False_v && if_cancel == `False_v) begin
+					if_data_o <= wishbone_data_i;
+				end else begin
+					mem_data_o <= wishbone_data_i;
+				end
 			end
 		end
 	end
 
-	always @(posedge clk) begin
-		if (rst == `RstEnable) begin
-		end else begin
-			if (wishbone_ack_i == `True_v) begin
-				case (state)
-					4'b0110: begin
-						if (if_cancel == `False_v) begin
-							if (flag == 1'b1) begin
-								flag <= 1'b0;
-							end  
-						end
-					end
-					4'b1101: begin
-						if (if_cancel == `False_v) begin
-							flag <= 1'b1;
-						end
-					end
-					4'b1011: begin
-						if (if_cancel == `False_v) begin
-							flag <= 1'b1;
-						end
-					end
-					4'b1001: begin
-						if (if_cancel == `False_v) begin
-							flag <= 1'b1;
-						end
-					end
-				endcase	
-			end
-		end
-	end
+	// always @(*) begin
+	// 	if (rst == `RstEnable) begin
+	// 		if_data_o <= `ZeroWord;
+	// 		mem_data_o <= `ZeroWord;
+	// 	end else begin
+	// 		case (state)
+	// 			4'b0110: begin
+	// 				if (if_cancel == `False_v) begin
+	// 					if_data_o <= wishbone_data_latch;
+	// 				end
+	// 			end
+	// 			4'b1110: begin
+	// 				if (if_cancel == `False_v) begin
+	// 					if_data_o <= wishbone_data_latch;
+	// 				end
+	// 			end
+	// 			default: begin
+	// 				if (if_ack == `True_v) begin
+	// 					mem_data_o <= wishbone_data_i;
+	// 				end
+	// 			end
+	// 		endcase
+	// 	end
+	// end
+
+	// always @(*) begin
+	// 	if (rst == `RstEnable) begin
+	// 	end else begin
+	// 		if (wishbone_ack_i == `True_v) begin
+	// 			case (state)
+	// 				4'b0110: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						if (flag == 1'b0) begin
+	// 							wishbone_data_latch <= wishbone_data_i;
+	// 						end
+	// 					end
+	// 				end
+	// 				4'b1101: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						wishbone_data_latch <= wishbone_data_i;
+	// 					end
+	// 				end
+	// 				4'b1011: begin
+	// 					if (if_cancel == `False_v && flag == 1'b0) begin
+	// 						wishbone_data_latch <= wishbone_data_i;
+	// 					end
+	// 				end
+	// 				4'b1001: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						wishbone_data_latch <= wishbone_data_i;
+	// 					end
+	// 				end
+	// 			endcase	
+	// 		end
+	// 	end
+	// end
+
+	// always @(posedge clk) begin
+	// 	if (rst == `RstEnable) begin
+	// 	end else begin
+	// 		if (wishbone_ack_i == `True_v) begin
+	// 			case (state)
+	// 				4'b0110: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						if (flag == 1'b1) begin
+	// 							flag <= 1'b0;
+	// 						end  
+	// 					end
+	// 				end
+	// 				4'b1101: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						flag <= 1'b1;
+	// 					end
+	// 				end
+	// 				4'b1011: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						flag <= 1'b1;
+	// 					end
+	// 				end
+	// 				4'b1001: begin
+	// 					if (if_cancel == `False_v) begin
+	// 						flag <= 1'b1;
+	// 					end
+	// 				end
+	// 			endcase	
+	// 		end
+	// 	end
+	// end
 
 endmodule

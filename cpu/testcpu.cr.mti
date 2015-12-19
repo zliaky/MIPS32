@@ -1,133 +1,126 @@
-C:/Users/Administrator-/Desktop/cpu/tlb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/tlb.v
+C:/Users/Administrator-/Documents/git/MIPS32/cpu/tlb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/tlb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module tlb
 
 Top level modules:
 	tlb
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module openmips_min_sopc
 
 Top level modules:
 	openmips_min_sopc
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/openmips.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/openmips.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module openmips
 
 Top level modules:
 	openmips
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/if_id.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/if_id.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/if_id.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/if_id.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module if_id
 
 Top level modules:
 	if_id
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/ex_mem.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/ex_mem.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/ex_mem.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/ex_mem.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module ex_mem
 
 Top level modules:
 	ex_mem
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/id.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/id.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/id.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/id.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module id
 
 Top level modules:
 	id
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/ex.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/ex.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/ex.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/ex.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module ex
 
 Top level modules:
 	ex
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/regfile.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/regfile.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/regfile.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/regfile.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module regfile
 
 Top level modules:
 	regfile
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/defines.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/defines.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/defines.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/defines.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/openmips_min_sopc_tb.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/openmips_min_sopc_tb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module openmips_min_sopc_tb
 
 Top level modules:
 	openmips_min_sopc_tb
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/mmu.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/mmu.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/mmu.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/mmu.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module mmu
 
 Top level modules:
 	mmu
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/mem.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/mem.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/mem.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/mem.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module mem
 
 Top level modules:
 	mem
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/wishbone_bus.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/wishbone_bus.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/wishbone_bus.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/wishbone_bus.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module wishbone_bus
 
 Top level modules:
 	wishbone_bus
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/data_ram.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/data_ram.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module data_ram
-
-Top level modules:
-	data_ram
-
-} {} {}} C:/Users/Administrator-/Desktop/cpu/hilo_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/hilo_reg.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/hilo_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/hilo_reg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module hilo_reg
 
 Top level modules:
 	hilo_reg
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/ctrl.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/ctrl.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/ctrl.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/ctrl.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module ctrl
 
 Top level modules:
 	ctrl
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/mem_wb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/mem_wb.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/mem_wb.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/mem_wb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module mem_wb
 
 Top level modules:
 	mem_wb
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/pc_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/pc_reg.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module pc_reg
-
-Top level modules:
-	pc_reg
-
-} {} {}} C:/Users/Administrator-/Desktop/cpu/cp0_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/cp0_reg.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/cp0_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/cp0_reg.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module cp0_reg
 
 Top level modules:
 	cp0_reg
 
-} {} {}} C:/Users/Administrator-/Desktop/cpu/id_ex.v {1 {vlog -work work -vopt C:/Users/Administrator-/Desktop/cpu/id_ex.v
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/pc_reg.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/pc_reg.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module pc_reg
+
+Top level modules:
+	pc_reg
+
+} {} {}} C:/Users/Administrator-/Documents/git/MIPS32/cpu/id_ex.v {1 {vlog -work work -vopt C:/Users/Administrator-/Documents/git/MIPS32/cpu/id_ex.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module id_ex
 
