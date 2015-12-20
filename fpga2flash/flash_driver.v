@@ -12,7 +12,11 @@ module flash_driver (
 
 	output [`FlashAddrBus] flash_addr, 
 	inout [`FlashDataBus] flash_data, 
-	output [`FlashCtrlBus] flash_ctl
+	output [`FlashCtrlBus] flash_ctl,
+	
+	output reg read_finish,
+	output reg erase_finish,
+	output reg write_finish
 	);
 
 	reg ack;
@@ -64,6 +68,7 @@ module flash_driver (
 				ack <= 1'b1;
 				addr_latch <= addr;
 				if (enable_write) begin
+					write_finish <= 1'b0;
 					ack <= 1'b0;
 					data_in_latch <= data_in;
 					flash_we <= 0;
@@ -71,12 +76,14 @@ module flash_driver (
 					state <= WRITE1;
 					busy <= 1;
 				end else if (enable_erase) begin
+					erase_finish <= 1'b0;
 					ack <= 1'b0;
 					flash_we <= 0;
 					data_to_write <= 16'h0020;
 					state <= ERASE1;
 					busy <= 1;
 				end else if (enable_read) begin
+					read_finish <= 1'b0;
 					ack <= 1'b0;
 					flash_we <= 0;
 					data_to_write <= 16'h00ff;
@@ -135,8 +142,10 @@ module flash_driver (
 				end
 			end
 			READ4: begin
-				if (!enable_read)
+				if (!enable_read) begin
+					read_finish <= 1'b1;
 					state <= IDLE;
+				end
 			end
 
 			//wait for sr[7] becomes 1
@@ -156,6 +165,8 @@ module flash_driver (
 			SR4: begin
 				flash_oe <= 1;
 				if (flash_data[7]) begin
+					erase_finish <= 1'b1;
+					write_finish <= 1'b1;
 					state <= IDLE;
 					busy <= 0;
 				end

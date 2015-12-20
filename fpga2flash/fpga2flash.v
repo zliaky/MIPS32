@@ -14,6 +14,8 @@ module fpga2flash(
 	output [`DigSegDataBus] segdisp1
 	);
 
+	wire write_finish, read_finish, erase_finish;
+
 	reg[`FlashAddrBusWord] addr_i;
 	reg[`FlashDataBus] data_i;
 	wire[`FlashDataBus] data_o;
@@ -46,31 +48,21 @@ module fpga2flash(
 		end
 	end
 	
-	reg[4:0] counter;
-	
 	always @ (posedge clk) begin
 		if (rst == 1'b0) begin
 			pc <= 32'b0;
-			counter <= 5'b0;
 		end else if (enable_write == 1'b1) begin		//write
-			if (counter[4] == 1'b1) begin
-				counter <= 5'b0;			
+			if (write_finish == 1'b1) begin
 				case (pc)
 					`include "input.v"
-					default: pc <= 32'h00000000;
 				endcase
-			end else begin
-				counter <= counter + 1'b1;
 			end
 		end else if (enable_read == 1'b1) begin
 			addr_i <= sw_dip[`FlashAddrBusWord];
 		end else if (enable_erase == 1'b1) begin
-			if (counter[4] == 1'b1) begin
+			if (erase_finish == 1'b1) begin
 				addr_i <= pc[`FlashAddrBusWord];
 				pc <= pc + 1'b1;
-				counter <= 5'b0;
-			end else begin
-				counter <= counter + 1'b1;
 			end
 		end
 	end
@@ -87,7 +79,11 @@ module fpga2flash(
 
 	.flash_addr(flash_addr),
 	.flash_data(flash_data),
-	.flash_ctl(flash_ctl)
+	.flash_ctl(flash_ctl),
+
+	.read_finish(read_finish),
+	.erase_finish(erase_finish),
+	.write_finish(write_finish)
 	);
 
 endmodule

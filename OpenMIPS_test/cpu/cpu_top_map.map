@@ -10,7 +10,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun Dec 20 17:24:17 2015
+Mapped Date    : Sun Dec 20 21:27:26 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -66,21 +66,21 @@ Phase 9.8  Global Placement
 ..........................................................................................................................................................................................
 ............................................................................................................................................................................
 ..................................................
-Phase 9.8  Global Placement (Checksum:752ee11c) REAL time: 1 mins 
+Phase 9.8  Global Placement (Checksum:752ee11c) REAL time: 1 mins 1 secs 
 
 Phase 10.5  Local Placement Optimization
 Phase 10.5  Local Placement Optimization (Checksum:752ee11c) REAL time: 1 mins 1 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:f4fa6484) REAL time: 1 mins 18 secs 
+Phase 11.18  Placement Optimization (Checksum:f4fa6484) REAL time: 1 mins 19 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:f4fa6484) REAL time: 1 mins 18 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f4fa6484) REAL time: 1 mins 19 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:bbf9e63e) REAL time: 1 mins 18 secs 
+Phase 13.34  Placement Validation (Checksum:bbf9e63e) REAL time: 1 mins 19 secs 
 
-Total REAL time to Placer completion: 1 mins 36 secs 
+Total REAL time to Placer completion: 1 mins 37 secs 
 Total CPU  time to Placer completion: 1 mins 36 secs 
 Running post-placement packing...
 Writing output files...
@@ -169,7 +169,7 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.43
 
 Peak Memory Usage:  641 MB
-Total REAL time to MAP completion:  1 mins 40 secs 
+Total REAL time to MAP completion:  1 mins 41 secs 
 Total CPU time to MAP completion:   1 mins 40 secs 
 
 Mapping completed.

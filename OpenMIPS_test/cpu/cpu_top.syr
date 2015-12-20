@@ -2645,12 +2645,12 @@ sopc/wishbone_ack_i                         |         |         |    8.664|     
 =========================================================================
 
 
-Total REAL time to Xst completion: 45.00 secs
-Total CPU time to Xst completion: 44.65 secs
+Total REAL time to Xst completion: 44.00 secs
+Total CPU time to Xst completion: 44.31 secs
  
 --> 
 
-Total memory usage is 340396 kilobytes
+Total memory usage is 344940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  765 (   0 filtered)

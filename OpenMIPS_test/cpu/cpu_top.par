@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-HUANG-PC::  Sun Dec 20 17:26:00 2015
+HUANG-PC::  Sun Dec 20 21:29:10 2015
 
 par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
 
@@ -116,25 +116,25 @@ Phase  1  : 28171 unrouted;      REAL time: 10 secs
 
 Phase  2  : 25910 unrouted;      REAL time: 15 secs 
 
-Phase  3  : 13345 unrouted;      REAL time: 26 secs 
+Phase  3  : 13345 unrouted;      REAL time: 25 secs 
 
-Phase  4  : 13345 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
+Phase  4  : 13345 unrouted; (Par is working to improve performance)     REAL time: 28 secs 
 
 Updating file: cpu_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 50 secs 
 Total REAL time to Router completion: 50 secs 
-Total CPU time to Router completion: 52 secs 
+Total CPU time to Router completion: 51 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -180,8 +180,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 55 secs 
-Total CPU time to PAR completion: 57 secs 
+Total REAL time to PAR completion: 54 secs 
+Total CPU time to PAR completion: 56 secs 
 
 Peak Memory Usage:  616 MB
 

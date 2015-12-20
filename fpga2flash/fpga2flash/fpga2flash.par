@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-HUANG-PC::  Sun Dec 20 22:50:36 2015
+HUANG-PC::  Mon Dec 21 00:04:22 2015
 
 par -w -intstyle ise -ol high -mt off fpga2flash_map.ncd fpga2flash.ncd
 fpga2flash.pcf 
@@ -28,16 +28,16 @@ Device speed data version:  "PRODUCTION 1.22 2012-07-09".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   131 out of 126,576    1%
-    Number used as Flip Flops:                 131
+  Number of Slice Registers:                   128 out of 126,576    1%
+    Number used as Flip Flops:                 128
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        147 out of  63,288    1%
-    Number used as logic:                      145 out of  63,288    1%
-      Number using O6 output only:              72
+  Number of Slice LUTs:                        157 out of  63,288    1%
+    Number used as logic:                      155 out of  63,288    1%
+      Number using O6 output only:              88
       Number using O5 output only:              30
-      Number using O5 and O6:                   43
+      Number using O5 and O6:                   37
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  15,616    0%
     Number used exclusively as route-thrus:      2
@@ -46,12 +46,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    62 out of  15,822    1%
+  Number of occupied Slices:                    60 out of  15,822    1%
   Nummber of MUXCYs used:                       32 out of  31,644    1%
-  Number of LUT Flip Flop pairs used:          177
-    Number with an unused Flip Flop:            65 out of     177   36%
-    Number with an unused LUT:                  30 out of     177   16%
-    Number of fully used LUT-FF pairs:          82 out of     177   46%
+  Number of LUT Flip Flop pairs used:          185
+    Number with an unused Flip Flop:            73 out of     185   39%
+    Number with an unused LUT:                  28 out of     185   15%
+    Number of fully used LUT-FF pairs:          84 out of     185   45%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,576    0%
 
@@ -107,13 +107,13 @@ WARNING:Par:288 - The signal sw_dip<28>_IBUF has no load.  PAR will not attempt 
 Starting Router
 
 
-Phase  1  : 898 unrouted;      REAL time: 7 secs 
+Phase  1  : 949 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 788 unrouted;      REAL time: 8 secs 
+Phase  2  : 845 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 289 unrouted;      REAL time: 9 secs 
+Phase  3  : 368 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 289 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  4  : 368 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
 Updating file: fpga2flash.ncd with current fully routed design.
 
@@ -127,9 +127,9 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion: 13 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Total REAL time to Router completion: 12 secs 
+Total CPU time to Router completion: 12 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -149,8 +149,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.419ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.415ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.017ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.416ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -168,10 +168,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 7 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 14 secs 
-Total CPU time to PAR completion: 14 secs 
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion: 13 secs 
 
-Peak Memory Usage:  469 MB
+Peak Memory Usage:  470 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

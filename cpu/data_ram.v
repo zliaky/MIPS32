@@ -13,7 +13,7 @@ module data_ram(
 
 	//定义四个字节数组
 	// reg[31:0] data_mem[0:`DataMemNum-1];
-	reg[31:0] data_mem[0:127];
+	reg[31:0] data_mem[0:`DataMemNum-1];
 
 	initial begin
 		`include "input.v"

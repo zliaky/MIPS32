@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-12-20T22:42:13</DateModified>
+  <DateModified>2015-12-20T23:32:51</DateModified>
   <ModuleName>fpga2flash</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/iseconfig/fpga2flash.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash\</ImplementationReportsDirectory>
   <DateInitialized>2015-12-20T22:42:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

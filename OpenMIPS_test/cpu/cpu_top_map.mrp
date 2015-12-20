@@ -10,7 +10,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun Dec 20 17:24:17 2015
+Mapped Date    : Sun Dec 20 21:27:26 2015
 
 Design Summary
 --------------
@@ -86,7 +86,7 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.43
 
 Peak Memory Usage:  641 MB
-Total REAL time to MAP completion:  1 mins 40 secs 
+Total REAL time to MAP completion:  1 mins 41 secs 
 Total CPU time to MAP completion:   1 mins 40 secs 
 
 Table of Contents
