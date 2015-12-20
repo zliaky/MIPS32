@@ -1,0 +1,3 @@
+verilog work "../flash_driver.v"
+verilog work "../digseg_driver.v"
+verilog work "../fpga2flash.v"

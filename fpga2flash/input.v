@@ -1,0 +1,16 @@
+32'h00000000: begin data_i <= 16'h1023; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000001: begin data_i <= 16'haaaa; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000002: begin data_i <= 16'hbbbb; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000003: begin data_i <= 16'hcccc; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000004: begin data_i <= 16'h1344; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000005: begin data_i <= 16'h0000; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000006: begin data_i <= 16'h1515; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000007: begin data_i <= 16'h0011; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000008: begin data_i <= 16'hffff; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000009: begin data_i <= 16'h2222; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000a: begin data_i <= 16'h3333; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000b: begin data_i <= 16'h7777; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000c: begin data_i <= 16'habcd; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000d: begin data_i <= 16'hdead; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000e: begin data_i <= 16'hbeaf; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h0000000f: begin data_i <= 16'h2323; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end

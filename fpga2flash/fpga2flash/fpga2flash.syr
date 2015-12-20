@@ -1,0 +1,528 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: fpga2flash.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fpga2flash.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fpga2flash"
+Output Format                      : NGC
+Target Device                      : xc6slx100-2-fgg676
+
+---- Source Options
+Top Module Name                    : fpga2flash
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\fpga2flash\flash_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/defines.v" included at line 1.
+Parsing module <flash_driver>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\fpga2flash\digseg_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/defines.v" included at line 1.
+Parsing module <digseg_driver>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/defines.v" included at line 1.
+Parsing module <fpga2flash>.
+Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/input.v" included at line 59.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <fpga2flash>.
+
+Elaborating module <digseg_driver>.
+
+Elaborating module <flash_driver>.
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\flash_driver.v" Line 61: Assignment to busy ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fpga2flash>.
+    Related source file is "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v".
+WARNING:Xst:647 - Input <sw_dip<28:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit register for signal <counter>.
+    Found 16-bit register for signal <data_i>.
+    Found 22-bit register for signal <addr_i>.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <pc[31]_GND_1_o_add_51_OUT> created at line 70.
+    Found 5-bit adder for signal <counter[4]_GND_1_o_add_52_OUT> created at line 73.
+    Found 16x16-bit Read Only RAM for signal <_n0137>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  75 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <fpga2flash> synthesized.
+
+Synthesizing Unit <digseg_driver>.
+    Related source file is "E:\course\GitRepository\MIPS32\fpga2flash\digseg_driver.v".
+    Found 16x7-bit Read Only RAM for signal <seg_o>
+    Summary:
+	inferred   1 RAM(s).
+Unit <digseg_driver> synthesized.
+
+Synthesizing Unit <flash_driver>.
+    Related source file is "E:\course\GitRepository\MIPS32\fpga2flash\flash_driver.v".
+    Found 1-bit register for signal <flash_we>.
+    Found 16-bit register for signal <data_to_write>.
+    Found 3-bit register for signal <read_wait_cnt>.
+    Found 1-bit register for signal <flash_oe>.
+    Found 22-bit register for signal <addr_latch>.
+    Found 16-bit register for signal <data_in_latch>.
+    Found 4-bit register for signal <state>.
+    Found 3-bit adder for signal <read_wait_cnt[2]_GND_3_o_add_12_OUT> created at line 134.
+    Found 1-bit tristate buffer for signal <flash_data<15>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<14>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<13>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<12>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<11>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<10>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<9>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<8>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<7>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<6>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<5>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<4>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<3>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<2>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<1>> created at line 30
+    Found 1-bit tristate buffer for signal <flash_data<0>> created at line 30
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  63 D-type flip-flop(s).
+	inferred  20 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <flash_driver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x16-bit single-port Read Only RAM                   : 1
+ 16x7-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 3
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 2
+ 16-bit register                                       : 3
+ 22-bit register                                       : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 12
+ 16-bit 2-to-1 multiplexer                             : 4
+ 22-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <digseg_driver>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <data_i>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_o>         |          |
+    -----------------------------------------------------------------------
+Unit <digseg_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <flash_driver>.
+The following registers are absorbed into counter <read_wait_cnt>: 1 register on signal <read_wait_cnt>.
+Unit <flash_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fpga2flash>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram__n0137> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <pc<3:0>>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fpga2flash> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x16-bit single-port distributed Read Only RAM       : 1
+ 16x7-bit single-port distributed Read Only RAM        : 2
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 130
+ Flip-Flops                                            : 130
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 12
+ 16-bit 2-to-1 multiplexer                             : 4
+ 22-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <data_i_3> in Unit <fpga2flash> is equivalent to the following 3 FFs/Latches, which will be removed : <data_i_7> <data_i_11> <data_i_15> 
+INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_15> in Unit <fpga2flash> is equivalent to the following 3 FFs/Latches, which will be removed : <flash0/data_in_latch_11> <flash0/data_in_latch_7> <flash0/data_in_latch_3> 
+INFO:Xst:2261 - The FF/Latch <flash0/data_to_write_15> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_to_write_11> 
+
+Optimizing unit <fpga2flash> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fpga2flash, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 131
+ Flip-Flops                                            : 131
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fpga2flash.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 269
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 31
+#      LUT2                        : 4
+#      LUT3                        : 63
+#      LUT4                        : 40
+#      LUT5                        : 46
+#      LUT6                        : 15
+#      MUXCY                       : 31
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 131
+#      FD                          : 7
+#      FDE                         : 88
+#      FDRE                        : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 103
+#      IBUF                        : 26
+#      IOBUF                       : 16
+#      OBUF                        : 61
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100fgg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             131  out of  126576     0%  
+ Number of Slice LUTs:                  202  out of  63288     0%  
+    Number used as Logic:               202  out of  63288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    215
+   Number with an unused Flip Flop:      84  out of    215    39%  
+   Number with an unused LUT:            13  out of    215     6%  
+   Number of fully used LUT-FF pairs:   118  out of    215    54%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                         111
+ Number of bonded IOBs:                 104  out of    480    21%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 131   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.802ns (Maximum Frequency: 172.354MHz)
+   Minimum input arrival time before clock: 6.277ns
+   Maximum output required time after clock: 5.638ns
+   Maximum combinational path delay: 7.539ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.802ns (frequency: 172.354MHz)
+  Total number of paths / destination ports: 2929 / 251
+-------------------------------------------------------------------------
+Delay:               5.802ns (Levels of Logic = 3)
+  Source:            pc_20 (FF)
+  Destination:       addr_i_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pc_20 to addr_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   1.042  pc_20 (pc_20)
+     LUT4:I0->O            2   0.254   1.156  _n0158_inv15 (_n0158_inv15)
+     LUT5:I0->O            1   0.254   0.682  _n0158_inv16_1 (_n0158_inv16)
+     LUT6:I5->O           22   0.254   1.333  _n0173_inv1 (_n0173_inv)
+     FDE:CE                    0.302          addr_i_0
+    ----------------------------------------
+    Total                      5.802ns (1.589ns logic, 4.213ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 555 / 204
+-------------------------------------------------------------------------
+Offset:              6.277ns (Levels of Logic = 3)
+  Source:            sw_dip<31> (PAD)
+  Destination:       flash0/data_to_write_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw_dip<31> to flash0/data_to_write_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            93   1.328   2.263  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     LUT2:I0->O            2   0.250   0.726  flash0/_n0173_inv61 (flash0/_n0173_inv_bdd6)
+     LUT6:I5->O           15   0.254   1.154  flash0/_n0173_inv21 (flash0/_n0173_inv)
+     FDE:CE                    0.302          flash0/data_to_write_0
+    ----------------------------------------
+    Total                      6.277ns (2.134ns logic, 4.143ns route)
+                                       (34.0% logic, 66.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 78 / 40
+-------------------------------------------------------------------------
+Offset:              5.638ns (Levels of Logic = 2)
+  Source:            flash0/flash_oe (FF)
+  Destination:       flash_data<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: flash0/flash_oe to flash_data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.765  flash0/flash_oe (flash0/flash_oe)
+     INV:I->O             16   0.255   1.181  flash0/flash_oe_inv1_INV_0 (flash0/flash_oe_inv)
+     IOBUF:T->IO               2.912          flash_data_15_IOBUF (flash_data<15>)
+    ----------------------------------------
+    Total                      5.638ns (3.692ns logic, 1.946ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 94 / 52
+-------------------------------------------------------------------------
+Delay:               7.539ns (Levels of Logic = 3)
+  Source:            sw_dip<31> (PAD)
+  Destination:       flash_addr<22> (PAD)
+
+  Data Path: sw_dip<31> to flash_addr<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            93   1.328   2.383  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     LUT3:I0->O            1   0.235   0.681  flash0/Mmux_flash_addr<22:1>110 (flash_addr_10_OBUF)
+     OBUF:I->O                 2.912          flash_addr_10_OBUF (flash_addr<10>)
+    ----------------------------------------
+    Total                      7.539ns (4.475ns logic, 3.064ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.802|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.29 secs
+ 
+--> 
+
+Total memory usage is 257452 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
