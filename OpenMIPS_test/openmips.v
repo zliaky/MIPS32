@@ -213,6 +213,9 @@ module openmips(
 			data_output <= {16'b0, mmu_select_i};
 		end else if (select[23] == 1'b1) begin
 			data_output <= {27'b0, state};
+		end else if (select[24] == 1'b1) begin
+			data_output <= {31'b0, rst};
+		end else if (select[25] == 1'b1) begin
 		end else begin
 			data_output <= regfile_data_o;
 		end

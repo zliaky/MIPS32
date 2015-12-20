@@ -20,10 +20,11 @@ module ram_driver (
 	output reg extram_ce,
 	output reg extram_oe,
 	output reg extram_we,
-	output wire ack
+	output reg ack
 );
 
-	wire ram_selector = addr[20];
+	wire ram_selector;
+	assign ram_selector = addr[20];
 
 	reg[`DataBus] base_data_latch = 0;
 	reg[`DataBus] extra_data_latch = 0;
@@ -33,6 +34,8 @@ module ram_driver (
 		
 	reg base_state;
 	reg extra_state;
+	wire state;
+	assign state = ram_selector ? extra_state : base_state;
 	localparam IDLE = 1'b0, WRITE1 = 1'b1;
 
 	wire[`DataBus] extra_data_out;
@@ -43,49 +46,25 @@ module ram_driver (
 	
 	reg extra_ack;
 	reg base_ack;
-	assign ack = ram_selector ? extra_ack : base_ack;
+//	assign ack = ram_selector ? extra_ack : base_ack;
 
 	always @ (*) begin
 		if (rst == `RstEnable) begin
-			base_ack <= 1'b1;
-		end
-		if (ram_selector == 1'b0) begin			//base
-			case (base_state)
+			ack <= 1'b1;
+		end else begin
+			case (state)
 				IDLE: begin
-					base_ack <= 1'b1;
+					ack <= 1'b1;
 					if(enable == 1'b1) begin
 						if (read_enable == 1'b1) begin
-							base_ack <= 1'b1;
+							ack <= 1'b1;
 						end else if (write_enable == 1'b1) begin
-							base_ack <= 1'b0;
+							ack <= 1'b0;
 						end
 					end
 				end
 				WRITE1: begin
-					base_ack <= 1'b1;
-				end
-			endcase
-		end
-	end
-
-	always @ (*) begin
-		if (rst == `RstEnable) begin
-			extra_ack <= 1'b1;
-		end
-		if (ram_selector == 1'b1) begin			//extra
-			case (extra_state)
-				IDLE: begin
-					extra_ack <= 1'b1;
-					if (enable == 1'b1) begin
-						if (read_enable == 1'b1) begin
-							extra_ack <= 1'b1;
-						end else if (write_enable == 1'b1) begin
-							extra_ack <= 1'b0;
-						end
-					end
-				end
-				WRITE1: begin
-					extra_ack <= 1'b1;
+					ack <= 1'b1;
 				end
 			endcase
 		end

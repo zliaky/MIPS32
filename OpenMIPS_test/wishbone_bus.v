@@ -138,7 +138,7 @@ module wishbone_bus(
 			memr_ack <= `True_v;
 		end else begin
 			if (wishbone_ack_i == `True_v) begin
-				case (state)
+				case (state[3:0])
 					4'b1001: begin
 						memr_ack <= `True_v;
 					end
@@ -197,10 +197,12 @@ module wishbone_bus(
 	assign stall_req_if = `NoStop;
 
 	always @ (*) begin
-		if (wishbone_ack_i == `False_v) begin
+		if (rst == `RstEnable) begin
+			stall_req_mem <= `NoStop;
+		end else if (wishbone_ack_i == `False_v) begin
 			stall_req_mem <= `Stop;
 		end else begin
-			case (state)
+			case (state[3:0])
 				4'b0000: stall_req_mem <= `NoStop;
 				4'b0001: stall_req_mem <= `NoStop;
 				4'b0010: stall_req_mem <= `NoStop;

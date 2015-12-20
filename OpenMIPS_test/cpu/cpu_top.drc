@@ -1,21 +1,17 @@
 Release 14.2 Drc P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Dec 19 20:57:01 2015
+Sun Dec 20 17:27:19 2015
 
 drc -z cpu_top.ncd cpu_top.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
+   sopc/openmips0/select[17]_select[18]_OR_16_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    sopc/openmips0/wishbone_bus0/tlb_ce_G is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
-DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Sat Dec 19 20:55:34 2015
+// Written by: Map P.28xd on Sun Dec 20 17:25:55 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -45,10 +45,10 @@ COMP "sw_dip<23>" LOCATE = SITE "P5" LEVEL 1;
 COMP "sw_dip<31>" LOCATE = SITE "L3" LEVEL 1;
 PIN sw_dip<31>_pin<0> = BEL "sw_dip<31>" PINNAME PAD;
 PIN "sw_dip<31>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
-COMP "sw_dip<24>" LOCATE = SITE "P3" LEVEL 1;
 COMP "sw_dip<16>" LOCATE = SITE "V4" LEVEL 1;
-COMP "sw_dip<25>" LOCATE = SITE "N4" LEVEL 1;
+COMP "sw_dip<24>" LOCATE = SITE "P3" LEVEL 1;
 COMP "sw_dip<17>" LOCATE = SITE "V3" LEVEL 1;
+COMP "sw_dip<25>" LOCATE = SITE "N4" LEVEL 1;
 COMP "sw_dip<26>" LOCATE = SITE "N3" LEVEL 1;
 COMP "sw_dip<18>" LOCATE = SITE "U4" LEVEL 1;
 COMP "sw_dip<27>" LOCATE = SITE "N5" LEVEL 1;

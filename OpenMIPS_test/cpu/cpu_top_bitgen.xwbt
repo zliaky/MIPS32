@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cpu\cpu_top.ncd
-OUTFILE=C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cpu\cpu_top.bit
+INFILE=E:\course\GitRepository\MIPS32\OpenMIPS_test\cpu\cpu_top.ncd
+OUTFILE=E:\course\GitRepository\MIPS32\OpenMIPS_test\cpu\cpu_top.bit
 FAMILY=Spartan6
 PART=xc6slx100-3fgg676
-WORKINGDIR=C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cpu
+WORKINGDIR=E:\course\GitRepository\MIPS32\OpenMIPS_test\cpu
 LICENSE=ISE
 USER_INFO=__0_0_0

@@ -68,6 +68,9 @@ module openmips_min_sopc(
 			end else if (select[10] == 1'b1) begin
 				data_o <= wishbone_addr_o;
 			end else if (select[11] == 1'b1) begin
+				data_o <= {16'b0, wishbone_select_o};
+			end else if (select[12] == 1'b1) begin
+				data_o <= {31'b0, rst};
 			end else begin
 				data_o <= output_data;
 			end

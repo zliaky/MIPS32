@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: cpu_top.prj
 
@@ -105,97 +105,97 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart_driver.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 14.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 14.
 Parsing module <uart_driver_transmitter>.
 Parsing module <uart_driver_receiver>.
 Parsing module <ASSERTION_ERROR>.
 Parsing module <BaudTickGen>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\rom_driver.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\rom_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <rom_driver>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ram_driver.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\ram_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <ram_driver>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\flash_driver.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <flash_driver>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\digseg_driver.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\digseg_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <digseg_driver>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\wishbone_bus.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\wishbone_bus.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <wishbone_bus>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <uart>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\tlb.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\tlb.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <tlb>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\rom.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\rom.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <rom>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\regfile.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\regfile.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <regfile>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ram.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\ram.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <ram>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\pc_reg.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\pc_reg.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <pc_reg>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mmu.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\mmu.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <mmu>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mem_wb.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\mem_wb.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <mem_wb>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mem.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\mem.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <mem>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\if_id.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\if_id.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <if_id>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\id_ex.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\id_ex.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <id_ex>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\id.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\id.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <id>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\hilo_reg.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\hilo_reg.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <hilo_reg>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\flash.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <flash>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ex_mem.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\ex_mem.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <ex_mem>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ex.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\ex.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <ex>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\digseg.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\digseg.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <digseg>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ctrl.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\ctrl.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <ctrl>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cp0_reg.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\cp0_reg.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <cp0_reg>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <bus>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <openmips>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <bus_top>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips_min_sopc.v" into library work
-Parsing verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips_min_sopc.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\/defines.v" included at line 1.
 Parsing module <openmips_min_sopc>.
-Analyzing Verilog file "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cpu_top.v" into library work
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\OpenMIPS_test\cpu_top.v" into library work
 Parsing module <cpu_top>.
 
 =========================================================================
@@ -231,39 +231,39 @@ Elaborating module <hilo_reg>.
 Elaborating module <ctrl>.
 
 Elaborating module <cp0_reg>.
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" Line 619: Assignment to cp0_count ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" Line 621: Assignment to cp0_compare ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" Line 625: Assignment to cp0_ebase ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" Line 622: Assignment to cp0_count ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" Line 624: Assignment to cp0_compare ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" Line 628: Assignment to cp0_ebase ignored, since the identifier is never used
 
 Elaborating module <mmu>.
 
 Elaborating module <tlb>.
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\tlb.v" Line 25: Assignment to tlb_reg ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\tlb.v" Line 50: Assignment to tlb_find ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\tlb.v" Line 25: Assignment to tlb_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\tlb.v" Line 50: Assignment to tlb_find ignored, since the identifier is never used
 
 Elaborating module <wishbone_bus>.
 
 Elaborating module <bus_top>.
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 41: Using initial value of s3_data_o since it is never assigned
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 42: Using initial value of s3_ack_o since it is never assigned
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 49: Using initial value of s5_data_o since it is never assigned
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 50: Using initial value of s5_ack_o since it is never assigned
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 57: Using initial value of s7_data_o since it is never assigned
-WARNING:HDLCompiler:872 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 58: Using initial value of s7_ack_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 41: Using initial value of s3_data_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 42: Using initial value of s3_ack_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 49: Using initial value of s5_data_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 50: Using initial value of s5_ack_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 57: Using initial value of s7_data_o since it is never assigned
+WARNING:HDLCompiler:872 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 58: Using initial value of s7_ack_o since it is never assigned
 
 Elaborating module <bus>.
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 120: Assignment to s3_data_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 121: Assignment to s3_addr_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 122: Assignment to s3_we_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 123: Assignment to s3_select_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 132: Assignment to s5_data_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 133: Assignment to s5_addr_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 134: Assignment to s5_we_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 135: Assignment to s5_select_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 144: Assignment to s7_data_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 145: Assignment to s7_addr_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 146: Assignment to s7_we_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" Line 147: Assignment to s7_select_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 120: Assignment to s3_data_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 121: Assignment to s3_addr_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 122: Assignment to s3_we_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 123: Assignment to s3_select_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 132: Assignment to s5_data_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 133: Assignment to s5_addr_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 134: Assignment to s5_we_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 135: Assignment to s5_select_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 144: Assignment to s7_data_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 145: Assignment to s7_addr_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 146: Assignment to s7_we_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" Line 147: Assignment to s7_select_i ignored, since the identifier is never used
 
 Elaborating module <ram>.
 
@@ -276,7 +276,7 @@ Elaborating module <rom_driver>.
 Elaborating module <flash>.
 
 Elaborating module <flash_driver>.
-WARNING:HDLCompiler:1127 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\flash_driver.v" Line 60: Assignment to busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v" Line 60: Assignment to busy ignored, since the identifier is never used
 
 Elaborating module <uart>.
 
@@ -297,14 +297,14 @@ Elaborating module <digseg_driver>.
 =========================================================================
 
 Synthesizing Unit <cpu_top>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cpu_top.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\cpu_top.v".
     Found 16-bit register for signal <led>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <cpu_top> synthesized.
 
 Synthesizing Unit <openmips_min_sopc>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips_min_sopc.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips_min_sopc.v".
     Found 1-bit register for signal <clk_2>.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -341,25 +341,58 @@ WARNING:Xst:737 - Found 1-bit latch for signal <data_o<0>>. Latches may be gener
     Summary:
 	inferred   1 D-type flip-flop(s).
 	inferred  32 Latch(s).
-	inferred 129 Multiplexer(s).
+	inferred 193 Multiplexer(s).
 Unit <openmips_min_sopc> synthesized.
 
 Synthesizing Unit <openmips>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v".
 WARNING:Xst:647 - Input <select<15:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <select<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" line 599: Output port <count_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" line 599: Output port <compare_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\openmips.v" line 599: Output port <ebase_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
+WARNING:Xst:647 - Input <select<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" line 602: Output port <count_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" line 602: Output port <compare_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips.v" line 602: Output port <ebase_o> of the instance <cp0_reg0> is unconnected or connected to loadless signal.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_output<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   8 Multiplexer(s).
+	inferred  32 Latch(s).
+	inferred 194 Multiplexer(s).
 Unit <openmips> synthesized.
 
 Synthesizing Unit <pc_reg>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\pc_reg.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\pc_reg.v".
 WARNING:Xst:647 - Input <stall<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit register for signal <pc>.
-    Found 32-bit adder for signal <pc[31]_GND_36_o_add_6_OUT> created at line 42.
+    Found 32-bit adder for signal <pc[31]_GND_68_o_add_6_OUT> created at line 42.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -367,7 +400,7 @@ WARNING:Xst:647 - Input <stall<5:1>> is never used. This port will be preserved 
 Unit <pc_reg> synthesized.
 
 Synthesizing Unit <if_id>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\if_id.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\if_id.v".
 WARNING:Xst:647 - Input <stall<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <stall<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit register for signal <id_inst>.
@@ -378,7 +411,7 @@ WARNING:Xst:647 - Input <stall<5:3>> is never used. This port will be preserved 
 Unit <if_id> synthesized.
 
 Synthesizing Unit <id>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\id.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\id.v".
     Found 32-bit adder for signal <pc_plus_8> created at line 88.
     Found 32-bit adder for signal <pc_plus_4> created at line 89.
     Found 32-bit adder for signal <pc_plus_4[31]_imm_sll2_signedext[31]_add_79_OUT> created at line 512.
@@ -394,7 +427,7 @@ Synthesizing Unit <id>.
 Unit <id> synthesized.
 
 Synthesizing Unit <regfile>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\regfile.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\regfile.v".
     Found 1024-bit register for signal <n0070[1023:0]>.
     Found 32-bit 32-to-1 multiplexer for signal <output_data> created at line 30.
     Found 32-bit 32-to-1 multiplexer for signal <raddr1[4]_regs[31][31]_wide_mux_47_OUT> created at line 87.
@@ -408,7 +441,7 @@ Synthesizing Unit <regfile>.
 Unit <regfile> synthesized.
 
 Synthesizing Unit <id_ex>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\id_ex.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\id_ex.v".
 WARNING:Xst:647 - Input <stall<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <stall<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <ex_alusel>.
@@ -429,15 +462,15 @@ WARNING:Xst:647 - Input <stall<5:4>> is never used. This port will be preserved 
 Unit <id_ex> synthesized.
 
 Synthesizing Unit <ex>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ex.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\ex.v".
 WARNING:Xst:647 - Input <inst_i<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <stallreq> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 6-bit subtractor for signal <PWR_10_o_GND_41_o_sub_22_OUT> created at line 153.
+    Found 6-bit subtractor for signal <PWR_10_o_GND_73_o_sub_22_OUT> created at line 153.
     Found 32-bit adder for signal <mem_addr_o> created at line 101.
-    Found 32-bit adder for signal <reg2_i[31]_GND_41_o_add_35_OUT> created at line 167.
+    Found 32-bit adder for signal <reg2_i[31]_GND_73_o_add_35_OUT> created at line 167.
     Found 32-bit adder for signal <result_sum> created at line 174.
-    Found 32-bit adder for signal <reg1_i[31]_GND_41_o_add_149_OUT> created at line 333.
-    Found 64-bit adder for signal <hilo_temp[63]_GND_41_o_add_163_OUT> created at line 352.
+    Found 32-bit adder for signal <reg1_i[31]_GND_73_o_add_149_OUT> created at line 333.
+    Found 64-bit adder for signal <hilo_temp[63]_GND_73_o_add_163_OUT> created at line 352.
     Found 32-bit shifter logical left for signal <reg2_i[31]_reg1_i[4]_shift_left_19_OUT> created at line 147
     Found 32-bit shifter logical right for signal <reg2_i[31]_reg1_i[4]_shift_right_20_OUT> created at line 150
     Found 32-bit shifter logical left for signal <reg2_i[31]_PWR_10_o_shift_left_22_OUT> created at line 153
@@ -456,7 +489,7 @@ WARNING:Xst:653 - Signal <stallreq> is used but never assigned. This sourceless 
 Unit <ex> synthesized.
 
 Synthesizing Unit <ex_mem>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ex_mem.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\ex_mem.v".
 WARNING:Xst:647 - Input <stall<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <stall<5:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <mem_wreg>.
@@ -480,12 +513,12 @@ WARNING:Xst:647 - Input <stall<5:5>> is never used. This port will be preserved 
 Unit <ex_mem> synthesized.
 
 Synthesizing Unit <mem>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mem.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\mem.v".
 WARNING:Xst:647 - Input <excepttype_i<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <excepttype_i<23:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cp0_bad_v_addr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_mem_data_i[31]_wide_mux_5_OUT> created at line 166.
-    Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_GND_45_o_wide_mux_7_OUT> created at line 192.
+    Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_GND_77_o_wide_mux_7_OUT> created at line 192.
     Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_mem_data_i[31]_wide_mux_24_OUT> created at line 280.
     Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_reg2_i[31]_wide_mux_25_OUT> created at line 303.
     Found 32-bit 4-to-1 multiplexer for signal <mem_addr_i[1]_reg2_i[31]_wide_mux_38_OUT> created at line 389.
@@ -529,7 +562,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <mem_addr_o<31>>. Latches may be 
 Unit <mem> synthesized.
 
 Synthesizing Unit <mem_wb>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mem_wb.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\mem_wb.v".
 WARNING:Xst:647 - Input <stall<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <wb_wreg>.
     Found 32-bit register for signal <wb_wdata>.
@@ -546,7 +579,7 @@ WARNING:Xst:647 - Input <stall<3:0>> is never used. This port will be preserved 
 Unit <mem_wb> synthesized.
 
 Synthesizing Unit <hilo_reg>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\hilo_reg.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\hilo_reg.v".
     Found 32-bit register for signal <lo_o>.
     Found 32-bit register for signal <hi_o>.
     Summary:
@@ -554,13 +587,13 @@ Synthesizing Unit <hilo_reg>.
 Unit <hilo_reg> synthesized.
 
 Synthesizing Unit <ctrl>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ctrl.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\ctrl.v".
     Summary:
 	inferred   8 Multiplexer(s).
 Unit <ctrl> synthesized.
 
 Synthesizing Unit <cp0_reg>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\cp0_reg.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\cp0_reg.v".
     Found 1-bit register for signal <index_o<30>>.
     Found 1-bit register for signal <index_o<29>>.
     Found 1-bit register for signal <index_o<28>>.
@@ -759,8 +792,8 @@ Synthesizing Unit <cp0_reg>.
     Found 1-bit register for signal <ebase_o<0>>.
     Found 1-bit register for signal <timer_int_o>.
     Found 1-bit register for signal <index_o<31>>.
-    Found 32-bit subtractor for signal <current_inst_addr_i[31]_GND_81_o_sub_149_OUT> created at line 155.
-    Found 32-bit adder for signal <count_o[31]_GND_81_o_add_2_OUT> created at line 74.
+    Found 32-bit subtractor for signal <current_inst_addr_i[31]_GND_113_o_sub_149_OUT> created at line 155.
+    Found 32-bit adder for signal <count_o[31]_GND_113_o_add_2_OUT> created at line 74.
     Found 32-bit comparator equal for signal <count_o[31]_compare_o[31]_equal_5_o> created at line 78
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -770,7 +803,7 @@ Synthesizing Unit <cp0_reg>.
 Unit <cp0_reg> synthesized.
 
 Synthesizing Unit <mmu>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\mmu.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\mmu.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 1-bit latch for signal <mmu_addr_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <mmu_addr_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -818,7 +851,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <mmu_addr_o<31>>. Latches may be 
 Unit <mmu> synthesized.
 
 Synthesizing Unit <tlb>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\tlb.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\tlb.v".
 WARNING:Xst:647 - Input <tlb_index> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <tlb_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -829,7 +862,7 @@ WARNING:Xst:647 - Input <tlb_we> is never used. This port will be preserved and 
 Unit <tlb> synthesized.
 
 Synthesizing Unit <wishbone_bus>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\wishbone_bus.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\wishbone_bus.v".
 WARNING:Xst:647 - Input <if_data_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <if_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <flush_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -839,6 +872,7 @@ WARNING:Xst:647 - Input <if_we_i> is never used. This port will be preserved and
     Found 1-bit register for signal <memw_ack>.
     Found 1-bit register for signal <memr_ack>.
     Found 1-bit register for signal <if_cancel>.
+    Found 16x1-bit Read Only RAM for signal <state[3]_GND_148_o_Mux_53_o>
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1017,35 +1051,35 @@ WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<1>>. Latches may be g
 WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <tlb_ce>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <stall_req_mem>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit comparator lessequal for signal <n0221> created at line 230
+    Found 1-bit comparator lessequal for signal <n0207> created at line 232
     Summary:
+	inferred   1 RAM(s).
 	inferred   4 D-type flip-flop(s).
-	inferred 179 Latch(s).
+	inferred 178 Latch(s).
 	inferred   1 Comparator(s).
-	inferred 227 Multiplexer(s).
+	inferred 229 Multiplexer(s).
 Unit <wishbone_bus> synthesized.
 
 Synthesizing Unit <bus_top>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v".
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v".
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_data_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_addr_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s3_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s5_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_we_o> of the instance <bus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus_top.v" line 95: Output port <s7_select_o> of the instance <bus0> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <bus_top> synthesized.
 
 Synthesizing Unit <bus>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\bus.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\bus.v".
 WARNING:Xst:737 - Found 1-bit latch for signal <m_data_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <m_data_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <m_data_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1083,7 +1117,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <m_data_o<31>>. Latches may be ge
 Unit <bus> synthesized.
 
 Synthesizing Unit <ram>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ram.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\ram.v".
 WARNING:Xst:647 - Input <bus_addr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_addr_i<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
@@ -1091,8 +1125,7 @@ WARNING:Xst:647 - Input <bus_addr_i<31:20>> is never used. This port will be pre
 Unit <ram> synthesized.
 
 Synthesizing Unit <ram_driver>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\ram_driver.v".
-    Found 1-bit register for signal <baseram_ce>.
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\ram_driver.v".
     Found 1-bit register for signal <baseram_we>.
     Found 1-bit register for signal <baseram_oe>.
     Found 1-bit register for signal <base_state>.
@@ -1104,81 +1137,79 @@ Synthesizing Unit <ram_driver>.
     Found 1-bit register for signal <extra_state>.
     Found 20-bit register for signal <extram_addr>.
     Found 32-bit register for signal <extra_data_latch>.
-    Found 1-bit tristate buffer for signal <baseram_data<31>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<30>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<29>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<28>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<27>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<26>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<25>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<24>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<23>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<22>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<21>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<20>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<19>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<18>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<17>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<16>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<15>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<14>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<13>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<12>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<11>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<10>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<9>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<8>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<7>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<6>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<5>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<4>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<3>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<2>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<1>> created at line 31
-    Found 1-bit tristate buffer for signal <baseram_data<0>> created at line 31
-    Found 1-bit tristate buffer for signal <extram_data<31>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<30>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<29>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<28>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<27>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<26>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<25>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<24>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<23>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<22>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<21>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<20>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<19>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<18>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<17>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<16>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<15>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<14>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<13>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<12>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<11>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<10>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<9>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<8>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<7>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<6>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<5>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<4>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<3>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<2>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<1>> created at line 32
-    Found 1-bit tristate buffer for signal <extram_data<0>> created at line 32
-WARNING:Xst:737 - Found 1-bit latch for signal <extra_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <base_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit register for signal <baseram_ce>.
+    Found 1-bit tristate buffer for signal <baseram_data<31>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<30>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<29>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<28>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<27>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<26>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<25>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<24>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<23>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<22>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<21>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<20>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<19>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<18>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<17>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<16>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<15>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<14>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<13>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<12>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<11>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<10>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<9>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<8>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<7>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<6>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<5>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<4>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<3>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<2>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<1>> created at line 32
+    Found 1-bit tristate buffer for signal <baseram_data<0>> created at line 32
+    Found 1-bit tristate buffer for signal <extram_data<31>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<30>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<29>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<28>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<27>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<26>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<25>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<24>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<23>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<22>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<21>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<20>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<19>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<18>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<17>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<16>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<15>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<14>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<13>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<12>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<11>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<10>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<9>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<8>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<7>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<6>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<5>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<4>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<3>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<2>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<1>> created at line 33
+    Found 1-bit tristate buffer for signal <extram_data<0>> created at line 33
     Summary:
 	inferred 112 D-type flip-flop(s).
-	inferred   2 Latch(s).
-	inferred  11 Multiplexer(s).
+	inferred   9 Multiplexer(s).
 	inferred  64 Tristate(s).
 Unit <ram_driver> synthesized.
 
 Synthesizing Unit <rom>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\rom.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\rom.v".
 WARNING:Xst:647 - Input <bus_addr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_addr_i<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_data_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1190,14 +1221,14 @@ WARNING:Xst:647 - Input <bus_we_i> is never used. This port will be preserved an
 Unit <rom> synthesized.
 
 Synthesizing Unit <rom_driver>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\rom_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\rom_driver.v".
 WARNING:Xst:647 - Input <addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <rom_driver> synthesized.
 
 Synthesizing Unit <flash>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\flash.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash.v".
 WARNING:Xst:647 - Input <bus_addr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_addr_i<31:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_data_i<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1208,7 +1239,7 @@ WARNING:Xst:647 - Input <bus_select_i> is never used. This port will be preserve
 Unit <flash> synthesized.
 
 Synthesizing Unit <flash_driver>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\flash_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v".
     Found 1-bit register for signal <flash_we>.
     Found 16-bit register for signal <data_to_write>.
     Found 3-bit register for signal <read_wait_cnt>.
@@ -1217,7 +1248,7 @@ Synthesizing Unit <flash_driver>.
     Found 22-bit register for signal <addr_latch>.
     Found 16-bit register for signal <data_in_latch>.
     Found 4-bit register for signal <state>.
-    Found 3-bit adder for signal <read_wait_cnt[2]_GND_403_o_add_12_OUT> created at line 133.
+    Found 3-bit adder for signal <read_wait_cnt[2]_GND_432_o_add_12_OUT> created at line 133.
     Found 1-bit tristate buffer for signal <flash_data<15>> created at line 29
     Found 1-bit tristate buffer for signal <flash_data<14>> created at line 29
     Found 1-bit tristate buffer for signal <flash_data<13>> created at line 29
@@ -1243,18 +1274,18 @@ Synthesizing Unit <flash_driver>.
 Unit <flash_driver> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v".
 WARNING:Xst:647 - Input <bus_addr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_data_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart.v" line 29: Output port <TxD_busy> of the instance <u0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart.v" line 33: Output port <RxD_data_ready> of the instance <u1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart.v" line 33: Output port <RxD_waiting_data> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 29: Output port <TxD_busy> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 33: Output port <RxD_data_ready> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 33: Output port <RxD_waiting_data> of the instance <u1> is unconnected or connected to loadless signal.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <uart> synthesized.
 
 Synthesizing Unit <uart_driver_transmitter>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart_driver.v".
         ClkFrequency = 50000000
         Baud = 115200
     Found 4-bit register for signal <TxD_state>.
@@ -1278,7 +1309,7 @@ Synthesizing Unit <uart_driver_transmitter>.
 Unit <uart_driver_transmitter> synthesized.
 
 Synthesizing Unit <BaudTickGen_1>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart_driver.v".
         ClkFrequency = 50000000
         Baud = 115200
         Oversampling = 1
@@ -1291,7 +1322,7 @@ Synthesizing Unit <BaudTickGen_1>.
 Unit <BaudTickGen_1> synthesized.
 
 Synthesizing Unit <uart_driver_receiver>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart_driver.v".
         ClkFrequency = 50000000
         Baud = 115200
         Oversampling = 8
@@ -1307,7 +1338,7 @@ Synthesizing Unit <uart_driver_receiver>.
     | States             | 11                                             |
     | Transitions        | 32                                             |
     | Inputs             | 3                                              |
-    | Outputs            | 8                                              |
+    | Outputs            | 7                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | rst (positive)                                 |
     | Reset type         | synchronous                                    |
@@ -1316,9 +1347,9 @@ Synthesizing Unit <uart_driver_receiver>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit subtractor for signal <Filter_cnt[1]_GND_423_o_sub_7_OUT> created at line 135.
-    Found 2-bit adder for signal <Filter_cnt[1]_GND_423_o_add_3_OUT> created at line 133.
-    Found 3-bit adder for signal <OversamplingCnt[2]_GND_423_o_add_19_OUT> created at line 151.
+    Found 2-bit subtractor for signal <Filter_cnt[1]_GND_452_o_sub_7_OUT> created at line 135.
+    Found 2-bit adder for signal <Filter_cnt[1]_GND_452_o_add_3_OUT> created at line 133.
+    Found 3-bit adder for signal <OversamplingCnt[2]_GND_452_o_add_19_OUT> created at line 151.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
@@ -1327,19 +1358,19 @@ Synthesizing Unit <uart_driver_receiver>.
 Unit <uart_driver_receiver> synthesized.
 
 Synthesizing Unit <BaudTickGen_2>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\uart_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart_driver.v".
         ClkFrequency = 50000000
         Baud = 115200
         Oversampling = 8
     Found 18-bit register for signal <Acc>.
-    Found 18-bit adder for signal <GND_424_o_BUS_0793_mux_2_OUT> created at line 231.
+    Found 18-bit adder for signal <GND_453_o_BUS_0793_mux_2_OUT> created at line 231.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
 Unit <BaudTickGen_2> synthesized.
 
 Synthesizing Unit <digseg>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\digseg.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\digseg.v".
 WARNING:Xst:647 - Input <bus_addr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <bus_data_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1349,7 +1380,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <digseg> synthesized.
 
 Synthesizing Unit <digseg_driver>.
-    Related source file is "C:\Users\Administrator-\Documents\git\MIPS32\OpenMIPS_test\digseg_driver.v".
+    Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\digseg_driver.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <digseg_driver> synthesized.
@@ -1358,6 +1389,8 @@ Unit <digseg_driver> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 17
@@ -1381,22 +1414,22 @@ Macro Statistics
  4-bit register                                        : 1
  5-bit register                                        : 5
  8-bit register                                        : 4
-# Latches                                              : 309
- 1-bit latch                                           : 309
+# Latches                                              : 338
+ 1-bit latch                                           : 338
 # Comparators                                          : 19
  1-bit comparator lessequal                            : 1
  32-bit comparator equal                               : 2
  32-bit comparator greater                             : 1
  32-bit comparator lessequal                           : 7
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1007
- 1-bit 2-to-1 multiplexer                              : 678
+# Multiplexers                                         : 1257
+ 1-bit 2-to-1 multiplexer                              : 934
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
  22-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 14
- 32-bit 2-to-1 multiplexer                             : 235
+ 32-bit 2-to-1 multiplexer                             : 229
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 7
  32-bit 8-to-1 multiplexer                             : 1
@@ -1442,10 +1475,10 @@ WARNING:Xst:1710 - FF/Latch <entry_hi_o_12> (without init value) has a constant 
 WARNING:Xst:1710 - FF/Latch <entry_hi_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <addr_latch_21> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <addr_latch_20> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <baseram_addr_19> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <baseram_addr_18> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <extram_addr_19> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <extram_addr_18> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <baseram_addr_19> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <baseram_addr_18> (without init value) has a constant value of 0 in block <ram_driver0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <index_o_31> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ebase_o_10> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ebase_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
@@ -1549,10 +1582,26 @@ The following registers are absorbed into counter <OversamplingCnt>: 1 register 
 The following registers are absorbed into counter <Filter_cnt>: 1 register on signal <Filter_cnt>.
 Unit <uart_driver_receiver> synthesized (advanced).
 
+Synthesizing (advanced) Unit <wishbone_bus>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[3]_GND_148_o_Mux_53_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(mem_ce_i,memw_ack,memr_ack,if_ack)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <wishbone_bus> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 14
@@ -1572,14 +1621,14 @@ Macro Statistics
  32-bit comparator greater                             : 1
  32-bit comparator lessequal                           : 7
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1003
- 1-bit 2-to-1 multiplexer                              : 676
+# Multiplexers                                         : 1252
+ 1-bit 2-to-1 multiplexer                              : 931
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
  22-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 12
- 32-bit 2-to-1 multiplexer                             : 235
+ 32-bit 2-to-1 multiplexer                             : 229
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 7
  32-bit 8-to-1 multiplexer                             : 1
@@ -1669,8 +1718,8 @@ INFO:Xst:2261 - The FF/Latch <extram_addr_18> in Unit <ram_driver> is equivalent
 INFO:Xst:2261 - The FF/Latch <baseram_addr_18> in Unit <ram_driver> is equivalent to the following FF/Latch, which will be removed : <baseram_addr_19> 
 INFO:Xst:2261 - The FF/Latch <addr_latch_20> in Unit <flash_driver> is equivalent to the following FF/Latch, which will be removed : <addr_latch_21> 
 WARNING:Xst:1710 - FF/Latch <cause_o_13> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <extram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <baseram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <baseram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <extram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <addr_latch_20> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <sopc/bus_top0/uart0/u0/FSM_2> on signal <TxD_state[1:4]> with user encoding.
@@ -1712,9 +1761,9 @@ WARNING:Xst:2677 - Node <Acc_0> of sequential type is unconnected in block <Baud
 WARNING:Xst:2677 - Node <Acc_1> of sequential type is unconnected in block <BaudTickGen_2>.
 WARNING:Xst:2677 - Node <Acc_2> of sequential type is unconnected in block <BaudTickGen_2>.
 WARNING:Xst:2677 - Node <Acc_3> of sequential type is unconnected in block <BaudTickGen_2>.
+WARNING:Xst:2677 - Node <sopc/data_o_16> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_17> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_18> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/data_o_16> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_19> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_20> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_22> of sequential type is unconnected in block <cpu_top>.
@@ -1722,12 +1771,12 @@ WARNING:Xst:2677 - Node <sopc/data_o_23> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <sopc/data_o_21> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_24> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/data_o_26> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_27> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_28> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/data_o_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/data_o_29> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_31> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/data_o_29> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:1710 - FF/Latch <sopc/bus_top0/flash0/flash_driver0/ack> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
@@ -1797,23 +1846,39 @@ Optimizing unit <uart_driver_receiver> ...
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/cp0_reg0/cause_o_6> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_3> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_9> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_12> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_16> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_17> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_18> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_19> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_20> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_21> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_23> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_27> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_29> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/data_output_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_23> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_22> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_25> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_26> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_27> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_29> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_29> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_31> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_29> of sequential type is unconnected in block <cpu_top>.
@@ -1947,7 +2012,9 @@ FlipFlop sopc/openmips0/id_ex0/ex_reg1_4 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/id_ex0/ex_reg2_31 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/if_id0/id_inst_26 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/if_id0/id_inst_27 has been replicated 1 time(s)
+FlipFlop sopc/openmips0/if_id0/id_inst_28 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/if_id0/id_inst_29 has been replicated 1 time(s)
+FlipFlop sopc/openmips0/if_id0/id_inst_31 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1955,8 +2022,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2266
- Flip-Flops                                            : 2266
+# Registers                                            : 2268
+ Flip-Flops                                            : 2268
 
 =========================================================================
 
@@ -1979,38 +2046,37 @@ Top Level Output File Name         : cpu_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6514
+# BELS                             : 6518
 #      GND                         : 1
-#      INV                         : 179
+#      INV                         : 178
 #      LUT1                        : 140
-#      LUT2                        : 214
-#      LUT3                        : 1318
-#      LUT4                        : 589
-#      LUT5                        : 678
-#      LUT6                        : 2474
+#      LUT2                        : 213
+#      LUT3                        : 1308
+#      LUT4                        : 605
+#      LUT5                        : 706
+#      LUT6                        : 2446
 #      MUXCY                       : 435
 #      MUXF7                       : 83
 #      VCC                         : 1
 #      XORCY                       : 402
-# FlipFlops/Latches                : 2530
+# FlipFlops/Latches                : 2545
 #      FD                          : 55
-#      FDE                         : 170
+#      FDE                         : 168
 #      FDR                         : 108
-#      FDRE                        : 1921
+#      FDRE                        : 1923
 #      FDS                         : 1
-#      FDSE                        : 11
-#      LD                          : 35
+#      FDSE                        : 13
+#      LD                          : 49
 #      LD_1                        : 22
-#      LDC                         : 126
+#      LDC                         : 134
 #      LDCE                        : 32
 #      LDCE_1                      : 32
-#      LDE                         : 16
-#      LDP                         : 1
+#      LDP                         : 8
 # Clock Buffers                    : 8
 #      BUFG                        : 7
 #      BUFGP                       : 1
-# IO Buffers                       : 210
-#      IBUF                        : 22
+# IO Buffers                       : 213
+#      IBUF                        : 25
 #      IOBUF                       : 80
 #      OBUF                        : 108
 # DSPs                             : 4
@@ -2023,20 +2089,20 @@ Selected Device : 6slx100fgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2514  out of  126576     1%  
- Number of Slice LUTs:                 5592  out of  63288     8%  
-    Number used as Logic:              5592  out of  63288     8%  
+ Number of Slice Registers:            2529  out of  126576     1%  
+ Number of Slice LUTs:                 5596  out of  63288     8%  
+    Number used as Logic:              5596  out of  63288     8%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7096
-   Number with an unused Flip Flop:    4582  out of   7096    64%  
-   Number with an unused LUT:          1504  out of   7096    21%  
-   Number of fully used LUT-FF pairs:  1010  out of   7096    14%  
-   Number of unique control sets:        57
+ Number of LUT Flip Flop pairs used:   7097
+   Number with an unused Flip Flop:    4568  out of   7097    64%  
+   Number with an unused LUT:          1501  out of   7097    21%  
+   Number of fully used LUT-FF pairs:  1028  out of   7097    14%  
+   Number of unique control sets:        53
 
 IO Utilization: 
  Number of IOs:                         224
- Number of bonded IOBs:                 211  out of    480    43%  
+ Number of bonded IOBs:                 214  out of    480    44%  
     IOB Flip Flops/Latches:              16
 
 Specific Feature Utilization:
@@ -2066,18 +2132,16 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
 clk                                                                                                                  | BUFGP                                                   | 17    |
 sw_dip<31>                                                                                                           | IBUF+BUFG                                               | 16    |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o(sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o1:O)| NONE(*)(sopc/bus_top0/ram0/ram_driver0/extra_ack)       | 1     |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o(sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o1:O)| NONE(*)(sopc/bus_top0/ram0/ram_driver0/base_ack)        | 1     |
-sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                  | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/extram_we)       | 2249  |
+sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                  | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/baseram_ce)      | 2251  |
+sopc/openmips0/select[17]_select[18]_OR_16_o(sopc/openmips0/select[17]_select[18]_OR_16_o:O)                         | NONE(*)(sopc/openmips0/data_output_0)                   | 16    |
 sopc/wishbone_ack_i(sopc/bus_top0/bus0/m_ack_o3:O)                                                                   | BUFG(*)(sopc/openmips0/wishbone_bus0/wishbone_data_o_31)| 126   |
-sopc/openmips0/wishbone_bus0/stall_req_mem                                                                           | NONE(sopc/openmips0/wishbone_bus0/stall_req_mem)        | 1     |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o(sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o1:O)| BUFG(*)(sopc/openmips0/wishbone_bus0/mem_data_o_0)      | 32    |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o(sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o1:O)| BUFG(*)(sopc/openmips0/wishbone_bus0/mem_data_o_1)      | 32    |
 rst                                                                                                                  | IBUF+BUFG                                               | 22    |
 sopc/openmips0/mem0/_n0583(sopc/openmips0/mem0/_n05831:O)                                                            | BUFG(*)(sopc/openmips0/mem0/mem_addr_o_31)              | 32    |
 sopc/bus_top0/bus0/_n0072(sopc/bus_top0/bus0/out3:O)                                                                 | BUFG(*)(sopc/bus_top0/bus0/m_data_o_31)                 | 32    |
 sopc/openmips0/wishbone_bus0/tlb_ce_G(sopc/openmips0/wishbone_bus0/tlb_ce_G:O)                                       | NONE(*)(sopc/openmips0/wishbone_bus0/tlb_ce)            | 1     |
 ---------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-(*) These 8 clock signal(s) are generated by combinatorial logic,
+(*) These 7 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -2090,9 +2154,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 22.394ns (Maximum Frequency: 44.655MHz)
-   Minimum input arrival time before clock: 21.778ns
-   Maximum output required time after clock: 5.840ns
+   Minimum period: 22.411ns (Maximum Frequency: 44.621MHz)
+   Minimum input arrival time before clock: 21.590ns
+   Maximum output required time after clock: 5.820ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2122,10 +2186,10 @@ Delay:               1.493ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/clk_tmp'
-  Clock period: 22.394ns (frequency: 44.655MHz)
-  Total number of paths / destination ports: 125597445870 / 4674
+  Clock period: 22.411ns (frequency: 44.621MHz)
+  Total number of paths / destination ports: 125601472144 / 4678
 -------------------------------------------------------------------------
-Delay:               22.394ns (Levels of Logic = 16)
+Delay:               22.411ns (Levels of Logic = 16)
   Source:            sopc/openmips0/id_ex0/ex_aluop_2 (FF)
   Destination:       sopc/openmips0/pc_reg0/pc_18 (FF)
   Source Clock:      sopc/clk_tmp rising
@@ -2136,81 +2200,59 @@ Delay:               22.394ns (Levels of Logic = 16)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q            12   0.447   1.137  sopc/openmips0/id_ex0/ex_aluop_2 (sopc/openmips0/id_ex0/ex_aluop_2)
-     LUT4:I1->O            8   0.205   0.803  sopc/openmips0/ex0/aluop_i[7]_aluop_i[7]_OR_693_o331 (sopc/openmips0/ex0/aluop_i[7]_aluop_i[7]_OR_693_o33)
-     LUT6:I5->O           16   0.205   1.005  sopc/openmips0/ex0/aluop_i[7]_reg1_i[31]_AND_269_o1 (sopc/openmips0/ex0/aluop_i[7]_reg1_i[31]_AND_269_o)
+     LUT4:I1->O            8   0.205   0.803  sopc/openmips0/ex0/aluop_i[7]_aluop_i[7]_OR_821_o331 (sopc/openmips0/ex0/aluop_i[7]_aluop_i[7]_OR_821_o33)
+     LUT6:I5->O           16   0.205   1.005  sopc/openmips0/ex0/aluop_i[7]_reg1_i[31]_AND_237_o1 (sopc/openmips0/ex0/aluop_i[7]_reg1_i[31]_AND_237_o)
      LUT3:I2->O            2   0.205   0.616  sopc/openmips0/ex0/Mmux_opdata1_mult110 (sopc/openmips0/ex0/opdata1_mult<0>)
      DSP48A1:A0->P47      18   4.560   1.049  sopc/openmips0/ex0/Mmult_hilo_temp (sopc/openmips0/ex0/Mmult_hilo_temp_P47_to_Mmult_hilo_temp1)
      DSP48A1:C30->PCOUT47    1   2.689   0.000  sopc/openmips0/ex0/Mmult_hilo_temp1 (sopc/openmips0/ex0/Mmult_hilo_temp1_PCOUT_to_Mmult_hilo_temp2_PCIN_47)
      DSP48A1:PCIN47->P1    6   2.264   0.744  sopc/openmips0/ex0/Mmult_hilo_temp2 (sopc/openmips0/ex0/hilo_temp<18>)
      INV:I->O              1   0.206   0.000  sopc/openmips0/ex0/n0369<18>1_INV_0 (sopc/openmips0/ex0/n0369<18>)
-     MUXCY:S->O            1   0.172   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<18> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<19> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<19>)
-     XORCY:CI->O           4   0.180   0.684  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_xor<20> (sopc/openmips0/ex0/hilo_temp[63]_GND_41_o_add_163_OUT<20>)
-     LUT6:I5->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1221 (sopc/openmips0/id_reg1_o<20>)
-     LUT6:I0->O            7   0.203   1.002  sopc/openmips0/id0/n01105 (sopc/openmips0/id0/n01105)
-     LUT6:I3->O            2   0.205   0.616  sopc/openmips0/id0/Mmux_branch_target_address_o102 (sopc/openmips0/id0/Mmux_branch_target_address_o101)
-     MUXF7:S->O            2   0.148   0.721  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5 (N669)
-     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/pc_reg0/Mmux_next_pc1191_SW0 (N841)
+     MUXCY:S->O            1   0.172   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_73_o_add_163_OUT_cy<18> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_73_o_add_163_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_73_o_add_163_OUT_cy<19> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_73_o_add_163_OUT_cy<19>)
+     XORCY:CI->O           4   0.180   0.684  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_73_o_add_163_OUT_xor<20> (sopc/openmips0/ex0/hilo_temp[63]_GND_73_o_add_163_OUT<20>)
+     LUT6:I5->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_70_o_imm[31]_mux_289_OUT1221 (sopc/openmips0/id_reg1_o<20>)
+     LUT6:I0->O            7   0.203   1.021  sopc/openmips0/id0/n01105 (sopc/openmips0/id0/n01105)
+     LUT6:I2->O            2   0.203   0.616  sopc/openmips0/id0/Mmux_branch_target_address_o102 (sopc/openmips0/id0/Mmux_branch_target_address_o101)
+     MUXF7:S->O            2   0.148   0.721  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5 (N693)
+     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/pc_reg0/Mmux_next_pc1191_SW0 (N865)
      LUT6:I5->O            1   0.205   0.000  sopc/openmips0/pc_reg0/Mmux_next_pc1191 (sopc/openmips0/pc_reg0/pc[31]_new_pc[31]_mux_11_OUT<18>)
      FDRE:D                    0.102          sopc/openmips0/pc_reg0/pc_18
     ----------------------------------------
-    Total                     22.394ns (12.423ns logic, 9.971ns route)
-                                       (55.5% logic, 44.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'sopc/openmips0/wishbone_bus0/stall_req_mem'
-  Clock period: 3.023ns (frequency: 330.750MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               3.023ns (Levels of Logic = 1)
-  Source:            sopc/openmips0/wishbone_bus0/stall_req_mem (LATCH)
-  Destination:       sopc/openmips0/wishbone_bus0/stall_req_mem (LATCH)
-  Source Clock:      sopc/openmips0/wishbone_bus0/stall_req_mem rising
-  Destination Clock: sopc/openmips0/wishbone_bus0/stall_req_mem rising
-
-  Data Path: sopc/openmips0/wishbone_bus0/stall_req_mem to sopc/openmips0/wishbone_bus0/stall_req_mem
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDP:G->Q            183   0.498   2.285  sopc/openmips0/wishbone_bus0/stall_req_mem (sopc/openmips0/wishbone_bus0/stall_req_mem)
-     LUT6:I2->O            2   0.203   0.000  sopc/openmips0/wishbone_bus0/state[4]_if_ack_Select_50_o1 (sopc/openmips0/wishbone_bus0/state[4]_if_ack_Select_50_o)
-     LDP:D                     0.037          sopc/openmips0/wishbone_bus0/stall_req_mem
-    ----------------------------------------
-    Total                      3.023ns (0.738ns logic, 2.285ns route)
-                                       (24.4% logic, 75.6% route)
+    Total                     22.411ns (12.421ns logic, 9.990ns route)
+                                       (55.4% logic, 44.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/wishbone_ack_i'
-  Clock period: 7.312ns (frequency: 136.763MHz)
+  Clock period: 7.461ns (frequency: 134.027MHz)
   Total number of paths / destination ports: 692 / 7
 -------------------------------------------------------------------------
-Delay:               7.312ns (Levels of Logic = 6)
+Delay:               7.461ns (Levels of Logic = 6)
   Source:            sopc/openmips0/wishbone_bus0/tlb_addr_o_30 (LATCH)
-  Destination:       sopc/openmips0/wishbone_bus0/wishbone_select_o_4 (LATCH)
+  Destination:       sopc/openmips0/wishbone_bus0/wishbone_select_o_7 (LATCH)
   Source Clock:      sopc/wishbone_ack_i falling
   Destination Clock: sopc/wishbone_ack_i falling
 
-  Data Path: sopc/openmips0/wishbone_bus0/tlb_addr_o_30 to sopc/openmips0/wishbone_bus0/wishbone_select_o_4
+  Data Path: sopc/openmips0/wishbone_bus0/tlb_addr_o_30 to sopc/openmips0/wishbone_bus0/wishbone_select_o_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LDC:G->Q              6   0.498   0.745  sopc/openmips0/wishbone_bus0/tlb_addr_o_30 (sopc/openmips0/wishbone_bus0/tlb_addr_o_30)
      LUT2:I1->O            2   0.205   0.981  sopc/openmips0/tlb0/Mmux_tlb_addr241 (sopc/openmips0/tlb_addr_i<30>)
-     LUT6:I0->O            1   0.203   0.924  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o11 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o11)
-     LUT6:I1->O            2   0.203   0.961  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o13 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o1)
-     LUT6:I1->O            3   0.203   1.015  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o3 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1353_o)
-     LUT6:I0->O            4   0.203   0.931  sopc/openmips0/mmu0/Mmux_mmu_select_o711 (sopc/openmips0/mmu0/Mmux_mmu_select_o71)
-     LUT4:I0->O            2   0.203   0.000  sopc/openmips0/mmu0/Mmux_mmu_select_o41 (sopc/openmips0/mmu_select_i<4>)
-     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/wishbone_select_o_4
+     LUT6:I0->O            1   0.203   0.924  sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o11 (sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o11)
+     LUT6:I1->O            2   0.203   0.961  sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o13 (sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o1)
+     LUT6:I1->O            4   0.203   1.048  sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o3 (sopc/openmips0/mmu0/GND_114_o_tlb_addr_i[31]_AND_1321_o)
+     LUT6:I0->O            4   0.203   1.048  sopc/openmips0/mmu0/Mmux_mmu_select_o711 (sopc/openmips0/mmu0/Mmux_mmu_select_o71)
+     LUT6:I0->O            2   0.203   0.000  sopc/openmips0/mmu0/Mmux_mmu_select_o7 (sopc/openmips0/mmu_select_i<7>)
+     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/wishbone_select_o_7
     ----------------------------------------
-    Total                      7.312ns (1.755ns logic, 5.557ns route)
-                                       (24.0% logic, 76.0% route)
+    Total                      7.461ns (1.755ns logic, 5.706ns route)
+                                       (23.5% logic, 76.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sw_dip<31>'
-  Total number of paths / destination ports: 304342 / 32
+  Total number of paths / destination ports: 134 / 16
 -------------------------------------------------------------------------
-Offset:              21.778ns (Levels of Logic = 18)
+Offset:              6.342ns (Levels of Logic = 4)
   Source:            rst (PAD)
   Destination:       sopc/data_o_0 (LATCH)
   Destination Clock: sw_dip<31> falling
@@ -2219,68 +2261,89 @@ Offset:              21.778ns (Levels of Logic = 18)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.598  rst_IBUF (rst_IBUF)
-     LUT5:I0->O          260   0.203   2.296  sopc/openmips0/id0/Mmux_reg1_addr_o11 (sopc/openmips0/reg1_addr<0>)
-     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N132)
-     LUT5:I4->O            6   0.205   0.745  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
-     LUT5:I4->O           95   0.205   1.845  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o153)
-     LUT6:I5->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o134)
-     LUT3:I2->O            2   0.205   0.981  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
-     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01101_F (N1034)
-     MUXF7:I0->O           1   0.131   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
-     LUT6:I5->O            1   0.205   0.944  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
-     LUT6:I0->O            7   0.203   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I2->O            3   0.203   0.879  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW4 (N667)
-     LUT6:I3->O           31   0.205   1.278  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
-     LUT6:I5->O            2   0.205   0.617  sopc/openmips0/id0/Mmux_branch_target_address_o12 (sopc/openmips0/branch_target_address<0>)
-     LUT6:I5->O            1   0.205   0.808  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>24 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>23)
-     LUT6:I3->O            1   0.205   0.684  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>25 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>24)
-     LUT5:I3->O            1   0.203   0.000  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>26 (sopc/output_data[31]_wishbone_data_i[31]_mux_12_OUT<0>)
-     LDE:D                     0.037          sopc/data_o_0
+     IBUF:I->O          1194   1.222   2.254  rst_IBUF (rst_IBUF)
+     LUT6:I5->O            1   0.205   0.580  sopc/bus_top0/bus0/m_ack_o1 (sopc/bus_top0/bus0/m_ack_o)
+     LUT6:I5->O           40   0.205   1.634  sopc/bus_top0/bus0/m_ack_o3 (sopc/wishbone_ack_i)
+     LUT5:I2->O            1   0.205   0.000  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_14_OUT<0>23 (sopc/output_data[31]_wishbone_data_i[31]_mux_14_OUT<0>)
+     LD:D                      0.037          sopc/data_o_0
     ----------------------------------------
-    Total                     21.778ns (4.660ns logic, 17.118ns route)
-                                       (21.4% logic, 78.6% route)
+    Total                      6.342ns (1.874ns logic, 4.468ns route)
+                                       (29.5% logic, 70.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/clk_tmp'
-  Total number of paths / destination ports: 1309045 / 3166
+  Total number of paths / destination ports: 1358607 / 3173
 -------------------------------------------------------------------------
-Offset:              19.027ns (Levels of Logic = 16)
+Offset:              19.445ns (Levels of Logic = 16)
   Source:            rst (PAD)
-  Destination:       sopc/openmips0/pc_reg0/pc_18 (FF)
+  Destination:       sopc/openmips0/pc_reg0/pc_31 (FF)
   Destination Clock: sopc/clk_tmp rising
 
-  Data Path: rst to sopc/openmips0/pc_reg0/pc_18
+  Data Path: rst to sopc/openmips0/pc_reg0/pc_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.598  rst_IBUF (rst_IBUF)
-     LUT5:I0->O          260   0.203   2.296  sopc/openmips0/id0/Mmux_reg1_addr_o11 (sopc/openmips0/reg1_addr<0>)
-     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N132)
-     LUT5:I4->O            6   0.205   0.745  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
-     LUT5:I4->O           95   0.205   1.845  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o153)
-     LUT6:I5->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o134)
-     LUT3:I2->O            2   0.205   0.981  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
-     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01101_F (N1034)
-     MUXF7:I0->O           1   0.131   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
-     LUT6:I5->O            1   0.205   0.944  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
-     LUT6:I0->O            7   0.203   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I2->O            2   0.203   0.616  sopc/openmips0/id0/Mmux_branch_target_address_o102 (sopc/openmips0/id0/Mmux_branch_target_address_o101)
-     MUXF7:S->O            2   0.148   0.721  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5 (N669)
-     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/pc_reg0/Mmux_next_pc1191_SW0 (N841)
-     LUT6:I5->O            1   0.205   0.000  sopc/openmips0/pc_reg0/Mmux_next_pc1191 (sopc/openmips0/pc_reg0/pc[31]_new_pc[31]_mux_11_OUT<18>)
-     FDRE:D                    0.102          sopc/openmips0/pc_reg0/pc_18
+     IBUF:I->O          1194   1.222   2.598  rst_IBUF (rst_IBUF)
+     LUT6:I1->O           68   0.203   1.771  sopc/openmips0/id0/Mmux_reg1_addr_o31 (sopc/openmips0/reg1_addr<2>)
+     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2)
+     LUT6:I5->O           33   0.205   1.306  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o3 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o)
+     LUT5:I4->O           32   0.205   1.292  sopc/openmips0/regfile1/Mmux_rdata11101 (sopc/openmips0/regfile1/Mmux_rdata1110)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242_SW0 (N962)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242)
+     LUT6:I5->O            3   0.205   0.651  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1243 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o_mmx_out2)
+     LUT2:I1->O            2   0.205   0.845  sopc/openmips0/id0/Mmux_GND_70_o_imm[31]_mux_289_OUT1321 (sopc/openmips0/id_reg1_o<2>)
+     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I3->O            7   0.205   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
+     LUT6:I2->O            3   0.203   0.755  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW4 (N691)
+     LUT6:I4->O           16   0.203   1.109  sopc/openmips0/id0/Mmux_branch_target_address_o1111_1 (sopc/openmips0/id0/Mmux_branch_target_address_o1111)
+     LUT6:I4->O            1   0.203   0.000  sopc/openmips0/pc_reg0/Mmux_next_pc1211 (sopc/openmips0/pc_reg0/pc[31]_new_pc[31]_mux_11_OUT<1>)
+     FDRE:D                    0.102          sopc/openmips0/pc_reg0/pc_1
     ----------------------------------------
-    Total                     19.027ns (4.258ns logic, 14.769ns route)
-                                       (22.4% logic, 77.6% route)
+    Total                     19.445ns (4.389ns logic, 15.056ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/select[17]_select[18]_OR_16_o'
+  Total number of paths / destination ports: 315034 / 32
+-------------------------------------------------------------------------
+Offset:              20.475ns (Levels of Logic = 17)
+  Source:            rst (PAD)
+  Destination:       sopc/openmips0/data_output_2 (LATCH)
+  Destination Clock: sopc/openmips0/select[17]_select[18]_OR_16_o falling
+
+  Data Path: rst to sopc/openmips0/data_output_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1194   1.222   2.598  rst_IBUF (rst_IBUF)
+     LUT6:I1->O           68   0.203   1.771  sopc/openmips0/id0/Mmux_reg1_addr_o31 (sopc/openmips0/reg1_addr<2>)
+     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2)
+     LUT6:I5->O           33   0.205   1.306  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o3 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o)
+     LUT5:I4->O           32   0.205   1.292  sopc/openmips0/regfile1/Mmux_rdata11101 (sopc/openmips0/regfile1/Mmux_rdata1110)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242_SW0 (N962)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242)
+     LUT6:I5->O            3   0.205   0.651  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1243 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o_mmx_out2)
+     LUT2:I1->O            2   0.205   0.845  sopc/openmips0/id0/Mmux_GND_70_o_imm[31]_mux_289_OUT1321 (sopc/openmips0/id_reg1_o<2>)
+     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I3->O            7   0.205   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
+     LUT6:I2->O            3   0.203   0.755  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW4 (N691)
+     LUT6:I4->O           31   0.203   1.382  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
+     LUT6:I4->O            2   0.203   0.617  sopc/openmips0/id0/Mmux_branch_target_address_o27 (sopc/openmips0/branch_target_address<4>)
+     LUT3:I2->O            1   0.205   0.000  sopc/openmips0/Mmux_regfile_data_o[31]_branch_target_address[31]_mux_19_OUT<0>3564 (sopc/openmips0/regfile_data_o[31]_branch_target_address[31]_mux_19_OUT<4>)
+     LDP:D                     0.037          sopc/openmips0/data_output_4
+    ----------------------------------------
+    Total                     20.475ns (4.529ns logic, 15.946ns route)
+                                       (22.1% logic, 77.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/wishbone_ack_i'
-  Total number of paths / destination ports: 1232369 / 197
+  Total number of paths / destination ports: 1275311 / 197
 -------------------------------------------------------------------------
-Offset:              21.095ns (Levels of Logic = 17)
+Offset:              21.590ns (Levels of Logic = 18)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_addr_o_2 (LATCH)
   Destination Clock: sopc/wishbone_ack_i falling
@@ -2289,64 +2352,45 @@ Offset:              21.095ns (Levels of Logic = 17)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.598  rst_IBUF (rst_IBUF)
-     LUT5:I0->O          260   0.203   2.296  sopc/openmips0/id0/Mmux_reg1_addr_o11 (sopc/openmips0/reg1_addr<0>)
-     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N132)
-     LUT5:I4->O            6   0.205   0.745  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
-     LUT5:I4->O           95   0.205   1.845  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_132_o)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o153)
-     LUT6:I5->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_130_o134)
-     LUT3:I2->O            2   0.205   0.981  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
-     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01101_F (N1034)
-     MUXF7:I0->O           1   0.131   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
-     LUT6:I5->O            1   0.205   0.944  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
-     LUT6:I0->O            7   0.203   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I2->O            3   0.203   0.879  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW4 (N667)
-     LUT6:I3->O           31   0.205   1.382  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
+     IBUF:I->O          1194   1.222   2.598  rst_IBUF (rst_IBUF)
+     LUT6:I1->O           68   0.203   1.771  sopc/openmips0/id0/Mmux_reg1_addr_o31 (sopc/openmips0/reg1_addr<2>)
+     LUT5:I3->O            1   0.203   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o1)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o2)
+     LUT6:I5->O           33   0.205   1.306  sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o3 (sopc/openmips0/regfile1/raddr1[4]_re1_AND_173_o)
+     LUT5:I4->O           32   0.205   1.292  sopc/openmips0/regfile1/Mmux_rdata11101 (sopc/openmips0/regfile1/Mmux_rdata1110)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242_SW0 (N962)
+     LUT5:I4->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1242)
+     LUT6:I5->O            3   0.205   0.651  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1243 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o_mmx_out2)
+     LUT2:I1->O            2   0.205   0.845  sopc/openmips0/id0/Mmux_GND_70_o_imm[31]_mux_289_OUT1321 (sopc/openmips0/id_reg1_o<2>)
+     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I3->O            7   0.205   1.021  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
+     LUT6:I2->O            3   0.203   0.755  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW4 (N691)
+     LUT6:I4->O           31   0.203   1.382  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
      LUT6:I4->O            2   0.203   0.845  sopc/openmips0/id0/Mmux_branch_target_address_o27 (sopc/openmips0/branch_target_address<4>)
      LUT6:I3->O            1   0.205   0.684  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>11 (sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>1)
      LUT6:I4->O            1   0.203   0.000  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>12 (sopc/openmips0/wishbone_bus0/if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>)
      LDC:D                     0.037          sopc/openmips0/wishbone_bus0/tlb_addr_o_4
     ----------------------------------------
-    Total                     21.095ns (4.453ns logic, 16.642ns route)
-                                       (21.1% logic, 78.9% route)
+    Total                     21.590ns (4.732ns logic, 16.858ns route)
+                                       (21.9% logic, 78.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/stall_req_mem'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.080ns (Levels of Logic = 2)
-  Source:            rst (PAD)
-  Destination:       sopc/openmips0/wishbone_bus0/stall_req_mem (LATCH)
-  Destination Clock: sopc/openmips0/wishbone_bus0/stall_req_mem rising
-
-  Data Path: rst to sopc/openmips0/wishbone_bus0/stall_req_mem
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.618  rst_IBUF (rst_IBUF)
-     LUT6:I0->O            2   0.203   0.000  sopc/openmips0/wishbone_bus0/state[4]_if_ack_Select_50_o1 (sopc/openmips0/wishbone_bus0/state[4]_if_ack_Select_50_o)
-     LDP:D                     0.037          sopc/openmips0/wishbone_bus0/stall_req_mem
-    ----------------------------------------
-    Total                      4.080ns (1.462ns logic, 2.618ns route)
-                                       (35.8% logic, 64.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o'
-  Total number of paths / destination ports: 32 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o'
+  Total number of paths / destination ports: 64 / 64
 -------------------------------------------------------------------------
 Offset:              6.453ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       sopc/openmips0/wishbone_bus0/mem_data_o_0 (LATCH)
-  Destination Clock: sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o rising
+  Destination:       sopc/openmips0/wishbone_bus0/mem_data_o_1 (LATCH)
+  Destination Clock: sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o rising
 
-  Data Path: rst to sopc/openmips0/wishbone_bus0/mem_data_o_0
+  Data Path: rst to sopc/openmips0/wishbone_bus0/mem_data_o_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.253  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1194   1.222   2.253  rst_IBUF (rst_IBUF)
      INV:I->O           1565   0.206   2.342  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
-     LDCE_1:CLR                0.430          sopc/openmips0/wishbone_bus0/mem_data_o_31
+     LDCE_1:CLR                0.430          sopc/openmips0/wishbone_bus0/mem_data_o_29
     ----------------------------------------
     Total                      6.453ns (1.858ns logic, 4.595ns route)
                                        (28.8% logic, 71.2% route)
@@ -2364,7 +2408,7 @@ Offset:              3.820ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.358  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1194   1.222   2.358  rst_IBUF (rst_IBUF)
      LUT2:I0->O            2   0.203   0.000  sopc/openmips0/tlb0/Mmux_tlb_addr110 (sopc/openmips0/tlb_addr_i<0>)
      LD_1:D                    0.037          sopc/openmips0/mmu0/mmu_addr_o_0
     ----------------------------------------
@@ -2384,7 +2428,7 @@ Offset:              6.453ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.253  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1194   1.222   2.253  rst_IBUF (rst_IBUF)
      INV:I->O           1565   0.206   2.342  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      LDC:CLR                   0.430          sopc/openmips0/mem0/mem_addr_o_30
     ----------------------------------------
@@ -2404,7 +2448,7 @@ Offset:              3.614ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   1.222   0.580  flash_data_0_IOBUF (N329)
+     IOBUF:IO->O           1   1.222   0.580  flash_data_0_IOBUF (N353)
      LUT6:I5->O            1   0.205   0.580  sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>1 (sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>1)
      LUT6:I5->O            1   0.205   0.580  sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>2 (sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>2)
      LUT6:I5->O            1   0.205   0.000  sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>3 (sopc/bus_top0/bus0/m_select_i[15]_s0_data_i[31]_select_17_OUT<0>)
@@ -2415,9 +2459,9 @@ Offset:              3.614ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/tlb_ce_G'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.820ns (Levels of Logic = 2)
+Offset:              6.114ns (Levels of Logic = 4)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_ce (LATCH)
   Destination Clock: sopc/openmips0/wishbone_bus0/tlb_ce_G falling
@@ -2426,12 +2470,14 @@ Offset:              3.820ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1191   1.222   2.358  rst_IBUF (rst_IBUF)
-     LUT2:I0->O            1   0.203   0.000  sopc/openmips0/wishbone_bus0/tlb_ce_D (sopc/openmips0/wishbone_bus0/tlb_ce_D)
+     IBUF:I->O          1194   1.222   2.254  rst_IBUF (rst_IBUF)
+     LUT6:I5->O            1   0.205   0.580  sopc/bus_top0/bus0/m_ack_o1 (sopc/bus_top0/bus0/m_ack_o)
+     LUT6:I5->O           40   0.205   1.406  sopc/bus_top0/bus0/m_ack_o3 (sopc/wishbone_ack_i)
+     LUT2:I1->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/tlb_ce_D (sopc/openmips0/wishbone_bus0/tlb_ce_D)
      LD:D                      0.037          sopc/openmips0/wishbone_bus0/tlb_ce
     ----------------------------------------
-    Total                      3.820ns (1.462ns logic, 2.358ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      6.114ns (1.874ns logic, 4.240ns route)
+                                       (30.7% logic, 69.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -2476,7 +2522,7 @@ Offset:              5.337ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sopc/wishbone_ack_i'
   Total number of paths / destination ports: 124 / 34
 -------------------------------------------------------------------------
-Offset:              5.840ns (Levels of Logic = 2)
+Offset:              5.820ns (Levels of Logic = 2)
   Source:            sopc/openmips0/wishbone_bus0/wishbone_we_o (LATCH)
   Destination:       segdisp0<4> (PAD)
   Source Clock:      sopc/wishbone_ack_i falling
@@ -2485,12 +2531,12 @@ Offset:              5.840ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q             59   0.498   1.951  sopc/openmips0/wishbone_bus0/wishbone_we_o (sopc/openmips0/wishbone_bus0/wishbone_we_o)
+     LDC:G->Q             56   0.498   1.932  sopc/openmips0/wishbone_bus0/wishbone_we_o (sopc/openmips0/wishbone_bus0/wishbone_we_o)
      LUT6:I1->O            2   0.203   0.616  sopc/bus_top0/digseg0/digseg_driver0/Mmux_seg_o71 (segdisp0_6_OBUF)
      OBUF:I->O                 2.571          segdisp0_6_OBUF (segdisp0<6>)
     ----------------------------------------
-    Total                      5.840ns (3.272ns logic, 2.568ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      5.820ns (3.272ns logic, 2.548ns route)
+                                       (56.2% logic, 43.8% route)
 
 =========================================================================
 
@@ -2523,35 +2569,14 @@ sopc/clk_tmp       |         |         |    2.978|         |
 sopc/wishbone_ack_i|         |         |    5.938|         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-sopc/clk_tmp       |         |         |    1.679|         |
-sopc/wishbone_ack_i|         |         |    2.449|         |
--------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-sopc/clk_tmp       |         |         |    1.434|         |
-sopc/wishbone_ack_i|         |         |    2.553|         |
--------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock sopc/clk_tmp
 --------------------------------------------------------+---------+---------+---------+---------+
                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o|         |    4.542|         |         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o|         |    4.559|         |         |
-sopc/clk_tmp                                            |   22.394|         |         |         |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o|   13.963|         |         |         |
-sopc/openmips0/wishbone_bus0/stall_req_mem              |    7.338|         |         |         |
-sopc/wishbone_ack_i                                     |         |    8.110|         |         |
+sopc/clk_tmp                                            |   22.411|         |         |         |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o|   13.928|         |         |         |
+sopc/wishbone_ack_i                                     |         |   15.684|         |         |
 --------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/mem0/_n0583
@@ -2562,40 +2587,35 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 sopc/clk_tmp   |         |         |    5.780|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o
+Clock to Setup on destination clock sopc/openmips0/select[17]_select[18]_OR_16_o
 --------------------------------------------------------+---------+---------+---------+---------+
                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/bus0/_n0072                               |         |    1.218|         |         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o|         |    3.275|         |         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o|         |    3.292|         |         |
-sopc/clk_tmp                                            |    3.883|         |         |         |
-sopc/wishbone_ack_i                                     |         |    6.843|         |         |
+sopc/clk_tmp                                            |         |         |   23.136|         |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o|         |         |   14.959|         |
+sopc/openmips0/wishbone_bus0/tlb_ce_G                   |         |         |    8.548|         |
+sopc/wishbone_ack_i                                     |         |         |   14.694|         |
 --------------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/stall_req_mem
---------------------------------------------------------+---------+---------+---------+---------+
-                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o|         |    2.557|         |         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o|         |    2.431|         |         |
-sopc/clk_tmp                                            |    6.373|         |         |         |
-sopc/openmips0/wishbone_bus0/stall_req_mem              |    3.023|         |         |         |
-sopc/wishbone_ack_i                                     |         |    5.763|         |         |
---------------------------------------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+sopc/bus_top0/bus0/_n0072|         |    1.218|         |         |
+sopc/clk_tmp             |    4.188|         |         |         |
+sopc/wishbone_ack_i      |         |    8.515|         |         |
+-------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/tlb_ce_G
---------------------------------------------------------+---------+---------+---------+---------+
-                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o|         |         |    3.196|         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o|         |         |    3.213|         |
-sopc/clk_tmp                                            |         |         |    3.804|         |
-sopc/wishbone_ack_i                                     |         |         |    6.764|         |
---------------------------------------------------------+---------+---------+---------+---------+
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+sopc/clk_tmp       |         |         |    4.109|         |
+sopc/wishbone_ack_i|         |         |    8.436|         |
+-------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/wishbone_ack_i
 --------------------------------------------------------+---------+---------+---------+---------+
@@ -2604,39 +2624,35 @@ Source Clock                                            |Dest:Rise|Dest:Rise|Des
 --------------------------------------------------------+---------+---------+---------+---------+
 rst                                                     |         |         |    1.114|         |
 sopc/bus_top0/bus0/_n0072                               |         |         |    1.652|         |
-sopc/clk_tmp                                            |         |         |   24.358|         |
+sopc/clk_tmp                                            |         |         |   24.251|         |
 sopc/openmips0/mem0/_n0583                              |         |         |    1.662|         |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o|         |         |   16.031|         |
-sopc/openmips0/wishbone_bus0/tlb_ce_G                   |         |         |    5.135|         |
-sopc/wishbone_ack_i                                     |         |         |    7.312|         |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o|         |         |   16.074|         |
+sopc/openmips0/wishbone_bus0/tlb_ce_G                   |         |         |    5.285|         |
+sopc/wishbone_ack_i                                     |         |         |    7.461|         |
 --------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sw_dip<31>
---------------------------------------------------------+---------+---------+---------+---------+
-                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/bus0/_n0072                               |         |         |    1.424|         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_867_o|         |         |    3.424|         |
-sopc/bus_top0/ram0/ram_driver0/ram_selector_rst_OR_868_o|         |         |    3.441|         |
-sopc/clk_tmp                                            |         |         |   25.040|         |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1386_o|         |         |   16.713|         |
-sopc/openmips0/wishbone_bus0/stall_req_mem              |         |         |    8.875|         |
-sopc/openmips0/wishbone_bus0/tlb_ce_G                   |         |         |    9.631|         |
-sopc/wishbone_ack_i                                     |         |         |   11.808|         |
---------------------------------------------------------+---------+---------+---------+---------+
+--------------------------------------------+---------+---------+---------+---------+
+                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------+---------+---------+---------+---------+
+sopc/bus_top0/bus0/_n0072                   |         |         |    1.424|         |
+sopc/clk_tmp                                |         |         |    4.337|         |
+sopc/openmips0/select[17]_select[18]_OR_16_o|         |         |    3.339|         |
+sopc/wishbone_ack_i                         |         |         |    8.664|         |
+--------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 51.00 secs
-Total CPU time to Xst completion: 50.95 secs
+Total REAL time to Xst completion: 45.00 secs
+Total CPU time to Xst completion: 44.65 secs
  
 --> 
 
-Total memory usage is 331208 kilobytes
+Total memory usage is 340396 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  720 (   0 filtered)
-Number of infos    :   23 (   0 filtered)
+Number of warnings :  765 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
 

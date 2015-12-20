@@ -134,7 +134,7 @@ always @ (*) begin
 		16'h0020:	m_ack_o <= s5_ack_i;
 		16'h0040:	m_ack_o <= s6_ack_i;
 		16'h0080:	m_ack_o <= s7_ack_i;
-		default:	m_ack_o <= 1'b0;
+		default:	m_ack_o <= 1'b1;
 	endcase
 end
 
