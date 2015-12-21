@@ -54,6 +54,13 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	ex
 
+} {} {}} E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module openmips_min_sopc_tb
+
+Top level modules:
+	openmips_min_sopc_tb
+
 } {} {}} E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module wishbone_bus
@@ -109,13 +116,6 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 Top level modules:
 	if_id
-
-} {} {}} E:/course/GitRepository/MIPS32/cpu/ctrl.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/ctrl.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module ctrl
-
-Top level modules:
-	ctrl
 
 } {} {}} E:/course/GitRepository/MIPS32/cpu/regfile.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/regfile.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012

@@ -12,6 +12,7 @@ module rom(
 	);
 
 	rom_driver rom_driver0(
+		clk, rst,
 		bus_select_i, {2'b00, bus_addr_i[11:2]}, 
 		bus_data_o, bus_ack_o
 	);

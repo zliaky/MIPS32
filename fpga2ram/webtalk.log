@@ -1,0 +1,16 @@
+Release 14.2 - WebTalk (P.28xd)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=6A79DE1CD6C447C48191C7F6562EB84A
+ProjectIteration=5
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - E:/course/GitRepository/MIPS32/fpga2ram/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-12-21T04:57:14.  For additional details about this file, please refer to the WebTalk help file at E:/programming/ISE/Xilinx/14.2/ISE_DS/ISE/data/reports/webtalk_introduction.html

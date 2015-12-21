@@ -1,0 +1,54 @@
+inst_rom_1.s
+	测试ori指令
+inst_rom_2.s
+	测试ori指令&测试数据冲突问题是否解决
+inst_rom_3.s
+	测试lui指令
+	测试ori, or, andi, and, xori, xor, nor指令（逻辑运算）
+inst_rom_4.s
+	测试sll, sllv, srl, srlv, sra, srav指令（移位运算）
+	测试nop, cache指令
+inst_rom_5.s
+	测试mthi, mfhi指令
+inst_rom_6.s
+	测试mthi, mfhi, mtlo, mflo指令及HI, LO寄存器数据冲突问题是否解决
+inst_rom_7.s
+	测试addu, subu, addiu指令（加减法）
+	测试slt, sltu, slti, sltiu指令（比较）
+	测试mult指令（乘法）
+inst_rom_8.s
+	测试j, jal, jalr, jr指令（跳转）
+	测试延迟槽，故没有测试控制冲突
+inst_rom_9.s
+	测试bne, beq, bgtz, bgez, blez, bltz指令（跳转）
+inst_rom_10.s
+	测试sb, lb, lbu, lhu, sw, lw指令
+inst_rom_11.s
+	load相关问题处理（数据冲突）（load后branch指令）
+inst_rom_12.s
+	测试mtc0, mfc0指令
+inst_rom_13.s
+	测试syscall, eret指令
+inst_rom_14.s
+	测试时钟中断
+inst_rom_15.s
+	测试指令不存在异常
+inst_rom_16.s
+	测试store和load指令的地址不对齐异常
+inst_rom_17.s
+	测试访问不存在的协处理器引起的异常
+	
+目标：
+`	addiu, addu, subu, mult,
+`	slt, slti, sltiu, sltu, 
+`	mflo, mfhi, mtlo, mthi, 
+`	and, andi, or, ori, nor, xor, xori,
+`	lui,  
+`	sll, sllv, sra, srav, srl, srlv
+`	beq, bgez, bgtz, blez, bltz, bne,
+`	j, jal, jalr, jr, 
+`	lw, lb, lbu, lhu, sw, sb,
+`	cache, nop,
+`	syscall, eret, 
+	tlbwi, 
+`	mfc0, mtc0

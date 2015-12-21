@@ -1,7 +1,7 @@
 Release 14.2 - par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun Dec 20 21:30:04 2015
+Mon Dec 21 04:34:16 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -42,9 +42,9 @@ Pinout by Pin Number:
 |A20       |                |IOBS     |IO_L64N_SCP4_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |A21       |                |IOBS     |IO_L65N_SCP2_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |A22       |                |IOBS     |IO_L66N_SCP0_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|A23       |segdisp1<4>     |IOB      |IO_L1N_A24_VREF_5            |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|A23       |segdisp1<4>     |IOB      |IO_L1N_A24_VREF_5            |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |A24       |                |         |TDO                          |         |           |              |          |         |           |         |       |          |           |                |
-|A25       |segdisp0<3>     |IOB      |IO_L10N_M5A1_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|A25       |segdisp0<3>     |IOB      |IO_L10N_M5A1_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |A26       |                |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |AA1       |extram_data<23> |IOB      |IO_L36N_M3DQ9_3              |BIDIR    |LVCMOS25*  |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |AA2       |extram_data<22> |IOB      |IO_L36P_M3DQ8_3              |BIDIR    |LVCMOS25*  |3             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
@@ -224,10 +224,10 @@ Pinout by Pin Number:
 |B20       |                |IOBM     |IO_L64P_SCP5_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |B21       |                |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |B22       |                |IOBM     |IO_L66P_SCP1_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|B23       |segdisp1<3>     |IOB      |IO_L1P_A25_5                 |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|B24       |segdisp0<4>     |IOB      |IO_L10P_M5A0_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|B25       |segdisp1<6>     |IOB      |IO_L12P_M5A3_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|B26       |segdisp0<0>     |IOB      |IO_L12N_M5ODT_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|B23       |segdisp1<3>     |IOB      |IO_L1P_A25_5                 |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|B24       |segdisp0<4>     |IOB      |IO_L10P_M5A0_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|B25       |segdisp1<6>     |IOB      |IO_L12P_M5A3_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|B26       |segdisp0<0>     |IOB      |IO_L12N_M5ODT_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |C1        |flash_data<4>   |IOB      |IO_L79N_M4A9_4               |BIDIR    |LVCMOS25*  |4             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |C2        |flash_addr<19>  |IOB      |IO_L79P_M4A8_4               |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |C3        |flash_addr<16>  |IOB      |IO_L83N_VREF_4               |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
@@ -251,9 +251,9 @@ Pinout by Pin Number:
 |C21       |                |IOBM     |IO_L65P_SCP3_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |C22       |                |         |VCCO_0                       |         |           |0             |          |         |           |         |2.50   |          |           |                |
 |C23       |                |         |TMS                          |         |           |              |          |         |           |         |       |          |           |                |
-|C24       |segdisp1<0>     |IOB      |IO_L3N_M5A11_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|C25       |segdisp0<1>     |IOB      |IO_L11P_M5CLK_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|C26       |segdisp0<5>     |IOB      |IO_L11N_M5CLKN_5             |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|C24       |segdisp1<0>     |IOB      |IO_L3N_M5A11_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|C25       |segdisp0<1>     |IOB      |IO_L11P_M5CLK_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|C26       |segdisp0<5>     |IOB      |IO_L11N_M5CLKN_5             |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |D1        |flash_data<12>  |IOB      |IO_L68N_M4DQ5_4              |BIDIR    |LVCMOS25*  |4             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |D2        |                |         |VCCO_4                       |         |           |4             |          |         |           |         |2.50   |          |           |                |
 |D3        |flash_addr<21>  |IOB      |IO_L68P_M4DQ4_4              |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
@@ -275,11 +275,11 @@ Pinout by Pin Number:
 |D19       |                |IOBS     |IO_L54N_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |D20       |                |IOBS     |IO_L58N_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |D21       |                |IOBM     |IO_L56P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|D22       |segdisp1<1>     |IOB      |IO_L4N_M5A12_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|D23       |segdisp1<5>     |IOB      |IO_L3P_M5RESET_5             |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
-|D24       |segdisp0<2>     |IOB      |IO_L17P_M5DQ6_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|D22       |segdisp1<1>     |IOB      |IO_L4N_M5A12_5               |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|D23       |segdisp1<5>     |IOB      |IO_L3P_M5RESET_5             |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|D24       |segdisp0<2>     |IOB      |IO_L17P_M5DQ6_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |D25       |                |         |VCCO_5                       |         |           |5             |          |         |           |         |2.50   |          |           |                |
-|D26       |segdisp0<6>     |IOB      |IO_L17N_M5DQ7_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|D26       |segdisp0<6>     |IOB      |IO_L17N_M5DQ7_5              |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |E1        |flash_data<13>  |IOB      |IO_L67N_M4DQ7_4              |BIDIR    |LVCMOS25*  |4             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E2        |flash_data<5>   |IOB      |IO_L67P_M4DQ6_4              |BIDIR    |LVCMOS25*  |4             |12        |SLOW     |           |NONE     |       |LOCATED   |NO         |NONE            |
 |E3        |flash_ctl<4>    |IOB      |IO_L77N_M4BA2_4              |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
@@ -302,7 +302,7 @@ Pinout by Pin Number:
 |E20       |                |IOBM     |IO_L58P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |E21       |                |         |TCK                          |         |           |              |          |         |           |         |       |          |           |                |
 |E22       |                |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
-|E23       |segdisp1<2>     |IOB      |IO_L7P_M5WE_5                |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|E23       |segdisp1<2>     |IOB      |IO_L7P_M5WE_5                |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |E24       |                |IOBS     |IO_L7N_M5BA2_5               |UNUSED   |           |5             |          |         |           |         |       |          |           |                |
 |E25       |                |IOBM     |IO_L16P_M5DQ4_5              |UNUSED   |           |5             |          |         |           |         |       |          |           |                |
 |E26       |                |IOBS     |IO_L16N_M5DQ5_5              |UNUSED   |           |5             |          |         |           |         |       |          |           |                |

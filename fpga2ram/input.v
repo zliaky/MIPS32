@@ -1,0 +1,11 @@
+32'h00000000: begin bus_data_i <= 32'h00000000; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000001: begin bus_data_i <= 32'h3c011fc0; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000002: begin bus_data_i <= 32'h8c220004; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000003: begin bus_data_i <= 32'h8c230008; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000004: begin bus_data_i <= 32'h8c24000c; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000005: begin bus_data_i <= 32'h8c250010; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000006: begin bus_data_i <= 32'h8c260014; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000007: begin bus_data_i <= 32'h8c270018; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000008: begin bus_data_i <= 32'h8c28001c; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h00000009: begin bus_data_i <= 32'h08000005; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end
+32'h0000000a: begin bus_data_i <= 32'h00000000; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end

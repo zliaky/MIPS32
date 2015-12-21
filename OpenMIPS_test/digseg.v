@@ -18,12 +18,12 @@ module digseg(
 	assign bus_ack_o = ack1 & ack0;
 
 	digseg_driver digseg_driver0(
-		bus_data_i[`DigSegAddrBus], seg0, 
+		clk, rst, bus_data_i[`DigSegAddrBus], seg0, 
 		ack0, bus_select_i, bus_we_i
 	);
 
 	digseg_driver digseg_driver1(
-		bus_data_i[7:4], seg1,
+		clk, rst, bus_data_i[7:4], seg1,
 		ack1, bus_select_i, bus_we_i
 	);
 

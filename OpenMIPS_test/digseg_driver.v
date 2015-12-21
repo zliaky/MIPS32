@@ -1,5 +1,7 @@
 `include "defines.v"
 module digseg_driver(
+	input clk,
+	input rst,
 	input [`DigSegAddrBus] data_i,
 	output reg[`DigSegDataBus] seg_o,
 	output ack, 
@@ -8,10 +10,10 @@ module digseg_driver(
 	);
 
 	assign ack = 1'b1;
-	always @ (*) begin
-		if (ce == 1'b0 || we == 1'b0) begin
+	always @ (posedge clk) begin
+		if (rst == `RstEnable) begin
 			seg_o <= 7'b1111110;
-		end else begin
+		end else if (ce == `ChipEnable && we == `WriteEnable) begin
 			case (data_i)
 				4'b0000: seg_o <= 7'b1111110;
 				4'b0001: seg_o <= 7'b0110000;

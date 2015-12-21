@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-12-20T21:17:58</DateModified>
+  <DateModified>2015-12-21T04:29:24</DateModified>
   <ModuleName>cpu_top</ModuleName>
-  <SummaryTimeStamp>2015-12-20T17:27:50</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-12-21T02:39:49</SummaryTimeStamp>
   <SavedFilePath>E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/iseconfig/cpu_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu\</ImplementationReportsDirectory>
   <DateInitialized>2015-12-16T20:22:29</DateInitialized>

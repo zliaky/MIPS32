@@ -230,18 +230,6 @@
 `define EXCEPTION_WATCH		32'h00000017
 `define EXCEPTION_ERET		32'h0000000e
 
-//*****************			与Wishbone总线有关的宏定义		*****************
-`define WB_IDLE				2'b00				//空闲状态
-`define WB_BUSY				2'b01				//忙状态
-`define WB_WAIT_FOR_STALL	2'b11				//等待暂停结束状态
-
-//*****************			与MMU有关的宏定义		******************
-`define WISHBONE_MEMW0_MEMR0_IF0	3'b000		//写访存未完成，读访存未完成，取指未完成
-`define WISHBONE_MEMW0_MEMR0_IF1	3'b001		//写访存未完成，读访存未完成，取指已完成
-`define WISHBONE_MEMW0_MEMR1_IF0	3'b010		//写访存未完成，读访存已完成，取指未完成
-`define WISHBONE_MEMW0_MEMR1_IF1	3'b011		//写访存未完成，读访存已完成，取指已完成
-`define WISHBONE_MEMW1_MEMR1_IF1	3'b111		//写访存已完成，读访存已完成，取指已完成
-
 //*****************			与TLB有关的宏定义		******************
 `define TLBIndexWidth		4					//TLB索引宽度
 `define TLBIndexNum			16					//TLB索引项数

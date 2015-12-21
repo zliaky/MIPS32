@@ -1,0 +1,2 @@
+NET "clk" LOC = U26;
+NET "rst" LOC = T1;
