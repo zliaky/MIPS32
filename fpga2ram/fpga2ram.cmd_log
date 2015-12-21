@@ -28,3 +28,9 @@ map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -r
 par -w -intstyle ise -ol high -mt off fpga2ram_map.ncd fpga2ram.ncd fpga2ram.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga2ram.twx fpga2ram.ncd -o fpga2ram.twr fpga2ram.pcf -ucf fpga2ram.ucf -ucf ram.ucf -ucf led.ucf -ucf key.ucf 
 bitgen -intstyle ise -f fpga2ram.ut fpga2ram.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram.xst" -ofn "E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga2ram.ucf -uc ram.ucf -uc led.ucf -uc key.ucf -p xc6slx100-fgg676-3 fpga2ram.ngc fpga2ram.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga2ram_map.ncd fpga2ram.ngd fpga2ram.pcf 
+par -w -intstyle ise -ol high -mt off fpga2ram_map.ncd fpga2ram.ncd fpga2ram.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga2ram.twx fpga2ram.ncd -o fpga2ram.twr fpga2ram.pcf -ucf fpga2ram.ucf -ucf ram.ucf -ucf led.ucf -ucf key.ucf 
+bitgen -intstyle ise -f fpga2ram.ut fpga2ram.ncd 

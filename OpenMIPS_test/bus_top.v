@@ -93,6 +93,7 @@ module bus_top(
 	wire digseg_ack_o;
 
 	bus bus0(
+		.clk(clk),
 		.m_data_i(wishbone_data_i),
 		.m_addr_i(wishbone_addr_i),
 		.m_we_i(wishbone_we_i),

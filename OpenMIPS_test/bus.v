@@ -1,6 +1,8 @@
 `include "defines.v"
 
 module bus(
+	input		wire				clk,
+	
 	//master interface
 	input 		wire[`WB_DataBus]	m_data_i,
 	input		wire[`WB_AddrBus]	m_addr_i,
@@ -74,6 +76,8 @@ module bus(
 	input		wire				s7_ack_i
 );
 
+reg[`WB_SelectBus] select_latch;
+
 //address & data pass
 assign s0_addr_o = m_addr_i;
 assign s1_addr_o = m_addr_i;
@@ -93,8 +97,12 @@ assign s5_select_o = m_select_i[5];
 assign s6_select_o = m_select_i[6];
 assign s7_select_o = m_select_i[7];
 
+always @ (posedge clk) begin
+	select_latch <= m_select_i;
+end
+
 always @ (*) begin
-	case(m_select_i)
+	case(select_latch)
 		16'h0001:	m_data_o <= s0_data_i;
 		16'h0002:	m_data_o <= s1_data_i;
 		16'h0004:	m_data_o <= s2_data_i;
