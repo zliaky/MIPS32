@@ -37,6 +37,18 @@ inst_rom_16.s
 	测试store和load指令的地址不对齐异常
 inst_rom_17.s
 	测试访问不存在的协处理器引起的异常
+inst_rom_18.s
+	测试GPIO
+inst_rom_19.s
+	测试读ROM
+inst_rom_20.s
+	测试读FLASH
+inst_rom_21.s
+	测试写UART
+inst_rom_22.s
+	测试读UART
+inst_rom_23.s
+	测试写FLASH
 	
 目标：
 `	addiu, addu, subu, mult,

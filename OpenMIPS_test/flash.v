@@ -12,7 +12,8 @@ module flash (
 
 	output [`FlashAddrBus] flash_addr, 
 	inout [`FlashDataBus] flash_data, 
-	output [`FlashCtrlBus] flash_ctl
+	output [`FlashCtrlBus] flash_ctl,
+	output [7:0] state_o
 	);
 
 	wire[`FlashDataBus] output_data;
@@ -20,11 +21,12 @@ module flash (
 	assign bus_data_o = {{16{1'b0}}, output_data};
 
 	flash_driver flash_driver0(
-		.clk(clk), .addr({2'b00, bus_addr_i[21:2]}), .data_in(bus_data_i[`FlashDataBus]), 
+		.clk(clk), .rst(rst), .ce(bus_select_i),
+		.addr({2'b00, bus_addr_i[21:2]}), .data_in(bus_data_i[`FlashDataBus]), 
 		.data_out(output_data), .enable_erase(1'b0), 
 		.enable_read(!bus_we_i), .enable_write(bus_we_i),
 		.flash_ctl(flash_ctl), .flash_addr(flash_addr), .flash_data(flash_data), 
-		.ack(bus_ack_o)
+		.ack(bus_ack_o), .state_o(state_o)
 	);
 
 endmodule

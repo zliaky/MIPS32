@@ -9,7 +9,12 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/cpu_top C:|Users|Administrator-|Desktop|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top</ClosedNode>
          <ClosedNode>/cpu_top C:|Users|Administrator-|Desktop|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/openmips0 - openmips</ClosedNode>
-         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/openmips0 - openmips</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/digseg0 - digseg</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/flash0 - flash</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/ram0 - ram</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/rom0 - rom</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/uart0 - uart/u0 - uart_driver_transmitter</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/uart0 - uart/u1 - uart_driver_receiver</ClosedNode>
          <ClosedNode>/cpu_top K:|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top</ClosedNode>
          <ClosedNode>/cpu_top K:|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/digseg0 - digseg</ClosedNode>
          <ClosedNode>/cpu_top K:|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/flash0 - flash</ClosedNode>
@@ -19,9 +24,9 @@
       <SelectedItems>
          <SelectedItem>cpu_top (E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu_top.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000223000000020000000000000000000000000200000064ffffffff000000810000000300000002000002230000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>cpu_top (E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu_top.v)</CurrentItem>
    </ItemView>

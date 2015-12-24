@@ -1,3 +1,0 @@
-verilog work "ram_driver.v"
-verilog work "ram.v"
-verilog work "fpga2ram.v"

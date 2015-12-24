@@ -14,12 +14,17 @@
 `include "defines.v"
 module uart_driver_transmitter(
 	input clk,
+	input ce,
 	input TxD_start,
 	input [7:0] TxD_data,
 	output TxD,
-	output TxD_busy, 
-	output reg ack
+	output TxD_busy,
+	output reg ack,
+	output reg [3:0] TxD_state,
+	output tick
 );
+
+assign tick = BitTick;
 
 // Assert TxD_start for (at least) one clock cycle to start transmission of TxD_data
 // TxD_data is latched so that it doesn't have to stay valid while it is being sent
@@ -39,7 +44,6 @@ wire BitTick;
 BaudTickGen #(ClkFrequency, Baud) tickgen(.clk(clk), .enable(TxD_busy), .tick(BitTick));
 `endif
 
-reg [3:0] TxD_state = 0;
 wire TxD_ready = (TxD_state==0);
 assign TxD_busy = ~TxD_ready;
 
@@ -53,8 +57,8 @@ begin
 		TxD_shift <= (TxD_shift >> 1);
 
 	case(TxD_state)
-		4'b0000: if(TxD_start) begin TxD_state <= 4'b0100; ack <= 1'b1; end
-		4'b0100: if(BitTick) begin TxD_state <= 4'b1000; ack <= 1'b0; end  // start bit
+		4'b0000: if(TxD_start) TxD_state <= 4'b0100;
+		4'b0100: if(BitTick) TxD_state <= 4'b1000;  // start bit
 		4'b1000: if(BitTick) TxD_state <= 4'b1001;  // bit 0
 		4'b1001: if(BitTick) TxD_state <= 4'b1010;  // bit 1
 		4'b1010: if(BitTick) TxD_state <= 4'b1011;  // bit 2
@@ -64,8 +68,19 @@ begin
 		4'b1110: if(BitTick) TxD_state <= 4'b1111;  // bit 6
 		4'b1111: if(BitTick) TxD_state <= 4'b0010;  // bit 7
 		4'b0010: if(BitTick) TxD_state <= 4'b0011;  // stop1
-		4'b0011: if(BitTick) TxD_state <= 4'b0000; // stop2
+		4'b0011: if(BitTick) TxD_state <= 4'b0001; // stop2
+		4'b0001: if(!ce) TxD_state <= 4'b0000;
 		default: if(BitTick) TxD_state <= 4'b0000;
+	endcase
+end
+
+always @ (*) begin
+	case(TxD_state)
+		4'b0000: begin
+			ack <= 1'b0;
+		end
+		4'b0001: if (ce) ack <= 1'b1; // stop2
+		default: ack <= 1'b0;
 	endcase
 end
 
@@ -153,7 +168,6 @@ end
 wire sampleNow = OversamplingTick && (OversamplingCnt==Oversampling/2-1);
 `endif
 
-initial ack = 0;
 assign RxD_waiting_data = (RxD_state == 4'b0);
 
 // now we can accumulate the RxD bits in a shift-register
@@ -163,8 +177,8 @@ always @(posedge clk) begin
 		RxD_state <= 0;
 	else begin
 		case(RxD_state)
-			4'b0000: if(~RxD_bit) begin RxD_state <= `ifdef SIMULATION 4'b1000 `else 4'b0001 `endif; ack <= 1'b1; end  // start bit found?
-			4'b0001: if(sampleNow) begin RxD_state <= 4'b1000; ack <= 1'b0; end  // sync start bit to sampleNow
+			4'b0000: if(~RxD_bit) RxD_state <= `ifdef SIMULATION 4'b1000 `else 4'b0001 `endif;  // start bit found?
+			4'b0001: if(sampleNow) RxD_state <= 4'b1000;  // sync start bit to sampleNow
 			4'b1000: if(sampleNow) RxD_state <= 4'b1001;  // bit 0
 			4'b1001: if(sampleNow) RxD_state <= 4'b1010;  // bit 1
 			4'b1010: if(sampleNow) RxD_state <= 4'b1011;  // bit 2
@@ -175,6 +189,20 @@ always @(posedge clk) begin
 			4'b1111: if(sampleNow) RxD_state <= 4'b0010;  // bit 7
 			4'b0010: if(sampleNow) RxD_state <= 4'b0000;  // stop bit
 			default: RxD_state <= 4'b0000;
+		endcase
+	end
+end
+
+always @ (*) begin
+	if (rst) 
+		ack <= 1'b1;
+	else begin
+		case(RxD_state)
+			4'b0000: begin
+				ack <= 1'b1;
+				if(~RxD_bit) ack <= 1'b0;  // start bit found?
+			end
+			4'b0010: if(sampleNow) ack <= 1'b1;  // stop bit
 		endcase
 	end
 end

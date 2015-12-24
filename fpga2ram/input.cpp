@@ -27,6 +27,13 @@ int main(int argc, char const *argv[])
 		fout << "; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end" << endl;
 		count++;
 	}
+	for(int i = 0; i < 100; i++)
+	{
+		fout << "32'h" << dec2hex(count,8) <<": begin ";
+		fout << "bus_data_i <= 32'h00000000";
+		fout << "; bus_addr_i <= {12'b0, pc[19:0]}; pc <= pc + 1'b1; end" << endl;
+		count++;
+	}
 	fin.close();
 	fout.close();
 

@@ -2,6 +2,7 @@
 
 module bus_top(
 	input		wire					clk,
+	input		wire 					clk_uart,
 	input		wire					rst,
 
 	input		wire[`WB_AddrBus]		wishbone_addr_i,
@@ -30,8 +31,13 @@ module bus_top(
 	input								uart_com_RxD,
 
 	output		[`DigSegDataBus]		digseg_seg1,
-	output		[`DigSegDataBus]		digseg_seg0
+	output		[`DigSegDataBus]		digseg_seg0,
+	output		[7:0]					state_o,
+	output		[3:0]					TxD_state,
+	output								tick
 	);
+
+	
 
 	//slave 3 interface - VGA
 	wire[`WB_DataBus]	s3_data_i;
@@ -193,11 +199,12 @@ module bus_top(
 		.bus_ack_o(flash_ack_o),
 		.flash_addr(flash_addr),
 		.flash_data(flash_data),
-		.flash_ctl(flash_ctl)
+		.flash_ctl(flash_ctl),
+		.state_o(state_o)
 	);
 
 	uart uart0(
-		.clk(clk),
+		.clk(clk_uart),
 		.rst(rst),
 		.bus_addr_i(uart_addr_i),
 		.bus_data_i(uart_data_i),
@@ -206,7 +213,9 @@ module bus_top(
 		.bus_we_i(uart_we_i),
 		.bus_ack_o(uart_ack_o),
 		.com_TxD(uart_com_TxD),
-		.com_RxD(uart_com_RxD)
+		.com_RxD(uart_com_RxD),
+		.TxD_state(TxD_state),
+		.tick(tick)
 	);
 
 	digseg digseg0(

@@ -193,6 +193,7 @@ module openmips(
 
 	wire[31:0]				regfile_data_o;
 	wire[4:0]				state;
+	wire[`InstAddrBus] latch_pc;
 
 	reg[31:0] data_output;
 	assign data_o = data_output;
@@ -200,7 +201,7 @@ module openmips(
 		if (select[16] == 1'b1) begin
 			data_output <= 32'h12345678;
 		end else if (select[17] == 1'b1) begin
-			data_output <= branch_target_address;
+			data_output <= {31'b0, id_branch_flag_o};
 		end else if (select[18] == 1'b1) begin
 			data_output <= pc;
 		end else if (select[19] == 1'b1) begin
@@ -216,6 +217,11 @@ module openmips(
 		end else if (select[24] == 1'b1) begin
 			data_output <= {31'b0, rst};
 		end else if (select[25] == 1'b1) begin
+			data_output <= {31'b0, flush};
+		end else if (select[26] == 1'b1) begin
+			data_output <= next_pc;
+		end else if (select[27] == 1'b1) begin
+			data_output <= latch_pc;
 		end else begin
 			data_output <= regfile_data_o;
 		end
@@ -232,7 +238,8 @@ module openmips(
 		.branch_target_address_i(branch_target_address),
 		.pc(pc),
 		.ce(rom_ce),
-		.next_pc(next_pc)
+		.next_pc(next_pc),
+		.latch_pc(latch_pc)
 	);
 
 	//IF/IDÄ£¿éÀý»¯

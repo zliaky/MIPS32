@@ -11,7 +11,10 @@ module uart(
 	output bus_ack_o,
 
 	output com_TxD,
-	input com_RxD
+	input com_RxD,
+
+	output [3:0] TxD_state,
+	output tick
 	);
 
 	localparam CLK_FREQ = 50000000,	// 50 MB
@@ -24,14 +27,14 @@ module uart(
 
 	assign data_in = bus_data_i[`UartDataBus];
 	assign bus_data_o = {{24{1'b0}}, data_out};
-	assign bus_ack_o = (bus_we_i == `WriteEnable) ? ack_in : ack_out;
+	assign bus_ack_o = ack_in;
 
 	uart_driver_transmitter #(.ClkFrequency(CLK_FREQ), .Baud(BAUD)) u0
-	(.clk(clk), .TxD_start(bus_we_i & bus_select_i), .TxD_data(data_in),
-	.TxD(com_TxD), .TxD_busy(), .ack(ack_in));
+	(.clk(clk), .ce(bus_select_i), .TxD_start(bus_we_i && bus_select_i), .TxD_data(data_in),
+	.TxD(com_TxD), .TxD_busy(), .ack(ack_in), .TxD_state(TxD_state), .tick(tick));
 
 	uart_driver_receiver #(.ClkFrequency(CLK_FREQ), .Baud(BAUD)) u1
-	(.clk(clk), .rst(!rst), .RxD(com_RxD),
+	(.clk(clk), .rst(rst), .RxD(com_RxD),
 	.RxD_data_ready(), .RxD_waiting_data(),
 	.RxD_data(data_out), .ack(ack_out));
 

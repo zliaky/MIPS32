@@ -45,3 +45,20 @@ map -intstyle ise -p xc6slx100-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -r
 par -w -intstyle ise -ol high -mt off fpga2flash_map.ncd fpga2flash.ncd fpga2flash.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fpga2flash.twx fpga2flash.ncd -o fpga2flash.twr fpga2flash.pcf 
 bitgen -intstyle ise -f fpga2flash.ut fpga2flash.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.xst" -ofn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/fpga2flash/segdisp.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/led.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/key.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/flash.ucf -p xc6slx100-fgg676-2 fpga2flash.ngc fpga2flash.ngd  
+map -intstyle ise -p xc6slx100-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga2flash_map.ncd fpga2flash.ngd fpga2flash.pcf 
+par -w -intstyle ise -ol high -mt off fpga2flash_map.ncd fpga2flash.ncd fpga2flash.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fpga2flash.twx fpga2flash.ncd -o fpga2flash.twr fpga2flash.pcf 
+bitgen -intstyle ise -f fpga2flash.ut fpga2flash.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.xst" -ofn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/fpga2flash/segdisp.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/led.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/key.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/flash.ucf -p xc6slx100-fgg676-2 fpga2flash.ngc fpga2flash.ngd  
+map -intstyle ise -p xc6slx100-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga2flash_map.ncd fpga2flash.ngd fpga2flash.pcf 
+par -w -intstyle ise -ol high -mt off fpga2flash_map.ncd fpga2flash.ncd fpga2flash.pcf 
+bitgen -intstyle ise -f fpga2flash.ut fpga2flash.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.xst" -ofn "E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash/fpga2flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/fpga2flash/segdisp.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/flash.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/key.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/fpga2flash.ucf -uc E:/course/GitRepository/MIPS32/fpga2flash/led.ucf -p xc6slx100-fgg676-2 fpga2flash.ngc fpga2flash.ngd  
+map -intstyle ise -p xc6slx100-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga2flash_map.ncd fpga2flash.ngd fpga2flash.pcf 
+par -w -intstyle ise -ol high -mt off fpga2flash_map.ncd fpga2flash.ncd fpga2flash.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fpga2flash.twx fpga2flash.ncd -o fpga2flash.twr fpga2flash.pcf 
+bitgen -intstyle ise -f fpga2flash.ut fpga2flash.ncd 

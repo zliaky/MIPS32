@@ -67,39 +67,40 @@ module wishbone_bus(
 			wishbone_we_o <= `WriteDisable;
 			wishbone_select_o <= `WB_SELECT_ZERO;
 		end else begin
-			if (wishbone_ack_i == `False_v) begin
-			end else if (if_ack == `False_v) begin
-				wishbone_data_o <= `ZeroWord;
-				wishbone_addr_o <= mmu_addr_i;
-				wishbone_we_o <= `WriteDisable;
-				wishbone_select_o <= mmu_select_i;
-			end else if (memr_ack == `False_v) begin
-				wishbone_data_o <= `ZeroWord;
-				wishbone_addr_o <= mmu_addr_i;
-				wishbone_we_o <= `WriteDisable;
-				wishbone_select_o <= mmu_select_i;
-			end else if (memw_ack == `False_v) begin
-				wishbone_data_o <= mem_data_i;
-				if (mem_sel_i[3] == 1'b0) begin
-					wishbone_data_o[31:24] <= wishbone_data_i[31:24];
+			if (wishbone_ack_i == `True_v) begin
+				if (if_ack == `False_v) begin
+					wishbone_data_o <= `ZeroWord;
+					wishbone_addr_o <= mmu_addr_i;
+					wishbone_we_o <= `WriteDisable;
+					wishbone_select_o <= mmu_select_i;
+				end else if (memr_ack == `False_v) begin
+					wishbone_data_o <= `ZeroWord;
+					wishbone_addr_o <= mmu_addr_i;
+					wishbone_we_o <= `WriteDisable;
+					wishbone_select_o <= mmu_select_i;
+				end else if (memw_ack == `False_v) begin
+					wishbone_data_o <= mem_data_i;
+					if (mem_sel_i[3] == 1'b0) begin
+						wishbone_data_o[31:24] <= wishbone_data_i[31:24];
+					end
+					if (mem_sel_i[2] == 1'b0) begin
+						wishbone_data_o[23:16] <= wishbone_data_i[23:16];
+					end
+					if (mem_sel_i[1] == 1'b0) begin
+						wishbone_data_o[15:8] <= wishbone_data_i[15:8];
+					end
+					if (mem_sel_i[0] == 1'b0) begin
+						wishbone_data_o[7:0] <= wishbone_data_i[7:0];
+					end
+					wishbone_addr_o <= mmu_addr_i;
+					wishbone_we_o <= `WriteEnable;
+					wishbone_select_o <= mmu_select_i;
+				end else begin
+					wishbone_data_o <= `ZeroWord;
+					wishbone_addr_o <= mmu_addr_i;
+					wishbone_we_o <= `WriteDisable;
+					wishbone_select_o <= mmu_select_i;
 				end
-				if (mem_sel_i[2] == 1'b0) begin
-					wishbone_data_o[23:16] <= wishbone_data_i[23:16];
-				end
-				if (mem_sel_i[1] == 1'b0) begin
-					wishbone_data_o[15:8] <= wishbone_data_i[15:8];
-				end
-				if (mem_sel_i[0] == 1'b0) begin
-					wishbone_data_o[7:0] <= wishbone_data_i[7:0];
-				end
-				wishbone_addr_o <= mmu_addr_i;
-				wishbone_we_o <= `WriteEnable;
-				wishbone_select_o <= mmu_select_i;
-			end else begin
-				wishbone_data_o <= `ZeroWord;
-				wishbone_addr_o <= mmu_addr_i;
-				wishbone_we_o <= `WriteDisable;
-				wishbone_select_o <= mmu_select_i;
 			end
 		end
 	end
@@ -110,23 +111,24 @@ module wishbone_bus(
 			tlb_write_o <= `False_v;
 			tlb_addr_o <= `ZeroWord;
 		end else begin
-			if (wishbone_ack_i == `False_v) begin
-			end else if (if_ack == `False_v) begin
-				tlb_ce <= `ChipEnable;
-				tlb_write_o <= `False_v;
-				tlb_addr_o <= if_addr_i;
-			end else if (memr_ack == `False_v) begin
-				tlb_ce <= `ChipEnable;
-				tlb_write_o <= `False_v;
-				tlb_addr_o <= mem_addr_i;
-			end else if (memw_ack == `False_v) begin
-				tlb_ce <= `ChipEnable;
-				tlb_write_o <= `True_v;
-				tlb_addr_o <= mem_addr_i;
-			end else begin
-				tlb_ce <= `ChipEnable;
-				tlb_write_o <= `False_v;
-				tlb_addr_o <= if_addr_i;
+			if (wishbone_ack_i == `True_v) begin
+				if (if_ack == `False_v) begin
+					tlb_ce <= `ChipEnable;
+					tlb_write_o <= `False_v;
+					tlb_addr_o <= if_addr_i;
+				end else if (memr_ack == `False_v) begin
+					tlb_ce <= `ChipEnable;
+					tlb_write_o <= `False_v;
+					tlb_addr_o <= mem_addr_i;
+				end else if (memw_ack == `False_v) begin
+					tlb_ce <= `ChipEnable;
+					tlb_write_o <= `True_v;
+					tlb_addr_o <= mem_addr_i;
+				end else begin
+					tlb_ce <= `ChipEnable;
+					tlb_write_o <= `False_v;
+					tlb_addr_o <= if_addr_i;
+				end
 			end
 		end
 	end

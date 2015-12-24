@@ -48,13 +48,22 @@ module openmips_min_sopc(
 	wire					wishbone_cyc_o;
 
 	assign int = {5'b00000, timer_int};		//时钟中断作为一个中断输入
-	reg clk_2;
+	reg clk_4;
+	reg counter = 0;
 	always @ (posedge clk) begin
-		clk_2 <= ~clk_2;
+		if (counter == 1'b1) begin
+			clk_4 <= ~clk_4;
+			counter <= 1'b0;
+		end else counter <= counter + 1'b1;
 	end
+
 
 	wire[31:0] output_data;
 	reg clk_tmp;
+
+	wire [7:0] state_o;
+	wire [3:0] TxD_state;
+	wire tick;
 
 	always @ (*) begin
 		if (select[31] == 1'b1) begin
@@ -71,11 +80,17 @@ module openmips_min_sopc(
 				data_o <= {16'b0, wishbone_select_o};
 			end else if (select[12] == 1'b1) begin
 				data_o <= {31'b0, rst};
+			end else if (select[13] == 1'b1) begin
+				data_o <= {24'b0, state_o};
+			end else if (select[14] == 1'b1) begin
+				data_o <= {28'b0, TxD_state};
+			end else if (select[15] == 1'b1) begin
+				data_o <= {31'b0, tick};
 			end else begin
 				data_o <= output_data;
 			end
 		end else begin
-			clk_tmp <= clk_2;
+			clk_tmp <= clk_4;
 		end
 	end
 
@@ -100,6 +115,7 @@ module openmips_min_sopc(
 	//例化总线部分
 	bus_top bus_top0(
 		.clk(clk_tmp),
+		.clk_uart(clk),
 		.rst(rst),
 		.wishbone_addr_i(wishbone_addr_o),
 		.wishbone_data_i(wishbone_data_o),
@@ -123,7 +139,10 @@ module openmips_min_sopc(
 		.uart_com_TxD(com_TxD),
 		.uart_com_RxD(com_RxD),
 		.digseg_seg0(segdisp0),
-		.digseg_seg1(segdisp1)
+		.digseg_seg1(segdisp1),
+		.state_o(state_o),
+		.TxD_state(TxD_state),
+		.tick(tick)
 	);
 
 endmodule

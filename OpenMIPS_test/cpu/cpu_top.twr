@@ -32,145 +32,54 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+com_RxD     |    1.723(R)|      SLOW  |   -1.081(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
 Setup/Hold to clock clk_key
 -------------+------------+------------+------------+------------+------------------+--------+
              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 -------------+------------+------------+------------+------------+------------------+--------+
-com_RxD      |   -1.108(R)|      FAST  |    3.060(R)|      SLOW  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<7>|   -0.212(R)|      FAST  |    1.912(R)|      SLOW  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<7>|    0.201(R)|      FAST  |    1.283(R)|      SLOW  |sopc/clk_tmp_BUFG |   0.000|
 -------------+------------+------------+------------+------------+------------------+--------+
-
-Setup/Hold to clock sw_dip<17>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    9.367(F)|      SLOW  |   -1.365(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    7.256(F)|      SLOW  |   -0.179(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    4.434(F)|      SLOW  |    0.272(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    4.133(F)|      SLOW  |    0.354(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    3.235(F)|      SLOW  |    0.371(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |    0.183(F)|      FAST  |    1.624(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<18>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    7.818(F)|      SLOW  |   -0.326(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    5.707(F)|      SLOW  |    1.409(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    2.885(F)|      SLOW  |    1.907(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    2.584(F)|      SLOW  |    1.989(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    1.686(F)|      SLOW  |    2.006(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |   -0.803(F)|      FAST  |    3.259(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<19>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    7.948(F)|      SLOW  |   -0.360(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    5.837(F)|      SLOW  |    1.266(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    3.015(F)|      SLOW  |    1.764(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    2.714(F)|      SLOW  |    1.846(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    1.816(F)|      SLOW  |    1.863(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |   -0.774(F)|      FAST  |    3.116(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<20>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    7.951(F)|      SLOW  |   -0.370(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    5.840(F)|      SLOW  |    1.262(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    3.018(F)|      SLOW  |    1.760(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    2.717(F)|      SLOW  |    1.842(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    1.819(F)|      SLOW  |    1.859(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |   -0.767(F)|      FAST  |    3.112(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<21>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    9.329(F)|      SLOW  |   -1.285(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    7.218(F)|      SLOW  |   -0.099(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    4.396(F)|      SLOW  |    0.308(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    4.095(F)|      SLOW  |    0.390(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    3.197(F)|      SLOW  |    0.407(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |    0.124(F)|      SLOW  |    1.660(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<22>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    9.430(F)|      SLOW  |   -1.346(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    7.319(F)|      SLOW  |   -0.160(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    4.497(F)|      SLOW  |    0.201(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    4.196(F)|      SLOW  |    0.283(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    3.298(F)|      SLOW  |    0.300(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |    0.225(F)|      SLOW  |    1.553(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<23>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    8.203(F)|      SLOW  |   -0.483(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    6.092(F)|      SLOW  |    1.001(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    3.270(F)|      SLOW  |    1.499(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    2.969(F)|      SLOW  |    1.581(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    2.071(F)|      SLOW  |    1.598(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |   -0.653(F)|      FAST  |    2.851(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<24>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    9.598(F)|      SLOW  |   -1.501(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    7.487(F)|      SLOW  |   -0.315(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    4.665(F)|      SLOW  |    0.020(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    4.364(F)|      SLOW  |    0.102(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    3.466(F)|      SLOW  |    0.119(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |    0.393(F)|      SLOW  |    1.372(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-
-Setup/Hold to clock sw_dip<25>
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                                            | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                           | Phase  |
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
-sw_dip<0>   |    8.125(F)|      SLOW  |   -0.534(F)|      FAST  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<1>   |    6.014(F)|      SLOW  |    1.086(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<2>   |    3.192(F)|      SLOW  |    1.584(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<3>   |    2.891(F)|      SLOW  |    1.666(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<4>   |    1.993(F)|      SLOW  |    1.683(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-sw_dip<16>  |   -0.603(F)|      FAST  |    2.936(F)|      SLOW  |sopc/openmips0/select[17]_select[18]_OR_16_o|   0.000|
-------------+------------+------------+------------+------------+--------------------------------------------+--------+
 
 Setup/Hold to clock sw_dip<31>
 -------------+------------+------------+------------+------------+-------------------+--------+
              |Max Setup to|  Process   |Max Hold to |  Process   |                   | Clock  |
 Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)  | Phase  |
 -------------+------------+------------+------------+------------+-------------------+--------+
-com_RxD      |   -1.960(R)|      FAST  |    4.462(R)|      SLOW  |sopc/clk_tmp_BUFG  |   0.000|
-flash_data<7>|   -1.064(R)|      FAST  |    3.314(R)|      SLOW  |sopc/clk_tmp_BUFG  |   0.000|
-sw_dip<7>    |   -0.748(F)|      FAST  |    3.404(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
-sw_dip<8>    |   -0.395(F)|      FAST  |    3.543(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
-sw_dip<9>    |    2.821(F)|      SLOW  |    1.510(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
-sw_dip<10>   |    2.978(F)|      SLOW  |    1.086(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
-sw_dip<11>   |    1.131(F)|      FAST  |    1.434(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
-sw_dip<12>   |    1.506(F)|      SLOW  |    0.804(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+flash_data<7>|   -0.592(R)|      FAST  |    2.602(R)|      SLOW  |sopc/clk_tmp_BUFG  |   0.000|
+sw_dip<0>    |   10.959(F)|      SLOW  |   -1.495(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<1>    |   13.648(F)|      SLOW  |   -0.914(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<2>    |   12.887(F)|      SLOW  |   -0.923(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<3>    |   12.531(F)|      SLOW  |   -1.027(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<4>    |   11.647(F)|      SLOW  |   -0.996(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<7>    |    1.919(F)|      SLOW  |    2.831(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<8>    |    3.372(F)|      SLOW  |    2.184(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<9>    |    4.597(F)|      SLOW  |    0.247(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<10>   |    4.813(F)|      SLOW  |    0.905(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<11>   |    5.054(F)|      SLOW  |    0.782(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<12>   |    5.863(F)|      SLOW  |   -0.454(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<13>   |    5.492(F)|      SLOW  |   -0.293(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<14>   |    6.011(F)|      SLOW  |   -0.936(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<15>   |    3.039(F)|      SLOW  |    1.580(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<16>   |    3.376(F)|      SLOW  |    0.248(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<17>   |    2.899(F)|      SLOW  |    1.009(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<18>   |    3.656(F)|      SLOW  |    0.603(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<19>   |    3.796(F)|      SLOW  |   -0.038(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<20>   |    5.723(F)|      SLOW  |   -0.002(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<21>   |    3.220(F)|      SLOW  |    0.451(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<22>   |    4.527(F)|      SLOW  |    0.236(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<23>   |    5.189(F)|      SLOW  |   -0.446(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<24>   |    4.301(F)|      SLOW  |   -0.982(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<25>   |    6.174(F)|      SLOW  |   -1.152(F)|      FAST  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<26>   |    6.167(F)|      SLOW  |   -0.065(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
+sw_dip<27>   |    5.713(F)|      SLOW  |   -0.241(F)|      SLOW  |sw_dip_31_IBUF_BUFG|   0.000|
 -------------+------------+------------+------------+------------+-------------------+--------+
 
 Clock clk to Pad
@@ -178,12 +87,13 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
+com_TxD     |        11.121(R)|      SLOW  |         5.839(R)|      FAST  |clk_BUFGP         |   0.000|
 led<0>      |         6.593(R)|      SLOW  |         3.136(R)|      FAST  |clk_BUFGP         |   0.000|
 led<1>      |         6.596(R)|      SLOW  |         3.139(R)|      FAST  |clk_BUFGP         |   0.000|
 led<2>      |         6.589(R)|      SLOW  |         3.132(R)|      FAST  |clk_BUFGP         |   0.000|
 led<3>      |         6.589(R)|      SLOW  |         3.132(R)|      FAST  |clk_BUFGP         |   0.000|
 led<4>      |         6.601(R)|      SLOW  |         3.144(R)|      FAST  |clk_BUFGP         |   0.000|
-led<5>      |         6.589(R)|      SLOW  |         3.132(R)|      FAST  |clk_BUFGP         |   0.000|
+led<5>      |         6.588(R)|      SLOW  |         3.131(R)|      FAST  |clk_BUFGP         |   0.000|
 led<6>      |         6.601(R)|      SLOW  |         3.144(R)|      FAST  |clk_BUFGP         |   0.000|
 led<7>      |         6.597(R)|      SLOW  |         3.140(R)|      FAST  |clk_BUFGP         |   0.000|
 led<8>      |         6.601(R)|      SLOW  |         3.144(R)|      FAST  |clk_BUFGP         |   0.000|
@@ -201,164 +111,163 @@ Clock clk_key to Pad
                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ----------------+-----------------+------------+-----------------+------------+------------------+--------+
-baseram_addr<0> |        11.811(R)|      SLOW  |         6.659(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<1> |        11.584(R)|      SLOW  |         6.537(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<2> |        11.707(R)|      SLOW  |         6.619(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<3> |        11.402(R)|      SLOW  |         6.433(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<4> |        15.066(R)|      SLOW  |         8.778(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<5> |        15.605(R)|      SLOW  |         9.014(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<6> |        15.819(R)|      SLOW  |         9.197(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<7> |        15.652(R)|      SLOW  |         9.068(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<8> |        15.777(R)|      SLOW  |         9.205(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<9> |        16.526(R)|      SLOW  |         9.689(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<10>|        16.603(R)|      SLOW  |         9.771(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<11>|        16.338(R)|      SLOW  |         9.578(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<12>|        16.350(R)|      SLOW  |         9.574(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<13>|        14.970(R)|      SLOW  |         8.784(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<14>|        17.014(R)|      SLOW  |        10.022(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<15>|        13.953(R)|      SLOW  |         8.156(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<16>|        15.173(R)|      SLOW  |         8.877(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_ce      |        14.284(R)|      SLOW  |         8.288(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<0> |        15.901(R)|      SLOW  |         7.955(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<1> |        19.056(R)|      SLOW  |         7.007(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<2> |        18.333(R)|      SLOW  |         6.949(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<3> |        18.694(R)|      SLOW  |         6.977(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<4> |        19.439(R)|      SLOW  |         6.630(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<5> |        16.336(R)|      SLOW  |         7.475(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<6> |        14.899(R)|      SLOW  |         8.263(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<7> |        18.730(R)|      SLOW  |         6.398(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<8> |        16.622(R)|      SLOW  |         8.669(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<9> |        16.093(R)|      SLOW  |         8.554(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<10>|        16.331(R)|      SLOW  |         8.525(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<11>|        15.274(R)|      SLOW  |         8.427(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<12>|        15.274(R)|      SLOW  |         8.228(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<13>|        17.662(R)|      SLOW  |         8.983(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<14>|        17.662(R)|      SLOW  |         8.759(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<15>|        17.426(R)|      SLOW  |         8.843(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<16>|        15.230(R)|      SLOW  |         8.231(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<17>|        15.230(R)|      SLOW  |         8.231(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<18>|        15.489(R)|      SLOW  |         7.703(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<19>|        15.489(R)|      SLOW  |         7.676(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<20>|        17.725(R)|      SLOW  |         7.749(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<21>|        17.725(R)|      SLOW  |         7.654(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<22>|        19.049(R)|      SLOW  |         8.080(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<23>|        18.326(R)|      SLOW  |         7.914(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<24>|        17.336(R)|      SLOW  |         8.333(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<25>|        17.336(R)|      SLOW  |         8.464(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<26>|        16.331(R)|      SLOW  |         8.297(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<27>|        16.310(R)|      SLOW  |         8.169(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<28>|        16.310(R)|      SLOW  |         8.159(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<29>|        15.793(R)|      SLOW  |         8.092(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<30>|        16.010(R)|      SLOW  |         8.183(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<31>|        16.010(R)|      SLOW  |         8.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_oe      |        14.820(R)|      SLOW  |         8.536(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_we      |        15.682(R)|      SLOW  |         9.255(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-com_TxD         |        15.624(R)|      SLOW  |         8.746(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<0>  |        14.600(R)|      SLOW  |         8.399(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<1>  |        12.638(R)|      SLOW  |         7.208(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<2>  |        14.512(R)|      SLOW  |         8.340(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<3>  |        13.387(R)|      SLOW  |         7.655(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<4>  |        15.377(R)|      SLOW  |         8.970(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<5>  |        15.090(R)|      SLOW  |         8.725(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<6>  |        14.808(R)|      SLOW  |         8.510(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<7>  |        16.196(R)|      SLOW  |         9.463(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<8>  |        14.924(R)|      SLOW  |         8.613(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<9>  |        15.253(R)|      SLOW  |         8.845(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<10> |        15.408(R)|      SLOW  |         8.933(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<11> |        15.364(R)|      SLOW  |         8.900(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<12> |        14.927(R)|      SLOW  |         8.628(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<13> |        15.366(R)|      SLOW  |         8.881(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<14> |        15.377(R)|      SLOW  |         8.903(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<15> |        12.950(R)|      SLOW  |         7.455(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<16> |        11.623(R)|      SLOW  |         6.631(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<17> |        13.119(R)|      SLOW  |         7.486(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_ce       |        13.247(R)|      SLOW  |         7.653(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<0>  |        16.938(R)|      SLOW  |         9.047(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<1>  |        16.938(R)|      SLOW  |         9.196(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<2>  |        16.945(R)|      SLOW  |         9.242(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<3>  |        16.945(R)|      SLOW  |         9.233(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<4>  |        16.750(R)|      SLOW  |         9.115(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<5>  |        16.564(R)|      SLOW  |         9.133(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<6>  |        16.640(R)|      SLOW  |         9.027(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<7>  |        16.330(R)|      SLOW  |         8.786(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<8>  |        18.947(R)|      SLOW  |         8.052(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<9>  |        18.947(R)|      SLOW  |         8.052(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<10> |        15.855(R)|      SLOW  |         8.772(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<11> |        15.855(R)|      SLOW  |         8.643(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<12> |        18.289(R)|      SLOW  |         8.402(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<13> |        16.083(R)|      SLOW  |         8.599(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<14> |        17.693(R)|      SLOW  |         8.253(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<15> |        18.686(R)|      SLOW  |         7.872(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<16> |        18.745(R)|      SLOW  |         7.855(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<17> |        18.745(R)|      SLOW  |         7.875(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<18> |        18.022(R)|      SLOW  |         7.897(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<19> |        18.384(R)|      SLOW  |         7.927(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<20> |        18.383(R)|      SLOW  |         7.731(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<21> |        17.639(R)|      SLOW  |         7.805(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<22> |        19.098(R)|      SLOW  |         8.053(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<23> |        19.098(R)|      SLOW  |         8.032(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<24> |        16.153(R)|      SLOW  |         8.157(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<25> |        16.070(R)|      SLOW  |         8.263(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<26> |        15.219(R)|      SLOW  |         8.037(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<27> |        15.219(R)|      SLOW  |         8.046(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<28> |        15.379(R)|      SLOW  |         8.257(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<29> |        15.340(R)|      SLOW  |         8.272(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<30> |        15.340(R)|      SLOW  |         8.314(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<31> |        18.289(R)|      SLOW  |         7.477(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_oe       |        15.345(R)|      SLOW  |         8.887(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_we       |        15.359(R)|      SLOW  |         8.984(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<1>   |        14.752(R)|      SLOW  |         8.514(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<2>   |        14.537(R)|      SLOW  |         8.328(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<3>   |        14.941(R)|      SLOW  |         8.639(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<4>   |        14.950(R)|      SLOW  |         8.633(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<5>   |        17.565(R)|      SLOW  |        10.222(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<6>   |        17.675(R)|      SLOW  |        10.354(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<7>   |        17.475(R)|      SLOW  |        10.152(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<8>   |        17.399(R)|      SLOW  |        10.087(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<9>   |        17.386(R)|      SLOW  |        10.091(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<10>  |        17.422(R)|      SLOW  |        10.070(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<11>  |        17.306(R)|      SLOW  |        10.030(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<12>  |        18.458(R)|      SLOW  |        10.793(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<13>  |        17.785(R)|      SLOW  |        10.380(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<14>  |        17.583(R)|      SLOW  |        10.194(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<15>  |        17.477(R)|      SLOW  |        10.092(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<16>  |        17.813(R)|      SLOW  |        10.392(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<17>  |        16.669(R)|      SLOW  |         9.656(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<18>  |        17.030(R)|      SLOW  |         9.896(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<19>  |        16.946(R)|      SLOW  |         9.835(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<20>  |        17.388(R)|      SLOW  |        10.078(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_ctl<0>    |        13.003(R)|      SLOW  |         7.462(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_ctl<3>    |        13.136(R)|      SLOW  |         7.554(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<0>   |        15.646(R)|      SLOW  |         8.316(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<1>   |        15.066(R)|      SLOW  |         7.986(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<2>   |        13.584(R)|      SLOW  |         7.530(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<3>   |        15.451(R)|      SLOW  |         8.313(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<4>   |        16.887(R)|      SLOW  |         8.843(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<5>   |        14.725(R)|      SLOW  |         8.268(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<6>   |        14.363(R)|      SLOW  |         8.148(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<7>   |        13.990(R)|      SLOW  |         7.968(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<8>   |        13.980(R)|      SLOW  |         7.747(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<9>   |        15.303(R)|      SLOW  |         8.636(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<10>  |        15.842(R)|      SLOW  |         8.789(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<11>  |        17.255(R)|      SLOW  |         9.759(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<12>  |        14.897(R)|      SLOW  |         8.520(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<13>  |        14.819(R)|      SLOW  |         8.418(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<14>  |        14.400(R)|      SLOW  |         7.963(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<15>  |        14.009(R)|      SLOW  |         7.742(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<0>     |        11.111(R)|      SLOW  |         6.056(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<1>     |        11.109(R)|      SLOW  |         6.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<2>     |        11.114(R)|      SLOW  |         6.059(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<3>     |        11.106(R)|      SLOW  |         6.051(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<4>     |        11.106(R)|      SLOW  |         6.051(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<5>     |        11.109(R)|      SLOW  |         6.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<6>     |        11.114(R)|      SLOW  |         6.059(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<0>     |        11.109(R)|      SLOW  |         6.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<1>     |        11.104(R)|      SLOW  |         6.049(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<2>     |        11.108(R)|      SLOW  |         6.053(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<3>     |        11.115(R)|      SLOW  |         6.060(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<4>     |        11.115(R)|      SLOW  |         6.060(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<5>     |        11.109(R)|      SLOW  |         6.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<6>     |        11.111(R)|      SLOW  |         6.056(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<0> |        12.068(R)|      SLOW  |         6.796(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<1> |        11.841(R)|      SLOW  |         6.674(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<2> |        11.964(R)|      SLOW  |         6.756(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<3> |        11.659(R)|      SLOW  |         6.570(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<4> |        15.277(R)|      SLOW  |         8.861(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<5> |        15.946(R)|      SLOW  |         9.181(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<6> |        15.996(R)|      SLOW  |         9.269(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<7> |        15.851(R)|      SLOW  |         9.169(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<8> |        15.544(R)|      SLOW  |         8.949(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<9> |        16.104(R)|      SLOW  |         9.338(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<10>|        16.461(R)|      SLOW  |         9.603(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<11>|        16.354(R)|      SLOW  |         9.502(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<12>|        16.456(R)|      SLOW  |         9.548(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<13>|        14.985(R)|      SLOW  |         8.695(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<14>|        16.684(R)|      SLOW  |         9.730(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<15>|        14.012(R)|      SLOW  |         8.106(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<16>|        14.997(R)|      SLOW  |         8.678(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_ce      |        13.621(R)|      SLOW  |         7.855(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<0> |        17.397(R)|      SLOW  |         8.079(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<1> |        20.697(R)|      SLOW  |         7.131(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<2> |        19.974(R)|      SLOW  |         7.073(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<3> |        20.336(R)|      SLOW  |         7.101(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<4> |        21.080(R)|      SLOW  |         6.754(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<5> |        17.978(R)|      SLOW  |         7.599(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<6> |        15.786(R)|      SLOW  |         8.390(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<7> |        20.372(R)|      SLOW  |         6.522(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<8> |        17.715(R)|      SLOW  |         8.614(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<9> |        17.143(R)|      SLOW  |         8.673(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<10>|        17.424(R)|      SLOW  |         8.574(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<11>|        16.353(R)|      SLOW  |         8.457(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<12>|        16.353(R)|      SLOW  |         8.305(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<13>|        18.754(R)|      SLOW  |         8.992(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<14>|        18.754(R)|      SLOW  |         8.850(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<15>|        18.519(R)|      SLOW  |         8.943(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<16>|        16.380(R)|      SLOW  |         8.467(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<17>|        16.380(R)|      SLOW  |         8.467(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<18>|        16.843(R)|      SLOW  |         7.744(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<19>|        16.843(R)|      SLOW  |         7.717(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<20>|        19.356(R)|      SLOW  |         7.531(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<21>|        19.356(R)|      SLOW  |         7.436(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<22>|        20.679(R)|      SLOW  |         7.823(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<23>|        19.956(R)|      SLOW  |         7.596(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<24>|        18.432(R)|      SLOW  |         8.571(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<25>|        18.432(R)|      SLOW  |         8.715(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<26>|        17.427(R)|      SLOW  |         8.492(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<27>|        17.407(R)|      SLOW  |         8.413(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<28>|        17.404(R)|      SLOW  |         8.276(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<29>|        16.809(R)|      SLOW  |         8.237(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<30>|        16.945(R)|      SLOW  |         8.180(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<31>|        16.945(R)|      SLOW  |         8.051(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_oe      |        15.816(R)|      SLOW  |         9.081(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_we      |        14.067(R)|      SLOW  |         8.152(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<0>  |        14.666(R)|      SLOW  |         8.440(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<1>  |        13.342(R)|      SLOW  |         7.643(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<2>  |        15.107(R)|      SLOW  |         8.724(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<3>  |        13.972(R)|      SLOW  |         8.038(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<4>  |        15.873(R)|      SLOW  |         9.301(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<5>  |        14.930(R)|      SLOW  |         8.534(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<6>  |        15.214(R)|      SLOW  |         8.806(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<7>  |        16.698(R)|      SLOW  |         9.781(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<8>  |        15.394(R)|      SLOW  |         8.887(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<9>  |        15.722(R)|      SLOW  |         9.110(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<10> |        15.864(R)|      SLOW  |         9.211(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<11> |        15.844(R)|      SLOW  |         9.187(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<12> |        15.446(R)|      SLOW  |         8.923(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<13> |        15.886(R)|      SLOW  |         9.177(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<14> |        15.883(R)|      SLOW  |         9.184(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<15> |        13.498(R)|      SLOW  |         7.781(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<16> |        12.296(R)|      SLOW  |         6.998(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<17> |        13.909(R)|      SLOW  |         7.973(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_ce       |        13.691(R)|      SLOW  |         7.897(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<0>  |        17.503(R)|      SLOW  |         8.841(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<1>  |        17.169(R)|      SLOW  |         8.965(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<2>  |        17.120(R)|      SLOW  |         9.090(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<3>  |        17.267(R)|      SLOW  |         9.099(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<4>  |        17.146(R)|      SLOW  |         9.381(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<5>  |        17.103(R)|      SLOW  |         9.305(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<6>  |        17.248(R)|      SLOW  |         9.452(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<7>  |        16.565(R)|      SLOW  |         9.127(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<8>  |        17.745(R)|      SLOW  |         8.196(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<9>  |        17.745(R)|      SLOW  |         8.196(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<10> |        16.255(R)|      SLOW  |         8.967(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<11> |        16.255(R)|      SLOW  |         8.883(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<12> |        18.013(R)|      SLOW  |         8.193(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<13> |        16.483(R)|      SLOW  |         8.837(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<14> |        18.124(R)|      SLOW  |         8.319(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<15> |        17.856(R)|      SLOW  |         8.130(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<16> |        22.124(R)|      SLOW  |         8.236(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<17> |        22.124(R)|      SLOW  |         8.009(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<18> |        21.400(R)|      SLOW  |         7.881(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<19> |        21.762(R)|      SLOW  |         8.115(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<20> |        21.749(R)|      SLOW  |         7.779(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<21> |        21.005(R)|      SLOW  |         7.633(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<22> |        22.464(R)|      SLOW  |         7.993(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<23> |        22.464(R)|      SLOW  |         8.062(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<24> |        16.690(R)|      SLOW  |         8.313(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<25> |        16.486(R)|      SLOW  |         8.486(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<26> |        15.760(R)|      SLOW  |         8.184(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<27> |        15.760(R)|      SLOW  |         8.202(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<28> |        16.031(R)|      SLOW  |         8.535(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<29> |        15.740(R)|      SLOW  |         8.432(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<30> |        15.740(R)|      SLOW  |         8.620(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<31> |        18.013(R)|      SLOW  |         7.653(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_oe       |        15.819(R)|      SLOW  |         9.158(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_we       |        16.109(R)|      SLOW  |         9.418(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<1>   |        15.026(R)|      SLOW  |         8.666(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<2>   |        15.174(R)|      SLOW  |         8.697(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<3>   |        15.386(R)|      SLOW  |         8.889(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<4>   |        15.374(R)|      SLOW  |         8.871(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<5>   |        18.506(R)|      SLOW  |        10.838(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<6>   |        17.774(R)|      SLOW  |        10.369(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<7>   |        17.743(R)|      SLOW  |        10.279(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<8>   |        18.380(R)|      SLOW  |        10.774(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<9>   |        18.638(R)|      SLOW  |        10.901(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<10>  |        18.581(R)|      SLOW  |        10.839(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<11>  |        18.549(R)|      SLOW  |        10.841(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<12>  |        18.471(R)|      SLOW  |        10.833(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<13>  |        18.309(R)|      SLOW  |        10.670(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<14>  |        18.439(R)|      SLOW  |        10.763(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<15>  |        18.038(R)|      SLOW  |        10.448(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<16>  |        18.726(R)|      SLOW  |        10.943(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<17>  |        17.202(R)|      SLOW  |         9.988(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<18>  |        17.922(R)|      SLOW  |        10.441(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<19>  |        17.324(R)|      SLOW  |        10.068(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<20>  |        17.686(R)|      SLOW  |        10.247(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_ctl<0>    |        15.284(R)|      SLOW  |         8.881(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_ctl<3>    |        13.127(R)|      SLOW  |         7.524(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<0>   |        15.208(R)|      SLOW  |         8.495(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<1>   |        14.953(R)|      SLOW  |         8.261(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<2>   |        13.603(R)|      SLOW  |         7.470(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<3>   |        15.156(R)|      SLOW  |         8.467(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<4>   |        16.449(R)|      SLOW  |         9.117(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<5>   |        14.760(R)|      SLOW  |         8.248(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<6>   |        14.385(R)|      SLOW  |         8.116(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<7>   |        14.068(R)|      SLOW  |         7.942(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<8>   |        13.995(R)|      SLOW  |         7.721(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<9>   |        15.113(R)|      SLOW  |         8.530(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<10>  |        15.511(R)|      SLOW  |         8.785(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<11>  |        16.678(R)|      SLOW  |         9.540(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<12>  |        15.235(R)|      SLOW  |         8.506(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<13>  |        15.420(R)|      SLOW  |         8.409(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<14>  |        14.338(R)|      SLOW  |         7.938(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<15>  |        14.426(R)|      SLOW  |         7.717(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<0>     |        11.367(R)|      SLOW  |         6.192(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<1>     |        11.365(R)|      SLOW  |         6.190(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<2>     |        11.370(R)|      SLOW  |         6.195(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<3>     |        11.362(R)|      SLOW  |         6.187(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<4>     |        11.362(R)|      SLOW  |         6.187(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<5>     |        11.365(R)|      SLOW  |         6.190(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<6>     |        11.370(R)|      SLOW  |         6.195(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<0>     |        11.365(R)|      SLOW  |         6.190(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<1>     |        11.360(R)|      SLOW  |         6.185(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<2>     |        11.364(R)|      SLOW  |         6.189(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<3>     |        11.371(R)|      SLOW  |         6.196(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<4>     |        11.371(R)|      SLOW  |         6.196(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<5>     |        11.365(R)|      SLOW  |         6.190(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<6>     |        11.367(R)|      SLOW  |         6.192(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
 ----------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock rst to Pad
@@ -366,26 +275,27 @@ Clock rst to Pad
               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
 Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
 --------------+-----------------+------------+-----------------+------------+------------------------+--------+
-flash_addr<1> |        24.322(F)|      SLOW  |        13.522(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<2> |        24.108(F)|      SLOW  |        13.539(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<3> |        24.257(F)|      SLOW  |        13.891(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<4> |        24.682(F)|      SLOW  |        13.759(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<5> |        23.154(F)|      SLOW  |        13.721(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<6> |        23.068(F)|      SLOW  |        13.521(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<7> |        23.031(F)|      SLOW  |        13.324(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<8> |        23.108(F)|      SLOW  |        13.162(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<9> |        23.795(F)|      SLOW  |        13.364(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<10>|        23.681(F)|      SLOW  |        13.476(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<11>|        23.444(F)|      SLOW  |        13.415(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<12>|        24.142(F)|      SLOW  |        13.679(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<13>|        24.087(F)|      SLOW  |        13.423(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<14>|        23.980(F)|      SLOW  |        13.537(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<15>|        23.253(F)|      SLOW  |        13.464(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<16>|        23.181(F)|      SLOW  |        13.469(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<17>|        23.890(F)|      SLOW  |        13.402(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<18>|        24.848(F)|      SLOW  |        13.619(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<19>|        23.776(F)|      SLOW  |        12.482(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
-flash_addr<20>|        24.899(F)|      SLOW  |        12.609(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<1> |        25.641(F)|      SLOW  |        14.253(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<2> |        26.297(F)|      SLOW  |        14.505(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<3> |        26.227(F)|      SLOW  |        15.552(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<4> |        26.621(F)|      SLOW  |        15.599(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<5> |        24.947(F)|      SLOW  |        14.929(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<6> |        24.729(F)|      SLOW  |        14.999(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<7> |        24.559(F)|      SLOW  |        14.751(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<8> |        24.788(F)|      SLOW  |        14.515(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<9> |        25.300(F)|      SLOW  |        14.582(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<10>|        25.002(F)|      SLOW  |        14.604(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<11>|        24.631(F)|      SLOW  |        14.732(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<12>|        24.156(F)|      SLOW  |        14.606(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<13>|        24.977(F)|      SLOW  |        14.946(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<14>|        24.921(F)|      SLOW  |        14.510(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<15>|        25.343(F)|      SLOW  |        14.501(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<16>|        25.597(F)|      SLOW  |        14.625(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<17>|        25.423(F)|      SLOW  |        14.653(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<18>|        26.323(F)|      SLOW  |        15.144(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<19>|        25.052(F)|      SLOW  |        13.451(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_addr<20>|        26.944(F)|      SLOW  |        13.725(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
+flash_ctl<6>  |        24.576(F)|      SLOW  |        14.913(F)|      FAST  |sopc/wishbone_ack_i_BUFG|   0.000|
 --------------+-----------------+------------+-----------------+------------+------------------------+--------+
 
 Clock sw_dip<31> to Pad
@@ -393,164 +303,163 @@ Clock sw_dip<31> to Pad
                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ----------------+-----------------+------------+-----------------+------------+------------------+--------+
-baseram_addr<0> |        13.213(R)|      SLOW  |         7.511(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<1> |        12.986(R)|      SLOW  |         7.389(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<2> |        13.109(R)|      SLOW  |         7.471(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<3> |        12.804(R)|      SLOW  |         7.285(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<4> |        16.468(R)|      SLOW  |         9.630(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<5> |        17.007(R)|      SLOW  |         9.866(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<6> |        17.221(R)|      SLOW  |        10.049(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<7> |        17.054(R)|      SLOW  |         9.920(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<8> |        17.179(R)|      SLOW  |        10.057(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<9> |        17.928(R)|      SLOW  |        10.541(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<10>|        18.005(R)|      SLOW  |        10.623(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<11>|        17.740(R)|      SLOW  |        10.430(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<12>|        17.752(R)|      SLOW  |        10.426(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<13>|        16.372(R)|      SLOW  |         9.636(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<14>|        18.416(R)|      SLOW  |        10.874(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<15>|        15.355(R)|      SLOW  |         9.008(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_addr<16>|        16.575(R)|      SLOW  |         9.729(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_ce      |        15.686(R)|      SLOW  |         9.140(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<0> |        17.303(R)|      SLOW  |         8.807(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<1> |        20.458(R)|      SLOW  |         7.859(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<2> |        19.735(R)|      SLOW  |         7.801(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<3> |        20.096(R)|      SLOW  |         7.829(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<4> |        20.841(R)|      SLOW  |         7.482(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<5> |        17.738(R)|      SLOW  |         8.327(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<6> |        16.301(R)|      SLOW  |         9.115(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<7> |        20.132(R)|      SLOW  |         7.250(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<8> |        18.024(R)|      SLOW  |         9.521(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<9> |        17.495(R)|      SLOW  |         9.406(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<10>|        17.733(R)|      SLOW  |         9.377(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<11>|        16.676(R)|      SLOW  |         9.279(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<12>|        16.676(R)|      SLOW  |         9.080(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<13>|        19.064(R)|      SLOW  |         9.835(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<14>|        19.064(R)|      SLOW  |         9.611(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<15>|        18.828(R)|      SLOW  |         9.695(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<16>|        16.632(R)|      SLOW  |         9.083(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<17>|        16.632(R)|      SLOW  |         9.083(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<18>|        16.891(R)|      SLOW  |         8.555(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<19>|        16.891(R)|      SLOW  |         8.528(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<20>|        19.127(R)|      SLOW  |         8.601(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<21>|        19.127(R)|      SLOW  |         8.506(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<22>|        20.451(R)|      SLOW  |         8.932(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<23>|        19.728(R)|      SLOW  |         8.766(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<24>|        18.738(R)|      SLOW  |         9.185(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<25>|        18.738(R)|      SLOW  |         9.316(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<26>|        17.733(R)|      SLOW  |         9.149(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<27>|        17.712(R)|      SLOW  |         9.021(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<28>|        17.712(R)|      SLOW  |         9.011(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<29>|        17.195(R)|      SLOW  |         8.944(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<30>|        17.412(R)|      SLOW  |         9.035(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_data<31>|        17.412(R)|      SLOW  |         8.906(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_oe      |        16.222(R)|      SLOW  |         9.388(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-baseram_we      |        17.084(R)|      SLOW  |        10.107(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-com_TxD         |        17.026(R)|      SLOW  |         9.598(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<0>  |        16.002(R)|      SLOW  |         9.251(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<1>  |        14.040(R)|      SLOW  |         8.060(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<2>  |        15.914(R)|      SLOW  |         9.192(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<3>  |        14.789(R)|      SLOW  |         8.507(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<4>  |        16.779(R)|      SLOW  |         9.822(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<5>  |        16.492(R)|      SLOW  |         9.577(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<6>  |        16.210(R)|      SLOW  |         9.362(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<7>  |        17.598(R)|      SLOW  |        10.315(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<8>  |        16.326(R)|      SLOW  |         9.465(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<9>  |        16.655(R)|      SLOW  |         9.697(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<10> |        16.810(R)|      SLOW  |         9.785(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<11> |        16.766(R)|      SLOW  |         9.752(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<12> |        16.329(R)|      SLOW  |         9.480(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<13> |        16.768(R)|      SLOW  |         9.733(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<14> |        16.779(R)|      SLOW  |         9.755(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<15> |        14.352(R)|      SLOW  |         8.307(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<16> |        13.025(R)|      SLOW  |         7.483(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_addr<17> |        14.521(R)|      SLOW  |         8.338(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_ce       |        14.649(R)|      SLOW  |         8.505(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<0>  |        18.340(R)|      SLOW  |         9.899(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<1>  |        18.340(R)|      SLOW  |        10.048(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<2>  |        18.347(R)|      SLOW  |        10.094(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<3>  |        18.347(R)|      SLOW  |        10.085(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<4>  |        18.152(R)|      SLOW  |         9.967(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<5>  |        17.966(R)|      SLOW  |         9.985(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<6>  |        18.042(R)|      SLOW  |         9.879(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<7>  |        17.732(R)|      SLOW  |         9.638(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<8>  |        20.349(R)|      SLOW  |         8.904(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<9>  |        20.349(R)|      SLOW  |         8.904(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<10> |        17.257(R)|      SLOW  |         9.624(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<11> |        17.257(R)|      SLOW  |         9.495(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<12> |        19.691(R)|      SLOW  |         9.254(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<13> |        17.485(R)|      SLOW  |         9.451(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<14> |        19.095(R)|      SLOW  |         9.105(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<15> |        20.088(R)|      SLOW  |         8.724(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<16> |        20.147(R)|      SLOW  |         8.707(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<17> |        20.147(R)|      SLOW  |         8.727(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<18> |        19.424(R)|      SLOW  |         8.749(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<19> |        19.786(R)|      SLOW  |         8.779(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<20> |        19.785(R)|      SLOW  |         8.583(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<21> |        19.041(R)|      SLOW  |         8.657(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<22> |        20.500(R)|      SLOW  |         8.905(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<23> |        20.500(R)|      SLOW  |         8.884(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<24> |        17.555(R)|      SLOW  |         9.009(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<25> |        17.472(R)|      SLOW  |         9.115(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<26> |        16.621(R)|      SLOW  |         8.889(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<27> |        16.621(R)|      SLOW  |         8.898(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<28> |        16.781(R)|      SLOW  |         9.109(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<29> |        16.742(R)|      SLOW  |         9.124(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<30> |        16.742(R)|      SLOW  |         9.166(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_data<31> |        19.691(R)|      SLOW  |         8.329(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_oe       |        16.747(R)|      SLOW  |         9.739(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-extram_we       |        16.761(R)|      SLOW  |         9.836(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<1>   |        16.154(R)|      SLOW  |         9.366(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<2>   |        15.939(R)|      SLOW  |         9.180(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<3>   |        16.343(R)|      SLOW  |         9.491(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<4>   |        16.352(R)|      SLOW  |         9.485(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<5>   |        18.967(R)|      SLOW  |        11.074(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<6>   |        19.077(R)|      SLOW  |        11.206(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<7>   |        18.877(R)|      SLOW  |        11.004(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<8>   |        18.801(R)|      SLOW  |        10.939(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<9>   |        18.788(R)|      SLOW  |        10.943(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<10>  |        18.824(R)|      SLOW  |        10.922(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<11>  |        18.708(R)|      SLOW  |        10.882(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<12>  |        19.860(R)|      SLOW  |        11.645(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<13>  |        19.187(R)|      SLOW  |        11.232(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<14>  |        18.985(R)|      SLOW  |        11.046(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<15>  |        18.879(R)|      SLOW  |        10.944(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<16>  |        19.215(R)|      SLOW  |        11.244(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<17>  |        18.071(R)|      SLOW  |        10.508(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<18>  |        18.432(R)|      SLOW  |        10.748(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<19>  |        18.348(R)|      SLOW  |        10.687(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_addr<20>  |        18.790(R)|      SLOW  |        10.930(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_ctl<0>    |        14.405(R)|      SLOW  |         8.314(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_ctl<3>    |        14.538(R)|      SLOW  |         8.406(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<0>   |        17.048(R)|      SLOW  |         9.168(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<1>   |        16.468(R)|      SLOW  |         8.838(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<2>   |        14.986(R)|      SLOW  |         8.382(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<3>   |        16.853(R)|      SLOW  |         9.165(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<4>   |        18.289(R)|      SLOW  |         9.695(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<5>   |        16.127(R)|      SLOW  |         9.120(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<6>   |        15.765(R)|      SLOW  |         9.000(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<7>   |        15.392(R)|      SLOW  |         8.820(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<8>   |        15.382(R)|      SLOW  |         8.599(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<9>   |        16.705(R)|      SLOW  |         9.488(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<10>  |        17.244(R)|      SLOW  |         9.641(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<11>  |        18.657(R)|      SLOW  |        10.611(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<12>  |        16.299(R)|      SLOW  |         9.372(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<13>  |        16.221(R)|      SLOW  |         9.270(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<14>  |        15.802(R)|      SLOW  |         8.815(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-flash_data<15>  |        15.411(R)|      SLOW  |         8.594(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<0>     |        12.513(R)|      SLOW  |         6.908(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<1>     |        12.511(R)|      SLOW  |         6.906(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<2>     |        12.516(R)|      SLOW  |         6.911(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<3>     |        12.508(R)|      SLOW  |         6.903(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<4>     |        12.508(R)|      SLOW  |         6.903(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<5>     |        12.511(R)|      SLOW  |         6.906(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp0<6>     |        12.516(R)|      SLOW  |         6.911(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<0>     |        12.511(R)|      SLOW  |         6.906(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<1>     |        12.506(R)|      SLOW  |         6.901(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<2>     |        12.510(R)|      SLOW  |         6.905(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<3>     |        12.517(R)|      SLOW  |         6.912(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<4>     |        12.517(R)|      SLOW  |         6.912(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<5>     |        12.511(R)|      SLOW  |         6.906(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
-segdisp1<6>     |        12.513(R)|      SLOW  |         6.908(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<0> |        13.387(R)|      SLOW  |         7.589(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<1> |        13.160(R)|      SLOW  |         7.467(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<2> |        13.283(R)|      SLOW  |         7.549(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<3> |        12.978(R)|      SLOW  |         7.363(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<4> |        16.596(R)|      SLOW  |         9.654(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<5> |        17.265(R)|      SLOW  |         9.974(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<6> |        17.315(R)|      SLOW  |        10.062(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<7> |        17.170(R)|      SLOW  |         9.962(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<8> |        16.863(R)|      SLOW  |         9.742(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<9> |        17.423(R)|      SLOW  |        10.131(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<10>|        17.780(R)|      SLOW  |        10.396(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<11>|        17.673(R)|      SLOW  |        10.295(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<12>|        17.775(R)|      SLOW  |        10.341(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<13>|        16.304(R)|      SLOW  |         9.488(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<14>|        18.003(R)|      SLOW  |        10.523(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<15>|        15.331(R)|      SLOW  |         8.899(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_addr<16>|        16.316(R)|      SLOW  |         9.471(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_ce      |        14.940(R)|      SLOW  |         8.648(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<0> |        18.716(R)|      SLOW  |         8.872(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<1> |        22.016(R)|      SLOW  |         7.924(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<2> |        21.293(R)|      SLOW  |         7.866(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<3> |        21.655(R)|      SLOW  |         7.894(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<4> |        22.399(R)|      SLOW  |         7.547(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<5> |        19.297(R)|      SLOW  |         8.392(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<6> |        17.105(R)|      SLOW  |         9.183(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<7> |        21.691(R)|      SLOW  |         7.315(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<8> |        19.034(R)|      SLOW  |         9.407(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<9> |        18.462(R)|      SLOW  |         9.466(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<10>|        18.743(R)|      SLOW  |         9.367(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<11>|        17.672(R)|      SLOW  |         9.250(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<12>|        17.672(R)|      SLOW  |         9.098(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<13>|        20.073(R)|      SLOW  |         9.785(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<14>|        20.073(R)|      SLOW  |         9.643(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<15>|        19.838(R)|      SLOW  |         9.736(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<16>|        17.699(R)|      SLOW  |         9.260(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<17>|        17.699(R)|      SLOW  |         9.260(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<18>|        18.162(R)|      SLOW  |         8.537(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<19>|        18.162(R)|      SLOW  |         8.510(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<20>|        20.675(R)|      SLOW  |         8.324(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<21>|        20.675(R)|      SLOW  |         8.229(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<22>|        21.998(R)|      SLOW  |         8.616(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<23>|        21.275(R)|      SLOW  |         8.389(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<24>|        19.751(R)|      SLOW  |         9.364(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<25>|        19.751(R)|      SLOW  |         9.508(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<26>|        18.746(R)|      SLOW  |         9.285(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<27>|        18.726(R)|      SLOW  |         9.206(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<28>|        18.723(R)|      SLOW  |         9.069(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<29>|        18.128(R)|      SLOW  |         9.030(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<30>|        18.264(R)|      SLOW  |         8.973(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_data<31>|        18.264(R)|      SLOW  |         8.844(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_oe      |        17.135(R)|      SLOW  |         9.874(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+baseram_we      |        15.386(R)|      SLOW  |         8.945(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<0>  |        15.985(R)|      SLOW  |         9.233(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<1>  |        14.661(R)|      SLOW  |         8.436(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<2>  |        16.426(R)|      SLOW  |         9.517(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<3>  |        15.291(R)|      SLOW  |         8.831(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<4>  |        17.192(R)|      SLOW  |        10.094(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<5>  |        16.249(R)|      SLOW  |         9.327(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<6>  |        16.533(R)|      SLOW  |         9.599(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<7>  |        18.017(R)|      SLOW  |        10.574(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<8>  |        16.713(R)|      SLOW  |         9.680(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<9>  |        17.041(R)|      SLOW  |         9.903(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<10> |        17.183(R)|      SLOW  |        10.004(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<11> |        17.163(R)|      SLOW  |         9.980(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<12> |        16.765(R)|      SLOW  |         9.716(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<13> |        17.205(R)|      SLOW  |         9.970(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<14> |        17.202(R)|      SLOW  |         9.977(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<15> |        14.817(R)|      SLOW  |         8.574(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<16> |        13.615(R)|      SLOW  |         7.791(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_addr<17> |        15.228(R)|      SLOW  |         8.766(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_ce       |        15.010(R)|      SLOW  |         8.690(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<0>  |        18.822(R)|      SLOW  |         9.634(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<1>  |        18.488(R)|      SLOW  |         9.758(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<2>  |        18.439(R)|      SLOW  |         9.883(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<3>  |        18.586(R)|      SLOW  |         9.892(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<4>  |        18.465(R)|      SLOW  |        10.174(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<5>  |        18.422(R)|      SLOW  |        10.098(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<6>  |        18.567(R)|      SLOW  |        10.245(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<7>  |        17.884(R)|      SLOW  |         9.920(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<8>  |        19.064(R)|      SLOW  |         8.989(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<9>  |        19.064(R)|      SLOW  |         8.989(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<10> |        17.574(R)|      SLOW  |         9.760(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<11> |        17.574(R)|      SLOW  |         9.676(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<12> |        19.332(R)|      SLOW  |         8.986(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<13> |        17.802(R)|      SLOW  |         9.630(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<14> |        19.443(R)|      SLOW  |         9.112(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<15> |        19.175(R)|      SLOW  |         8.923(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<16> |        23.443(R)|      SLOW  |         9.029(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<17> |        23.443(R)|      SLOW  |         8.802(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<18> |        22.719(R)|      SLOW  |         8.674(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<19> |        23.081(R)|      SLOW  |         8.908(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<20> |        23.068(R)|      SLOW  |         8.572(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<21> |        22.324(R)|      SLOW  |         8.426(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<22> |        23.783(R)|      SLOW  |         8.786(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<23> |        23.783(R)|      SLOW  |         8.855(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<24> |        18.009(R)|      SLOW  |         9.106(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<25> |        17.805(R)|      SLOW  |         9.279(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<26> |        17.079(R)|      SLOW  |         8.977(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<27> |        17.079(R)|      SLOW  |         8.995(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<28> |        17.350(R)|      SLOW  |         9.328(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<29> |        17.059(R)|      SLOW  |         9.225(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<30> |        17.059(R)|      SLOW  |         9.413(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_data<31> |        19.332(R)|      SLOW  |         8.446(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_oe       |        17.138(R)|      SLOW  |         9.951(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+extram_we       |        17.428(R)|      SLOW  |        10.211(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<1>   |        16.345(R)|      SLOW  |         9.459(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<2>   |        16.493(R)|      SLOW  |         9.490(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<3>   |        16.705(R)|      SLOW  |         9.682(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<4>   |        16.693(R)|      SLOW  |         9.664(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<5>   |        19.825(R)|      SLOW  |        11.631(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<6>   |        19.093(R)|      SLOW  |        11.162(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<7>   |        19.062(R)|      SLOW  |        11.072(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<8>   |        19.699(R)|      SLOW  |        11.567(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<9>   |        19.957(R)|      SLOW  |        11.694(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<10>  |        19.900(R)|      SLOW  |        11.632(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<11>  |        19.868(R)|      SLOW  |        11.634(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<12>  |        19.790(R)|      SLOW  |        11.626(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<13>  |        19.628(R)|      SLOW  |        11.463(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<14>  |        19.758(R)|      SLOW  |        11.556(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<15>  |        19.357(R)|      SLOW  |        11.241(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<16>  |        20.045(R)|      SLOW  |        11.736(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<17>  |        18.521(R)|      SLOW  |        10.781(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<18>  |        19.241(R)|      SLOW  |        11.234(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<19>  |        18.643(R)|      SLOW  |        10.861(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_addr<20>  |        19.005(R)|      SLOW  |        11.040(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_ctl<0>    |        16.603(R)|      SLOW  |         9.674(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_ctl<3>    |        14.446(R)|      SLOW  |         8.317(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<0>   |        16.527(R)|      SLOW  |         9.288(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<1>   |        16.272(R)|      SLOW  |         9.054(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<2>   |        14.922(R)|      SLOW  |         8.263(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<3>   |        16.475(R)|      SLOW  |         9.260(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<4>   |        17.768(R)|      SLOW  |         9.910(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<5>   |        16.079(R)|      SLOW  |         9.041(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<6>   |        15.704(R)|      SLOW  |         8.909(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<7>   |        15.387(R)|      SLOW  |         8.735(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<8>   |        15.314(R)|      SLOW  |         8.514(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<9>   |        16.432(R)|      SLOW  |         9.323(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<10>  |        16.830(R)|      SLOW  |         9.578(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<11>  |        17.997(R)|      SLOW  |        10.333(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<12>  |        16.554(R)|      SLOW  |         9.299(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<13>  |        16.739(R)|      SLOW  |         9.202(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<14>  |        15.657(R)|      SLOW  |         8.731(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+flash_data<15>  |        15.745(R)|      SLOW  |         8.510(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<0>     |        12.686(R)|      SLOW  |         6.985(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<1>     |        12.684(R)|      SLOW  |         6.983(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<2>     |        12.689(R)|      SLOW  |         6.988(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<3>     |        12.681(R)|      SLOW  |         6.980(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<4>     |        12.681(R)|      SLOW  |         6.980(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<5>     |        12.684(R)|      SLOW  |         6.983(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp0<6>     |        12.689(R)|      SLOW  |         6.988(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<0>     |        12.684(R)|      SLOW  |         6.983(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<1>     |        12.679(R)|      SLOW  |         6.978(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<2>     |        12.683(R)|      SLOW  |         6.982(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<3>     |        12.690(R)|      SLOW  |         6.989(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<4>     |        12.690(R)|      SLOW  |         6.989(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<5>     |        12.684(R)|      SLOW  |         6.983(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
+segdisp1<6>     |        12.686(R)|      SLOW  |         6.985(R)|      FAST  |sopc/clk_tmp_BUFG |   0.000|
 ----------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -558,8 +467,9 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.152|         |         |         |
-sw_dip<31>     |         |   13.694|         |         |
+clk            |    3.144|         |         |         |
+rst            |   20.964|   20.964|         |         |
+sw_dip<31>     |         |   12.851|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_key
@@ -567,9 +477,9 @@ Clock to Setup on destination clock clk_key
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_key        |   21.427|         |         |         |
-rst            |   20.619|   20.619|         |         |
-sw_dip<31>     |   21.427|         |         |         |
+clk_key        |   22.023|         |         |         |
+rst            |   20.571|   20.571|         |         |
+sw_dip<31>     |   22.023|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rst
@@ -577,171 +487,9 @@ Clock to Setup on destination clock rst
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_key        |         |         |   22.861|         |
-rst            |         |         |   19.823|   19.823|
-sw_dip<31>     |         |         |   22.861|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<17>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   22.455|   22.455|
-sw_dip<17>     |         |         |    0.670|    0.670|
-sw_dip<18>     |         |         |    3.129|    3.129|
-sw_dip<19>     |         |         |    3.651|    3.651|
-sw_dip<20>     |         |         |    4.009|    4.009|
-sw_dip<21>     |         |         |    2.484|    2.484|
-sw_dip<22>     |         |         |    2.225|    2.225|
-sw_dip<23>     |         |         |    3.239|    3.239|
-sw_dip<24>     |         |         |    2.366|    2.366|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<18>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   20.906|   20.906|
-sw_dip<17>     |         |         |   -0.513|   -0.513|
-sw_dip<18>     |         |         |    1.580|    1.580|
-sw_dip<19>     |         |         |    2.102|    2.102|
-sw_dip<20>     |         |         |    2.460|    2.460|
-sw_dip<21>     |         |         |    0.935|    0.935|
-sw_dip<22>     |         |         |    0.700|    0.700|
-sw_dip<23>     |         |         |    1.690|    1.690|
-sw_dip<24>     |         |         |    0.817|    0.817|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<19>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   21.036|   21.036|
-sw_dip<17>     |         |         |   -0.484|   -0.484|
-sw_dip<18>     |         |         |    1.710|    1.710|
-sw_dip<19>     |         |         |    2.232|    2.232|
-sw_dip<20>     |         |         |    2.590|    2.590|
-sw_dip<21>     |         |         |    1.065|    1.065|
-sw_dip<22>     |         |         |    0.806|    0.806|
-sw_dip<23>     |         |         |    1.820|    1.820|
-sw_dip<24>     |         |         |    0.947|    0.947|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<20>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   21.039|   21.039|
-sw_dip<17>     |         |         |   -0.477|   -0.477|
-sw_dip<18>     |         |         |    1.713|    1.713|
-sw_dip<19>     |         |         |    2.235|    2.235|
-sw_dip<20>     |         |         |    2.593|    2.593|
-sw_dip<21>     |         |         |    1.068|    1.068|
-sw_dip<22>     |         |         |    0.809|    0.809|
-sw_dip<23>     |         |         |    1.823|    1.823|
-sw_dip<24>     |         |         |    0.950|    0.950|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<21>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   22.417|   22.417|
-sw_dip<17>     |         |         |    0.632|    0.632|
-sw_dip<18>     |         |         |    3.091|    3.091|
-sw_dip<19>     |         |         |    3.613|    3.613|
-sw_dip<20>     |         |         |    3.971|    3.971|
-sw_dip<21>     |         |         |    2.446|    2.446|
-sw_dip<22>     |         |         |    2.187|    2.187|
-sw_dip<23>     |         |         |    3.201|    3.201|
-sw_dip<24>     |         |         |    2.328|    2.328|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<22>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   22.518|   22.518|
-sw_dip<17>     |         |         |    0.733|    0.733|
-sw_dip<18>     |         |         |    3.192|    3.192|
-sw_dip<19>     |         |         |    3.714|    3.714|
-sw_dip<20>     |         |         |    4.072|    4.072|
-sw_dip<21>     |         |         |    2.547|    2.547|
-sw_dip<22>     |         |         |    2.288|    2.288|
-sw_dip<23>     |         |         |    3.302|    3.302|
-sw_dip<24>     |         |         |    2.429|    2.429|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<23>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   21.291|   21.291|
-sw_dip<17>     |         |         |   -0.363|   -0.363|
-sw_dip<18>     |         |         |    1.965|    1.965|
-sw_dip<19>     |         |         |    2.487|    2.487|
-sw_dip<20>     |         |         |    2.845|    2.845|
-sw_dip<21>     |         |         |    1.320|    1.320|
-sw_dip<22>     |         |         |    1.061|    1.061|
-sw_dip<23>     |         |         |    2.075|    2.075|
-sw_dip<24>     |         |         |    1.202|    1.202|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<24>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   22.686|   22.686|
-sw_dip<17>     |         |         |    0.901|    0.901|
-sw_dip<18>     |         |         |    3.360|    3.360|
-sw_dip<19>     |         |         |    3.882|    3.882|
-sw_dip<20>     |         |         |    4.240|    4.240|
-sw_dip<21>     |         |         |    2.715|    2.715|
-sw_dip<22>     |         |         |    2.456|    2.456|
-sw_dip<23>     |         |         |    3.470|    3.470|
-sw_dip<24>     |         |         |    2.597|    2.597|
-sw_dip<31>     |         |         |   25.724|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sw_dip<25>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_key        |         |         |   25.724|         |
-rst            |         |         |   21.213|   21.213|
-sw_dip<17>     |         |         |   -0.313|   -0.313|
-sw_dip<18>     |         |         |    1.887|    1.887|
-sw_dip<19>     |         |         |    2.409|    2.409|
-sw_dip<20>     |         |         |    2.767|    2.767|
-sw_dip<21>     |         |         |    1.242|    1.242|
-sw_dip<22>     |         |         |    0.983|    0.983|
-sw_dip<23>     |         |         |    1.997|    1.997|
-sw_dip<24>     |         |         |    1.124|    1.124|
-sw_dip<31>     |         |         |   25.724|         |
+clk_key        |         |         |   24.070|         |
+rst            |         |         |   19.495|   19.495|
+sw_dip<31>     |         |         |   24.070|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sw_dip<31>
@@ -749,29 +497,21 @@ Clock to Setup on destination clock sw_dip<31>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_key        |   21.427|         |    7.241|         |
-rst            |   19.289|   19.289|    2.082|   10.555|
-sw_dip<17>     |         |         |         |    0.907|
-sw_dip<18>     |         |         |         |    0.907|
-sw_dip<19>     |         |         |         |    0.907|
-sw_dip<20>     |         |         |         |    0.907|
-sw_dip<21>     |         |         |         |    0.907|
-sw_dip<22>     |         |         |         |    0.907|
-sw_dip<23>     |         |         |         |    0.907|
-sw_dip<24>     |         |         |         |    0.907|
-sw_dip<25>     |         |         |         |    0.907|
-sw_dip<31>     |   21.427|         |    7.241|         |
+clk            |         |         |    0.431|         |
+clk_key        |   22.023|         |   31.916|         |
+rst            |   19.330|   19.330|   27.447|   27.447|
+sw_dip<31>     |   22.023|         |   31.916|         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Dec 21 20:31:25 2015 
+Analysis completed Thu Dec 24 21:49:21 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 451 MB
+Peak Memory Usage: 455 MB
 
 
 

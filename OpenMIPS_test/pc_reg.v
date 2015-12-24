@@ -10,10 +10,11 @@ module pc_reg(
 	input		wire[`RegBus]			branch_target_address_i,
 	output		reg[`InstAddrBus]		pc,
 	output		reg						ce,
-	output		reg[`InstAddrBus]		next_pc
+	output		reg[`InstAddrBus]		next_pc,
+	output		reg[`InstAddrBus]		latch_pc
 	);
 
-	reg[`InstAddrBus] latch_pc;
+	// reg[`InstAddrBus] latch_pc;
 
 	always @ (*) begin
 		if (rst == `RstEnable) begin

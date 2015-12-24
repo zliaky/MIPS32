@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: fpga2flash.prj
 
@@ -126,7 +126,7 @@ Elaborating module <digseg_driver>.
 
 Elaborating module <flash_driver>.
 WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\flash_driver.v" Line 65: Assignment to busy ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" Line 84: Assignment to read_finish ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" Line 87: Assignment to read_finish ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -135,12 +135,12 @@ WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash
 Synthesizing Unit <fpga2flash>.
     Related source file is "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v".
 WARNING:Xst:647 - Input <sw_dip<28:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" line 70: Output port <read_finish> of the instance <flash0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" line 74: Output port <read_finish> of the instance <flash0> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <data_i>.
     Found 22-bit register for signal <addr_i>.
     Found 32-bit register for signal <pc>.
-    Found 32-bit adder for signal <pc[31]_GND_1_o_add_49_OUT> created at line 65.
-    Found 16x16-bit Read Only RAM for signal <_n0119>
+    Found 32-bit adder for signal <pc[31]_GND_1_o_add_50_OUT> created at line 69.
+    Found 16x16-bit Read Only RAM for signal <_n0124>
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
@@ -245,7 +245,7 @@ Unit <flash_driver> synthesized (advanced).
 
 Synthesizing (advanced) Unit <fpga2flash>.
 The following registers are absorbed into counter <pc>: 1 register on signal <pc>.
-INFO:Xst:3231 - The small RAM <Mram__n0119> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0124> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -281,16 +281,29 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <data_i_3> in Unit <fpga2flash> is equivalent to the following 3 FFs/Latches, which will be removed : <data_i_7> <data_i_11> <data_i_15> 
+INFO:Xst:2261 - The FF/Latch <data_i_3> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <data_i_11> 
+INFO:Xst:2261 - The FF/Latch <data_i_7> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <data_i_15> 
 WARNING:Xst:2677 - Node <flash0/read_finish> of sequential type is unconnected in block <fpga2flash>.
-INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_15> in Unit <fpga2flash> is equivalent to the following 3 FFs/Latches, which will be removed : <flash0/data_in_latch_11> <flash0/data_in_latch_7> <flash0/data_in_latch_3> 
-INFO:Xst:2261 - The FF/Latch <flash0/data_to_write_15> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_to_write_11> 
+INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_11> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_in_latch_3> 
+INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_15> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_in_latch_7> 
 
 Optimizing unit <fpga2flash> ...
+WARNING:Xst:1710 - FF/Latch <pc_21> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_22> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_23> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_24> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_25> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_26> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_27> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_28> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_29> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_30> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_31> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block fpga2flash, actual ratio is 0.
+FlipFlop flash0/state_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -298,8 +311,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 128
- Flip-Flops                                            : 128
+# Registers                                            : 121
+ Flip-Flops                                            : 121
 
 =========================================================================
 
@@ -322,23 +335,23 @@ Top Level Output File Name         : fpga2flash.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 262
+# BELS                             : 236
 #      GND                         : 1
 #      INV                         : 3
-#      LUT1                        : 31
+#      LUT1                        : 20
 #      LUT2                        : 3
-#      LUT3                        : 35
-#      LUT4                        : 37
-#      LUT5                        : 38
-#      LUT6                        : 46
-#      MUXCY                       : 31
-#      MUXF7                       : 4
+#      LUT3                        : 29
+#      LUT4                        : 39
+#      LUT5                        : 37
+#      LUT6                        : 57
+#      MUXCY                       : 20
+#      MUXF7                       : 5
 #      VCC                         : 1
-#      XORCY                       : 32
-# FlipFlops/Latches                : 128
-#      FD                          : 8
-#      FDE                         : 88
-#      FDRE                        : 32
+#      XORCY                       : 21
+# FlipFlops/Latches                : 121
+#      FD                          : 9
+#      FDE                         : 91
+#      FDRE                        : 21
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 103
@@ -353,16 +366,16 @@ Selected Device : 6slx100fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             128  out of  126576     0%  
- Number of Slice LUTs:                  193  out of  63288     0%  
-    Number used as Logic:               193  out of  63288     0%  
+ Number of Slice Registers:             121  out of  126576     0%  
+ Number of Slice LUTs:                  188  out of  63288     0%  
+    Number used as Logic:               188  out of  63288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    202
-   Number with an unused Flip Flop:      74  out of    202    36%  
-   Number with an unused LUT:             9  out of    202     4%  
-   Number of fully used LUT-FF pairs:   119  out of    202    58%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    190
+   Number with an unused Flip Flop:      69  out of    190    36%  
+   Number with an unused LUT:             2  out of    190     1%  
+   Number of fully used LUT-FF pairs:   119  out of    190    62%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                         111
@@ -392,7 +405,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 128   |
+clk                                | BUFGP                  | 121   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -403,10 +416,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.106ns (Maximum Frequency: 195.848MHz)
-   Minimum input arrival time before clock: 8.212ns
+   Minimum period: 4.837ns (Maximum Frequency: 206.740MHz)
+   Minimum input arrival time before clock: 7.743ns
    Maximum output required time after clock: 5.676ns
-   Maximum combinational path delay: 7.446ns
+   Maximum combinational path delay: 7.275ns
 
 Timing Details:
 ---------------
@@ -414,32 +427,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.106ns (frequency: 195.848MHz)
-  Total number of paths / destination ports: 3047 / 248
+  Clock period: 4.837ns (frequency: 206.740MHz)
+  Total number of paths / destination ports: 2293 / 233
 -------------------------------------------------------------------------
-Delay:               5.106ns (Levels of Logic = 2)
+Delay:               4.837ns (Levels of Logic = 2)
   Source:            flash0/write_finish (FF)
-  Destination:       pc_0 (FF)
+  Destination:       addr_i_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: flash0/write_finish to pc_0
+  Data Path: flash0/write_finish to addr_i_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.525   1.196  flash0/write_finish (flash0/write_finish)
-     LUT5:I0->O            3   0.254   1.196  _n01545 (_n01545)
-     LUT6:I1->O           24   0.254   1.379  _n0171_inv1_cepot (_n0171_inv1_cepot)
-     FDRE:CE                   0.302          pc_0
+     FD:C->Q               4   0.525   1.234  flash0/write_finish (flash0/write_finish)
+     LUT5:I0->O            2   0.254   0.954  _n01573 (_n01573)
+     LUT6:I3->O           22   0.235   1.333  _n0160_inv1_cepot (_n0160_inv1_cepot)
+     FDE:CE                    0.302          addr_i_0
     ----------------------------------------
-    Total                      5.106ns (1.335ns logic, 3.771ns route)
-                                       (26.1% logic, 73.9% route)
+    Total                      4.837ns (1.316ns logic, 3.521ns route)
+                                       (27.2% logic, 72.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 608 / 197
+  Total number of paths / destination ports: 566 / 182
 -------------------------------------------------------------------------
-Offset:              8.212ns (Levels of Logic = 4)
+Offset:              7.743ns (Levels of Logic = 4)
   Source:            sw_dip<31> (PAD)
   Destination:       data_i_0 (FF)
   Destination Clock: clk rising
@@ -448,14 +461,14 @@ Offset:              8.212ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            81   1.328   2.290  sw_dip_31_IBUF (sw_dip_31_IBUF)
-     LUT3:I0->O            7   0.235   1.340  _n0142_inv11 (_n0142_inv1)
-     LUT6:I1->O            1   0.254   1.112  _n0142_inv1 (_n0142_inv2)
-     LUT6:I1->O           13   0.254   1.097  _n0142_inv6 (_n0142_inv)
+     IBUF:I->O            59   1.328   2.119  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     LUT3:I0->O            4   0.235   1.234  _n0145_inv11 (_n0145_inv1)
+     LUT6:I1->O            1   0.254   0.910  _n0145_inv1 (_n0145_inv2)
+     LUT5:I2->O           14   0.235   1.126  _n0145_inv4 (_n0145_inv)
      FDE:CE                    0.302          data_i_0
     ----------------------------------------
-    Total                      8.212ns (2.373ns logic, 5.839ns route)
-                                       (28.9% logic, 71.1% route)
+    Total                      7.743ns (2.354ns logic, 5.389ns route)
+                                       (30.4% logic, 69.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -481,7 +494,7 @@ Offset:              5.676ns (Levels of Logic = 2)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 94 / 52
 -------------------------------------------------------------------------
-Delay:               7.446ns (Levels of Logic = 3)
+Delay:               7.275ns (Levels of Logic = 3)
   Source:            sw_dip<31> (PAD)
   Destination:       flash_addr<22> (PAD)
 
@@ -489,12 +502,12 @@ Delay:               7.446ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            81   1.328   2.290  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     IBUF:I->O            59   1.328   2.119  sw_dip_31_IBUF (sw_dip_31_IBUF)
      LUT3:I0->O            1   0.235   0.681  flash0/Mmux_flash_addr<22:1>110 (flash_addr_10_OBUF)
      OBUF:I->O                 2.912          flash_addr_10_OBUF (flash_addr<10>)
     ----------------------------------------
-    Total                      7.446ns (4.475ns logic, 2.971ns route)
-                                       (60.1% logic, 39.9% route)
+    Total                      7.275ns (4.475ns logic, 2.800ns route)
+                                       (61.5% logic, 38.5% route)
 
 =========================================================================
 
@@ -506,20 +519,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.106|         |         |         |
+clk            |    4.837|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.22 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.50 secs
  
 --> 
 
-Total memory usage is 256876 kilobytes
+Total memory usage is 257004 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

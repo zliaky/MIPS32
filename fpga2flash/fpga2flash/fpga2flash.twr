@@ -37,33 +37,33 @@ Setup/Hold to clock clk
              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 -------------+------------+------------+------------+------------+------------------+--------+
-flash_data<7>|    2.947(R)|      SLOW  |    0.085(R)|      SLOW  |clk_BUFGP         |   0.000|
-rst          |    5.779(R)|      SLOW  |   -1.028(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<0>    |    5.065(R)|      SLOW  |   -2.605(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<1>    |    3.769(R)|      SLOW  |   -1.921(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<2>    |    4.108(R)|      SLOW  |   -2.003(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<3>    |    3.220(R)|      SLOW  |   -1.582(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<4>    |    3.428(R)|      SLOW  |   -1.689(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<5>    |    3.061(R)|      SLOW  |   -1.438(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<6>    |    2.651(R)|      SLOW  |   -1.258(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<7>    |    2.310(R)|      SLOW  |   -0.988(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<8>    |    2.045(R)|      SLOW  |   -0.803(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<9>    |    0.383(R)|      FAST  |    0.777(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<10>   |    1.002(R)|      SLOW  |    0.051(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<11>   |    0.543(R)|      SLOW  |    0.486(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<12>   |    0.797(R)|      SLOW  |    0.247(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<13>   |    0.570(R)|      SLOW  |    0.461(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<14>   |    5.875(R)|      SLOW  |   -2.996(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<15>   |    2.380(R)|      SLOW  |   -1.107(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<16>   |    2.764(R)|      SLOW  |   -1.249(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<17>   |    3.193(R)|      SLOW  |   -1.501(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<18>   |    4.650(R)|      SLOW  |   -2.316(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<19>   |    4.999(R)|      SLOW  |   -2.549(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<20>   |    4.873(R)|      SLOW  |   -2.477(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<21>   |    2.880(R)|      SLOW  |   -1.298(R)|      FAST  |clk_BUFGP         |   0.000|
-sw_dip<29>   |    5.197(R)|      SLOW  |    0.152(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<30>   |    4.957(R)|      SLOW  |    0.544(R)|      SLOW  |clk_BUFGP         |   0.000|
-sw_dip<31>   |    5.304(R)|      SLOW  |    0.508(R)|      SLOW  |clk_BUFGP         |   0.000|
+flash_data<7>|    1.917(R)|      SLOW  |    0.186(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst          |    5.601(R)|      SLOW  |   -0.943(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<0>    |    6.125(R)|      SLOW  |   -3.275(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<1>    |    3.593(R)|      SLOW  |   -1.817(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<2>    |    3.389(R)|      SLOW  |   -1.587(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<3>    |    3.273(R)|      SLOW  |   -1.613(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<4>    |    2.612(R)|      SLOW  |   -1.237(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<5>    |    3.400(R)|      SLOW  |   -1.617(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<6>    |    2.490(R)|      SLOW  |   -1.171(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<7>    |    3.087(R)|      SLOW  |   -1.436(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<8>    |    1.933(R)|      SLOW  |   -0.837(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<9>    |    0.503(R)|      SLOW  |    0.517(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<10>   |    0.754(R)|      SLOW  |    0.275(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<11>   |    0.231(R)|      FAST  |    0.784(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<12>   |    0.655(R)|      SLOW  |    0.373(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<13>   |    0.963(R)|      SLOW  |    0.082(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<14>   |    6.136(R)|      SLOW  |   -3.136(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<15>   |    3.614(R)|      SLOW  |   -1.770(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<16>   |    3.678(R)|      SLOW  |   -1.758(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<17>   |    3.616(R)|      SLOW  |   -1.724(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<18>   |    4.444(R)|      SLOW  |   -2.196(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<19>   |    4.458(R)|      SLOW  |   -2.262(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<20>   |    4.434(R)|      SLOW  |   -2.218(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<21>   |    2.570(R)|      SLOW  |   -1.181(R)|      FAST  |clk_BUFGP         |   0.000|
+sw_dip<29>   |    4.861(R)|      SLOW  |    0.091(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<30>   |    5.154(R)|      SLOW  |    0.150(R)|      SLOW  |clk_BUFGP         |   0.000|
+sw_dip<31>   |    5.226(R)|      SLOW  |    0.175(R)|      SLOW  |clk_BUFGP         |   0.000|
 -------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -71,46 +71,46 @@ Clock clk to Pad
               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
-flash_addr<1> |        14.732(R)|      SLOW  |         5.896(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<2> |        14.965(R)|      SLOW  |         5.925(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<3> |        14.789(R)|      SLOW  |         5.894(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<4> |        14.200(R)|      SLOW  |         5.915(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<5> |        13.812(R)|      SLOW  |         5.528(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<6> |        14.625(R)|      SLOW  |         5.793(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<7> |        14.190(R)|      SLOW  |         5.720(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<8> |        14.347(R)|      SLOW  |         5.819(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<9> |        15.132(R)|      SLOW  |         5.909(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<10>|        14.259(R)|      SLOW  |         5.436(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<11>|        14.175(R)|      SLOW  |         5.438(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<12>|        12.947(R)|      SLOW  |         4.922(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<13>|        14.594(R)|      SLOW  |         5.526(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<14>|        13.754(R)|      SLOW  |         5.156(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<15>|        13.843(R)|      SLOW  |         5.335(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<16>|        13.650(R)|      SLOW  |         5.236(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<17>|        13.937(R)|      SLOW  |         5.395(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<18>|        14.101(R)|      SLOW  |         5.700(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<19>|        13.659(R)|      SLOW  |         5.219(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<20>|        13.921(R)|      SLOW  |         5.207(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<21>|        11.682(R)|      SLOW  |         4.571(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_addr<22>|        14.010(R)|      SLOW  |         5.634(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_ctl<0>  |         9.393(R)|      SLOW  |         3.794(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_ctl<3>  |         9.538(R)|      SLOW  |         3.868(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<0> |        11.840(R)|      SLOW  |         4.389(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<1> |        11.183(R)|      SLOW  |         4.137(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<2> |         9.873(R)|      SLOW  |         3.692(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<3> |        11.616(R)|      SLOW  |         4.230(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<4> |        13.236(R)|      SLOW  |         4.944(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<5> |        10.955(R)|      SLOW  |         4.086(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<6> |        10.544(R)|      SLOW  |         4.043(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<7> |        10.112(R)|      SLOW  |         3.693(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<8> |         9.699(R)|      SLOW  |         3.654(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<9> |        11.181(R)|      SLOW  |         4.000(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<10>|        12.059(R)|      SLOW  |         4.306(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<11>|        13.655(R)|      SLOW  |         5.079(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<12>|        10.982(R)|      SLOW  |         3.987(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<13>|        10.953(R)|      SLOW  |         4.023(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<14>|        10.112(R)|      SLOW  |         3.898(R)|      FAST  |clk_BUFGP         |   0.000|
-flash_data<15>|         9.699(R)|      SLOW  |         3.664(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<1> |        15.309(R)|      SLOW  |         6.193(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<2> |        14.932(R)|      SLOW  |         6.463(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<3> |        14.861(R)|      SLOW  |         6.133(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<4> |        14.777(R)|      SLOW  |         6.289(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<5> |        14.790(R)|      SLOW  |         5.790(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<6> |        15.056(R)|      SLOW  |         5.714(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<7> |        14.270(R)|      SLOW  |         5.798(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<8> |        14.525(R)|      SLOW  |         5.743(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<9> |        14.458(R)|      SLOW  |         5.970(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<10>|        14.417(R)|      SLOW  |         5.457(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<11>|        13.749(R)|      SLOW  |         5.585(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<12>|        13.673(R)|      SLOW  |         5.105(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<13>|        13.930(R)|      SLOW  |         5.494(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<14>|        14.175(R)|      SLOW  |         5.476(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<15>|        13.952(R)|      SLOW  |         5.237(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<16>|        13.603(R)|      SLOW  |         5.236(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<17>|        13.785(R)|      SLOW  |         5.192(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<18>|        13.596(R)|      SLOW  |         5.328(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<19>|        13.799(R)|      SLOW  |         5.236(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<20>|        13.632(R)|      SLOW  |         5.387(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<21>|        12.535(R)|      SLOW  |         5.043(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_addr<22>|        13.236(R)|      SLOW  |         5.657(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_ctl<0>  |         9.512(R)|      SLOW  |         3.832(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_ctl<3>  |         9.485(R)|      SLOW  |         3.810(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<0> |        11.615(R)|      SLOW  |         4.429(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<1> |        11.152(R)|      SLOW  |         3.977(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<2> |         9.858(R)|      SLOW  |         3.942(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<3> |        11.579(R)|      SLOW  |         4.270(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<4> |        12.791(R)|      SLOW  |         5.197(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<5> |        10.916(R)|      SLOW  |         4.307(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<6> |        10.496(R)|      SLOW  |         4.080(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<7> |        10.065(R)|      SLOW  |         3.728(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<8> |         9.652(R)|      SLOW  |         3.689(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<9> |        11.152(R)|      SLOW  |         4.216(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<10>|        11.828(R)|      SLOW  |         4.341(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<11>|        13.212(R)|      SLOW  |         4.954(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<12>|        10.929(R)|      SLOW  |         4.176(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<13>|        10.915(R)|      SLOW  |         4.063(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<14>|        10.065(R)|      SLOW  |         3.926(R)|      FAST  |clk_BUFGP         |   0.000|
+flash_data<15>|         9.652(R)|      SLOW  |         3.822(R)|      FAST  |clk_BUFGP         |   0.000|
 --------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -118,111 +118,111 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.017|         |         |         |
+clk            |    4.645|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-flash_data<0>  |led<0>         |   14.117|
-flash_data<0>  |segdisp0<0>    |   15.037|
-flash_data<0>  |segdisp0<1>    |   14.850|
-flash_data<0>  |segdisp0<2>    |   15.468|
-flash_data<0>  |segdisp0<3>    |   15.339|
-flash_data<0>  |segdisp0<4>    |   15.375|
-flash_data<0>  |segdisp0<5>    |   15.138|
-flash_data<0>  |segdisp0<6>    |   15.512|
-flash_data<1>  |led<1>         |   13.318|
-flash_data<1>  |segdisp0<0>    |   14.526|
-flash_data<1>  |segdisp0<1>    |   14.539|
-flash_data<1>  |segdisp0<2>    |   14.409|
-flash_data<1>  |segdisp0<3>    |   14.700|
-flash_data<1>  |segdisp0<4>    |   14.736|
-flash_data<1>  |segdisp0<5>    |   14.627|
-flash_data<1>  |segdisp0<6>    |   14.453|
-flash_data<2>  |led<2>         |   14.180|
-flash_data<2>  |segdisp0<0>    |   14.963|
-flash_data<2>  |segdisp0<1>    |   14.788|
-flash_data<2>  |segdisp0<2>    |   14.221|
-flash_data<2>  |segdisp0<3>    |   14.931|
-flash_data<2>  |segdisp0<4>    |   14.967|
-flash_data<2>  |segdisp0<5>    |   15.064|
-flash_data<2>  |segdisp0<6>    |   14.265|
-flash_data<3>  |led<3>         |   15.052|
-flash_data<3>  |segdisp0<0>    |   13.952|
-flash_data<3>  |segdisp0<1>    |   14.648|
-flash_data<3>  |segdisp0<2>    |   14.254|
-flash_data<3>  |segdisp0<3>    |   14.235|
-flash_data<3>  |segdisp0<4>    |   14.271|
-flash_data<3>  |segdisp0<5>    |   14.053|
-flash_data<3>  |segdisp0<6>    |   14.298|
-flash_data<4>  |led<4>         |   15.798|
-flash_data<4>  |segdisp1<0>    |   16.141|
-flash_data<4>  |segdisp1<1>    |   17.240|
-flash_data<4>  |segdisp1<2>    |   16.029|
-flash_data<4>  |segdisp1<3>    |   16.539|
-flash_data<4>  |segdisp1<4>    |   16.628|
-flash_data<4>  |segdisp1<5>    |   16.240|
-flash_data<4>  |segdisp1<6>    |   15.201|
+flash_data<0>  |led<0>         |   15.111|
+flash_data<0>  |segdisp0<0>    |   13.929|
+flash_data<0>  |segdisp0<1>    |   14.566|
+flash_data<0>  |segdisp0<2>    |   14.007|
+flash_data<0>  |segdisp0<3>    |   13.822|
+flash_data<0>  |segdisp0<4>    |   13.926|
+flash_data<0>  |segdisp0<5>    |   13.869|
+flash_data<0>  |segdisp0<6>    |   14.235|
+flash_data<1>  |led<1>         |   13.133|
+flash_data<1>  |segdisp0<0>    |   14.230|
+flash_data<1>  |segdisp0<1>    |   14.182|
+flash_data<1>  |segdisp0<2>    |   13.672|
+flash_data<1>  |segdisp0<3>    |   14.510|
+flash_data<1>  |segdisp0<4>    |   14.614|
+flash_data<1>  |segdisp0<5>    |   14.170|
+flash_data<1>  |segdisp0<6>    |   13.900|
+flash_data<2>  |led<2>         |   15.135|
+flash_data<2>  |segdisp0<0>    |   14.873|
+flash_data<2>  |segdisp0<1>    |   14.208|
+flash_data<2>  |segdisp0<2>    |   15.264|
+flash_data<2>  |segdisp0<3>    |   14.774|
+flash_data<2>  |segdisp0<4>    |   14.878|
+flash_data<2>  |segdisp0<5>    |   14.813|
+flash_data<2>  |segdisp0<6>    |   15.492|
+flash_data<3>  |led<3>         |   14.954|
+flash_data<3>  |segdisp0<0>    |   13.907|
+flash_data<3>  |segdisp0<1>    |   14.530|
+flash_data<3>  |segdisp0<2>    |   14.386|
+flash_data<3>  |segdisp0<3>    |   14.170|
+flash_data<3>  |segdisp0<4>    |   14.274|
+flash_data<3>  |segdisp0<5>    |   13.847|
+flash_data<3>  |segdisp0<6>    |   14.614|
+flash_data<4>  |led<4>         |   15.373|
+flash_data<4>  |segdisp1<0>    |   15.854|
+flash_data<4>  |segdisp1<1>    |   16.660|
+flash_data<4>  |segdisp1<2>    |   15.483|
+flash_data<4>  |segdisp1<3>    |   15.987|
+flash_data<4>  |segdisp1<4>    |   16.076|
+flash_data<4>  |segdisp1<5>    |   15.953|
+flash_data<4>  |segdisp1<6>    |   14.655|
 flash_data<5>  |led<5>         |   14.675|
-flash_data<5>  |segdisp1<0>    |   15.130|
-flash_data<5>  |segdisp1<1>    |   15.239|
-flash_data<5>  |segdisp1<2>    |   14.747|
-flash_data<5>  |segdisp1<3>    |   15.382|
-flash_data<5>  |segdisp1<4>    |   15.471|
-flash_data<5>  |segdisp1<5>    |   15.229|
-flash_data<5>  |segdisp1<6>    |   13.919|
-flash_data<6>  |led<6>         |   13.441|
-flash_data<6>  |segdisp1<0>    |   15.240|
-flash_data<6>  |segdisp1<1>    |   14.828|
-flash_data<6>  |segdisp1<2>    |   14.784|
-flash_data<6>  |segdisp1<3>    |   15.394|
-flash_data<6>  |segdisp1<4>    |   15.483|
-flash_data<6>  |segdisp1<5>    |   15.339|
-flash_data<6>  |segdisp1<6>    |   13.956|
-flash_data<7>  |led<7>         |   14.289|
-flash_data<7>  |segdisp1<0>    |   18.541|
-flash_data<7>  |segdisp1<1>    |   18.086|
-flash_data<7>  |segdisp1<2>    |   17.821|
-flash_data<7>  |segdisp1<3>    |   18.850|
-flash_data<7>  |segdisp1<4>    |   18.939|
-flash_data<7>  |segdisp1<5>    |   18.640|
-flash_data<7>  |segdisp1<6>    |   16.993|
+flash_data<5>  |segdisp1<0>    |   15.156|
+flash_data<5>  |segdisp1<1>    |   15.180|
+flash_data<5>  |segdisp1<2>    |   14.603|
+flash_data<5>  |segdisp1<3>    |   15.467|
+flash_data<5>  |segdisp1<4>    |   15.556|
+flash_data<5>  |segdisp1<5>    |   15.255|
+flash_data<5>  |segdisp1<6>    |   13.775|
+flash_data<6>  |led<6>         |   13.442|
+flash_data<6>  |segdisp1<0>    |   15.596|
+flash_data<6>  |segdisp1<1>    |   14.770|
+flash_data<6>  |segdisp1<2>    |   14.794|
+flash_data<6>  |segdisp1<3>    |   15.461|
+flash_data<6>  |segdisp1<4>    |   15.550|
+flash_data<6>  |segdisp1<5>    |   15.695|
+flash_data<6>  |segdisp1<6>    |   13.966|
+flash_data<7>  |led<7>         |   13.862|
+flash_data<7>  |segdisp1<0>    |   15.755|
+flash_data<7>  |segdisp1<1>    |   15.880|
+flash_data<7>  |segdisp1<2>    |   15.593|
+flash_data<7>  |segdisp1<3>    |   16.302|
+flash_data<7>  |segdisp1<4>    |   16.391|
+flash_data<7>  |segdisp1<5>    |   15.854|
+flash_data<7>  |segdisp1<6>    |   14.765|
 flash_data<8>  |led<8>         |   12.850|
-flash_data<9>  |led<9>         |   13.306|
-flash_data<10> |led<10>        |   13.712|
-flash_data<11> |led<11>        |   14.535|
-flash_data<12> |led<12>        |   12.416|
-flash_data<13> |led<13>        |   12.732|
+flash_data<9>  |led<9>         |   14.483|
+flash_data<10> |led<10>        |   13.606|
+flash_data<11> |led<11>        |   14.652|
+flash_data<12> |led<12>        |   12.476|
+flash_data<13> |led<13>        |   12.999|
 flash_data<14> |led<14>        |   12.356|
-flash_data<15> |led<15>        |   12.235|
-sw_dip<31>     |flash_addr<1>  |   15.035|
-sw_dip<31>     |flash_addr<2>  |   15.254|
-sw_dip<31>     |flash_addr<3>  |   14.788|
-sw_dip<31>     |flash_addr<4>  |   14.907|
-sw_dip<31>     |flash_addr<5>  |   14.327|
-sw_dip<31>     |flash_addr<6>  |   14.406|
-sw_dip<31>     |flash_addr<7>  |   14.652|
-sw_dip<31>     |flash_addr<8>  |   14.796|
-sw_dip<31>     |flash_addr<9>  |   14.588|
-sw_dip<31>     |flash_addr<10> |   14.285|
-sw_dip<31>     |flash_addr<11> |   14.536|
-sw_dip<31>     |flash_addr<12> |   13.748|
-sw_dip<31>     |flash_addr<13> |   14.576|
-sw_dip<31>     |flash_addr<14> |   14.091|
-sw_dip<31>     |flash_addr<15> |   14.091|
-sw_dip<31>     |flash_addr<16> |   13.758|
-sw_dip<31>     |flash_addr<17> |   13.610|
-sw_dip<31>     |flash_addr<18> |   14.296|
-sw_dip<31>     |flash_addr<19> |   13.875|
-sw_dip<31>     |flash_addr<20> |   13.997|
-sw_dip<31>     |flash_addr<21> |   12.570|
-sw_dip<31>     |flash_addr<22> |   14.346|
+flash_data<15> |led<15>        |   12.475|
+sw_dip<31>     |flash_addr<1>  |   14.241|
+sw_dip<31>     |flash_addr<2>  |   14.770|
+sw_dip<31>     |flash_addr<3>  |   14.231|
+sw_dip<31>     |flash_addr<4>  |   14.330|
+sw_dip<31>     |flash_addr<5>  |   14.506|
+sw_dip<31>     |flash_addr<6>  |   14.625|
+sw_dip<31>     |flash_addr<7>  |   14.421|
+sw_dip<31>     |flash_addr<8>  |   15.114|
+sw_dip<31>     |flash_addr<9>  |   15.102|
+sw_dip<31>     |flash_addr<10> |   14.073|
+sw_dip<31>     |flash_addr<11> |   14.367|
+sw_dip<31>     |flash_addr<12> |   14.120|
+sw_dip<31>     |flash_addr<13> |   14.805|
+sw_dip<31>     |flash_addr<14> |   14.960|
+sw_dip<31>     |flash_addr<15> |   14.703|
+sw_dip<31>     |flash_addr<16> |   14.450|
+sw_dip<31>     |flash_addr<17> |   14.330|
+sw_dip<31>     |flash_addr<18> |   13.859|
+sw_dip<31>     |flash_addr<19> |   13.625|
+sw_dip<31>     |flash_addr<20> |   13.365|
+sw_dip<31>     |flash_addr<21> |   11.721|
+sw_dip<31>     |flash_addr<22> |   12.665|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Dec 21 00:04:45 2015 
+Analysis completed Thu Dec 24 07:21:09 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

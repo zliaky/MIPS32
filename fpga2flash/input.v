@@ -1,5 +1,5 @@
-32'h00000000: begin data_i <= 16'h1023; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
-32'h00000001: begin data_i <= 16'haaaa; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000000: begin data_i <= 16'h5050; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
+32'h00000001: begin data_i <= 16'h1829; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
 32'h00000002: begin data_i <= 16'hbbbb; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
 32'h00000003: begin data_i <= 16'hcccc; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
 32'h00000004: begin data_i <= 16'h1344; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end
