@@ -189,7 +189,7 @@ module bus_top(
 	);
 
 	flash flash0(
-		.clk(clk),
+		.clk(clk_uart),
 		.rst(rst),
 		.bus_addr_i(flash_addr_i),
 		.bus_data_i(flash_data_i),

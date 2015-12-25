@@ -27,7 +27,7 @@ module uart(
 
 	assign data_in = bus_data_i[`UartDataBus];
 	assign bus_data_o = {{24{1'b0}}, data_out};
-	assign bus_ack_o = ack_in;
+	assign bus_ack_o = bus_select_i ? ((bus_we_i == `WriteEnable) ? ack_in : ack_out) : 1'b0;
 
 	uart_driver_transmitter #(.ClkFrequency(CLK_FREQ), .Baud(BAUD)) u0
 	(.clk(clk), .ce(bus_select_i), .TxD_start(bus_we_i && bus_select_i), .TxD_data(data_in),

@@ -24,7 +24,7 @@ module flash (
 		.clk(clk), .rst(rst), .ce(bus_select_i),
 		.addr({2'b00, bus_addr_i[21:2]}), .data_in(bus_data_i[`FlashDataBus]), 
 		.data_out(output_data), .enable_erase(1'b0), 
-		.enable_read(!bus_we_i), .enable_write(bus_we_i),
+		.enable_read(!bus_we_i&&bus_select_i), .enable_write(bus_we_i&&bus_select_i),
 		.flash_ctl(flash_ctl), .flash_addr(flash_addr), .flash_data(flash_data), 
 		.ack(bus_ack_o), .state_o(state_o)
 	);

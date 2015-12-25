@@ -25,7 +25,7 @@ module flash_driver (
 	assign data_out = flash_data;
 	reg flash_oe, flash_we;
 
-	wire flash_byte = 1, flash_vpen = 1, flash_rp = 1;
+	wire flash_byte = 1, flash_vpen = 1, flash_rp = 1, flash_ce = 0;
 
 	reg [21:0] addr_latch;
 	assign flash_addr = {enable_read ? addr : addr_latch, 1'b0};
@@ -35,7 +35,7 @@ module flash_driver (
 
 	assign flash_ctl = {
 		flash_byte, 
-		!ce, 
+		flash_ce, 
 		2'b0, 		//ce1 ce2
 		flash_oe, 
 		flash_rp, 
@@ -59,7 +59,8 @@ module flash_driver (
 		SR1 = 4'b1110, 
 		SR2 = 4'b1010, 
 		SR3 = 4'b1011, 
-		SR4 = 4'b1001;
+		SR4 = 4'b1001,
+		END = 4'b1000;
 
 	reg [2:0] read_wait_cnt;
 
@@ -69,29 +70,13 @@ module flash_driver (
 		end else begin
 			case (state)
 				IDLE: begin
+					ack <= 1'b0;
+				end
+				END: begin
 					ack <= 1'b1;
-					if (enable_write) begin
-						ack <= 1'b0;
-					end else if (enable_erase) begin
-						ack <= 1'b0;
-					end else if (enable_read) begin
-						ack <= 1'b0;
-					end
-				end
-				READ3: begin
-					if (read_wait_cnt[2]) begin
-						ack <= 1'b1;
-					end
-				end
-				READ4: begin
-				end
-				SR3: begin
-					ack <= 1'b1;
-				end
-				SR4: begin
 				end
 				default: begin
-					// ack <= 1'b0;
+					ack <= 1'b0;
 				end
 			endcase
 		end
@@ -104,6 +89,9 @@ module flash_driver (
 			case (state)
 				IDLE: begin
 					addr_latch <= addr;
+					flash_oe <= 1;
+					flash_we <= 1;
+					busy <= 0;
 					if (enable_write) begin
 						data_in_latch <= data_in;
 						flash_we <= 0;
@@ -120,10 +108,6 @@ module flash_driver (
 						data_to_write <= 16'h00ff;
 						state <= READ1;
 						busy <= 1;
-					end else begin
-						flash_oe <= 1;
-						flash_we <= 1;
-						busy <= 0;
 					end
 				end
 				
@@ -173,8 +157,8 @@ module flash_driver (
 					end
 				end
 				READ4: begin
-					if (!enable_read)
-						state <= IDLE;
+					// if (!enable_read)
+					state <= END;
 				end
 
 				//wait for sr[7] becomes 1
@@ -194,11 +178,17 @@ module flash_driver (
 				SR4: begin
 					flash_oe <= 1;
 					if (flash_data[7]) begin
-						state <= IDLE;
+						state <= END;
 						busy <= 0;
 					end
 					else
 						state <= SR1;
+				end
+				END: begin
+					// flash_oe <= 1;
+					// flash_we <= 1;
+					if(!ce)
+						state <= IDLE;
 				end
 				default:
 					state <= IDLE;

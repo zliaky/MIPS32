@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-12-24T20:09:02</DateModified>
+  <DateModified>2015-12-25T15:28:56</DateModified>
   <ModuleName>fpga2ram</ModuleName>
-  <SummaryTimeStamp>2015-12-24T19:07:43</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-12-25T12:14:33</SummaryTimeStamp>
   <SavedFilePath>E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram/iseconfig/fpga2ram.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram\</ImplementationReportsDirectory>
   <DateInitialized>2015-12-23T19:09:57</DateInitialized>

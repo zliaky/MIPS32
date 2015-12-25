@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: cpu_top.prj
 
@@ -277,7 +277,7 @@ Elaborating module <rom_driver>.
 Elaborating module <flash>.
 
 Elaborating module <flash_driver>.
-WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v" Line 100: Assignment to busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v" Line 85: Assignment to busy ignored, since the identifier is never used
 
 Elaborating module <uart>.
 
@@ -288,7 +288,6 @@ Elaborating module <BaudTickGen(ClkFrequency=50000000,Baud=115200)>.
 Elaborating module <uart_driver_receiver(ClkFrequency=50000000,Baud=115200)>.
 
 Elaborating module <BaudTickGen(ClkFrequency=50000000,Baud=115200,Oversampling=8)>.
-WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" Line 39: Assignment to ack_out ignored, since the identifier is never used
 
 Elaborating module <digseg>.
 
@@ -1212,29 +1211,29 @@ Unit <flash> synthesized.
 
 Synthesizing Unit <flash_driver>.
     Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\flash_driver.v".
-    Found 4-bit register for signal <state>.
     Found 1-bit register for signal <flash_we>.
     Found 16-bit register for signal <data_to_write>.
     Found 3-bit register for signal <read_wait_cnt>.
     Found 1-bit register for signal <flash_oe>.
     Found 22-bit register for signal <addr_latch>.
     Found 16-bit register for signal <data_in_latch>.
+    Found 4-bit register for signal <state>.
 INFO:Xst:1799 - State 0111 is never reached in FSM <state>.
 INFO:Xst:1799 - State 0101 is never reached in FSM <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 14                                             |
-    | Transitions        | 17                                             |
-    | Inputs             | 4                                              |
-    | Outputs            | 13                                             |
+    | States             | 15                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 9                                              |
     | Clock              | clk (rising_edge)                              |
-    | Reset              | rst_ce_OR_743_o (positive)                     |
+    | Reset              | rst_ce_OR_744_o (positive)                     |
     | Reset type         | synchronous                                    |
     | Reset State        | 0000                                           |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <read_wait_cnt[2]_GND_399_o_add_25_OUT> created at line 172.
+    Found 3-bit adder for signal <read_wait_cnt[2]_GND_399_o_add_20_OUT> created at line 156.
     Found 1-bit tristate buffer for signal <flash_data<15>> created at line 34
     Found 1-bit tristate buffer for signal <flash_data<14>> created at line 34
     Found 1-bit tristate buffer for signal <flash_data<13>> created at line 34
@@ -1251,12 +1250,10 @@ INFO:Xst:1799 - State 0101 is never reached in FSM <state>.
     Found 1-bit tristate buffer for signal <flash_data<2>> created at line 34
     Found 1-bit tristate buffer for signal <flash_data<1>> created at line 34
     Found 1-bit tristate buffer for signal <flash_data<0>> created at line 34
-WARNING:Xst:737 - Found 1-bit latch for signal <ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  59 D-type flip-flop(s).
-	inferred   1 Latch(s).
-	inferred  10 Multiplexer(s).
+	inferred  11 Multiplexer(s).
 	inferred  16 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <flash_driver> synthesized.
@@ -1268,9 +1265,8 @@ WARNING:Xst:647 - Input <bus_data_i<31:8>> is never used. This port will be pres
 INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 32: Output port <TxD_busy> of the instance <u0> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 36: Output port <RxD_data_ready> of the instance <u1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 36: Output port <RxD_waiting_data> of the instance <u1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\uart.v" line 36: Output port <ack> of the instance <u1> is unconnected or connected to loadless signal.
     Summary:
-	no macro.
+	inferred   2 Multiplexer(s).
 Unit <uart> synthesized.
 
 Synthesizing Unit <uart_driver_transmitter>.
@@ -1281,7 +1277,7 @@ Synthesizing Unit <uart_driver_transmitter>.
     Found 8-bit register for signal <TxD_shift>.
     Found 4-bit 15-to-1 multiplexer for signal <TxD_state[3]_TxD_state[3]_wide_mux_18_OUT> created at line 59.
 WARNING:Xst:737 - Found 1-bit latch for signal <ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 4-bit comparator greater for signal <TxD_state[3]_GND_419_o_LessThan_25_o> created at line 87
+    Found 4-bit comparator greater for signal <TxD_state[3]_GND_417_o_LessThan_25_o> created at line 87
     HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <TxD_state> would allow inference of a finite state machine and as consequence better performance and smaller area.
     Summary:
 	inferred  12 D-type flip-flop(s).
@@ -1328,9 +1324,9 @@ Synthesizing Unit <uart_driver_receiver>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit subtractor for signal <Filter_cnt[1]_GND_422_o_sub_7_OUT> created at line 150.
-    Found 2-bit adder for signal <Filter_cnt[1]_GND_422_o_add_3_OUT> created at line 148.
-    Found 3-bit adder for signal <OversamplingCnt[2]_GND_422_o_add_19_OUT> created at line 166.
+    Found 2-bit subtractor for signal <Filter_cnt[1]_GND_420_o_sub_7_OUT> created at line 150.
+    Found 2-bit adder for signal <Filter_cnt[1]_GND_420_o_add_3_OUT> created at line 148.
+    Found 3-bit adder for signal <OversamplingCnt[2]_GND_420_o_add_19_OUT> created at line 166.
 WARNING:Xst:737 - Found 1-bit latch for signal <ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -1346,7 +1342,7 @@ Synthesizing Unit <BaudTickGen_2>.
         Baud = 115200
         Oversampling = 8
     Found 18-bit register for signal <Acc>.
-    Found 18-bit adder for signal <GND_423_o_BUS_0793_mux_2_OUT> created at line 259.
+    Found 18-bit adder for signal <GND_421_o_BUS_0793_mux_2_OUT> created at line 259.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
@@ -1400,8 +1396,8 @@ Macro Statistics
  5-bit register                                        : 5
  7-bit register                                        : 2
  8-bit register                                        : 4
-# Latches                                              : 309
- 1-bit latch                                           : 309
+# Latches                                              : 308
+ 1-bit latch                                           : 308
 # Comparators                                          : 20
  1-bit comparator lessequal                            : 1
  32-bit comparator equal                               : 2
@@ -1409,8 +1405,8 @@ Macro Statistics
  32-bit comparator lessequal                           : 7
  4-bit comparator greater                              : 1
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1087
- 1-bit 2-to-1 multiplexer                              : 738
+# Multiplexers                                         : 1090
+ 1-bit 2-to-1 multiplexer                              : 741
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
@@ -1630,8 +1626,8 @@ Macro Statistics
  32-bit comparator lessequal                           : 7
  4-bit comparator greater                              : 1
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1083
- 1-bit 2-to-1 multiplexer                              : 736
+# Multiplexers                                         : 1086
+ 1-bit 2-to-1 multiplexer                              : 739
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
@@ -1745,6 +1741,7 @@ Optimizing FSM <sopc/bus_top0/flash0/flash_driver0/FSM_0> on signal <state[1:4]>
  1100  | 1100
  0111  | unreached
  0101  | unreached
+ 1000  | 1000
  1011  | 1011
  1001  | 1001
  1101  | 1101
@@ -1986,7 +1983,6 @@ WARNING:Xst:2677 - Node <sopc/openmips0/mmu0/mmu_addr_o_28> of sequential type i
 WARNING:Xst:2677 - Node <sopc/openmips0/mmu0/mmu_addr_o_29> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/mmu0/mmu_addr_o_27> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/mmu0/mmu_addr_o_30> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/bus_top0/uart0/u1/ack> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_992> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_993> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_994> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
@@ -2020,6 +2016,7 @@ WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_1011> (without init
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_1010> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_1009> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/regfile1/regs_31_1008> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sopc/counter> in Unit <cpu_top> is equivalent to the following FF/Latch, which will be removed : <sopc/bus_top0/uart0/u1/tickgen/Acc_4> 
 INFO:Xst:3203 - The FF/Latch <sopc/bus_top0/ram0/ram_driver0/extram_we> in Unit <cpu_top> is the opposite to the following FF/Latch, which will be removed : <sopc/bus_top0/ram0/ram_driver0/extra_state> 
 INFO:Xst:3203 - The FF/Latch <sopc/bus_top0/ram0/ram_driver0/baseram_we> in Unit <cpu_top> is the opposite to the following FF/Latch, which will be removed : <sopc/bus_top0/ram0/ram_driver0/base_state> 
 
@@ -2059,8 +2056,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2306
- Flip-Flops                                            : 2306
+# Registers                                            : 2305
+ Flip-Flops                                            : 2305
 
 =========================================================================
 
@@ -2083,21 +2080,21 @@ Top Level Output File Name         : cpu_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6693
+# BELS                             : 6694
 #      GND                         : 1
-#      INV                         : 179
+#      INV                         : 177
 #      LUT1                        : 140
-#      LUT2                        : 232
-#      LUT3                        : 1335
-#      LUT4                        : 597
-#      LUT5                        : 828
-#      LUT6                        : 2431
+#      LUT2                        : 236
+#      LUT3                        : 1315
+#      LUT4                        : 618
+#      LUT5                        : 818
+#      LUT6                        : 2440
 #      MUXCY                       : 435
 #      MUXF7                       : 112
 #      VCC                         : 1
-#      XORCY                       : 402
-# FlipFlops/Latches                : 2569
-#      FD                          : 90
+#      XORCY                       : 401
+# FlipFlops/Latches                : 2568
+#      FD                          : 89
 #      FDE                         : 195
 #      FDR                         : 121
 #      FDRE                        : 1886
@@ -2126,15 +2123,15 @@ Selected Device : 6slx100fgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2539  out of  126576     2%  
- Number of Slice LUTs:                 5742  out of  63288     9%  
-    Number used as Logic:              5742  out of  63288     9%  
+ Number of Slice Registers:            2538  out of  126576     2%  
+ Number of Slice LUTs:                 5744  out of  63288     9%  
+    Number used as Logic:              5744  out of  63288     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7223
-   Number with an unused Flip Flop:    4684  out of   7223    64%  
-   Number with an unused LUT:          1481  out of   7223    20%  
-   Number of fully used LUT-FF pairs:  1058  out of   7223    14%  
+ Number of LUT Flip Flop pairs used:   7226
+   Number with an unused Flip Flop:    4688  out of   7226    64%  
+   Number with an unused LUT:          1482  out of   7226    20%  
+   Number of fully used LUT-FF pairs:  1056  out of   7226    14%  
    Number of unique control sets:        53
 
 IO Utilization: 
@@ -2164,21 +2161,21 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-Clock Signal                                                                                                                            | Clock buffer(FF name)                                   | Load  |
-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-clk                                                                                                                                     | BUFGP                                                   | 81    |
-sw_dip<31>                                                                                                                              | IBUF+BUFG                                               | 16    |
-sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                                     | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/baseram_ce)      | 2225  |
-sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o(sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o<2>1:O)| NONE(*)(sopc/bus_top0/flash0/flash_driver0/ack)         | 1     |
-sopc/wishbone_ack_i(sopc/bus_top0/bus0/m_ack_o7:O)                                                                                      | BUFG(*)(sopc/openmips0/wishbone_bus0/wishbone_data_o_31)| 126   |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o(sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o1:O)                   | BUFG(*)(sopc/openmips0/wishbone_bus0/mem_data_o_1)      | 32    |
-rst                                                                                                                                     | IBUF+BUFG                                               | 22    |
-sopc/openmips0/mem0/_n0583(sopc/openmips0/mem0/_n05831:O)                                                                               | BUFG(*)(sopc/openmips0/mem0/mem_addr_o_31)              | 32    |
-sopc/bus_top0/bus0/_n0085(sopc/bus_top0/bus0/out13:O)                                                                                   | BUFG(*)(sopc/bus_top0/bus0/m_data_o_0)                  | 32    |
-sopc/openmips0/wishbone_bus0/tlb_ce_G(sopc/openmips0/wishbone_bus0/tlb_ce_G:O)                                                          | NONE(*)(sopc/openmips0/wishbone_bus0/tlb_ce)            | 1     |
-sopc/bus_top0/uart0/u0/ack_G(sopc/bus_top0/uart0/u0/ack_G:O)                                                                            | NONE(*)(sopc/bus_top0/uart0/u0/ack)                     | 1     |
-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                                                                                                           | Clock buffer(FF name)                                   | Load  |
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+clk                                                                                                                    | BUFGP                                                   | 141   |
+sw_dip<31>                                                                                                             | IBUF+BUFG                                               | 16    |
+sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                    | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/baseram_ce)      | 2164  |
+sopc/wishbone_ack_i(sopc/bus_top0/bus0/m_ack_o8:O)                                                                     | BUFG(*)(sopc/openmips0/wishbone_bus0/wishbone_data_o_31)| 126   |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o(sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o1:O)  | BUFG(*)(sopc/openmips0/wishbone_bus0/mem_data_o_1)      | 32    |
+rst                                                                                                                    | IBUF+BUFG                                               | 22    |
+sopc/openmips0/mem0/_n0583(sopc/openmips0/mem0/_n05831:O)                                                              | BUFG(*)(sopc/openmips0/mem0/mem_addr_o_31)              | 32    |
+sopc/bus_top0/bus0/_n0085(sopc/bus_top0/bus0/out13:O)                                                                  | BUFG(*)(sopc/bus_top0/bus0/m_data_o_0)                  | 32    |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o(sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o1:O)| NONE(*)(sopc/bus_top0/uart0/u1/ack)                     | 1     |
+sopc/openmips0/wishbone_bus0/tlb_ce_G(sopc/openmips0/wishbone_bus0/tlb_ce_G:O)                                         | NONE(*)(sopc/openmips0/wishbone_bus0/tlb_ce)            | 1     |
+sopc/bus_top0/uart0/u0/ack_G(sopc/bus_top0/uart0/u0/ack_G:O)                                                           | NONE(*)(sopc/bus_top0/uart0/u0/ack)                     | 1     |
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
 (*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -2193,8 +2190,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 22.514ns (Maximum Frequency: 44.417MHz)
-   Minimum input arrival time before clock: 29.479ns
-   Maximum output required time after clock: 5.501ns
+   Minimum input arrival time before clock: 29.480ns
+   Maximum output required time after clock: 5.572ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2203,31 +2200,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.538ns (frequency: 282.647MHz)
-  Total number of paths / destination ports: 544 / 90
+  Clock period: 3.575ns (frequency: 279.719MHz)
+  Total number of paths / destination ports: 870 / 171
 -------------------------------------------------------------------------
-Delay:               3.538ns (Levels of Logic = 2)
-  Source:            sopc/bus_top0/uart0/u0/TxD_state_2 (FF)
-  Destination:       sopc/bus_top0/uart0/u0/TxD_shift_6 (FF)
+Delay:               3.575ns (Levels of Logic = 1)
+  Source:            sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 (FF)
+  Destination:       sopc/bus_top0/flash0/flash_driver0/addr_latch_19 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: sopc/bus_top0/uart0/u0/TxD_state_2 to sopc/bus_top0/uart0/u0/TxD_shift_6
+  Data Path: sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 to sopc/bus_top0/flash0/flash_driver0/addr_latch_19
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              28   0.447   1.579  sopc/bus_top0/uart0/u0/TxD_state_2 (sopc/bus_top0/uart0/u0/TxD_state_2)
-     LUT6:I1->O            7   0.203   1.002  sopc/bus_top0/uart0/u0/Mmux_TxD_shift[7]_TxD_data[7]_mux_3_OUT111 (sopc/bus_top0/uart0/u0/Mmux_TxD_shift[7]_TxD_data[7]_mux_3_OUT11)
-     LUT3:I0->O            1   0.205   0.000  sopc/bus_top0/uart0/u0/Mmux_TxD_shift[7]_TxD_data[7]_mux_3_OUT12 (sopc/bus_top0/uart0/u0/TxD_shift[7]_TxD_data[7]_mux_3_OUT<0>)
-     FDE:D                     0.102          sopc/bus_top0/uart0/u0/TxD_shift_0
+     FDR:C->Q             30   0.447   1.511  sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 (sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1)
+     LUT6:I2->O           20   0.203   1.092  sopc/bus_top0/flash0/flash_driver0/_n0264_inv1 (sopc/bus_top0/flash0/flash_driver0/_n0264_inv)
+     FDE:CE                    0.322          sopc/bus_top0/flash0/flash_driver0/addr_latch_0
     ----------------------------------------
-    Total                      3.538ns (0.957ns logic, 2.581ns route)
-                                       (27.0% logic, 73.0% route)
+    Total                      3.575ns (0.972ns logic, 2.603ns route)
+                                       (27.2% logic, 72.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/clk_tmp'
   Clock period: 22.514ns (frequency: 44.417MHz)
-  Total number of paths / destination ports: 126784704057 / 4542
+  Total number of paths / destination ports: 126784703729 / 4460
 -------------------------------------------------------------------------
 Delay:               22.514ns (Levels of Logic = 16)
   Source:            sopc/openmips0/id_ex0/ex_aluop_2 (FF)
@@ -2263,10 +2259,10 @@ Delay:               22.514ns (Levels of Logic = 16)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/wishbone_ack_i'
-  Clock period: 7.460ns (frequency: 134.042MHz)
+  Clock period: 7.440ns (frequency: 134.402MHz)
   Total number of paths / destination ports: 692 / 7
 -------------------------------------------------------------------------
-Delay:               7.460ns (Levels of Logic = 6)
+Delay:               7.440ns (Levels of Logic = 6)
   Source:            sopc/openmips0/wishbone_bus0/tlb_addr_o_30 (LATCH)
   Destination:       sopc/openmips0/wishbone_bus0/wishbone_select_o_7 (LATCH)
   Source Clock:      sopc/wishbone_ack_i falling
@@ -2277,22 +2273,22 @@ Delay:               7.460ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LDC:G->Q              6   0.498   0.745  sopc/openmips0/wishbone_bus0/tlb_addr_o_30 (sopc/openmips0/wishbone_bus0/tlb_addr_o_30)
-     LUT2:I1->O            2   0.205   0.981  sopc/openmips0/tlb0/Mmux_tlb_addr241 (sopc/openmips0/tlb_addr_i<30>)
-     LUT6:I0->O            1   0.203   0.924  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o11 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o11)
+     LUT2:I1->O            2   0.205   0.961  sopc/openmips0/tlb0/Mmux_tlb_addr241 (sopc/openmips0/tlb_addr_i<30>)
+     LUT6:I1->O            1   0.203   0.924  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o11 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o11)
      LUT6:I1->O            2   0.203   0.961  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o13 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o1)
      LUT6:I1->O            3   0.203   1.015  sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o3 (sopc/openmips0/mmu0/GND_82_o_tlb_addr_i[31]_AND_1321_o)
      LUT6:I0->O            5   0.203   1.079  sopc/openmips0/mmu0/Mmux_mmu_select_o711 (sopc/openmips0/mmu0/Mmux_mmu_select_o71)
      LUT6:I0->O            2   0.203   0.000  sopc/openmips0/mmu0/Mmux_mmu_select_o7 (sopc/openmips0/mmu_select_i<7>)
      LDC:D                     0.037          sopc/openmips0/wishbone_bus0/wishbone_select_o_7
     ----------------------------------------
-    Total                      7.460ns (1.755ns logic, 5.705ns route)
-                                       (23.5% logic, 76.5% route)
+    Total                      7.440ns (1.755ns logic, 5.685ns route)
+                                       (23.6% logic, 76.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sw_dip<31>'
-  Total number of paths / destination ports: 1439127 / 16
+  Total number of paths / destination ports: 1439207 / 16
 -------------------------------------------------------------------------
-Offset:              29.479ns (Levels of Logic = 27)
+Offset:              29.480ns (Levels of Logic = 27)
   Source:            rst (PAD)
   Destination:       sopc/data_o_0 (LATCH)
   Destination Clock: sw_dip<31> falling
@@ -2301,12 +2297,12 @@ Offset:              29.479ns (Levels of Logic = 27)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.604  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1220   1.222   2.604  rst_IBUF (rst_IBUF)
      LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
      LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
      LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1080)
+     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1078)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
      LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N863)
      LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
@@ -2323,19 +2319,39 @@ Offset:              29.479ns (Levels of Logic = 27)
      LUT6:I2->O            1   0.203   0.684  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>38 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>314)
      LUT6:I4->O            1   0.203   0.808  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>39 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>315)
      LUT6:I3->O            1   0.205   0.580  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>310 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>316)
-     LUT3:I2->O            1   0.205   0.808  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>311_SW0 (N1016)
-     LUT6:I3->O            1   0.205   0.684  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>312_SW0 (N1124)
+     LUT3:I2->O            1   0.205   0.808  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>311_SW0 (N1014)
+     LUT6:I3->O            1   0.205   0.684  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>312_SW0 (N1122)
      LUT5:I3->O            1   0.203   0.684  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>312 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>318)
      LUT6:I4->O            1   0.203   0.808  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>313 (sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>319)
      LUT6:I3->O            1   0.205   0.000  sopc/Mmux_output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>314 (sopc/output_data[31]_wishbone_data_i[31]_mux_22_OUT<0>)
      LD:D                      0.037          sopc/data_o_0
     ----------------------------------------
-    Total                     29.479ns (6.565ns logic, 22.914ns route)
+    Total                     29.480ns (6.565ns logic, 22.915ns route)
                                        (22.3% logic, 77.7% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 84 / 84
+-------------------------------------------------------------------------
+Offset:              6.457ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       sopc/bus_top0/uart0/u1/OversamplingCnt_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to sopc/bus_top0/uart0/u1/OversamplingCnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1220   1.222   2.259  rst_IBUF (rst_IBUF)
+     INV:I->O           1553   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     FDSE:S                    0.430          sopc/bus_top0/uart0/u1/RxD_sync_0
+    ----------------------------------------
+    Total                      6.457ns (1.858ns logic, 4.599ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/clk_tmp'
-  Total number of paths / destination ports: 1507023 / 3205
+  Total number of paths / destination ports: 1508258 / 3141
 -------------------------------------------------------------------------
 Offset:              20.280ns (Levels of Logic = 17)
   Source:            rst (PAD)
@@ -2346,12 +2362,12 @@ Offset:              20.280ns (Levels of Logic = 17)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.604  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1220   1.222   2.604  rst_IBUF (rst_IBUF)
      LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
      LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
      LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1080)
+     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1078)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
      LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N863)
      LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
@@ -2369,26 +2385,6 @@ Offset:              20.280ns (Levels of Logic = 17)
                                        (22.6% logic, 77.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.992ns (Levels of Logic = 2)
-  Source:            rst (PAD)
-  Destination:       sopc/bus_top0/flash0/flash_driver0/ack (LATCH)
-  Destination Clock: sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o falling
-
-  Data Path: rst to sopc/bus_top0/flash0/flash_driver0/ack
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.364  rst_IBUF (rst_IBUF)
-     LUT2:I0->O            7   0.203   0.773  sopc/bus_top0/flash0/flash_driver0/rst_ce_OR_743_o1 (sopc/bus_top0/flash0/flash_driver0/rst_ce_OR_743_o)
-     LDP:PRE                   0.430          sopc/bus_top0/flash0/flash_driver0/ack
-    ----------------------------------------
-    Total                      4.992ns (1.855ns logic, 3.137ns route)
-                                       (37.2% logic, 62.8% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/wishbone_ack_i'
   Total number of paths / destination ports: 1419984 / 197
 -------------------------------------------------------------------------
@@ -2401,12 +2397,12 @@ Offset:              22.132ns (Levels of Logic = 19)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.604  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1220   1.222   2.604  rst_IBUF (rst_IBUF)
      LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
      LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
      LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1080)
+     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1078)
      LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
      LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N863)
      LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
@@ -2427,9 +2423,9 @@ Offset:              22.132ns (Levels of Logic = 19)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o'
-  Total number of paths / destination ports: 64 / 64
+  Total number of paths / destination ports: 96 / 64
 -------------------------------------------------------------------------
-Offset:              6.456ns (Levels of Logic = 2)
+Offset:              6.955ns (Levels of Logic = 3)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/mem_data_o_1 (LATCH)
   Destination Clock: sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o rising
@@ -2438,12 +2434,13 @@ Offset:              6.456ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.259  rst_IBUF (rst_IBUF)
-     INV:I->O           1552   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
-     LDCE_1:CLR                0.430          sopc/openmips0/wishbone_bus0/mem_data_o_29
+     IBUF:I->O          1220   1.222   2.624  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            2   0.203   0.961  sopc/bus_top0/flash0/flash_driver0/Mmux_ack11 (sopc/bus_top0/flash_ack_o)
+     LUT6:I1->O           41   0.203   1.419  sopc/bus_top0/bus0/m_ack_o8 (sopc/wishbone_ack_i)
+     LDCE_1:GE                 0.322          sopc/openmips0/wishbone_bus0/mem_data_o_29
     ----------------------------------------
-    Total                      6.456ns (1.858ns logic, 4.598ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      6.955ns (1.950ns logic, 5.005ns route)
+                                       (28.0% logic, 72.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'rst'
@@ -2458,7 +2455,7 @@ Offset:              3.826ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.364  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1220   1.222   2.364  rst_IBUF (rst_IBUF)
      LUT2:I0->O            2   0.203   0.000  sopc/openmips0/tlb0/Mmux_tlb_addr110 (sopc/openmips0/tlb_addr_i<0>)
      LD_1:D                    0.037          sopc/openmips0/mmu0/mmu_addr_o_0
     ----------------------------------------
@@ -2469,7 +2466,7 @@ Offset:              3.826ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/mem0/_n0583'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              6.456ns (Levels of Logic = 2)
+Offset:              6.457ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/mem0/mem_addr_o_31 (LATCH)
   Destination Clock: sopc/openmips0/mem0/_n0583 falling
@@ -2478,59 +2475,59 @@ Offset:              6.456ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.259  rst_IBUF (rst_IBUF)
-     INV:I->O           1552   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     IBUF:I->O          1220   1.222   2.259  rst_IBUF (rst_IBUF)
+     INV:I->O           1553   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      LDC:CLR                   0.430          sopc/openmips0/mem0/mem_addr_o_30
     ----------------------------------------
-    Total                      6.456ns (1.858ns logic, 4.598ns route)
+    Total                      6.457ns (1.858ns logic, 4.599ns route)
                                        (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/bus_top0/bus0/_n0085'
   Total number of paths / destination ports: 80 / 32
 -------------------------------------------------------------------------
-Offset:              3.293ns (Levels of Logic = 3)
-  Source:            baseram_data<3> (PAD)
-  Destination:       sopc/bus_top0/bus0/m_data_o_3 (LATCH)
+Offset:              3.419ns (Levels of Logic = 3)
+  Source:            extram_data<16> (PAD)
+  Destination:       sopc/bus_top0/bus0/m_data_o_16 (LATCH)
   Destination Clock: sopc/bus_top0/bus0/_n0085 falling
 
-  Data Path: baseram_data<3> to sopc/bus_top0/bus0/m_data_o_3
+  Data Path: extram_data<16> to sopc/bus_top0/bus0/m_data_o_16
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   1.222   0.684  baseram_data_3_IOBUF (N278)
-     LUT6:I4->O            1   0.203   0.944  sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<3>2 (sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<3>2)
-     LUT6:I0->O            1   0.203   0.000  sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<3>3 (sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<3>)
-     LD:D                      0.037          sopc/bus_top0/bus0/m_data_o_3
+     IOBUF:IO->O           1   1.222   0.808  extram_data_16_IOBUF (N297)
+     LUT6:I3->O            1   0.205   0.944  sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<16>1 (sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<16>1)
+     LUT6:I0->O            1   0.203   0.000  sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<16>2 (sopc/bus_top0/bus0/select_latch[15]_s0_data_i[31]_select_19_OUT<16>)
+     LD:D                      0.037          sopc/bus_top0/bus0/m_data_o_16
     ----------------------------------------
-    Total                      3.293ns (1.665ns logic, 1.628ns route)
-                                       (50.6% logic, 49.4% route)
+    Total                      3.419ns (1.667ns logic, 1.752ns route)
+                                       (48.8% logic, 51.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 21 / 21
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.456ns (Levels of Logic = 2)
+Offset:              6.457ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       sopc/bus_top0/uart0/u1/OversamplingCnt_2 (FF)
-  Destination Clock: clk rising
+  Destination:       sopc/bus_top0/uart0/u1/ack (LATCH)
+  Destination Clock: sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o falling
 
-  Data Path: rst to sopc/bus_top0/uart0/u1/OversamplingCnt_2
+  Data Path: rst to sopc/bus_top0/uart0/u1/ack
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.259  rst_IBUF (rst_IBUF)
-     INV:I->O           1552   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
-     FDSE:S                    0.430          sopc/bus_top0/uart0/u1/RxD_sync_0
+     IBUF:I->O          1220   1.222   2.259  rst_IBUF (rst_IBUF)
+     INV:I->O           1553   0.206   2.339  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     LDP:PRE                   0.430          sopc/bus_top0/uart0/u1/ack
     ----------------------------------------
-    Total                      6.456ns (1.858ns logic, 4.598ns route)
+    Total                      6.457ns (1.858ns logic, 4.599ns route)
                                        (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/tlb_ce_G'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 3 / 1
 -------------------------------------------------------------------------
-Offset:              4.086ns (Levels of Logic = 2)
+Offset:              6.876ns (Levels of Logic = 4)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_ce (LATCH)
   Destination Clock: sopc/openmips0/wishbone_bus0/tlb_ce_G falling
@@ -2539,16 +2536,18 @@ Offset:              4.086ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1219   1.222   2.624  rst_IBUF (rst_IBUF)
-     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/wishbone_bus0/tlb_ce_D (sopc/openmips0/wishbone_bus0/tlb_ce_D)
+     IBUF:I->O          1220   1.222   2.624  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            2   0.203   0.961  sopc/bus_top0/flash0/flash_driver0/Mmux_ack11 (sopc/bus_top0/flash_ack_o)
+     LUT6:I1->O           41   0.203   1.420  sopc/bus_top0/bus0/m_ack_o8 (sopc/wishbone_ack_i)
+     LUT2:I1->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/tlb_ce_D (sopc/openmips0/wishbone_bus0/tlb_ce_D)
      LD:D                      0.037          sopc/openmips0/wishbone_bus0/tlb_ce
     ----------------------------------------
-    Total                      4.086ns (1.462ns logic, 2.624ns route)
-                                       (35.8% logic, 64.2% route)
+    Total                      6.876ns (1.870ns logic, 5.006ns route)
+                                       (27.2% logic, 72.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 19 / 17
+  Total number of paths / destination ports: 73 / 55
 -------------------------------------------------------------------------
 Offset:              5.265ns (Levels of Logic = 2)
   Source:            sopc/bus_top0/uart0/u0/TxD_state_3 (FF)
@@ -2568,7 +2567,7 @@ Offset:              5.265ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sopc/clk_tmp'
-  Total number of paths / destination ports: 237 / 157
+  Total number of paths / destination ports: 183 / 119
 -------------------------------------------------------------------------
 Offset:              5.131ns (Levels of Logic = 2)
   Source:            sopc/bus_top0/ram0/ram_driver0/baseram_oe (FF)
@@ -2588,23 +2587,23 @@ Offset:              5.131ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sopc/wishbone_ack_i'
-  Total number of paths / destination ports: 41 / 21
+  Total number of paths / destination ports: 60 / 20
 -------------------------------------------------------------------------
-Offset:              5.501ns (Levels of Logic = 2)
-  Source:            sopc/openmips0/wishbone_bus0/wishbone_we_o (LATCH)
+Offset:              5.572ns (Levels of Logic = 2)
+  Source:            sopc/openmips0/wishbone_bus0/wishbone_select_o_2 (LATCH)
   Destination:       flash_addr<20> (PAD)
   Source Clock:      sopc/wishbone_ack_i falling
 
-  Data Path: sopc/openmips0/wishbone_bus0/wishbone_we_o to flash_addr<20>
+  Data Path: sopc/openmips0/wishbone_bus0/wishbone_select_o_2 to flash_addr<20>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q             41   0.498   1.648  sopc/openmips0/wishbone_bus0/wishbone_we_o (sopc/openmips0/wishbone_bus0/wishbone_we_o)
-     LUT3:I0->O            1   0.205   0.579  sopc/bus_top0/flash0/flash_driver0/Mmux_flash_addr<22:1>110 (flash_addr_10_OBUF)
+     LDC:G->Q             46   0.498   1.719  sopc/openmips0/wishbone_bus0/wishbone_select_o_2 (sopc/openmips0/wishbone_bus0/wishbone_select_o_2)
+     LUT4:I1->O            1   0.205   0.579  sopc/bus_top0/flash0/flash_driver0/Mmux_flash_addr<22:1>110 (flash_addr_10_OBUF)
      OBUF:I->O                 2.571          flash_addr_10_OBUF (flash_addr<10>)
     ----------------------------------------
-    Total                      5.501ns (3.274ns logic, 2.227ns route)
-                                       (59.5% logic, 40.5% route)
+    Total                      5.572ns (3.274ns logic, 2.298ns route)
+                                       (58.8% logic, 41.2% route)
 
 =========================================================================
 
@@ -2616,8 +2615,8 @@ Clock to Setup on destination clock clk
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |    3.538|         |         |         |
-sopc/wishbone_ack_i|         |    4.547|         |         |
+clk                |    3.575|         |         |         |
+sopc/wishbone_ack_i|         |    4.812|         |         |
 sw_dip<31>         |         |    1.179|         |         |
 -------------------+---------+---------+---------+---------+
 
@@ -2636,16 +2635,7 @@ Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
 clk                |         |         |    2.661|         |
 sopc/clk_tmp       |         |         |    5.607|         |
-sopc/wishbone_ack_i|         |         |    3.606|         |
--------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-sopc/clk_tmp       |         |         |    2.209|         |
-sopc/wishbone_ack_i|         |         |    2.814|         |
+sopc/wishbone_ack_i|         |         |    3.623|         |
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/bus_top0/uart0/u0/ack_G
@@ -2657,17 +2647,26 @@ clk                |         |         |    2.252|         |
 sopc/wishbone_ack_i|         |         |    1.868|         |
 -------------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.764|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock sopc/clk_tmp
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o|         |   12.074|         |         |
-sopc/bus_top0/uart0/u0/ack_G                                    |         |   11.378|         |         |
-sopc/clk_tmp                                                    |   22.514|         |         |         |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o        |   14.395|         |         |         |
-sopc/wishbone_ack_i                                             |         |   12.868|         |         |
-----------------------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |   12.122|         |         |         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |   11.352|         |         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |   11.209|         |         |
+sopc/clk_tmp                                             |   22.514|         |         |         |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o |   14.395|         |         |         |
+sopc/wishbone_ack_i                                      |         |   13.816|         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/mem0/_n0583
 ---------------+---------+---------+---------+---------+
@@ -2678,27 +2677,29 @@ sopc/clk_tmp   |         |         |    5.780|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/bus0/_n0085                                       |         |    1.218|         |         |
-sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o|         |    5.004|         |         |
-sopc/bus_top0/uart0/u0/ack_G                                    |         |    4.308|         |         |
-sopc/clk_tmp                                                    |    4.523|         |         |         |
-sopc/wishbone_ack_i                                             |         |    5.798|         |         |
-----------------------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |    5.052|         |         |         |
+sopc/bus_top0/bus0/_n0085                                |         |    1.218|         |         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |    4.282|         |         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |    4.139|         |         |
+sopc/clk_tmp                                             |    4.138|         |         |         |
+sopc/wishbone_ack_i                                      |         |    6.746|         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/tlb_ce_G
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o|         |         |    3.202|         |
-sopc/bus_top0/uart0/u0/ack_G                                    |         |         |    2.506|         |
-sopc/clk_tmp                                                    |         |         |    2.602|         |
-sopc/wishbone_ack_i                                             |         |         |    3.877|         |
-----------------------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |         |         |    4.973|         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |         |    4.203|         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |    4.060|         |
+sopc/clk_tmp                                             |         |         |    4.059|         |
+sopc/wishbone_ack_i                                      |         |         |    6.667|         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/wishbone_ack_i
 --------------------------------------------------------+---------+---------+---------+---------+
@@ -2711,35 +2712,35 @@ sopc/clk_tmp                                            |         |         |   
 sopc/openmips0/mem0/_n0583                              |         |         |    1.662|         |
 sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o|         |         |   16.247|         |
 sopc/openmips0/wishbone_bus0/tlb_ce_G                   |         |         |    5.284|         |
-sopc/wishbone_ack_i                                     |         |         |    7.460|         |
+sopc/wishbone_ack_i                                     |         |         |    7.440|         |
 --------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sw_dip<31>
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-clk                                                             |         |         |    4.697|         |
-sopc/bus_top0/bus0/_n0085                                       |         |         |    2.453|         |
-sopc/bus_top0/flash0/flash_driver0/state[3]_PWR_95_o_Select_14_o|         |         |   16.473|         |
-sopc/bus_top0/uart0/u0/ack_G                                    |         |         |   15.777|         |
-sopc/clk_tmp                                                    |         |         |   32.071|         |
-sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o        |         |         |   23.594|         |
-sopc/openmips0/wishbone_bus0/tlb_ce_G                           |         |         |    9.408|         |
-sopc/wishbone_ack_i                                             |         |         |   17.266|         |
-----------------------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |         |         |   16.521|         |
+sopc/bus_top0/bus0/_n0085                                |         |         |    2.453|         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |         |   15.751|         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |   15.608|         |
+sopc/clk_tmp                                             |         |         |   32.071|         |
+sopc/openmips0/wishbone_bus0/if_ack_if_cancel_AND_1354_o |         |         |   23.594|         |
+sopc/openmips0/wishbone_bus0/tlb_ce_G                    |         |         |    9.388|         |
+sopc/wishbone_ack_i                                      |         |         |   18.215|         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 45.00 secs
-Total CPU time to Xst completion: 45.37 secs
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 64.16 secs
  
 --> 
 
-Total memory usage is 351916 kilobytes
+Total memory usage is 345516 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  735 (   0 filtered)
+Number of warnings :  732 (   0 filtered)
 Number of infos    :   34 (   0 filtered)
 

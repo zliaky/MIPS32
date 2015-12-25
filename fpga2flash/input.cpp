@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 {
 	ifstream fin;
 	ofstream fout;
-	fin.open("kernel"); 
+	fin.open("ucore-kernel-initrd"); 
 	fout.open("input.v");
 
 	int n;
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 		fin >> hex >> n;
 		fout << "32'h" << dec2hex(count, 8) << ": begin ";
 		fout << "data_i <= 16'h";
-		fout << hex << setfill('0') << setw(4) << n;
+		fout << hex << setfill('0') << setw(4) << (n % 256 * 256 + n / 256);
 		fout << "; addr_i <= pc[`FlashAddrBusWord]; pc <= pc + 1'b1; end" << endl;
 		count++;
 	}
