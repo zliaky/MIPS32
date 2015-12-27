@@ -53,20 +53,22 @@ module fpga2flash(
 			pc <= 32'b0;
 		end else if (enable_write == 1'b1) begin		//write
 			if (write_finish == 1'b1) begin
-				case (pc)
-					`include "input.v"
-					default: pc <= pc;
-				endcase
+				addr_i <= pc[`FlashAddrBusWord];
+				data_i <= 16'h457f;
+				// case (pc)
+				// 	`include "input.v"
+				// 	default: pc <= pc;
+				// endcase
 			end
 		end else if (enable_read == 1'b1) begin
 			addr_i <= sw_dip[`FlashAddrBusWord];
 		end else if (enable_erase == 1'b1) begin
 			if (erase_finish == 1'b1) begin
 				addr_i <= pc[`FlashAddrBusWord];
-				if (pc[20:0] == {21{1'b1}}) begin
-				end
-				else
-					pc <= pc + 1'b1;
+				// if (pc[20:0] == {21{1'b1}}) begin
+				// end
+				// else
+					// pc <= pc + 1'b1;
 			end
 		end
 	end

@@ -61,7 +61,7 @@ module tlb(
 			excepttype_is_tlbs <= `False_v;						//默认没有发生写未在TLB中映射的内存地址异常
 			if (tlb_ce == `ChipEnable) begin
 				if (bus_addr_i[31:30] == 2'b10) begin				//虚拟地址在[0x80000000, 0xbfffffff]范围内，不进行地址映射
-					tlb_addr <= {2'b00, bus_addr_i[29:0]};
+					tlb_addr <= {3'b000, bus_addr_i[28:0]};
 				end else begin
 					tlb_addr <= bus_addr_i;
 

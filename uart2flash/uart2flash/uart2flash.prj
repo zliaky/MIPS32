@@ -1,0 +1,6 @@
+verilog work "../uart_driver.v"
+verilog work "../flash_driver.v"
+verilog work "../uart.v"
+verilog work "../flash.v"
+verilog work "../digseg_driver.v"
+verilog work "../uart2flash.v"

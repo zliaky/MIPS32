@@ -64,8 +64,13 @@ module openmips_min_sopc(
 	wire [7:0] state_o;
 	wire [3:0] TxD_state;
 	wire tick;
+	reg break_flag;
 
 	always @ (*) begin
+		break_flag <= `False_v;
+		if (select[6] == 1'b1) begin
+			break_flag <= `True_v;
+		end
 		if (select[31] == 1'b1) begin
 			clk_tmp <= clk_key;
 			if (select[7] == 1'b1) begin
@@ -87,7 +92,11 @@ module openmips_min_sopc(
 			end else if (select[15] == 1'b1) begin
 				data_o <= {31'b0, tick};
 			end else begin
-				data_o <= output_data;
+				if (select[16] == 1'b1) begin
+					data_o <= {16'b0, output_data[15:0]};
+				end else begin
+					data_o <= {16'b0, output_data[31:16]};
+				end
 			end
 		end else begin
 			clk_tmp <= clk_4;
@@ -109,7 +118,8 @@ module openmips_min_sopc(
 
 		.timer_int_o(timer_int),				//时钟中断输出
 		.select(select),
-		.data_o(output_data)
+		.data_o(output_data),
+		.break_flag(break_flag)
 	);
 
 	//例化总线部分

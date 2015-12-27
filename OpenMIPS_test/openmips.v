@@ -16,7 +16,8 @@ module openmips(
 	output		wire					timer_int_o,
 
 	input		wire[31:0]				select,
-	output		wire[31:0]				data_o
+	output		wire[31:0]				data_o,
+	input		wire 					break_flag
 	);
 
 	//连接IF/ID模块与译码阶段ID模块的变量
@@ -198,9 +199,7 @@ module openmips(
 	reg[31:0] data_output;
 	assign data_o = data_output;
 	always @ (*) begin
-		if (select[16] == 1'b1) begin
-			data_output <= 32'h12345678;
-		end else if (select[17] == 1'b1) begin
+		if (select[17] == 1'b1) begin
 			data_output <= {31'b0, id_branch_flag_o};
 		end else if (select[18] == 1'b1) begin
 			data_output <= pc;
@@ -222,6 +221,12 @@ module openmips(
 			data_output <= next_pc;
 		end else if (select[27] == 1'b1) begin
 			data_output <= latch_pc;
+		end else if (select[28] == 1'b1) begin
+			data_output <= {31'b0, tlb_ce_i};
+		end else if (select[29] == 1'b1) begin
+			data_output <= id_reg1_o;
+		end else if (select[30] == 1'b1) begin
+			data_output <= id_reg2_o;
 		end else begin
 			data_output <= regfile_data_o;
 		end
@@ -239,7 +244,8 @@ module openmips(
 		.pc(pc),
 		.ce(rom_ce),
 		.next_pc(next_pc),
-		.latch_pc(latch_pc)
+		.latch_pc(latch_pc),
+		.break_flag(break_flag)
 	);
 
 	//IF/ID模块例化

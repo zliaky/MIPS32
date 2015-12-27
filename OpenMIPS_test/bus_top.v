@@ -52,8 +52,8 @@ module bus_top(
 	wire[`WB_AddrBus]	s5_addr_i;
 	wire				s5_we_i;
 	wire				s5_select_i;
-	reg[`WB_DataBus]	s5_data_o = 0;
-	reg					s5_ack_o = 0;
+	reg[`WB_DataBus]	s5_data_o = 32'h00000003;
+	reg					s5_ack_o = 1;
 
 	//slave 7 interface - PS2
 	wire[`WB_DataBus]	s7_data_i;
@@ -100,6 +100,7 @@ module bus_top(
 
 	bus bus0(
 		.clk(clk),
+		.rst(rst),
 		.m_data_i(wishbone_data_i),
 		.m_addr_i(wishbone_addr_i),
 		.m_we_i(wishbone_we_i),

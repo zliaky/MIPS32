@@ -61,7 +61,7 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	openmips_min_sopc_tb
 
-} {} {}} E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v
+} {} {}} E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v {1 {vlog -work work -vopt {E:\course\GitRepository\MIPS32\cpu\wishbone_bus.v}
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module wishbone_bus
 
@@ -75,19 +75,19 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	cp0_reg
 
-} {} {}} E:/course/GitRepository/MIPS32/cpu/hilo_reg.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/hilo_reg.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module hilo_reg
-
-Top level modules:
-	hilo_reg
-
 } {} {}} E:/course/GitRepository/MIPS32/cpu/id_ex.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/id_ex.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module id_ex
 
 Top level modules:
 	id_ex
+
+} {} {}} E:/course/GitRepository/MIPS32/cpu/hilo_reg.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/hilo_reg.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module hilo_reg
+
+Top level modules:
+	hilo_reg
 
 } {} {}} E:/course/GitRepository/MIPS32/cpu/data_ram.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/data_ram.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -96,19 +96,19 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	data_ram
 
-} {} {}} E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
--- Compiling module openmips_min_sopc
-
-Top level modules:
-	openmips_min_sopc
-
 } {} {}} E:/course/GitRepository/MIPS32/cpu/tlb.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/tlb.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module tlb
 
 Top level modules:
 	tlb
+
+} {} {}} E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module openmips_min_sopc
+
+Top level modules:
+	openmips_min_sopc
 
 } {} {}} E:/course/GitRepository/MIPS32/cpu/if_id.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/if_id.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
@@ -124,14 +124,14 @@ Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 Top level modules:
 	ctrl
 
-} {} {}} E:/course/GitRepository/MIPS32/cpu/defines.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/defines.v
-Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-
 } {} {}} E:/course/GitRepository/MIPS32/cpu/regfile.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/regfile.v
 Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 -- Compiling module regfile
 
 Top level modules:
 	regfile
+
+} {} {}} E:/course/GitRepository/MIPS32/cpu/defines.v {1 {vlog -work work -vopt E:/course/GitRepository/MIPS32/cpu/defines.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 
 } {} {}}

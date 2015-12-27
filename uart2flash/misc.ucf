@@ -1,0 +1,3 @@
+NET "clk" LOC = U26;
+NET "rst" LOC = T1;
+NET "clk_key" LOC = T3;

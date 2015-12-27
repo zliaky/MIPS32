@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: fpga2ram.prj
 
@@ -141,7 +141,7 @@ INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\fpga2ram\fpga2ram.v" line 42: Ou
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  96 D-type flip-flop(s).
-	inferred  30 Multiplexer(s).
+	inferred  15 Multiplexer(s).
 Unit <fpga2ram> synthesized.
 
 Synthesizing Unit <ram>.
@@ -252,10 +252,10 @@ Macro Statistics
  20-bit register                                       : 2
  3-bit register                                        : 2
  32-bit register                                       : 7
-# Multiplexers                                         : 88
+# Multiplexers                                         : 73
  1-bit 2-to-1 multiplexer                              : 51
  3-bit 2-to-1 multiplexer                              : 6
- 32-bit 2-to-1 multiplexer                             : 31
+ 32-bit 2-to-1 multiplexer                             : 16
 # Tristates                                            : 64
  1-bit tristate buffer                                 : 64
 
@@ -290,10 +290,10 @@ Macro Statistics
  32-bit up counter                                     : 1
 # Registers                                            : 246
  Flip-Flops                                            : 246
-# Multiplexers                                         : 88
+# Multiplexers                                         : 73
  1-bit 2-to-1 multiplexer                              : 51
  3-bit 2-to-1 multiplexer                              : 6
- 32-bit 2-to-1 multiplexer                             : 31
+ 32-bit 2-to-1 multiplexer                             : 16
 
 =========================================================================
 
@@ -312,22 +312,22 @@ WARNING:Xst:2677 - Node <bus_addr_i_28> of sequential type is unconnected in blo
 WARNING:Xst:2677 - Node <bus_addr_i_29> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <bus_addr_i_30> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <bus_addr_i_31> of sequential type is unconnected in block <fpga2ram>.
-WARNING:Xst:1710 - FF/Latch <bus_data_i_22> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_data_i_23> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <bus_data_i_19> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_data_i_20> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_data_i_24> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_data_i_25> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_data_i_30> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <bus_data_i_7> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <bus_data_i_15> 
+INFO:Xst:2261 - The FF/Latch <bus_data_i_11> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <bus_data_i_12> 
 WARNING:Xst:1293 - FF/Latch <ram0/ram_driver0/extra_data_latch_30> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_25> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_24> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_23> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_22> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_20> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/extra_data_latch_19> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_30> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_25> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_24> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_23> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_22> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_20> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ram0/ram_driver0/base_data_latch_19> has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <ram0/ram_driver0/extra_data_out_31> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <ram0/ram_driver0/extra_data_out_30> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <ram0/ram_driver0/extra_data_out_29> of sequential type is unconnected in block <fpga2ram>.
@@ -362,8 +362,8 @@ WARNING:Xst:2677 - Node <ram0/ram_driver0/base_data_out_17> of sequential type i
 WARNING:Xst:2677 - Node <ram0/ram_driver0/base_data_out_16> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <ram0/ram_driver0/extra_ack> of sequential type is unconnected in block <fpga2ram>.
 WARNING:Xst:2677 - Node <ram0/ram_driver0/base_ack> of sequential type is unconnected in block <fpga2ram>.
-INFO:Xst:2261 - The FF/Latch <ram0/ram_driver0/base_data_latch_15> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <ram0/ram_driver0/base_data_latch_7> 
-INFO:Xst:2261 - The FF/Latch <ram0/ram_driver0/extra_data_latch_15> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <ram0/ram_driver0/extra_data_latch_7> 
+INFO:Xst:2261 - The FF/Latch <ram0/ram_driver0/base_data_latch_12> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <ram0/ram_driver0/base_data_latch_11> 
+INFO:Xst:2261 - The FF/Latch <ram0/ram_driver0/extra_data_latch_12> in Unit <fpga2ram> is equivalent to the following FF/Latch, which will be removed : <ram0/ram_driver0/extra_data_latch_11> 
 
 Optimizing unit <fpga2ram> ...
 WARNING:Xst:1710 - FF/Latch <ram0/ram_driver0/baseram_addr_19> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
@@ -391,17 +391,23 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_11> (without ini
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_10> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_9> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_8> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_7> (without init value) has a constant value of 0 in block <fpga2ram>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block fpga2ram, actual ratio is 0.
-FlipFlop pc_0 has been replicated 1 time(s)
-FlipFlop pc_1 has been replicated 2 time(s)
-FlipFlop pc_2 has been replicated 2 time(s)
-FlipFlop pc_3 has been replicated 2 time(s)
+FlipFlop bus_addr_i_19 has been replicated 3 time(s)
+FlipFlop pc_2 has been replicated 1 time(s)
+FlipFlop pc_3 has been replicated 1 time(s)
 FlipFlop pc_4 has been replicated 1 time(s)
 FlipFlop pc_5 has been replicated 1 time(s)
 FlipFlop pc_6 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/base_state_0 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/base_state_1 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/base_state_2 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/extra_state_0 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/extra_state_1 has been replicated 1 time(s)
+FlipFlop ram0/ram_driver0/extra_state_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -409,8 +415,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 199
- Flip-Flops                                            : 199
+# Registers                                            : 202
+ Flip-Flops                                            : 202
 
 =========================================================================
 
@@ -433,23 +439,23 @@ Top Level Output File Name         : fpga2ram.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 166
+# BELS                             : 210
 #      GND                         : 1
-#      INV                         : 4
-#      LUT1                        : 7
+#      INV                         : 6
+#      LUT1                        : 6
 #      LUT2                        : 16
-#      LUT3                        : 30
-#      LUT4                        : 21
-#      LUT5                        : 21
-#      LUT6                        : 43
-#      MUXCY                       : 7
-#      MUXF7                       : 7
+#      LUT3                        : 25
+#      LUT4                        : 13
+#      LUT5                        : 2
+#      LUT6                        : 123
+#      MUXCY                       : 6
+#      MUXF7                       : 4
 #      VCC                         : 1
-#      XORCY                       : 8
-# FlipFlops/Latches                : 199
-#      FD                          : 11
-#      FDE                         : 181
-#      FDRE                        : 7
+#      XORCY                       : 7
+# FlipFlops/Latches                : 202
+#      FD                          : 1
+#      FDE                         : 190
+#      FDRE                        : 11
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 148
@@ -465,16 +471,16 @@ Selected Device : 6slx100fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             167  out of  126576     0%  
- Number of Slice LUTs:                  142  out of  63288     0%  
-    Number used as Logic:               142  out of  63288     0%  
+ Number of Slice Registers:             170  out of  126576     0%  
+ Number of Slice LUTs:                  191  out of  63288     0%  
+    Number used as Logic:               191  out of  63288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    233
-   Number with an unused Flip Flop:      66  out of    233    28%  
-   Number with an unused LUT:            91  out of    233    39%  
-   Number of fully used LUT-FF pairs:    76  out of    233    32%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    196
+   Number with an unused Flip Flop:      26  out of    196    13%  
+   Number with an unused LUT:             5  out of    196     2%  
+   Number of fully used LUT-FF pairs:   165  out of    196    84%  
+   Number of unique control sets:        11
 
 IO Utilization: 
  Number of IOs:                         160
@@ -505,7 +511,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 199   |
+clk                                | BUFGP                  | 202   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -516,9 +522,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.592ns (Maximum Frequency: 217.783MHz)
-   Minimum input arrival time before clock: 6.465ns
-   Maximum output required time after clock: 6.068ns
+   Minimum period: 3.997ns (Maximum Frequency: 250.188MHz)
+   Minimum input arrival time before clock: 6.084ns
+   Maximum output required time after clock: 5.976ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -527,67 +533,65 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.592ns (frequency: 217.783MHz)
-  Total number of paths / destination ports: 1526 / 343
+  Clock period: 3.997ns (frequency: 250.188MHz)
+  Total number of paths / destination ports: 1306 / 355
 -------------------------------------------------------------------------
-Delay:               4.592ns (Levels of Logic = 2)
-  Source:            pc_4_1 (FF)
-  Destination:       bus_data_i_0 (FF)
+Delay:               3.997ns (Levels of Logic = 1)
+  Source:            pc_6 (FF)
+  Destination:       pc_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: pc_4_1 to bus_data_i_0
+  Data Path: pc_6 to pc_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.156  pc_4_1 (pc_4_1)
-     LUT6:I1->O            1   0.254   0.682  _n0783_inv1 (_n0783_inv1)
-     LUT3:I2->O           26   0.254   1.419  _n0783_inv2 (_n0783_inv)
-     FDE:CE                    0.302          bus_data_i_0
+     FDRE:C->Q            19   0.525   1.691  pc_6 (pc_6)
+     LUT6:I1->O           12   0.254   1.068  _n053711 (_n0537)
+     FDRE:R                    0.459          pc_1
     ----------------------------------------
-    Total                      4.592ns (1.335ns logic, 3.257ns route)
-                                       (29.1% logic, 70.9% route)
+    Total                      3.997ns (1.238ns logic, 2.759ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 301 / 226
+  Total number of paths / destination ports: 266 / 236
 -------------------------------------------------------------------------
-Offset:              6.465ns (Levels of Logic = 3)
+Offset:              6.084ns (Levels of Logic = 2)
   Source:            sw_dip<31> (PAD)
-  Destination:       pc_3 (FF)
+  Destination:       bus_data_i_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: sw_dip<31> to pc_3
+  Data Path: sw_dip<31> to bus_data_i_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            55   1.328   2.290  sw_dip_31_IBUF (sw_dip_31_IBUF)
-     LUT5:I0->O            2   0.254   0.726  _n0641101 (_n0641_bdd1)
-     LUT6:I5->O           15   0.254   1.154  _n064111 (_n0641)
-     FDRE:R                    0.459          pc_3
+     IBUF:I->O           138   1.328   2.781  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     LUT6:I0->O           26   0.254   1.419  _n0614_inv11 (_n0614_inv)
+     FDE:CE                    0.302          bus_data_i_0
     ----------------------------------------
-    Total                      6.465ns (2.295ns logic, 4.170ns route)
-                                       (35.5% logic, 64.5% route)
+    Total                      6.084ns (1.884ns logic, 4.200ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 211 / 125
 -------------------------------------------------------------------------
-Offset:              6.068ns (Levels of Logic = 2)
-  Source:            bus_addr_i_19 (FF)
-  Destination:       led<15> (PAD)
+Offset:              5.976ns (Levels of Logic = 2)
+  Source:            ram0/ram_driver0/baseram_oe (FF)
+  Destination:       baseram_data<31> (PAD)
   Source Clock:      clk rising
 
-  Data Path: bus_addr_i_19 to led<15>
+  Data Path: ram0/ram_driver0/baseram_oe to baseram_data<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             30   0.525   1.715  bus_addr_i_19 (bus_addr_i_19)
-     LUT3:I0->O            1   0.235   0.681  ram0/ram_driver0/Mmux_data_out11 (led_0_OBUF)
-     OBUF:I->O                 2.912          led_0_OBUF (led<0>)
+     FDE:C->Q              3   0.525   0.765  ram0/ram_driver0/baseram_oe (ram0/ram_driver0/baseram_oe)
+     INV:I->O             32   0.255   1.519  ram0/ram_driver0/baseram_oe_inv1_INV_0 (ram0/ram_driver0/baseram_oe_inv)
+     OBUFT:T->O                2.912          baseram_data_31_OBUFT (baseram_data<31>)
     ----------------------------------------
-    Total                      6.068ns (3.672ns logic, 2.396ns route)
-                                       (60.5% logic, 39.5% route)
+    Total                      5.976ns (3.692ns logic, 2.284ns route)
+                                       (61.8% logic, 38.2% route)
 
 =========================================================================
 
@@ -599,20 +603,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.592|         |         |         |
+clk            |    3.997|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.40 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.00 secs
  
 --> 
 
-Total memory usage is 262956 kilobytes
+Total memory usage is 261484 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  101 (   0 filtered)
+Number of warnings :  102 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

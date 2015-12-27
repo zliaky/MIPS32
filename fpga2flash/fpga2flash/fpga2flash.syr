@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: fpga2flash.prj
 
@@ -114,7 +114,6 @@ Parsing module <digseg_driver>.
 Analyzing Verilog file "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" into library work
 Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/defines.v" included at line 1.
 Parsing module <fpga2flash>.
-Parsing verilog file "E:\course\GitRepository\MIPS32\fpga2flash\/input.v" included at line 57.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -126,7 +125,7 @@ Elaborating module <digseg_driver>.
 
 Elaborating module <flash_driver>.
 WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\flash_driver.v" Line 65: Assignment to busy ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" Line 87: Assignment to read_finish ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" Line 89: Assignment to read_finish ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -135,15 +134,11 @@ WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash
 Synthesizing Unit <fpga2flash>.
     Related source file is "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v".
 WARNING:Xst:647 - Input <sw_dip<28:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" line 74: Output port <read_finish> of the instance <flash0> is unconnected or connected to loadless signal.
-    Found 16-bit register for signal <data_i>.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\fpga2flash\fpga2flash.v" line 76: Output port <read_finish> of the instance <flash0> is unconnected or connected to loadless signal.
     Found 22-bit register for signal <addr_i>.
+    Found 16-bit register for signal <data_i>.
     Found 32-bit register for signal <pc>.
-    Found 32-bit adder for signal <pc[31]_GND_1_o_add_50_OUT> created at line 69.
-    Found 16x16-bit Read Only RAM for signal <_n0124>
     Summary:
-	inferred   1 RAM(s).
-	inferred   1 Adder/Subtractor(s).
 	inferred  70 D-type flip-flop(s).
 	inferred   5 Multiplexer(s).
 Unit <fpga2flash> synthesized.
@@ -196,12 +191,10 @@ Unit <flash_driver> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
- 16x16-bit single-port Read Only RAM                   : 1
+# RAMs                                                 : 2
  16x7-bit single-port Read Only RAM                    : 2
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 1
  3-bit adder                                           : 1
- 32-bit adder                                          : 1
 # Registers                                            : 13
  1-bit register                                        : 5
  16-bit register                                       : 3
@@ -224,6 +217,70 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <data_in_latch_15> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_14> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_13> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_12> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_11> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_10> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_9> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_8> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_7> (without init value) has a constant value of 0 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_6> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_5> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_4> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_3> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_2> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_1> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_0> (without init value) has a constant value of 1 in block <flash0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_5> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_4> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_3> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_2> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_1> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_0> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_21> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_20> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_19> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_6> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_7> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_8> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_9> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_10> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_11> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_12> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_13> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_14> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_15> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_0> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_1> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_2> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_3> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_4> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_5> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_6> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_7> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_8> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_9> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_10> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_11> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_12> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_13> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_14> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_15> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_16> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_17> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_18> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pc_22> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_23> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_24> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_25> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_26> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_27> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_28> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_29> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_30> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_31> of sequential type is unconnected in block <fpga2flash>.
 
 Synthesizing (advanced) Unit <digseg_driver>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -242,34 +299,27 @@ Unit <digseg_driver> synthesized (advanced).
 Synthesizing (advanced) Unit <flash_driver>.
 The following registers are absorbed into counter <read_wait_cnt>: 1 register on signal <read_wait_cnt>.
 Unit <flash_driver> synthesized (advanced).
-
-Synthesizing (advanced) Unit <fpga2flash>.
-The following registers are absorbed into counter <pc>: 1 register on signal <pc>.
-INFO:Xst:3231 - The small RAM <Mram__n0124> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 16-word x 16-bit                    |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <pc<3:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <fpga2flash> synthesized (advanced).
+WARNING:Xst:2677 - Node <pc_22> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_23> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_24> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_25> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_26> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_27> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_28> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_29> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_30> of sequential type is unconnected in block <fpga2flash>.
+WARNING:Xst:2677 - Node <pc_31> of sequential type is unconnected in block <fpga2flash>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
- 16x16-bit single-port distributed Read Only RAM       : 1
+# RAMs                                                 : 2
  16x7-bit single-port distributed Read Only RAM        : 2
-# Counters                                             : 2
+# Counters                                             : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 101
- Flip-Flops                                            : 101
+# Registers                                            : 123
+ Flip-Flops                                            : 123
 # Multiplexers                                         : 24
  1-bit 2-to-1 multiplexer                              : 12
  16-bit 2-to-1 multiplexer                             : 4
@@ -281,29 +331,66 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <data_i_3> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <data_i_11> 
-INFO:Xst:2261 - The FF/Latch <data_i_7> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <data_i_15> 
+WARNING:Xst:1710 - FF/Latch <pc_19> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_20> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_21> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_0> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_1> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_2> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_3> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_4> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_5> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_6> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_7> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_8> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_9> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_10> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_11> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_12> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_13> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_14> (without init value) has a constant value of 1 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_i_15> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_0> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_1> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_2> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_3> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_4> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_5> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_6> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_7> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_8> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_9> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_10> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_11> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_12> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_13> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_14> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_15> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_16> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_17> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_18> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_in_latch_0> in Unit <flash_driver> is equivalent to the following 9 FFs/Latches, which will be removed : <data_in_latch_1> <data_in_latch_2> <data_in_latch_3> <data_in_latch_4> <data_in_latch_5> <data_in_latch_6> <data_in_latch_8> <data_in_latch_10> <data_in_latch_14> 
+INFO:Xst:2261 - The FF/Latch <data_in_latch_7> in Unit <flash_driver> is equivalent to the following 5 FFs/Latches, which will be removed : <data_in_latch_9> <data_in_latch_11> <data_in_latch_12> <data_in_latch_13> <data_in_latch_15> 
+WARNING:Xst:1710 - FF/Latch <data_in_latch_0> (without init value) has a constant value of 1 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_7> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_to_write_9> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_11> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_12> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_13> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_15> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_to_write_0> in Unit <flash_driver> is equivalent to the following 3 FFs/Latches, which will be removed : <data_to_write_1> <data_to_write_2> <data_to_write_3> 
+INFO:Xst:2261 - The FF/Latch <data_to_write_8> in Unit <flash_driver> is equivalent to the following 2 FFs/Latches, which will be removed : <data_to_write_10> <data_to_write_14> 
 WARNING:Xst:2677 - Node <flash0/read_finish> of sequential type is unconnected in block <fpga2flash>.
-INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_11> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_in_latch_3> 
-INFO:Xst:2261 - The FF/Latch <flash0/data_in_latch_15> in Unit <fpga2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/data_in_latch_7> 
 
 Optimizing unit <fpga2flash> ...
-WARNING:Xst:1710 - FF/Latch <pc_21> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_22> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_23> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_24> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_25> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_26> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_27> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_28> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_29> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_30> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pc_31> (without init value) has a constant value of 0 in block <fpga2flash>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block fpga2flash, actual ratio is 0.
-FlipFlop flash0/state_1 has been replicated 1 time(s)
+FlipFlop flash0/state_0 has been replicated 1 time(s)
+FlipFlop flash0/state_1 has been replicated 2 time(s)
+FlipFlop flash0/state_2 has been replicated 2 time(s)
+FlipFlop flash0/state_3 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -311,8 +398,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 121
- Flip-Flops                                            : 121
+# Registers                                            : 68
+ Flip-Flops                                            : 68
 
 =========================================================================
 
@@ -335,23 +422,19 @@ Top Level Output File Name         : fpga2flash.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 236
+# BELS                             : 112
 #      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 20
-#      LUT2                        : 3
-#      LUT3                        : 29
-#      LUT4                        : 39
-#      LUT5                        : 37
-#      LUT6                        : 57
-#      MUXCY                       : 20
-#      MUXF7                       : 5
+#      INV                         : 2
+#      LUT2                        : 23
+#      LUT3                        : 27
+#      LUT4                        : 14
+#      LUT5                        : 28
+#      LUT6                        : 14
+#      MUXF7                       : 2
 #      VCC                         : 1
-#      XORCY                       : 21
-# FlipFlops/Latches                : 121
-#      FD                          : 9
-#      FDE                         : 91
-#      FDRE                        : 21
+# FlipFlops/Latches                : 68
+#      FD                          : 15
+#      FDE                         : 53
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 103
@@ -366,16 +449,16 @@ Selected Device : 6slx100fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             121  out of  126576     0%  
- Number of Slice LUTs:                  188  out of  63288     0%  
-    Number used as Logic:               188  out of  63288     0%  
+ Number of Slice Registers:              68  out of  126576     0%  
+ Number of Slice LUTs:                  108  out of  63288     0%  
+    Number used as Logic:               108  out of  63288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    190
-   Number with an unused Flip Flop:      69  out of    190    36%  
-   Number with an unused LUT:             2  out of    190     1%  
-   Number of fully used LUT-FF pairs:   119  out of    190    62%  
-   Number of unique control sets:         8
+ Number of LUT Flip Flop pairs used:    111
+   Number with an unused Flip Flop:      43  out of    111    38%  
+   Number with an unused LUT:             3  out of    111     2%  
+   Number of fully used LUT-FF pairs:    65  out of    111    58%  
+   Number of unique control sets:         5
 
 IO Utilization: 
  Number of IOs:                         111
@@ -405,7 +488,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 121   |
+clk                                | BUFGP                  | 68    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -416,9 +499,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.837ns (Maximum Frequency: 206.740MHz)
-   Minimum input arrival time before clock: 7.743ns
-   Maximum output required time after clock: 5.676ns
+   Minimum period: 3.244ns (Maximum Frequency: 308.261MHz)
+   Minimum input arrival time before clock: 6.204ns
+   Maximum output required time after clock: 5.638ns
    Maximum combinational path delay: 7.275ns
 
 Timing Details:
@@ -427,10 +510,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.837ns (frequency: 206.740MHz)
-  Total number of paths / destination ports: 2293 / 233
+  Clock period: 3.244ns (frequency: 308.261MHz)
+  Total number of paths / destination ports: 325 / 99
 -------------------------------------------------------------------------
-Delay:               4.837ns (Levels of Logic = 2)
+Delay:               3.244ns (Levels of Logic = 1)
   Source:            flash0/write_finish (FF)
   Destination:       addr_i_0 (FF)
   Source Clock:      clk rising
@@ -440,41 +523,39 @@ Delay:               4.837ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.525   1.234  flash0/write_finish (flash0/write_finish)
-     LUT5:I0->O            2   0.254   0.954  _n01573 (_n01573)
-     LUT6:I3->O           22   0.235   1.333  _n0160_inv1_cepot (_n0160_inv1_cepot)
+     FD:C->Q               2   0.525   0.834  flash0/write_finish (flash0/write_finish)
+     LUT6:I4->O           22   0.250   1.333  _n0064_inv1 (_n0064_inv)
      FDE:CE                    0.302          addr_i_0
     ----------------------------------------
-    Total                      4.837ns (1.316ns logic, 3.521ns route)
-                                       (27.2% logic, 72.8% route)
+    Total                      3.244ns (1.077ns logic, 2.167ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 566 / 182
+  Total number of paths / destination ports: 215 / 70
 -------------------------------------------------------------------------
-Offset:              7.743ns (Levels of Logic = 4)
+Offset:              6.204ns (Levels of Logic = 3)
   Source:            sw_dip<31> (PAD)
-  Destination:       data_i_0 (FF)
+  Destination:       flash0/data_to_write_8 (FF)
   Destination Clock: clk rising
 
-  Data Path: sw_dip<31> to data_i_0
+  Data Path: sw_dip<31> to flash0/data_to_write_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            59   1.328   2.119  sw_dip_31_IBUF (sw_dip_31_IBUF)
-     LUT3:I0->O            4   0.235   1.234  _n0145_inv11 (_n0145_inv1)
-     LUT6:I1->O            1   0.254   0.910  _n0145_inv1 (_n0145_inv2)
-     LUT5:I2->O           14   0.235   1.126  _n0145_inv4 (_n0145_inv)
-     FDE:CE                    0.302          data_i_0
+     IBUF:I->O            59   1.328   1.999  sw_dip_31_IBUF (sw_dip_31_IBUF)
+     LUT3:I1->O            3   0.250   1.196  flash0/_n0188_inv51 (flash0/_n0188_inv_bdd4)
+     LUT5:I0->O            6   0.254   0.875  flash0/_n0188_inv21 (flash0/_n0188_inv)
+     FDE:CE                    0.302          flash0/data_to_write_0
     ----------------------------------------
-    Total                      7.743ns (2.354ns logic, 5.389ns route)
-                                       (30.4% logic, 69.6% route)
+    Total                      6.204ns (2.134ns logic, 4.070ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 78 / 40
+  Total number of paths / destination ports: 73 / 40
 -------------------------------------------------------------------------
-Offset:              5.676ns (Levels of Logic = 2)
+Offset:              5.638ns (Levels of Logic = 2)
   Source:            flash0/flash_oe (FF)
   Destination:       flash_data<15> (PAD)
   Source Clock:      clk rising
@@ -483,12 +564,12 @@ Offset:              5.676ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.525   0.803  flash0/flash_oe (flash0/flash_oe)
+     FD:C->Q               3   0.525   0.765  flash0/flash_oe (flash0/flash_oe)
      INV:I->O             16   0.255   1.181  flash0/flash_oe_inv1_INV_0 (flash0/flash_oe_inv)
      IOBUF:T->IO               2.912          flash_data_15_IOBUF (flash_data<15>)
     ----------------------------------------
-    Total                      5.676ns (3.692ns logic, 1.984ns route)
-                                       (65.0% logic, 35.0% route)
+    Total                      5.638ns (3.692ns logic, 1.946ns route)
+                                       (65.5% logic, 34.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -519,20 +600,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.837|         |         |         |
+clk            |    3.244|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.50 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.07 secs
  
 --> 
 
-Total memory usage is 257004 kilobytes
+Total memory usage is 256492 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  123 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

@@ -10,40 +10,40 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 25 18:00:09 2015
+Mapped Date    : Sun Dec 27 15:16:30 2015
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    4
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,539 out of 126,576    2%
-    Number used as Flip Flops:               2,275
+  Number of Slice Registers:                 2,497 out of 126,576    1%
+    Number used as Flip Flops:               2,233
     Number used as Latches:                    263
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      4,751 out of  63,288    7%
-    Number used as logic:                    4,746 out of  63,288    7%
-      Number using O6 output only:           3,450
+  Number of Slice LUTs:                      5,020 out of  63,288    7%
+    Number used as logic:                    5,006 out of  63,288    7%
+      Number using O6 output only:           3,715
       Number using O5 output only:             136
-      Number using O5 and O6:                1,160
+      Number using O5 and O6:                1,155
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  15,616    0%
-    Number used exclusively as route-thrus:      5
-      Number with same-slice register load:      1
+    Number used exclusively as route-thrus:     14
+      Number with same-slice register load:     10
       Number with same-slice carry load:         4
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,809 out of  15,822   11%
+  Number of occupied Slices:                 1,888 out of  15,822   11%
   Nummber of MUXCYs used:                      464 out of  31,644    1%
-  Number of LUT Flip Flop pairs used:        5,163
-    Number with an unused Flip Flop:         3,245 out of   5,163   62%
-    Number with an unused LUT:                 412 out of   5,163    7%
-    Number of fully used LUT-FF pairs:       1,506 out of   5,163   29%
-    Number of unique control sets:              53
+  Number of LUT Flip Flop pairs used:        5,445
+    Number with an unused Flip Flop:         3,570 out of   5,445   65%
+    Number with an unused LUT:                 425 out of   5,445    7%
+    Number of fully used LUT-FF pairs:       1,450 out of   5,445   26%
+    Number of unique control sets:              52
     Number of slice register sites lost
-      to control set restrictions:             190 out of 126,576    1%
+      to control set restrictions:             192 out of 126,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -57,7 +57,7 @@ IO Utilization:
     IOB Flip Flops:                             30
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of     268    0%
+  Number of RAMB16BWERs:                         1 out of     268    1%
   Number of RAMB8BWERs:                          0 out of     536    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
@@ -83,11 +83,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.39
+Average Fanout of Non-Clock Nets:                4.45
 
-Peak Memory Usage:  633 MB
-Total REAL time to MAP completion:  2 mins 17 secs 
-Total CPU time to MAP completion:   2 mins 17 secs 
+Peak Memory Usage:  627 MB
+Total REAL time to MAP completion:  5 mins 31 secs 
+Total CPU time to MAP completion:   2 mins 43 secs 
 
 Table of Contents
 -----------------
@@ -113,7 +113,7 @@ Section 2 - Warnings
 WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
    IOB component <sw_dip<31>> is placed at site <L3>. The corresponding BUFG
-   component <sw_dip_31_IBUF_BUFG> is placed at site <BUFGMUX_X3Y16>. There is
+   component <sw_dip_31_IBUF_BUFG> is placed at site <BUFGMUX_X2Y4>. There is
    only a select set of IOBs that can use the fast path to the Clocker buffer,
    and they are not being used. You may want to analyze why this problem exists
    and correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
@@ -123,28 +123,21 @@ WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
    lead to very poor timing results. It is recommended that this error condition
    be corrected in the design.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
+   sopc/openmips0/wishbone_bus0/tlb_ce_G is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    sopc/bus_top0/uart0/u0/ack_G is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sopc/openmips0/wishbone_bus0/tlb_ce_G is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
+   sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network sw_dip<30>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 4 more times for the following
-   (max. 5 shown):
-   sw_dip<29>_IBUF,
-   sw_dip<28>_IBUF,
-   sw_dip<6>_IBUF,
-   sw_dip<5>_IBUF
-   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:243 - Logical network sw_dip<5>_IBUF has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

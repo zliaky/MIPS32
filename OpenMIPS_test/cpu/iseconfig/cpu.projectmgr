@@ -7,8 +7,10 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/cpu_top C:|Users|Administrator-|Desktop|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top</ClosedNode>
          <ClosedNode>/cpu_top C:|Users|Administrator-|Desktop|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/openmips0 - openmips</ClosedNode>
+         <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top</ClosedNode>
          <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/digseg0 - digseg</ClosedNode>
          <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/flash0 - flash</ClosedNode>
          <ClosedNode>/cpu_top E:|course|GitRepository|MIPS32|OpenMIPS_test|cpu_top.v/sopc - openmips_min_sopc/bus_top0 - bus_top/ram0 - ram</ClosedNode>

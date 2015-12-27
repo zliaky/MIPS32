@@ -617,3 +617,341 @@ map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -r
 par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
 bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.xst" -ofn "E:/course/GitRepository/MIPS32/OpenMIPS_test/cpu/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/led.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/key.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/flash.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/com.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/segdisp.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/ram.ucf -uc E:/course/GitRepository/MIPS32/OpenMIPS_test/misc.ucf -p xc6slx100-fgg676-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 

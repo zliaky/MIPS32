@@ -27,34 +27,34 @@ module ctrl(
 			stall <= 6'b000000;
 			case (excepttype_i)
 				32'h000000f: begin				//interrupt
-					new_pc <= 32'h00000020;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000001: begin				//TLB Modified
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000002: begin				//TLBL
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000003: begin				//TLBS
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000004: begin				//ADEL
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000005: begin				//ADES
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000008: begin				//Syscall
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h000000a: begin				//RI
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h000000b: begin				//Co-Processor Unavailable
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h0000017: begin				//Watch
-					new_pc <= 32'h00000040;
+					new_pc <= 32'h80000180;
 				end
 				32'h000000e: begin				//eret
 					new_pc <= cp0_epc_i;

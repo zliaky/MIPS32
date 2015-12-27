@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+xst -intstyle ise -ifn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.xst" -ofn "E:/course/GitRepository/MIPS32/uart2flash/uart2flash/uart2flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx100-fgg676-2 uart2flash.ngc uart2flash.ngd  
+map -intstyle ise -p xc6slx100-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart2flash_map.ncd uart2flash.ngd uart2flash.pcf 
+par -w -intstyle ise -ol high -mt off uart2flash_map.ncd uart2flash.ncd uart2flash.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart2flash.twx uart2flash.ncd -o uart2flash.twr uart2flash.pcf 
+bitgen -intstyle ise -f uart2flash.ut uart2flash.ncd 

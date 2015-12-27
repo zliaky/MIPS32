@@ -2,6 +2,7 @@
 
 module bus(
 	input		wire				clk,
+	input		wire				rst,
 	
 	//master interface
 	input 		wire[`WB_DataBus]	m_data_i,
@@ -102,16 +103,19 @@ always @ (posedge clk) begin
 end
 
 always @ (*) begin
-	case(select_latch)
-		16'h0001:	m_data_o <= s0_data_i;
-		16'h0002:	m_data_o <= s1_data_i;
-		16'h0004:	m_data_o <= s2_data_i;
-		16'h0008:	m_data_o <= s3_data_i;
-		16'h0010:	m_data_o <= s4_data_i;
-		16'h0020:	m_data_o <= s5_data_i;
-		16'h0040:	m_data_o <= s6_data_i;
-		16'h0080:	m_data_o <= s7_data_i;
-	endcase
+	if (rst == `RstEnable) begin
+		m_data_o <= 32'h0;
+	end else
+		case(select_latch)
+			16'h0001:	m_data_o <= s0_data_i;
+			16'h0002:	m_data_o <= s1_data_i;
+			16'h0004:	m_data_o <= s2_data_i;
+			16'h0008:	m_data_o <= s3_data_i;
+			16'h0010:	m_data_o <= s4_data_i;
+			16'h0020:	m_data_o <= s5_data_i;
+			16'h0040:	m_data_o <= s6_data_i;
+			16'h0080:	m_data_o <= s7_data_i;
+		endcase
 end
 
 assign s0_data_o = m_data_i;

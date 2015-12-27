@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Fri Dec 25 18:02:24 2015
+// Written by: Map P.28xd on Sun Dec 27 15:21:55 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -37,9 +37,9 @@ COMP "sw_dip<12>" LOCATE = SITE "L1" LEVEL 1;
 COMP "sw_dip<20>" LOCATE = SITE "T4" LEVEL 1;
 COMP "sw_dip<13>" LOCATE = SITE "L2" LEVEL 1;
 COMP "sw_dip<21>" LOCATE = SITE "R4" LEVEL 1;
-COMP "sw_dip<30>" LOCATE = SITE "L4" LEVEL 1;
 COMP "sw_dip<14>" LOCATE = SITE "W5" LEVEL 1;
 COMP "sw_dip<22>" LOCATE = SITE "R3" LEVEL 1;
+COMP "sw_dip<30>" LOCATE = SITE "L4" LEVEL 1;
 COMP "sw_dip<15>" LOCATE = SITE "W3" LEVEL 1;
 COMP "sw_dip<23>" LOCATE = SITE "P5" LEVEL 1;
 COMP "sw_dip<31>" LOCATE = SITE "L3" LEVEL 1;

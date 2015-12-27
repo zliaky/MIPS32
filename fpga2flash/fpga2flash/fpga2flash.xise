@@ -371,7 +371,6 @@
     <!-- project is analyzed based on files automatically identified as       -->
     <!-- include files.                                                       -->
     <file xil_pn:name="../defines.v" xil_pn:type="FILE_VERILOG"/>
-    <file xil_pn:name="../input.v" xil_pn:type="FILE_VERILOG"/>
   </autoManagedFiles>
 
 </project>

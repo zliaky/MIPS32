@@ -1,0 +1,839 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: uart2flash.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "uart2flash.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "uart2flash"
+Output Format                      : NGC
+Target Device                      : xc6slx100-2-fgg676
+
+---- Source Options
+Top Module Name                    : uart2flash
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\uart_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 14.
+Parsing module <uart_driver_transmitter>.
+Parsing module <uart_driver_receiver>.
+Parsing module <ASSERTION_ERROR>.
+Parsing module <BaudTickGen>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\flash_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 1.
+Parsing module <flash_driver>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\uart.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 1.
+Parsing module <uart>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\flash.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 1.
+Parsing module <flash>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\digseg_driver.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 1.
+Parsing module <digseg_driver>.
+Analyzing Verilog file "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" into library work
+Parsing verilog file "E:\course\GitRepository\MIPS32\uart2flash\/defines.v" included at line 1.
+Parsing module <uart2flash>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <uart2flash>.
+
+Elaborating module <digseg_driver>.
+
+Elaborating module <flash>.
+
+Elaborating module <flash_driver>.
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\flash_driver.v" Line 85: Assignment to busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 44: Assignment to flash_data_o ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 47: Assignment to flash_ack_o ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 51: Assignment to state_o ignored, since the identifier is never used
+
+Elaborating module <uart>.
+
+Elaborating module <uart_driver_transmitter(ClkFrequency=50000000,Baud=115200)>.
+
+Elaborating module <BaudTickGen(ClkFrequency=50000000,Baud=115200)>.
+
+Elaborating module <uart_driver_receiver(ClkFrequency=50000000,Baud=115200)>.
+
+Elaborating module <BaudTickGen(ClkFrequency=50000000,Baud=115200,Oversampling=8)>.
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 65: Assignment to state ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 66: Assignment to tick ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 22: Net <flash_data_i[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 26: Net <uart_addr_i[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" Line 27: Net <uart_data_i[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <uart2flash>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v".
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" line 39: Output port <bus_data_o> of the instance <flash0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" line 39: Output port <state_o> of the instance <flash0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" line 39: Output port <bus_ack_o> of the instance <flash0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" line 54: Output port <TxD_state> of the instance <uart0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart2flash.v" line 54: Output port <tick> of the instance <uart0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <flash_data_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <uart_addr_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <uart_data_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <uart2flash> synthesized.
+
+Synthesizing Unit <digseg_driver>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\digseg_driver.v".
+    Found 16x7-bit Read Only RAM for signal <seg_o>
+    Summary:
+	inferred   1 RAM(s).
+Unit <digseg_driver> synthesized.
+
+Synthesizing Unit <flash>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\flash.v".
+WARNING:Xst:647 - Input <bus_addr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_addr_i<31:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_data_i<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <flash> synthesized.
+
+Synthesizing Unit <flash_driver>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\flash_driver.v".
+    Found 1-bit register for signal <flash_we>.
+    Found 16-bit register for signal <data_to_write>.
+    Found 3-bit register for signal <read_wait_cnt>.
+    Found 1-bit register for signal <flash_oe>.
+    Found 22-bit register for signal <addr_latch>.
+    Found 16-bit register for signal <data_in_latch>.
+    Found 4-bit register for signal <state>.
+INFO:Xst:1799 - State 0111 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0101 is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_ce_OR_7_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <read_wait_cnt[2]_GND_4_o_add_20_OUT> created at line 156.
+    Found 1-bit tristate buffer for signal <flash_data<15>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<14>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<13>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<12>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<11>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<10>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<9>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<8>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<7>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<6>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<5>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<4>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<3>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<2>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<1>> created at line 34
+    Found 1-bit tristate buffer for signal <flash_data<0>> created at line 34
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <flash_driver> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart.v".
+WARNING:Xst:647 - Input <bus_addr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_data_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart.v" line 32: Output port <TxD_busy> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart.v" line 36: Output port <RxD_data_ready> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\uart2flash\uart.v" line 36: Output port <RxD_waiting_data> of the instance <u1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <uart> synthesized.
+
+Synthesizing Unit <uart_driver_transmitter>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart_driver.v".
+        ClkFrequency = 50000000
+        Baud = 115200
+    Found 4-bit register for signal <TxD_state>.
+    Found 8-bit register for signal <TxD_shift>.
+WARNING:Xst:737 - Found 1-bit latch for signal <ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator greater for signal <TxD_state[3]_GND_22_o_LessThan_25_o> created at line 87
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <TxD_state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <uart_driver_transmitter> synthesized.
+
+Synthesizing Unit <BaudTickGen_1>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart_driver.v".
+        ClkFrequency = 50000000
+        Baud = 115200
+        Oversampling = 1
+    Found 18-bit register for signal <Acc>.
+    Found 18-bit adder for signal <n0007> created at line 259.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <BaudTickGen_1> synthesized.
+
+Synthesizing Unit <uart_driver_receiver>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart_driver.v".
+        ClkFrequency = 50000000
+        Baud = 115200
+        Oversampling = 8
+    Found 2-bit register for signal <Filter_cnt>.
+    Found 1-bit register for signal <RxD_bit>.
+    Found 3-bit register for signal <OversamplingCnt>.
+    Found 4-bit register for signal <RxD_state>.
+    Found 8-bit register for signal <RxD_data>.
+    Found 2-bit register for signal <RxD_sync>.
+    Found finite state machine <FSM_3> for signal <RxD_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 32                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit subtractor for signal <Filter_cnt[1]_GND_25_o_sub_7_OUT> created at line 150.
+    Found 2-bit adder for signal <Filter_cnt[1]_GND_25_o_add_3_OUT> created at line 148.
+    Found 3-bit adder for signal <OversamplingCnt[2]_GND_25_o_add_19_OUT> created at line 166.
+WARNING:Xst:737 - Found 1-bit latch for signal <ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_driver_receiver> synthesized.
+
+Synthesizing Unit <BaudTickGen_2>.
+    Related source file is "E:\course\GitRepository\MIPS32\uart2flash\uart_driver.v".
+        ClkFrequency = 50000000
+        Baud = 115200
+        Oversampling = 8
+    Found 18-bit register for signal <Acc>.
+    Found 18-bit adder for signal <GND_26_o_BUS_0793_mux_2_OUT> created at line 259.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <BaudTickGen_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 2
+ 2-bit addsub                                          : 1
+ 3-bit adder                                           : 2
+# Registers                                            : 15
+ 1-bit register                                        : 3
+ 16-bit register                                       : 2
+ 18-bit register                                       : 2
+ 2-bit register                                        : 2
+ 22-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 6
+ 16-bit 2-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <addr_latch_21> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_20> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_19> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_18> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_17> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_16> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_15> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_14> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_13> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_12> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_11> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_10> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_9> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_8> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_7> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr_latch_6> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_15> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_14> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_13> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_12> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_11> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_10> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_9> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_8> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_7> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_6> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_5> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_4> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_3> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_2> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_1> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_latch_0> (without init value) has a constant value of 0 in block <flash_driver0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <digseg_driver>.
+INFO:Xst:3231 - The small RAM <Mram_seg_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <data_i>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_o>         |          |
+    -----------------------------------------------------------------------
+Unit <digseg_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <flash_driver>.
+The following registers are absorbed into counter <read_wait_cnt>: 1 register on signal <read_wait_cnt>.
+Unit <flash_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_driver_receiver>.
+The following registers are absorbed into counter <OversamplingCnt>: 1 register on signal <OversamplingCnt>.
+The following registers are absorbed into counter <Filter_cnt>: 1 register on signal <Filter_cnt>.
+Unit <uart_driver_receiver> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 2
+# Adders/Subtractors                                   : 2
+ 18-bit adder                                          : 2
+# Counters                                             : 3
+ 2-bit updown counter                                  : 1
+ 3-bit up counter                                      : 2
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 6
+ 16-bit 2-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <data_in_latch_0> in Unit <flash_driver> is equivalent to the following 15 FFs/Latches, which will be removed : <data_in_latch_1> <data_in_latch_2> <data_in_latch_3> <data_in_latch_4> <data_in_latch_5> <data_in_latch_6> <data_in_latch_7> <data_in_latch_8> <data_in_latch_9> <data_in_latch_10> <data_in_latch_11> <data_in_latch_12> <data_in_latch_13> <data_in_latch_14> <data_in_latch_15> 
+INFO:Xst:2261 - The FF/Latch <addr_latch_6> in Unit <flash_driver> is equivalent to the following 15 FFs/Latches, which will be removed : <addr_latch_7> <addr_latch_8> <addr_latch_9> <addr_latch_10> <addr_latch_11> <addr_latch_12> <addr_latch_13> <addr_latch_14> <addr_latch_15> <addr_latch_16> <addr_latch_17> <addr_latch_18> <addr_latch_19> <addr_latch_20> <addr_latch_21> 
+WARNING:Xst:1710 - FF/Latch <data_in_latch_0> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_latch_6> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <flash0/flash_driver0/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0100  | 0100
+ 0001  | 0001
+ 0011  | 0011
+ 1110  | 1110
+ 0010  | 0010
+ 1100  | 1100
+ 0111  | unreached
+ 0101  | unreached
+ 1000  | 1000
+ 1011  | 1011
+ 1001  | 1001
+ 1101  | 1101
+ 1111  | 1111
+ 1010  | 1010
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart0/u1/FSM_3> on signal <RxD_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+ 1110  | 1110
+ 1111  | 1111
+ 0010  | 0010
+-------------------
+WARNING:Xst:1710 - FF/Latch <data_to_write_8> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_9> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_10> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_11> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_12> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_13> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_14> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_write_15> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <TxD_shift_7> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_6> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_5> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_4> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_3> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_2> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_1> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <TxD_shift_0> has a constant value of 0 in block <uart_driver_transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Acc_0> of sequential type is unconnected in block <BaudTickGen_1>.
+WARNING:Xst:2677 - Node <Acc_0> of sequential type is unconnected in block <BaudTickGen_2>.
+WARNING:Xst:2677 - Node <Acc_1> of sequential type is unconnected in block <BaudTickGen_2>.
+WARNING:Xst:2677 - Node <Acc_2> of sequential type is unconnected in block <BaudTickGen_2>.
+WARNING:Xst:2677 - Node <Acc_3> of sequential type is unconnected in block <BaudTickGen_2>.
+INFO:Xst:2261 - The FF/Latch <data_to_write_0> in Unit <flash_driver> is equivalent to the following 3 FFs/Latches, which will be removed : <data_to_write_1> <data_to_write_2> <data_to_write_3> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    ack in unit <uart_driver_transmitter>
+
+
+Optimizing unit <BaudTickGen_2> ...
+
+Optimizing unit <uart2flash> ...
+
+Optimizing unit <uart_driver_transmitter> ...
+
+Optimizing unit <BaudTickGen_1> ...
+
+Optimizing unit <uart_driver_receiver> ...
+WARNING:Xst:2677 - Node <uart0/u0/ack> of sequential type is unconnected in block <uart2flash>.
+WARNING:Xst:1293 - FF/Latch <uart0/u0/tickgen/Acc_4> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_6> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_7> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_9> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_10> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_11> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_12> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_13> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_14> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_15> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_16> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/tickgen/Acc_17> has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/TxD_state_0> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/TxD_state_1> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/TxD_state_2> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/u0/TxD_state_3> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flash0/flash_driver0/data_to_write_0> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flash0/flash_driver0/data_to_write_7> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flash0/flash_driver0/read_wait_cnt_0> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flash0/flash_driver0/read_wait_cnt_1> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flash0/flash_driver0/read_wait_cnt_2> (without init value) has a constant value of 0 in block <uart2flash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <uart0/u0/tickgen/Acc_8> of sequential type is unconnected in block <uart2flash>.
+WARNING:Xst:2677 - Node <uart0/u0/tickgen/Acc_5> of sequential type is unconnected in block <uart2flash>.
+WARNING:Xst:2677 - Node <uart0/u0/tickgen/Acc_3> of sequential type is unconnected in block <uart2flash>.
+WARNING:Xst:2677 - Node <uart0/u0/tickgen/Acc_2> of sequential type is unconnected in block <uart2flash>.
+WARNING:Xst:2677 - Node <uart0/u0/tickgen/Acc_1> of sequential type is unconnected in block <uart2flash>.
+INFO:Xst:2261 - The FF/Latch <flash0/flash_driver0/data_to_write_5> in Unit <uart2flash> is equivalent to the following FF/Latch, which will be removed : <flash0/flash_driver0/data_to_write_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block uart2flash, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : uart2flash.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 99
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 8
+#      LUT2                        : 1
+#      LUT3                        : 9
+#      LUT4                        : 20
+#      LUT5                        : 11
+#      LUT6                        : 12
+#      MUXCY                       : 13
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 49
+#      FD                          : 19
+#      FDE                         : 6
+#      FDR                         : 16
+#      FDRE                        : 3
+#      FDSE                        : 4
+#      LDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 80
+#      IBUF                        : 2
+#      IOBUF                       : 1
+#      OBUF                        : 62
+#      OBUFT                       : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100fgg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              49  out of  126576     0%  
+ Number of Slice LUTs:                   69  out of  63288     0%  
+    Number used as Logic:                69  out of  63288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     71
+   Number with an unused Flip Flop:      22  out of     71    30%  
+   Number with an unused LUT:             2  out of     71     2%  
+   Number of fully used LUT-FF pairs:    47  out of     71    66%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          81
+ Number of bonded IOBs:                  81  out of    480    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                             | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------------------------------+------------------------+-------+
+clk                                                                                      | BUFGP                  | 48    |
+uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o(uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o1:O)| NONE(*)(uart0/u1/ack)  | 1     |
+-----------------------------------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.247ns (Maximum Frequency: 307.977MHz)
+   Minimum input arrival time before clock: 4.696ns
+   Maximum output required time after clock: 5.687ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.247ns (frequency: 307.977MHz)
+  Total number of paths / destination ports: 309 / 60
+-------------------------------------------------------------------------
+Delay:               3.247ns (Levels of Logic = 2)
+  Source:            uart0/u1/OversamplingCnt_2 (FF)
+  Destination:       uart0/u1/RxD_data_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: uart0/u1/OversamplingCnt_2 to uart0/u1/RxD_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   1.196  uart0/u1/OversamplingCnt_2 (uart0/u1/OversamplingCnt_2)
+     LUT5:I0->O            8   0.254   0.944  uart0/u1/sampleNow_RxD_state[3]_AND_15_o1 (uart0/u1/sampleNow_RxD_state[3]_AND_15_o)
+     LUT3:I2->O            1   0.254   0.000  uart0/u1/RxD_data_7_rstpot (uart0/u1/RxD_data_7_rstpot)
+     FDR:D                     0.074          uart0/u1/RxD_data_7
+    ----------------------------------------
+    Total                      3.247ns (1.107ns logic, 2.140ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 39 / 37
+-------------------------------------------------------------------------
+Offset:              4.696ns (Levels of Logic = 4)
+  Source:            rst (PAD)
+  Destination:       flash0/flash_driver0/data_to_write_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to flash0/flash_driver0/data_to_write_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.328   1.380  rst_IBUF (rst_IBUF)
+     LUT2:I1->O           14   0.254   1.235  flash0/flash_driver0/rst_ce_OR_7_o1 (flash0/flash_driver0/rst_ce_OR_7_o)
+     LUT5:I3->O            1   0.250   0.000  flash0/flash_driver0/data_to_write_6_rstpot_G (N47)
+     MUXF7:I1->O           1   0.175   0.000  flash0/flash_driver0/data_to_write_6_rstpot (flash0/flash_driver0/data_to_write_6_rstpot)
+     FD:D                      0.074          flash0/flash_driver0/data_to_write_6
+    ----------------------------------------
+    Total                      4.696ns (2.081ns logic, 2.615ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.166ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       uart0/u1/ack (LATCH)
+  Destination Clock: uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o falling
+
+  Data Path: rst to uart0/u1/ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.328   1.379  rst_IBUF (rst_IBUF)
+     LDP:PRE                   0.459          uart0/u1/ack
+    ----------------------------------------
+    Total                      3.166ns (1.787ns logic, 1.379ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 91 / 46
+-------------------------------------------------------------------------
+Offset:              5.687ns (Levels of Logic = 2)
+  Source:            uart0/u1/RxD_data_3 (FF)
+  Destination:       segdisp0<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: uart0/u1/RxD_data_3 to segdisp0<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.525   1.315  uart0/u1/RxD_data_3 (uart0/u1/RxD_data_3)
+     LUT4:I0->O            1   0.254   0.681  digseg0/Mram_seg_o41 (segdisp0_2_OBUF)
+     OBUF:I->O                 2.912          segdisp0_2_OBUF (segdisp0<2>)
+    ----------------------------------------
+    Total                      5.687ns (3.691ns logic, 1.996ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+clk                                       |    3.247|         |         |         |
+uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o|         |    3.514|         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart0/u1/RxD_state[3]_PWR_11_o_Select_45_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.067|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.93 secs
+ 
+--> 
+
+Total memory usage is 257260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  102 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

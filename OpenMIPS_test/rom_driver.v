@@ -15,10 +15,17 @@ module rom_driver(
 		if (ce == `ChipDisable || rst == `RstEnable) begin
 			inst <= `ZeroWord;
 		end else begin
+			`include "rom_inst_2.v"
+
+
+
+
+/*		
 			case (addr)
 				`include "rom_inst.v"
 				default: inst <= 32'h00000000;
 			endcase
+*/
 		end
 	end
 

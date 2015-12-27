@@ -17,6 +17,8 @@ module uart(
 	output tick
 	);
 
+	wire RxD_data_ready;
+
 	localparam CLK_FREQ = 50000000,	// 50 MB
 			BAUD = 115200;
 
@@ -35,7 +37,7 @@ module uart(
 
 	uart_driver_receiver #(.ClkFrequency(CLK_FREQ), .Baud(BAUD)) u1
 	(.clk(clk), .rst(rst), .RxD(com_RxD),
-	.RxD_data_ready(), .RxD_waiting_data(),
+	.RxD_data_ready(RxD_data_ready), .RxD_waiting_data(),
 	.RxD_data(data_out), .ack(ack_out));
 
 endmodule

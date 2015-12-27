@@ -52,12 +52,14 @@ module wishbone_bus(
 	reg	memw_ack;
 	reg memr_ack;
 
-	reg if_cancel;	
+	reg if_cancel;
+	reg if_stay;
 	reg flag;
 	reg[31:0] wishbone_data_latch;
 	
 	initial wishbone_data_latch = 32'h00000000;
 	initial if_cancel = `False_v;
+	initial if_stay = `False_v;
 	initial flag = 1'b0;
 
 	wire[3:0] state;
@@ -147,21 +149,9 @@ module wishbone_bus(
 					end
 					4'b1011: begin
 						memw_ack <= `True_v;
-						// if_ack <= `False_v;
-						if (stall_i == 6'b000111) begin
-							if_cancel = `True_v;
-						end else begin
-							if_cancel = `False_v;
-						end
 					end
 					4'b1101: begin
 						memr_ack <= `True_v;
-						// if_ack <= `False_v;
-						if (stall_i == 6'b000111) begin
-							if_cancel = `True_v;
-						end else begin
-							if_cancel = `False_v;
-						end
 					end
 					4'b1110: begin
 						if_ack <= `True_v;
@@ -178,14 +168,14 @@ module wishbone_bus(
 						end
 					end
 					4'b1111: begin
+						if(stall_i == 6'b000111) begin
+							if_stay <= `True_v;
+						end else begin
+							if_stay <= `False_v;
+						end
 						if_ack <= `False_v;
 					end
 					default: begin
-						if (stall_i == 6'b000111) begin
-							if_cancel = `True_v;
-						end else begin
-							if_cancel = `False_v;
-						end
 						if_ack <= `False_v;
 						memw_ack <= `True_v;
 						memr_ack <= `True_v;
@@ -200,7 +190,8 @@ module wishbone_bus(
 	assign stall_req_if = `NoStop;
 
 	always @ (*) begin
-		if (wishbone_ack_i == `False_v) begin
+		if (rst == `RstEnable) begin
+		end else if (wishbone_ack_i == `False_v) begin
 			stall_req_mem <= `Stop;
 		end else begin
 			case (state)
@@ -230,7 +221,7 @@ module wishbone_bus(
 			mem_data_o <= `ZeroWord;
 		end else begin
 			if (wishbone_ack_i == `True_v) begin
-				if (if_ack <= `False_v && if_cancel == `False_v) begin
+				if (if_ack <= `False_v && !if_stay) begin
 					if_data_o <= wishbone_data_i;
 				end else begin
 					mem_data_o <= wishbone_data_i;

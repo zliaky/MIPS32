@@ -791,7 +791,7 @@ module id(
 				reg2_read_o <= 1'b0;
 				instvalid <= `InstValid;
 				excepttype_is_eret <= `True_v;
-			end else if (inst_i[31:21] == 11'b01000000000 && inst_i[10:0] == 11'b00000000000) begin
+			end else if (inst_i[31:21] == 11'b01000000000 && inst_i[10:3] == 11'b00000000) begin
 				aluop_o <= `EXE_MFC0_OP;
 				alusel_o <= `EXE_RES_MOVE;
 				wd_o <= inst_i[20:16];
@@ -807,7 +807,7 @@ module id(
 					excepttype_is_cpu <= `True_v;
 				end else begin
 				end
-			end else if (inst_i[31:21] == 11'b01000000100 && inst_i[10:0] == 11'b00000000000) begin
+			end else if (inst_i[31:21] == 11'b01000000100 && inst_i[10:3] == 11'b00000000) begin
 				aluop_o <= `EXE_MTC0_OP;
 				alusel_o <= `EXE_RES_NOP;
 				wreg_o <= `WriteDisable;
@@ -885,7 +885,7 @@ module id(
 		if (rst == `RstEnable) begin
 			reg2_o <= `ZeroWord;
 		end else if (pre_inst_is_load == 1'b1 && ex_wd_i == reg2_addr_o && reg2_read_o == 1'b1) begin
-				stallreq_for_reg2_loadrelate <= `Stop;
+			stallreq_for_reg2_loadrelate <= `Stop;
 		end else if ((reg2_read_o == 1'b1) && (ex_wreg_i == 1'b1) && (ex_wd_i == reg2_addr_o)) begin
 			reg2_o <= ex_wdata_i;
 		end else if ((reg2_read_o == 1'b1) && (mem_wreg_i == 1'b1) && (mem_wd_i == reg2_addr_o)) begin
