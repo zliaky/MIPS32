@@ -7,7 +7,8 @@ E:\programming\ISE\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 E:/course/GitRepository/MIPS32/fpga2ram/ram.ucf -uc
 E:/course/GitRepository/MIPS32/fpga2ram/key.ucf -uc
 E:/course/GitRepository/MIPS32/fpga2ram/led.ucf -uc
-E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram.ucf -p xc6slx100-fgg676-2
+E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram.ucf -uc
+E:/course/GitRepository/MIPS32/fpga2ram/segdisp.ucf -p xc6slx100-fgg676-2
 fpga2ram.ngc fpga2ram.ngd
 
 Reading NGO file "E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram/fpga2ram.ngc"
@@ -23,6 +24,8 @@ Annotating constraints to design from ucf file
 "E:/course/GitRepository/MIPS32/fpga2ram/led.ucf" ...
 Annotating constraints to design from ucf file
 "E:/course/GitRepository/MIPS32/fpga2ram/fpga2ram.ucf" ...
+Annotating constraints to design from ucf file
+"E:/course/GitRepository/MIPS32/fpga2ram/segdisp.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -40,10 +43,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 160076 kilobytes
+Total memory usage is 160460 kilobytes
 
 Writing NGD file "fpga2ram.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "fpga2ram.bld"...

@@ -17,11 +17,10 @@ module openmips(
 
 	input		wire[31:0]				select,
 	output		wire[31:0]				data_o,
-	input		wire 					break_flag
+	output 		wire[`InstAddrBus]		pc
 	);
 
 	//连接IF/ID模块与译码阶段ID模块的变量
-	wire[`InstAddrBus]		pc;
 	wire[`InstBus]			inst_i;
 	wire[`InstAddrBus]		id_pc_i;
 	wire[`InstBus]			id_inst_i;
@@ -244,8 +243,7 @@ module openmips(
 		.pc(pc),
 		.ce(rom_ce),
 		.next_pc(next_pc),
-		.latch_pc(latch_pc),
-		.break_flag(break_flag)
+		.latch_pc(latch_pc)
 	);
 
 	//IF/ID模块例化

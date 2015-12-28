@@ -8,7 +8,6 @@ module pc_reg(
 	input		wire[`RegBus]			new_pc,
 	input		wire					branch_flag_i,
 	input		wire[`RegBus]			branch_target_address_i,
-	input		wire					break_flag,
 	output		reg[`InstAddrBus]		pc,
 	output		reg						ce,
 	output		reg[`InstAddrBus]		next_pc,
@@ -26,16 +25,15 @@ module pc_reg(
 	end
 
 	always @ (posedge clk) begin
-		if(break_flag == `True_v && pc == 32'h80000000) begin
-		end else begin
-			pc <= latch_pc;
-		end
+		pc <= latch_pc;
 	end
 
 	always @ (*) begin
 		if (ce == `ChipDisable) begin
-			next_pc <= 32'hbfbffffc;				//指令存储器禁用时，PC为0
-			latch_pc <= 32'hbfbffffc;
+			// next_pc <= 32'hbfbffffc;				//指令存储器禁用时，PC为0
+			// latch_pc <= 32'hbfbffffc;
+			next_pc <= 32'h7ffffffc;
+			latch_pc <= 32'h7ffffffc;
 			// next_pc <= 32'h00000000;
 			// latch_pc <= 32'h00000000;
 		end else begin
@@ -43,7 +41,6 @@ module pc_reg(
 				next_pc <= new_pc;
 				latch_pc <= new_pc;
 			end else begin
-
 				if (branch_flag_i == `Branch) begin
 					next_pc <= branch_target_address_i;
 				end else begin

@@ -15,7 +15,10 @@ module fpga2ram(
 	inout [31:0] extram_data,
 	output extram_ce,
 	output extram_oe,
-	output extram_we 
+	output extram_we,
+
+	output [0:6] segdisp0,
+	output [0:6] segdisp1
 	);
 
 	reg[31:0] bus_addr_i;
@@ -25,8 +28,11 @@ module fpga2ram(
 	wire bus_ack_o;
 	reg[31:0] pc;
 
-	assign led = bus_data_o[15:0];
+	assign led = sw_dip[30] ? bus_data_o[31:16] : bus_data_o[15:0];
 	assign bus_we_i = sw_dip[31];
+
+	digseg_driver digseg0(bus_data_o[3:0], segdisp0);
+	digseg_driver digseg1(bus_data_o[7:4], segdisp1);
 	
 	always @ (posedge clk) begin
 		if (bus_we_i == 1'b1) begin		//write

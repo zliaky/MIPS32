@@ -12,9 +12,9 @@ n@_opt
 Z3 OL;O;10.1c;51
 Z4 dE:\programming\modeltech64_10.1c\examples
 T_opt1
-V89^=n5@S^beQ0Y3fRkWma0
+V^Ej582kh`mKUbJQ1B?T<Y3
 R1
-=12-0c84dc65e838-567ec93f-2ba-3ad0
+=9-0c84dc65e838-5680b9a0-1e6-d64
 R2
 n@_opt1
 R3
@@ -27,23 +27,23 @@ n@_opt2
 R3
 R4
 vcp0_reg
-I]gVNCB9cCR<HERS486^Ie3
 Vo>dZkd2J2PeVJX6<kY?WO0
+r1
+31
+I]gVNCB9cCR<HERS486^Ie3
 Z5 dE:\course\GitRepository\MIPS32\cpu
 Z6 w1450986614
 8E:/course/GitRepository/MIPS32/cpu/cp0_reg.v
 FE:/course/GitRepository/MIPS32/cpu/cp0_reg.v
 L0 2
 Z7 OL;L;10.1c;51
-r1
-31
 Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !s100 T:bK^MRiSIYRN;L92`WVz3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/cp0_reg.v|
-!s108 1451148369.711000
+!s108 1451213694.357000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/cp0_reg.v|
-!i10b 1
 !s85 0
+!i10b 1
 vctrl
 Ie1=7XB[2g]i4Voc:UZPTf3
 VzO:g?QL_Z2IJ_dmH`Yick2
@@ -58,29 +58,29 @@ r1
 R8
 !s100 cY]dc82_<3BJgid6?`^mQ1
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/ctrl.v|
-!s108 1451148369.961000
+!s108 1451276273.885000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/ctrl.v|
 !i10b 1
 !s85 0
 vdata_ram
-I@J;A6H2d<4kk6oddc8ZDR2
 Vibjkj^i[hP;_fAPh]jQXP3
+r1
+31
+IiVWoI>M7S@Hc6^z298Nof3
 R5
-w1451149618
+w1451213662
 8E:/course/GitRepository/MIPS32/cpu/data_ram.v
 FE:/course/GitRepository/MIPS32/cpu/data_ram.v
 Finput.v
 L0 3
 R7
-r1
-31
 R8
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/data_ram.v|
-!i10b 1
-!s100 J9LfUXJ?`CmEzcSK0;7b]0
-!s85 0
-!s108 1451149623.708000
+!s100 [71N^bOLVU2[XM[6;WC1m0
+!s108 1451213695.267000
 !s107 input.v|defines.v|E:/course/GitRepository/MIPS32/cpu/data_ram.v|
+!s85 0
+!i10b 1
 vdigseg
 I7i:`WbZh<NZ93P;WkI@Cg2
 V]eoZYZBTg5nY7eJU_5i]l3
@@ -118,41 +118,41 @@ R8
 !i10b 1
 !s85 0
 vex
-Im<>[=hWa4]foNUMiYaUT`3
 VDzT6JXU3[;fa6oBg<Ejg:3
+r1
+31
+Im<>[=hWa4]foNUMiYaUT`3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/ex.v
 FE:/course/GitRepository/MIPS32/cpu/ex.v
 L0 2
 R7
-r1
-31
 R8
 !s100 oXXDYoHciRiPa^[<B=cbo0
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/ex.v|
-!s108 1451148370.511000
+!s108 1451213695.537000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/ex.v|
-!i10b 1
 !s85 0
+!i10b 1
 vex_mem
-INLn_JZA24izNX3k`MCjbY3
 VBPIhPMzzk;M1__9D5]CS?2
+r1
+31
+INLn_JZA24izNX3k`MCjbY3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/ex_mem.v
 FE:/course/GitRepository/MIPS32/cpu/ex_mem.v
 L0 2
 R7
-r1
-31
 R8
 !s100 YEG@ZNoGmMh?0=nNI1aE_2
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/ex_mem.v|
-!s108 1451148370.731000
+!s108 1451213695.797000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/ex_mem.v|
-!i10b 1
 !s85 0
+!i10b 1
 vflash
 I>R2D9Ti<6mW=`]b7QjzgY1
 VQ1f@JVjPEL<E8:YFC@7z53
@@ -190,77 +190,77 @@ R8
 !i10b 1
 !s85 0
 vhilo_reg
-IFJ@hm]>[:o`[O::LXg4S02
 V^8YfHOj6?D4ha@2?A<4Nj3
+r1
+31
+IFJ@hm]>[:o`[O::LXg4S02
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/hilo_reg.v
 FE:/course/GitRepository/MIPS32/cpu/hilo_reg.v
 L0 2
 R7
-r1
-31
 R8
 !s100 `=9SZM^EaCYBHP5`LBfPV2
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/hilo_reg.v|
-!s108 1451148371.001000
+!s108 1451213695.997000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/hilo_reg.v|
-!i10b 1
 !s85 0
+!i10b 1
 vid
-I<bHYXiOfX=m8ITVeNb5E91
 Vfc_jjJ5o>bQ8HhQV3lI[K3
+r1
+31
+I<bHYXiOfX=m8ITVeNb5E91
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/id.v
 FE:/course/GitRepository/MIPS32/cpu/id.v
 L0 2
 R7
-r1
-31
 R8
 !s100 ]zSHo<Nz[F]zUdiE61KLf3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/id.v|
-!s108 1451148371.191000
+!s108 1451213696.157000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/id.v|
-!i10b 1
 !s85 0
+!i10b 1
 vid_ex
-IcPTC>c9bY7Yf@YkWF;U?f0
 VQ8bZ`R4`mM2TJ:S2bQR<W0
+r1
+31
+IcPTC>c9bY7Yf@YkWF;U?f0
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/id_ex.v
 FE:/course/GitRepository/MIPS32/cpu/id_ex.v
 L0 2
 R7
-r1
-31
 R8
 !s100 VTRi`C`_oFjXoL75dz22W3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/id_ex.v|
-!s108 1451148371.441000
+!s108 1451213696.537000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/id_ex.v|
-!i10b 1
 !s85 0
+!i10b 1
 vif_id
-IYEJXcXNcWjJ:k4hSB^0dX0
 VeH9l^SH>9f[S3Uef3]3:V0
+r1
+31
+IYEJXcXNcWjJ:k4hSB^0dX0
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/if_id.v
 FE:/course/GitRepository/MIPS32/cpu/if_id.v
 L0 3
 R7
-r1
-31
 R8
 !s100 7bJzBZYK8FCYVWKof2ADN2
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/if_id.v|
-!s108 1451148371.611000
+!s108 1451213696.987000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/if_id.v|
-!i10b 1
 !s85 0
+!i10b 1
 vinst_rom
 I7?2?VJc?zn?AoIY^6GGNC3
 VgX7XJlealh@C`b@f=Y70Q0
@@ -280,182 +280,182 @@ R8
 !i10b 1
 !s85 0
 vmem
-ICFh?^:4j4Cz4iC^6EWf_B2
 V`1j=]=>bHVk`UQbB[GN:^0
+r1
+31
+ICFh?^:4j4Cz4iC^6EWf_B2
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/mem.v
 FE:/course/GitRepository/MIPS32/cpu/mem.v
 L0 2
 R7
-r1
-31
 R8
 !s100 UW?ElQTXDUnSd;zlX9XVW1
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/mem.v|
-!s108 1451148371.781000
+!s108 1451213697.247000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/mem.v|
-!i10b 1
 !s85 0
+!i10b 1
 vmem_wb
-I>?0eS2leNS8`hYd^c?B7K2
 V7[W=VSUomUmXQzM4igOm:0
+r1
+31
+I>?0eS2leNS8`hYd^c?B7K2
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/mem_wb.v
 FE:/course/GitRepository/MIPS32/cpu/mem_wb.v
 L0 2
 R7
-r1
-31
 R8
 !s100 8j<>Dj8gLTAFSkTEhP0Gh3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/mem_wb.v|
-!s108 1451148371.991000
+!s108 1451213697.437000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/mem_wb.v|
-!i10b 1
 !s85 0
+!i10b 1
 vmmu
-IPZjQ5NJhFP9N9A`:O6Pk[3
 V01fEz>eEMmJTIn9jJ=2NN2
+r1
+31
+IPZjQ5NJhFP9N9A`:O6Pk[3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/mmu.v
 FE:/course/GitRepository/MIPS32/cpu/mmu.v
 L0 2
 R7
-r1
-31
 R8
 !s100 :eN[FhPTPTmY=l@:=gogi1
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/mmu.v|
-!s108 1451148372.251000
+!s108 1451213697.617000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/mmu.v|
-!i10b 1
 !s85 0
+!i10b 1
 vopenmips
-IZDhKibgMiUBA[e`:RI_M?0
 V::=hUDkB0dSo?m4IcB;K@0
+r1
+31
+IZDhKibgMiUBA[e`:RI_M?0
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/openmips.v
 FE:/course/GitRepository/MIPS32/cpu/openmips.v
 L0 2
 R7
-r1
-31
 R8
 !s100 BcJ;D<ZD<=BmGTJi3Z@`f2
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/openmips.v|
-!s108 1451148372.431000
+!s108 1451213697.767000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/openmips.v|
-!i10b 1
 !s85 0
+!i10b 1
 vopenmips_min_sopc
-IM[eEHJ`jD:cGW1jKXj?613
 V>oQnH]7^FROW0cG3a6B;63
+r1
+31
+IM[eEHJ`jD:cGW1jKXj?613
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v
 FE:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v
 L0 2
 R7
-r1
-31
 R8
 !s100 DQT5`]`[UzcIA98nlDKk31
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v|
-!s108 1451148372.651000
+!s108 1451213697.997000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc.v|
-!i10b 1
 !s85 0
+!i10b 1
 vopenmips_min_sopc_tb
-Ih3N9FJU<WUXk;fD;A@>5>3
 VjAlLFJz2iV<GeaoLO:T?d1
+r1
+31
+Ih3N9FJU<WUXk;fD;A@>5>3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v
 FE:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v
 L0 5
 R7
-r1
-31
 R8
 !s100 2n<e]1_QFTe8hneS;J5mB3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v|
-!s108 1451148372.861000
+!s108 1451213698.247000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/openmips_min_sopc_tb.v|
-!i10b 1
 !s85 0
+!i10b 1
 vpc_reg
-I[=2kH]>]ofXha0[>5V6_Q3
 Vd2_i[8L:1YO9cj;zf?6kk1
+r1
+31
+I[=2kH]>]ofXha0[>5V6_Q3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/pc_reg.v
 FE:/course/GitRepository/MIPS32/cpu/pc_reg.v
 L0 3
 R7
-r1
-31
 R8
 !s100 mSkWTM=g[Oib4PjOD6=H:2
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/pc_reg.v|
-!s108 1451148373.101000
+!s108 1451213698.447000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/pc_reg.v|
-!i10b 1
 !s85 0
+!i10b 1
 vregfile
-IJD4QEa1HM`EK@i@k4Ga^Z1
 VCc88GW:H2:IP]GcGWTbBo0
+r1
+31
+IJD4QEa1HM`EK@i@k4Ga^Z1
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/regfile.v
 FE:/course/GitRepository/MIPS32/cpu/regfile.v
 L0 3
 R7
-r1
-31
 R8
 !s100 3[W5@YPZn]N<1_S;lG5A<3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/regfile.v|
-!s108 1451148373.291000
+!s108 1451213698.627000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/regfile.v|
-!i10b 1
 !s85 0
+!i10b 1
 vtlb
-I;TLI=fDbeclgEF]mzXffI3
 V2JP8Zd]hgjLn>D6_6@C:X3
+r1
+31
+I;TLI=fDbeclgEF]mzXffI3
 R5
 R6
 8E:/course/GitRepository/MIPS32/cpu/tlb.v
 FE:/course/GitRepository/MIPS32/cpu/tlb.v
 L0 3
 R7
-r1
-31
 R8
 !s100 kDW4c7fMg6X`4dCjJ1jG@3
 !s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/tlb.v|
-!s108 1451148373.451000
+!s108 1451213698.827000
 !s107 defines.v|E:/course/GitRepository/MIPS32/cpu/tlb.v|
-!i10b 1
 !s85 0
+!i10b 1
 vwishbone_bus
-I4G2bN3T8CinUCE5nOK7HB3
+IWSaY@:O^:zbkG3fzke;6k3
 V4c6zUDImGE=X2e>CQA0gQ1
 R5
-w1451149459
-8E:\course\GitRepository\MIPS32\cpu\wishbone_bus.v
-FE:\course\GitRepository\MIPS32\cpu\wishbone_bus.v
+w1451276697
+8E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v
+FE:/course/GitRepository/MIPS32/cpu/wishbone_bus.v
 L0 3
 R7
 r1
 31
 R8
-!s90 -reportprogress|300|-work|work|-vopt|E:\course\GitRepository\MIPS32\cpu\wishbone_bus.v|
-!s100 2FO83;9Mc28IgFDaFHHJV2
-!s108 1451149464.494000
-!s107 defines.v|E:\course\GitRepository\MIPS32\cpu\wishbone_bus.v|
+!s90 -reportprogress|300|-work|work|-vopt|E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v|
 !i10b 1
+!s100 SR<[Z1KQTOWWcJOU4fNa^0
 !s85 0
+!s108 1451276702.226000
+!s107 defines.v|E:/course/GitRepository/MIPS32/cpu/wishbone_bus.v|

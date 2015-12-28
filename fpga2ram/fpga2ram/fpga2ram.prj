@@ -1,3 +1,4 @@
 verilog work "../ram_driver.v"
 verilog work "../ram.v"
+verilog work "../digseg_driver.v"
 verilog work "../fpga2ram.v"

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Sun Dec 27 03:08:40 2015
+// Written by: Map P.28xd on Sun Dec 27 18:45:57 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -21,8 +21,8 @@ COMP "sw_dip<12>" LOCATE = SITE "L1" LEVEL 1;
 COMP "sw_dip<21>" LOCATE = SITE "R4" LEVEL 1;
 COMP "sw_dip<13>" LOCATE = SITE "L2" LEVEL 1;
 COMP "sw_dip<22>" LOCATE = SITE "R3" LEVEL 1;
-COMP "sw_dip<30>" LOCATE = SITE "L4" LEVEL 1;
 COMP "sw_dip<14>" LOCATE = SITE "W5" LEVEL 1;
+COMP "sw_dip<30>" LOCATE = SITE "L4" LEVEL 1;
 COMP "sw_dip<23>" LOCATE = SITE "P5" LEVEL 1;
 COMP "sw_dip<15>" LOCATE = SITE "W3" LEVEL 1;
 COMP "sw_dip<31>" LOCATE = SITE "L3" LEVEL 1;
@@ -46,6 +46,7 @@ COMP "extram_addr<6>" LOCATE = SITE "AC13" LEVEL 1;
 COMP "extram_addr<7>" LOCATE = SITE "AB10" LEVEL 1;
 COMP "extram_addr<8>" LOCATE = SITE "AD10" LEVEL 1;
 COMP "extram_addr<9>" LOCATE = SITE "AD9" LEVEL 1;
+COMP "segdisp0<0>" LOCATE = SITE "B26" LEVEL 1;
 COMP "extram_data<0>" LOCATE = SITE "AF2" LEVEL 1;
 COMP "extram_data<1>" LOCATE = SITE "AE3" LEVEL 1;
 COMP "extram_data<2>" LOCATE = SITE "AE4" LEVEL 1;
@@ -56,6 +57,19 @@ COMP "extram_data<6>" LOCATE = SITE "AF6" LEVEL 1;
 COMP "extram_data<7>" LOCATE = SITE "AE7" LEVEL 1;
 COMP "extram_data<8>" LOCATE = SITE "AE13" LEVEL 1;
 COMP "extram_data<9>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "segdisp0<1>" LOCATE = SITE "C25" LEVEL 1;
+COMP "segdisp0<2>" LOCATE = SITE "D24" LEVEL 1;
+COMP "segdisp0<3>" LOCATE = SITE "A25" LEVEL 1;
+COMP "segdisp1<0>" LOCATE = SITE "C24" LEVEL 1;
+COMP "segdisp0<4>" LOCATE = SITE "B24" LEVEL 1;
+COMP "segdisp1<1>" LOCATE = SITE "D22" LEVEL 1;
+COMP "segdisp0<5>" LOCATE = SITE "C26" LEVEL 1;
+COMP "segdisp1<2>" LOCATE = SITE "E23" LEVEL 1;
+COMP "segdisp0<6>" LOCATE = SITE "D26" LEVEL 1;
+COMP "segdisp1<3>" LOCATE = SITE "B23" LEVEL 1;
+COMP "segdisp1<4>" LOCATE = SITE "A23" LEVEL 1;
+COMP "segdisp1<5>" LOCATE = SITE "D23" LEVEL 1;
+COMP "segdisp1<6>" LOCATE = SITE "B25" LEVEL 1;
 COMP "baseram_addr<0>" LOCATE = SITE "Y26" LEVEL 1;
 COMP "baseram_addr<1>" LOCATE = SITE "W25" LEVEL 1;
 COMP "baseram_addr<2>" LOCATE = SITE "W26" LEVEL 1;
