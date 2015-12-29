@@ -30,10 +30,10 @@ module pc_reg(
 
 	always @ (*) begin
 		if (ce == `ChipDisable) begin
-			// next_pc <= 32'hbfbffffc;				//指令存储器禁用时，PC为0
-			// latch_pc <= 32'hbfbffffc;
-			next_pc <= 32'h7ffffffc;
-			latch_pc <= 32'h7ffffffc;
+			next_pc <= 32'hbfbffffc;				//指令存储器禁用时，PC为0
+			latch_pc <= 32'hbfbffffc;
+			// next_pc <= 32'h7ffffffc;
+			// latch_pc <= 32'h7ffffffc;
 			// next_pc <= 32'h00000000;
 			// latch_pc <= 32'h00000000;
 		end else begin

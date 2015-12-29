@@ -29,28 +29,6 @@ module mem_wb(
 	output		reg[`RegBus]			wb_cp0_reg_data
 	);
 
-/*	reg[`RegAddrBus]		latch_wd;
-	reg						latch_wreg;
-	reg[`RegBus]			latch_wdata;
-	reg[`RegBus]			latch_hi;
-	reg[`RegBus]			latch_lo;
-	reg						latch_whilo;
-	reg						latch_cp0_reg_we;
-	reg[4:0]				latch_cp0_reg_write_addr;
-	reg[`RegBus]			latch_cp0_reg_data;
-
-	always @ (posedge clk) begin
-		wb_wd <= latch_wd;
-		wb_wreg <= latch_wreg;
-		wb_wdata <= latch_wdata;
-		wb_hi <= latch_hi;
-		wb_lo <= latch_lo;
-		wb_whilo <= latch_whilo;
-		wb_cp0_reg_we <= latch_cp0_reg_we;
-		wb_cp0_reg_write_addr <= latch_cp0_reg_write_addr;
-		wb_cp0_reg_data <= latch_cp0_reg_data;
-	end*/
-
 	//（1）当stall[4]为Stop，stall[5]为NoStop时，表示访存阶段暂停，而写回阶段继续，所以使用空指令作为下一个周期进入回写阶段的指令
 	//（2）当stall[4]为NoStop时，访存阶段继续，访存后的指令进入回写阶段
 	//（3）其余情况下，保持回写阶段的寄存器wb_wd、wb_wreg、wb_data、wb_hi、wb_lo、wb_whilo不变

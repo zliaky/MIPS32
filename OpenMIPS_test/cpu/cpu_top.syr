@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: cpu_top.prj
 
@@ -206,7 +206,6 @@ Parsing module <cpu_top>.
 Elaborating module <cpu_top>.
 
 Elaborating module <openmips_min_sopc>.
-WARNING:HDLCompiler:1127 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips_min_sopc.v" Line 70: Assignment to break_flag ignored, since the identifier is never used
 
 Elaborating module <openmips>.
 
@@ -308,7 +307,6 @@ Unit <cpu_top> synthesized.
 
 Synthesizing Unit <openmips_min_sopc>.
     Related source file is "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips_min_sopc.v".
-INFO:Xst:3210 - "E:\course\GitRepository\MIPS32\OpenMIPS_test\openmips_min_sopc.v" line 113: Output port <pc> of the instance <openmips0> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <counter>.
     Found 1-bit register for signal <clk_4>.
     Found 1-bit adder for signal <counter_PWR_2_o_add_3_OUT<0>> created at line 58.
@@ -348,7 +346,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <data_o<0>>. Latches may be gener
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
 	inferred  32 Latch(s).
-	inferred 197 Multiplexer(s).
+	inferred 198 Multiplexer(s).
 Unit <openmips_min_sopc> synthesized.
 
 Synthesizing Unit <openmips>.
@@ -768,12 +766,13 @@ Synthesizing Unit <cp0_reg>.
     Found 1-bit register for signal <index_o<31>>.
     Found 32-bit subtractor for signal <current_inst_addr_i[31]_GND_81_o_sub_149_OUT> created at line 155.
     Found 32-bit adder for signal <count_o[31]_GND_81_o_add_2_OUT> created at line 74.
+    Found 32-bit 13-to-1 multiplexer for signal <_n0830> created at line 301.
     Found 32-bit comparator equal for signal <count_o[31]_compare_o[31]_equal_5_o> created at line 78
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 353 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  11 Multiplexer(s).
+	inferred  13 Multiplexer(s).
 Unit <cp0_reg> synthesized.
 
 Synthesizing Unit <mmu>.
@@ -845,9 +844,7 @@ WARNING:Xst:647 - Input <if_we_i> is never used. This port will be preserved and
     Found 1-bit register for signal <if_ack>.
     Found 1-bit register for signal <memw_ack>.
     Found 1-bit register for signal <memr_ack>.
-    Found 1-bit register for signal <if_cancel>.
-    Found 1-bit register for signal <if_stay>.
-    Found 16x1-bit Read Only RAM for signal <state[3]_GND_116_o_Mux_55_o>
+    Found 16x1-bit Read Only RAM for signal <state[3]_GND_116_o_Mux_49_o>
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1026,10 +1023,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<1>>. Latches may be g
 WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <wishbone_data_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <tlb_ce>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 1-bit comparator greater for signal <if_ack_INV_199_o> created at line 239
+    Found 1-bit comparator greater for signal <if_ack_INV_199_o> created at line 217
     Summary:
 	inferred   1 RAM(s).
-	inferred   5 D-type flip-flop(s).
+	inferred   3 D-type flip-flop(s).
 	inferred 178 Latch(s).
 	inferred   1 Comparator(s).
 	inferred 229 Multiplexer(s).
@@ -1392,8 +1389,8 @@ Macro Statistics
  32-bit subtractor                                     : 1
  6-bit subtractor                                      : 1
  64-bit adder                                          : 1
-# Registers                                            : 279
- 1-bit register                                        : 221
+# Registers                                            : 277
+ 1-bit register                                        : 219
  1024-bit register                                     : 1
  16-bit register                                       : 4
  18-bit register                                       : 2
@@ -1415,14 +1412,15 @@ Macro Statistics
  32-bit comparator lessequal                           : 7
  4-bit comparator greater                              : 1
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1094
- 1-bit 2-to-1 multiplexer                              : 742
+# Multiplexers                                         : 1097
+ 1-bit 2-to-1 multiplexer                              : 743
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
  22-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 14
- 32-bit 2-to-1 multiplexer                             : 247
+ 32-bit 13-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 248
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 7
  32-bit 8-to-1 multiplexer                             : 1
@@ -1451,23 +1449,23 @@ Macro Statistics
 
 WARNING:Xst:1710 - FF/Latch <index_o_31> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ebase_o_10> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ebase_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_0> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ebase_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ebase_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_1> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_0> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_7> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_12> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_14> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_15> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_13> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_14> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_12> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_15> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_16> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_17> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_18> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_19> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_21> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_24> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_20> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_21> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_19> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_24> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_25> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_26> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_27> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
@@ -1515,24 +1513,24 @@ WARNING:Xst:1710 - FF/Latch <index_o_27> (without init value) has a constant val
 WARNING:Xst:1710 - FF/Latch <index_o_28> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <index_o_29> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <index_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_28> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cause_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cause_o_29> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_hi_o_9> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_hi_o_10> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_28> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_hi_o_8> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_hi_o_12> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_hi_o_9> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_hi_o_11> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_hi_o_12> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_hi_o_10> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_26> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_27> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_28> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_29> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_31> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_26> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_31> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_29> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_26> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_27> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_28> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_29> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_27> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_31> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <index_o_6> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_30> (without init value) has a constant value of 0 in block <cp0_reg0>. This FF/Latch will be trimmed during the optimization process.
@@ -1617,7 +1615,7 @@ The following registers are absorbed into counter <Filter_cnt>: 1 register on si
 Unit <uart_driver_receiver> synthesized (advanced).
 
 Synthesizing (advanced) Unit <wishbone_bus>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[3]_GND_116_o_Mux_55_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[3]_GND_116_o_Mux_49_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1649,8 +1647,8 @@ Macro Statistics
  1-bit up counter                                      : 1
  2-bit updown counter                                  : 1
  3-bit up counter                                      : 2
-# Registers                                            : 2446
- Flip-Flops                                            : 2446
+# Registers                                            : 2444
+ Flip-Flops                                            : 2444
 # Comparators                                          : 20
  1-bit comparator greater                              : 1
  32-bit comparator equal                               : 2
@@ -1658,14 +1656,15 @@ Macro Statistics
  32-bit comparator lessequal                           : 7
  4-bit comparator greater                              : 1
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 1090
- 1-bit 2-to-1 multiplexer                              : 740
+# Multiplexers                                         : 1124
+ 1-bit 13-to-1 multiplexer                             : 32
+ 1-bit 2-to-1 multiplexer                              : 741
  1-bit 4-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 11
  18-bit 2-to-1 multiplexer                             : 1
  22-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 12
- 32-bit 2-to-1 multiplexer                             : 247
+ 32-bit 2-to-1 multiplexer                             : 248
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 7
  32-bit 8-to-1 multiplexer                             : 1
@@ -1689,35 +1688,35 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <entry_lo_0_o_26> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <entry_lo_1_o_29> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_31> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_29> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_28> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_27> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_26> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_11> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_12> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_8> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_10> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_12> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_11> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_9> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_29> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_hi_o_8> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_28> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_29> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_27> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_26> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_25> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_20> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_24> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_21> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_19> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_21> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_20> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_18> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_17> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_16> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_7> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_1> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ebase_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_0> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cause_o_1> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ebase_o_11> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ebase_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ebase_o_10> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <index_o_31> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <index_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
@@ -1747,10 +1746,10 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <index_o_7> (without
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <index_o_6> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_31> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_27> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_29> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_28> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_1_o_30> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_27> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <entry_lo_0_o_26> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <data_in_latch_0> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_1> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_2> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
@@ -1767,11 +1766,11 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_12> (
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_13> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_14> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_latch_15> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <cause_o_13> in Unit <cp0_reg> is equivalent to the following 4 FFs/Latches, which will be removed : <cause_o_15> <cause_o_14> <cause_o_12> <cause_o_11> 
+INFO:Xst:2261 - The FF/Latch <cause_o_15> in Unit <cp0_reg> is equivalent to the following 4 FFs/Latches, which will be removed : <cause_o_12> <cause_o_14> <cause_o_13> <cause_o_11> 
 INFO:Xst:2261 - The FF/Latch <extram_addr_18> in Unit <ram_driver> is equivalent to the following FF/Latch, which will be removed : <extram_addr_19> 
 INFO:Xst:2261 - The FF/Latch <baseram_addr_18> in Unit <ram_driver> is equivalent to the following FF/Latch, which will be removed : <baseram_addr_19> 
 INFO:Xst:2261 - The FF/Latch <addr_latch_20> in Unit <flash_driver> is equivalent to the following FF/Latch, which will be removed : <addr_latch_21> 
-WARNING:Xst:1710 - FF/Latch <cause_o_13> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cause_o_15> (without init value) has a constant value of 0 in block <cp0_reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <baseram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <extram_addr_18> (without init value) has a constant value of 0 in block <ram_driver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <addr_latch_20> (without init value) has a constant value of 0 in block <flash_driver>. This FF/Latch will be trimmed during the optimization process.
@@ -1833,10 +1832,10 @@ WARNING:Xst:2677 - Node <sopc/data_o_18> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <sopc/data_o_19> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_20> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_21> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/data_o_23> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/data_o_24> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/data_o_24> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/data_o_23> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_26> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_27> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/data_o_28> of sequential type is unconnected in block <cpu_top>.
@@ -1911,14 +1910,14 @@ Optimizing unit <uart_driver_transmitter> ...
 Optimizing unit <BaudTickGen_1> ...
 
 Optimizing unit <uart_driver_receiver> ...
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_12> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_9> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/wishbone_bus0/wishbone_select_o_3> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sopc/openmips0/cp0_reg0/cause_o_6> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sopc/bus_top0/bus0/select_latch_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
@@ -1931,15 +1930,15 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sopc/bus_top0/bus0/
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sopc/bus_top0/bus0/select_latch_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sopc/bus_top0/bus0/select_latch_3> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_23> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_24> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_25> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_23> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_26> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_27> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_28> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_29> of sequential type is unconnected in block <cpu_top>.
-WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_31> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_30> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <sopc/openmips0/wishbone_bus0/wishbone_addr_o_31> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_31> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_30> of sequential type is unconnected in block <cpu_top>.
 WARNING:Xst:2677 - Node <sopc/openmips0/id_ex0/ex_excepttype_29> of sequential type is unconnected in block <cpu_top>.
@@ -2075,6 +2074,9 @@ FlipFlop sopc/openmips0/id_ex0/ex_reg1_3 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/id_ex0/ex_reg1_31 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/id_ex0/ex_reg1_4 has been replicated 1 time(s)
 FlipFlop sopc/openmips0/id_ex0/ex_reg2_31 has been replicated 1 time(s)
+FlipFlop sopc/openmips0/if_id0/id_inst_26 has been replicated 1 time(s)
+FlipFlop sopc/openmips0/if_id0/id_inst_27 has been replicated 1 time(s)
+FlipFlop sopc/openmips0/if_id0/id_inst_29 has been replicated 1 time(s)
 FlipFlop sopc/bus_top0/digseg0/digseg_driver0/seg_o_0 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop sopc/bus_top0/digseg0/digseg_driver0/seg_o_1 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop sopc/bus_top0/digseg0/digseg_driver0/seg_o_2 has been replicated 1 time(s) to handle iob=true attribute.
@@ -2096,8 +2098,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2264
- Flip-Flops                                            : 2264
+# Registers                                            : 2265
+ Flip-Flops                                            : 2265
 
 =========================================================================
 
@@ -2120,30 +2122,31 @@ Top Level Output File Name         : cpu_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6960
+# BELS                             : 6935
 #      GND                         : 1
 #      INV                         : 177
 #      LUT1                        : 140
-#      LUT2                        : 240
-#      LUT3                        : 1310
-#      LUT4                        : 601
+#      LUT2                        : 238
+#      LUT3                        : 1318
+#      LUT4                        : 576
 #      LUT5                        : 811
-#      LUT6                        : 2714
+#      LUT6                        : 2704
 #      MUXCY                       : 435
-#      MUXF7                       : 129
+#      MUXF7                       : 133
 #      VCC                         : 1
 #      XORCY                       : 401
-# FlipFlops/Latches                : 2527
+# FlipFlops/Latches                : 2528
 #      FD                          : 89
-#      FDE                         : 165
-#      FDR                         : 110
-#      FDRE                        : 1886
+#      FDE                         : 163
+#      FDR                         : 112
+#      FDRE                        : 1888
 #      FDS                         : 1
-#      FDSE                        : 13
+#      FDSE                        : 12
 #      LD                          : 18
 #      LD_1                        : 22
-#      LDC                         : 190
+#      LDC                         : 158
 #      LDCE                        : 32
+#      LDCE_1                      : 32
 #      LDP                         : 1
 # RAMS                             : 1
 #      RAMB16BWER                  : 1
@@ -2164,16 +2167,16 @@ Selected Device : 6slx100fgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2497  out of  126576     1%  
- Number of Slice LUTs:                 5993  out of  63288     9%  
-    Number used as Logic:              5993  out of  63288     9%  
+ Number of Slice Registers:            2498  out of  126576     1%  
+ Number of Slice LUTs:                 5964  out of  63288     9%  
+    Number used as Logic:              5964  out of  63288     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7326
-   Number with an unused Flip Flop:    4829  out of   7326    65%  
-   Number with an unused LUT:          1333  out of   7326    18%  
-   Number of fully used LUT-FF pairs:  1164  out of   7326    15%  
-   Number of unique control sets:        52
+ Number of LUT Flip Flop pairs used:   7303
+   Number with an unused Flip Flop:    4805  out of   7303    65%  
+   Number with an unused LUT:          1339  out of   7303    18%  
+   Number of fully used LUT-FF pairs:  1159  out of   7303    15%  
+   Number of unique control sets:        51
 
 IO Utilization: 
  Number of IOs:                         224
@@ -2204,22 +2207,22 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-Clock Signal                                                                                                                   | Clock buffer(FF name)                                   | Load  |
--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-clk                                                                                                                            | BUFGP                                                   | 110   |
-sw_dip<31>                                                                                                                     | IBUF+BUFG                                               | 16    |
-sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                            | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/baseram_ce)      | 2155  |
-sopc/wishbone_ack_i(sopc/bus_top0/bus0/m_ack_o6:O)                                                                             | BUFG(*)(sopc/openmips0/wishbone_bus0/wishbone_data_o_31)| 126   |
-sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o(sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o1:O)| BUFG(*)(sopc/openmips0/wishbone_bus0/if_data_o_1)       | 32    |
-rst                                                                                                                            | IBUF+BUFG                                               | 22    |
-sopc/openmips0/mem0/_n0583(sopc/openmips0/mem0/_n05831:O)                                                                      | BUFG(*)(sopc/openmips0/mem0/mem_addr_o_31)              | 32    |
-sopc/bus_top0/bus0/_n0086(sopc/bus_top0/bus0/out1:O)                                                                           | BUFG(*)(sopc/bus_top0/bus0/m_data_o_0)                  | 32    |
-sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o(sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o1:O)        | NONE(*)(sopc/bus_top0/uart0/u1/ack)                     | 1     |
-sopc/openmips0/wishbone_bus0/tlb_ce_G(sopc/openmips0/wishbone_bus0/tlb_ce_G:O)                                                 | NONE(*)(sopc/openmips0/wishbone_bus0/tlb_ce)            | 1     |
-sopc/bus_top0/uart0/u0/ack_G(sopc/bus_top0/uart0/u0/ack_G:O)                                                                   | NONE(*)(sopc/bus_top0/uart0/u0/ack)                     | 1     |
--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
-(*) These 8 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                                                                                                           | Clock buffer(FF name)                                   | Load  |
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+clk                                                                                                                    | BUFGP                                                   | 110   |
+sw_dip<31>                                                                                                             | IBUF+BUFG                                               | 16    |
+sopc/clk_tmp(sopc/Mmux_clk_tmp11:O)                                                                                    | BUFG(*)(sopc/bus_top0/ram0/ram_driver0/baseram_ce)      | 2156  |
+sopc/wishbone_ack_i(sopc/bus_top0/bus0/m_ack_o6:O)                                                                     | BUFG(*)(sopc/openmips0/wishbone_bus0/wishbone_data_o_31)| 126   |
+sopc/openmips0/wishbone_bus0/if_ack                                                                                    | BUFG                                                    | 32    |
+rst                                                                                                                    | IBUF+BUFG                                               | 22    |
+sopc/openmips0/mem0/_n0583(sopc/openmips0/mem0/_n05831:O)                                                              | BUFG(*)(sopc/openmips0/mem0/mem_addr_o_31)              | 32    |
+sopc/bus_top0/bus0/_n0086(sopc/bus_top0/bus0/out1:O)                                                                   | BUFG(*)(sopc/bus_top0/bus0/m_data_o_0)                  | 32    |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o(sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o1:O)| NONE(*)(sopc/bus_top0/uart0/u1/ack)                     | 1     |
+sopc/openmips0/wishbone_bus0/tlb_ce_G(sopc/openmips0/wishbone_bus0/tlb_ce_G:O)                                         | NONE(*)(sopc/openmips0/wishbone_bus0/tlb_ce)            | 1     |
+sopc/bus_top0/uart0/u0/ack_G(sopc/bus_top0/uart0/u0/ack_G:O)                                                           | NONE(*)(sopc/bus_top0/uart0/u0/ack)                     | 1     |
+-----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+(*) These 7 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -2232,9 +2235,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 22.507ns (Maximum Frequency: 44.430MHz)
-   Minimum input arrival time before clock: 28.702ns
-   Maximum output required time after clock: 5.444ns
+   Minimum period: 22.409ns (Maximum Frequency: 44.625MHz)
+   Minimum input arrival time before clock: 28.353ns
+   Maximum output required time after clock: 5.387ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2243,10 +2246,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.274ns (frequency: 233.995MHz)
+  Clock period: 4.294ns (frequency: 232.905MHz)
   Total number of paths / destination ports: 686 / 125
 -------------------------------------------------------------------------
-Delay:               4.274ns (Levels of Logic = 2)
+Delay:               4.294ns (Levels of Logic = 2)
   Source:            sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 (FF)
   Destination:       sopc/bus_top0/flash0/flash_driver0/data_to_write_7 (FF)
   Source Clock:      clk rising
@@ -2256,26 +2259,26 @@ Delay:               4.274ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             14   0.447   1.302  sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 (sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1)
-     LUT6:I1->O           21   0.203   1.218  sopc/bus_top0/flash0/flash_driver0/_n0194_inv11 (sopc/bus_top0/flash0/flash_driver0/_n0194_inv1)
+     FDR:C->Q             14   0.447   1.322  sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1 (sopc/bus_top0/flash0/flash_driver0/state_FSM_FFd1)
+     LUT6:I0->O           21   0.203   1.218  sopc/bus_top0/flash0/flash_driver0/_n0194_inv11 (sopc/bus_top0/flash0/flash_driver0/_n0194_inv1)
      LUT6:I4->O            1   0.203   0.579  sopc/bus_top0/flash0/flash_driver0/_n0194_inv (sopc/bus_top0/flash0/flash_driver0/_n0194_inv)
      FDE:CE                    0.322          sopc/bus_top0/flash0/flash_driver0/data_to_write_7
     ----------------------------------------
-    Total                      4.274ns (1.175ns logic, 3.099ns route)
-                                       (27.5% logic, 72.5% route)
+    Total                      4.294ns (1.175ns logic, 3.119ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/clk_tmp'
-  Clock period: 22.507ns (frequency: 44.430MHz)
-  Total number of paths / destination ports: 129207040248 / 4462
+  Clock period: 22.409ns (frequency: 44.625MHz)
+  Total number of paths / destination ports: 131746673200 / 4463
 -------------------------------------------------------------------------
-Delay:               22.507ns (Levels of Logic = 16)
+Delay:               22.409ns (Levels of Logic = 24)
   Source:            sopc/openmips0/id_ex0/ex_aluop_2 (FF)
-  Destination:       sopc/openmips0/pc_reg0/pc_18 (FF)
+  Destination:       sopc/openmips0/pc_reg0/pc_31 (FF)
   Source Clock:      sopc/clk_tmp rising
   Destination Clock: sopc/clk_tmp rising
 
-  Data Path: sopc/openmips0/id_ex0/ex_aluop_2 to sopc/openmips0/pc_reg0/pc_18
+  Data Path: sopc/openmips0/id_ex0/ex_aluop_2 to sopc/openmips0/pc_reg0/pc_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -2285,62 +2288,72 @@ Delay:               22.507ns (Levels of Logic = 16)
      LUT3:I2->O            2   0.205   0.616  sopc/openmips0/ex0/Mmux_opdata1_mult110 (sopc/openmips0/ex0/opdata1_mult<0>)
      DSP48A1:A0->P47      18   4.560   1.049  sopc/openmips0/ex0/Mmult_hilo_temp (sopc/openmips0/ex0/Mmult_hilo_temp_P47_to_Mmult_hilo_temp1)
      DSP48A1:C30->PCOUT47    1   2.689   0.000  sopc/openmips0/ex0/Mmult_hilo_temp1 (sopc/openmips0/ex0/Mmult_hilo_temp1_PCOUT_to_Mmult_hilo_temp2_PCIN_47)
-     DSP48A1:PCIN47->P1    7   2.264   0.773  sopc/openmips0/ex0/Mmult_hilo_temp2 (sopc/openmips0/ex0/hilo_temp<18>)
+     DSP48A1:PCIN47->P1    6   2.264   0.744  sopc/openmips0/ex0/Mmult_hilo_temp2 (sopc/openmips0/ex0/hilo_temp<18>)
      INV:I->O              1   0.206   0.000  sopc/openmips0/ex0/n0369<18>1_INV_0 (sopc/openmips0/ex0/n0369<18>)
      MUXCY:S->O            1   0.172   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<18> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<18>)
      MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<19> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<19>)
-     XORCY:CI->O           4   0.180   0.684  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_xor<20> (sopc/openmips0/ex0/hilo_temp[63]_GND_41_o_add_163_OUT<20>)
-     LUT6:I5->O            5   0.205   1.079  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1221 (sopc/openmips0/id_reg1_o<20>)
-     LUT6:I0->O            7   0.203   1.002  sopc/openmips0/id0/n01101 (sopc/openmips0/id0/n01101)
-     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5_SW1 (N1013)
-     LUT6:I5->O            1   0.205   0.684  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5 (N840)
-     LUT6:I4->O            2   0.203   0.617  sopc/openmips0/id0/Mmux_branch_target_address_o103 (sopc/openmips0/branch_target_address<18>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<20> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<21> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<22> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<23> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<24> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<25> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<26> (sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_cy<26>)
+     XORCY:CI->O           4   0.180   0.684  sopc/openmips0/ex0/Madd_hilo_temp[63]_GND_41_o_add_163_OUT_xor<27> (sopc/openmips0/ex0/hilo_temp[63]_GND_41_o_add_163_OUT<27>)
+     LUT6:I5->O            5   0.205   0.962  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1614 (sopc/openmips0/id_reg2_o<27>)
+     LUT4:I0->O            1   0.203   0.580  sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_lut<9>_SW1 (N760)
+     LUT6:I5->O            1   0.205   0.000  sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_lut<9> (sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_lut<9>)
+     MUXCY:S->O            1   0.172   0.000  sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_cy<9> (sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_cy<9>)
+     MUXCY:CI->O           8   0.213   1.031  sopc/openmips0/id0/Mcompar_reg1_o[31]_reg2_o[31]_equal_79_o_cy<10> (sopc/openmips0/id0/reg1_o[31]_reg2_o[31]_equal_79_o)
+     LUT5:I2->O           16   0.205   1.005  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13_1 (sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13)
      LUT6:I5->O            2   0.205   0.000  sopc/openmips0/pc_reg0/Mmux_latch_pc102 (sopc/openmips0/latch_pc<18>)
      FD:D                      0.102          sopc/openmips0/pc_reg0/pc_18
     ----------------------------------------
-    Total                     22.507ns (12.480ns logic, 10.027ns route)
-                                       (55.4% logic, 44.6% route)
+    Total                     22.409ns (12.795ns logic, 9.614ns route)
+                                       (57.1% logic, 42.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sopc/wishbone_ack_i'
-  Clock period: 15.547ns (frequency: 64.321MHz)
-  Total number of paths / destination ports: 141030 / 39
+  Clock period: 16.619ns (frequency: 60.172MHz)
+  Total number of paths / destination ports: 164268 / 39
 -------------------------------------------------------------------------
-Delay:               15.547ns (Levels of Logic = 14)
-  Source:            sopc/openmips0/wishbone_bus0/mem_data_o_23 (LATCH)
+Delay:               16.619ns (Levels of Logic = 16)
+  Source:            sopc/openmips0/wishbone_bus0/mem_data_o_13 (LATCH)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_addr_o_2 (LATCH)
   Source Clock:      sopc/wishbone_ack_i falling
   Destination Clock: sopc/wishbone_ack_i falling
 
-  Data Path: sopc/openmips0/wishbone_bus0/mem_data_o_23 to sopc/openmips0/wishbone_bus0/tlb_addr_o_2
+  Data Path: sopc/openmips0/wishbone_bus0/mem_data_o_13 to sopc/openmips0/wishbone_bus0/tlb_addr_o_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCE:G->Q             5   0.498   0.819  sopc/openmips0/wishbone_bus0/mem_data_o_23 (sopc/openmips0/wishbone_bus0/mem_data_o_23)
-     LUT3:I1->O            2   0.203   0.845  sopc/openmips0/mem0/mem_addr_i<0>731 (sopc/openmips0/mem0/mem_addr_i<0>_mmx_out73)
-     LUT6:I3->O            1   0.205   0.924  sopc/openmips0/mem0/Mmux_wdata_o301 (sopc/openmips0/mem0/Mmux_wdata_o30)
-     LUT5:I0->O            1   0.203   0.924  sopc/openmips0/mem0/Mmux_wdata_o303 (sopc/openmips0/mem0/Mmux_wdata_o302)
-     LUT6:I1->O            3   0.203   0.879  sopc/openmips0/mem0/Mmux_wdata_o305 (sopc/openmips0/mem_wdata_o<7>)
-     LUT6:I3->O            1   0.205   0.580  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1571 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o157)
-     LUT6:I5->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1573 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o138)
-     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1391 (sopc/openmips0/id_reg1_o<7>)
-     LUT6:I0->O            1   0.203   0.808  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I3->O           10   0.205   1.201  sopc/openmips0/id0/n01106 (sopc/openmips0/id0/n01106)
-     LUT6:I1->O            3   0.203   0.651  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW3 (N837)
-     LUT6:I5->O           31   0.205   1.382  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
-     LUT6:I4->O            1   0.203   0.827  sopc/openmips0/id0/Mmux_branch_target_address_o27 (sopc/openmips0/branch_target_address<4>)
-     LUT6:I2->O            2   0.203   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1361 (sopc/openmips0/next_pc<4>)
-     LUT5:I4->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>11 (sopc/openmips0/wishbone_bus0/if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>)
-     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/tlb_addr_o_4
+     LDCE:G->Q             5   0.498   0.962  sopc/openmips0/wishbone_bus0/mem_data_o_13 (sopc/openmips0/wishbone_bus0/mem_data_o_13)
+     LUT6:I2->O            2   0.203   0.617  sopc/openmips0/mem0/Mmux_mem_addr_i[1]_reg2_i[31]_wide_mux_25_OUT281 (sopc/openmips0/mem0/mem_addr_i[1]_reg2_i[31]_wide_mux_25_OUT<5>)
+     LUT5:I4->O            1   0.205   0.924  sopc/openmips0/mem0/Mmux_wdata_o283 (sopc/openmips0/mem0/Mmux_wdata_o282)
+     LUT5:I0->O            1   0.203   0.684  sopc/openmips0/mem0/Mmux_wdata_o284 (sopc/openmips0/mem0/Mmux_wdata_o283)
+     LUT5:I3->O            3   0.203   0.879  sopc/openmips0/mem0/Mmux_wdata_o286 (sopc/openmips0/mem_wdata_o<5>)
+     LUT6:I3->O            1   0.205   0.808  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o153)
+     LUT6:I3->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o134)
+     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
+     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01102_F (N1247)
+     MUXF7:I0->O           3   0.131   0.651  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/ex0/Mmux_wdata_o1014_SW1 (N996)
+     LUT6:I3->O            6   0.205   0.849  sopc/openmips0/id0/n01103 (sopc/openmips0/id0/n01103)
+     LUT6:I4->O            1   0.203   0.944  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1_SW0_SW2_G (N962)
+     LUT6:I0->O            4   0.203   0.788  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1 (N834)
+     LUT5:I3->O           34   0.203   1.665  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13 (sopc/openmips0/id_branch_flag_o)
+     LUT6:I1->O            2   0.203   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1191 (sopc/openmips0/next_pc<18>)
+     LUT5:I4->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<18>11 (sopc/openmips0/wishbone_bus0/if_addr_i[31]_if_addr_i[31]_mux_26_OUT<18>)
+     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/tlb_addr_o_18
     ----------------------------------------
-    Total                     15.547ns (3.391ns logic, 12.156ns route)
-                                       (21.8% logic, 78.2% route)
+    Total                     16.619ns (3.725ns logic, 12.894ns route)
+                                       (22.4% logic, 77.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sw_dip<31>'
-  Total number of paths / destination ports: 3072775 / 16
+  Total number of paths / destination ports: 3347212 / 16
 -------------------------------------------------------------------------
-Offset:              28.702ns (Levels of Logic = 26)
+Offset:              28.353ns (Levels of Logic = 25)
   Source:            rst (PAD)
   Destination:       sopc/data_o_0 (LATCH)
   Destination Clock: sw_dip<31> falling
@@ -2349,23 +2362,22 @@ Offset:              28.702ns (Levels of Logic = 26)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.606  rst_IBUF (rst_IBUF)
-     LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
-     LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
-     LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1142)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
-     LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N986)
-     LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
-     LUT6:I4->O            4   0.203   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1573 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o138)
-     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1391 (sopc/openmips0/id_reg1_o<7>)
-     LUT6:I0->O            1   0.203   0.808  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I3->O           10   0.205   1.201  sopc/openmips0/id0/n01106 (sopc/openmips0/id0/n01106)
-     LUT6:I1->O            3   0.203   0.651  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW3 (N837)
-     LUT6:I5->O           31   0.205   1.278  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
-     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/Mmux_branch_target_address_o12 (sopc/openmips0/branch_target_address<0>)
-     LUT6:I3->O            2   0.205   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1101 (sopc/openmips0/next_pc<0>)
+     IBUF:I->O          1198   1.222   2.599  rst_IBUF (rst_IBUF)
+     LUT5:I0->O          260   0.203   2.068  sopc/openmips0/id0/Mmux_reg1_addr_o21 (sopc/openmips0/reg1_addr<1>)
+     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N138)
+     LUT5:I4->O            8   0.205   0.803  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
+     LUT3:I2->O           78   0.205   1.733  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o153)
+     LUT6:I3->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o134)
+     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
+     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01102_F (N1247)
+     MUXF7:I0->O           3   0.131   0.651  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/ex0/Mmux_wdata_o1014_SW1 (N996)
+     LUT6:I3->O            6   0.205   0.849  sopc/openmips0/id0/n01103 (sopc/openmips0/id0/n01103)
+     LUT6:I4->O            1   0.203   0.944  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1_SW0_SW2_G (N962)
+     LUT6:I0->O            4   0.203   0.788  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1 (N834)
+     LUT5:I3->O           34   0.203   1.568  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13 (sopc/openmips0/id_branch_flag_o)
+     LUT6:I2->O            2   0.203   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1101 (sopc/openmips0/next_pc<0>)
      LUT5:I4->O            1   0.205   0.580  sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>49 (sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>44)
      LUT6:I5->O            1   0.205   0.808  sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>411 (sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>45)
      LUT6:I3->O            1   0.205   0.684  sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>413 (sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>46)
@@ -2377,14 +2389,14 @@ Offset:              28.702ns (Levels of Logic = 26)
      LUT5:I3->O            1   0.203   0.000  sopc/Mmux_GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>425 (sopc/GND_2_o_wishbone_data_i[31]_mux_25_OUT<0>)
      LD:D                      0.037          sopc/data_o_0
     ----------------------------------------
-    Total                     28.702ns (6.360ns logic, 22.342ns route)
-                                       (22.2% logic, 77.8% route)
+    Total                     28.353ns (6.083ns logic, 22.270ns route)
+                                       (21.5% logic, 78.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 52 / 51
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 2)
+Offset:              6.459ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/bus_top0/uart0/u1/OversamplingCnt_2 (FF)
   Destination Clock: clk rising
@@ -2393,53 +2405,52 @@ Offset:              6.466ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.261  rst_IBUF (rst_IBUF)
-     INV:I->O           1585   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     IBUF:I->O          1198   1.222   2.254  rst_IBUF (rst_IBUF)
+     INV:I->O           1584   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      FDSE:S                    0.430          sopc/bus_top0/uart0/u1/RxD_sync_0
     ----------------------------------------
-    Total                      6.466ns (1.858ns logic, 4.608ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      6.459ns (1.858ns logic, 4.601ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/clk_tmp'
-  Total number of paths / destination ports: 1607784 / 3133
+  Total number of paths / destination ports: 1737899 / 3133
 -------------------------------------------------------------------------
-Offset:              19.602ns (Levels of Logic = 17)
+Offset:              19.648ns (Levels of Logic = 16)
   Source:            rst (PAD)
-  Destination:       sopc/openmips0/pc_reg0/pc_18 (FF)
+  Destination:       sopc/openmips0/pc_reg0/pc_31 (FF)
   Destination Clock: sopc/clk_tmp rising
 
-  Data Path: rst to sopc/openmips0/pc_reg0/pc_18
+  Data Path: rst to sopc/openmips0/pc_reg0/pc_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.606  rst_IBUF (rst_IBUF)
-     LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
-     LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
-     LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1142)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
-     LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N986)
-     LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
-     LUT6:I4->O            4   0.203   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1573 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o138)
-     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1391 (sopc/openmips0/id_reg1_o<7>)
-     LUT6:I0->O            1   0.203   0.808  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I3->O           10   0.205   1.104  sopc/openmips0/id0/n01106 (sopc/openmips0/id0/n01106)
-     LUT6:I2->O            1   0.203   0.580  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5_SW1 (N1013)
-     LUT6:I5->O            1   0.205   0.684  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW5 (N840)
-     LUT6:I4->O            2   0.203   0.617  sopc/openmips0/id0/Mmux_branch_target_address_o103 (sopc/openmips0/branch_target_address<18>)
+     IBUF:I->O          1198   1.222   2.599  rst_IBUF (rst_IBUF)
+     LUT5:I0->O          260   0.203   2.068  sopc/openmips0/id0/Mmux_reg1_addr_o21 (sopc/openmips0/reg1_addr<1>)
+     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N138)
+     LUT5:I4->O            8   0.205   0.803  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
+     LUT3:I2->O           78   0.205   1.733  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o153)
+     LUT6:I3->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o134)
+     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
+     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01102_F (N1247)
+     MUXF7:I0->O           3   0.131   0.651  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/ex0/Mmux_wdata_o1014_SW1 (N996)
+     LUT6:I3->O            6   0.205   0.849  sopc/openmips0/id0/n01103 (sopc/openmips0/id0/n01103)
+     LUT6:I4->O            1   0.203   0.944  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1_SW0_SW2_G (N962)
+     LUT6:I0->O            4   0.203   0.788  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1 (N834)
+     LUT5:I3->O           16   0.203   1.005  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13_1 (sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13)
      LUT6:I5->O            2   0.205   0.000  sopc/openmips0/pc_reg0/Mmux_latch_pc102 (sopc/openmips0/latch_pc<18>)
      FD:D                      0.102          sopc/openmips0/pc_reg0/pc_18
     ----------------------------------------
-    Total                     19.602ns (4.588ns logic, 15.014ns route)
-                                       (23.4% logic, 76.6% route)
+    Total                     19.648ns (4.315ns logic, 15.333ns route)
+                                       (22.0% logic, 78.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/wishbone_ack_i'
-  Total number of paths / destination ports: 1513909 / 197
+  Total number of paths / destination ports: 1649487 / 197
 -------------------------------------------------------------------------
-Offset:              21.433ns (Levels of Logic = 18)
+Offset:              21.063ns (Levels of Logic = 17)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_addr_o_2 (LATCH)
   Destination Clock: sopc/wishbone_ack_i falling
@@ -2448,54 +2459,55 @@ Offset:              21.433ns (Levels of Logic = 18)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.606  rst_IBUF (rst_IBUF)
-     LUT5:I0->O           61   0.203   1.868  sopc/openmips0/ex0/Mmux_cp0_reg_read_addr_o21 (sopc/openmips0/cp0_raddr_i<1>)
-     LUT5:I1->O           23   0.203   1.258  sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>31 (sopc/openmips0/cp0_reg0/raddr_i[4]_index_o[31]_select_255_OUT<30>3)
-     LUT4:I2->O            1   0.203   0.580  sopc/openmips0/ex0/Mmux_wdata_o3010 (sopc/openmips0/ex0/Mmux_wdata_o309)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3013 (sopc/openmips0/ex0/Mmux_wdata_o3012)
-     LUT4:I3->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015_SW0 (N1142)
-     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/ex0/Mmux_wdata_o3015 (sopc/openmips0/ex0/Mmux_wdata_o3014)
-     LUT6:I5->O            1   0.205   0.684  sopc/openmips0/ex0/Mmux_wdata_o307_SW0 (N986)
-     LUT6:I4->O            4   0.203   0.788  sopc/openmips0/ex0/Mmux_wdata_o3016 (sopc/openmips0/ex_wdata_o<7>)
-     LUT6:I4->O            4   0.203   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1573 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o138)
-     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1391 (sopc/openmips0/id_reg1_o<7>)
-     LUT6:I0->O            1   0.203   0.808  sopc/openmips0/id0/n01104 (sopc/openmips0/id0/n01104)
-     LUT6:I3->O           10   0.205   1.201  sopc/openmips0/id0/n01106 (sopc/openmips0/id0/n01106)
-     LUT6:I1->O            3   0.203   0.651  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW3 (N837)
-     LUT6:I5->O           31   0.205   1.382  sopc/openmips0/id0/Mmux_branch_target_address_o1111 (sopc/openmips0/id0/Mmux_branch_target_address_o111)
-     LUT6:I4->O            1   0.203   0.827  sopc/openmips0/id0/Mmux_branch_target_address_o27 (sopc/openmips0/branch_target_address<4>)
-     LUT6:I2->O            2   0.203   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1361 (sopc/openmips0/next_pc<4>)
-     LUT5:I4->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>11 (sopc/openmips0/wishbone_bus0/if_addr_i[31]_if_addr_i[31]_mux_26_OUT<4>)
-     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/tlb_addr_o_4
+     IBUF:I->O          1198   1.222   2.599  rst_IBUF (rst_IBUF)
+     LUT5:I0->O          260   0.203   2.068  sopc/openmips0/id0/Mmux_reg1_addr_o21 (sopc/openmips0/reg1_addr<1>)
+     LUT6:I5->O            1   0.205   0.580  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5_SW0 (N138)
+     LUT5:I4->O            8   0.205   0.803  sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o5 (sopc/openmips0/id0/ex_wd_i[4]_reg1_addr_o[4]_equal_266_o)
+     LUT3:I2->O           78   0.205   1.733  sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o1 (sopc/openmips0/id0/reg1_read_o_ex_wd_i[4]_AND_100_o)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1531 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o153)
+     LUT6:I3->O            4   0.205   0.684  sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o1533 (sopc/openmips0/id0/pre_inst_is_load_reg1_read_o_AND_98_o134)
+     LUT3:I2->O            3   0.205   1.015  sopc/openmips0/id0/Mmux_GND_38_o_imm[31]_mux_289_OUT1371 (sopc/openmips0/id_reg1_o<5>)
+     LUT6:I0->O            1   0.203   0.000  sopc/openmips0/id0/n01102_F (N1247)
+     MUXF7:I0->O           3   0.131   0.651  sopc/openmips0/id0/n01102 (sopc/openmips0/id0/n01102)
+     LUT6:I5->O            1   0.205   0.808  sopc/openmips0/ex0/Mmux_wdata_o1014_SW1 (N996)
+     LUT6:I3->O            6   0.205   0.849  sopc/openmips0/id0/n01103 (sopc/openmips0/id0/n01103)
+     LUT6:I4->O            1   0.203   0.944  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1_SW0_SW2_G (N962)
+     LUT6:I0->O            4   0.203   0.788  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o112_SW1 (N834)
+     LUT5:I3->O           34   0.203   1.665  sopc/openmips0/id0/Mmux_next_inst_in_delayslot_o13 (sopc/openmips0/id_branch_flag_o)
+     LUT6:I1->O            2   0.203   0.617  sopc/openmips0/pc_reg0/Mmux_latch_pc1191 (sopc/openmips0/next_pc<18>)
+     LUT5:I4->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/Mmux_if_addr_i[31]_if_addr_i[31]_mux_26_OUT<18>11 (sopc/openmips0/wishbone_bus0/if_addr_i[31]_if_addr_i[31]_mux_26_OUT<18>)
+     LDC:D                     0.037          sopc/openmips0/wishbone_bus0/tlb_addr_o_18
     ----------------------------------------
-    Total                     21.433ns (4.726ns logic, 16.707ns route)
-                                       (22.0% logic, 78.0% route)
+    Total                     21.063ns (4.453ns logic, 16.610ns route)
+                                       (21.1% logic, 78.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o'
-  Total number of paths / destination ports: 32 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/if_ack'
+  Total number of paths / destination ports: 96 / 64
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 2)
+Offset:              7.568ns (Levels of Logic = 4)
   Source:            rst (PAD)
-  Destination:       sopc/openmips0/wishbone_bus0/if_data_o_1 (LATCH)
-  Destination Clock: sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o falling
+  Destination:       sopc/openmips0/wishbone_bus0/if_data_o_0 (LATCH)
+  Destination Clock: sopc/openmips0/wishbone_bus0/if_ack rising
 
-  Data Path: rst to sopc/openmips0/wishbone_bus0/if_data_o_1
+  Data Path: rst to sopc/openmips0/wishbone_bus0/if_data_o_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.261  rst_IBUF (rst_IBUF)
-     INV:I->O           1585   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
-     LDC:CLR                   0.430          sopc/openmips0/wishbone_bus0/if_data_o_31
+     IBUF:I->O          1198   1.222   2.483  rst_IBUF (rst_IBUF)
+     LUT6:I3->O            1   0.205   0.827  sopc/bus_top0/bus0/m_ack_o2 (sopc/bus_top0/bus0/m_ack_o1)
+     LUT5:I1->O            1   0.203   0.684  sopc/bus_top0/bus0/m_ack_o6_SW0 (N1129)
+     LUT6:I4->O           41   0.203   1.419  sopc/bus_top0/bus0/m_ack_o6 (sopc/wishbone_ack_i)
+     LDCE_1:GE                 0.322          sopc/openmips0/wishbone_bus0/if_data_o_31
     ----------------------------------------
-    Total                      6.466ns (1.858ns logic, 4.608ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      7.568ns (2.155ns logic, 5.413ns route)
+                                       (28.5% logic, 71.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'rst'
   Total number of paths / destination ports: 22 / 22
 -------------------------------------------------------------------------
-Offset:              3.828ns (Levels of Logic = 2)
+Offset:              3.821ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/mmu0/mmu_addr_o_1 (LATCH)
   Destination Clock: rst falling
@@ -2504,18 +2516,18 @@ Offset:              3.828ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.366  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1198   1.222   2.359  rst_IBUF (rst_IBUF)
      LUT2:I0->O            3   0.203   0.000  sopc/openmips0/tlb0/Mmux_tlb_addr321 (sopc/openmips0/tlb_addr_i<9>)
      LD_1:D                    0.037          sopc/openmips0/mmu0/mmu_addr_o_9
     ----------------------------------------
-    Total                      3.828ns (1.462ns logic, 2.366ns route)
-                                       (38.2% logic, 61.8% route)
+    Total                      3.821ns (1.462ns logic, 2.359ns route)
+                                       (38.3% logic, 61.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/mem0/_n0583'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 2)
+Offset:              6.459ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/mem0/mem_addr_o_31 (LATCH)
   Destination Clock: sopc/openmips0/mem0/_n0583 falling
@@ -2524,18 +2536,18 @@ Offset:              6.466ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.261  rst_IBUF (rst_IBUF)
-     INV:I->O           1585   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     IBUF:I->O          1198   1.222   2.254  rst_IBUF (rst_IBUF)
+     INV:I->O           1584   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      LDC:CLR                   0.430          sopc/openmips0/mem0/mem_addr_o_30
     ----------------------------------------
-    Total                      6.466ns (1.858ns logic, 4.608ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      6.459ns (1.858ns logic, 4.601ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/bus_top0/bus0/_n0086'
   Total number of paths / destination ports: 112 / 64
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 2)
+Offset:              6.459ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/bus_top0/bus0/m_data_o_0 (LATCH)
   Destination Clock: sopc/bus_top0/bus0/_n0086 falling
@@ -2544,18 +2556,18 @@ Offset:              6.466ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.261  rst_IBUF (rst_IBUF)
-     INV:I->O           1585   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     IBUF:I->O          1198   1.222   2.254  rst_IBUF (rst_IBUF)
+     INV:I->O           1584   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      LDC:CLR                   0.430          sopc/bus_top0/bus0/m_data_o_30
     ----------------------------------------
-    Total                      6.466ns (1.858ns logic, 4.608ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      6.459ns (1.858ns logic, 4.601ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 2)
+Offset:              6.459ns (Levels of Logic = 2)
   Source:            rst (PAD)
   Destination:       sopc/bus_top0/uart0/u1/ack (LATCH)
   Destination Clock: sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o falling
@@ -2564,18 +2576,18 @@ Offset:              6.466ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.261  rst_IBUF (rst_IBUF)
-     INV:I->O           1585   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
+     IBUF:I->O          1198   1.222   2.254  rst_IBUF (rst_IBUF)
+     INV:I->O           1584   0.206   2.347  rst_IBUF_BUFG_LUT1_INV_0 (rst_IBUF_BUFG_LUT1)
      LDP:PRE                   0.430          sopc/bus_top0/uart0/u1/ack
     ----------------------------------------
-    Total                      6.466ns (1.858ns logic, 4.608ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                      6.459ns (1.858ns logic, 4.601ns route)
+                                       (28.8% logic, 71.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sopc/openmips0/wishbone_bus0/tlb_ce_G'
   Total number of paths / destination ports: 3 / 1
 -------------------------------------------------------------------------
-Offset:              6.984ns (Levels of Logic = 5)
+Offset:              7.489ns (Levels of Logic = 5)
   Source:            rst (PAD)
   Destination:       sopc/openmips0/wishbone_bus0/tlb_ce (LATCH)
   Destination Clock: sopc/openmips0/wishbone_bus0/tlb_ce_G falling
@@ -2584,15 +2596,15 @@ Offset:              6.984ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          1225   1.222   2.490  rst_IBUF (rst_IBUF)
+     IBUF:I->O          1198   1.222   2.483  rst_IBUF (rst_IBUF)
      LUT6:I3->O            1   0.205   0.827  sopc/bus_top0/bus0/m_ack_o2 (sopc/bus_top0/bus0/m_ack_o1)
-     LUT5:I1->O            1   0.203   0.684  sopc/bus_top0/bus0/m_ack_o6_SW0 (N1102)
-     LUT6:I4->O           12   0.203   0.909  sopc/bus_top0/bus0/m_ack_o6 (sopc/wishbone_ack_i)
+     LUT5:I1->O            1   0.203   0.684  sopc/bus_top0/bus0/m_ack_o6_SW0 (N1129)
+     LUT6:I4->O           41   0.203   1.420  sopc/bus_top0/bus0/m_ack_o6 (sopc/wishbone_ack_i)
      LUT2:I1->O            1   0.205   0.000  sopc/openmips0/wishbone_bus0/tlb_ce_D (sopc/openmips0/wishbone_bus0/tlb_ce_D)
      LD:D                      0.037          sopc/openmips0/wishbone_bus0/tlb_ce
     ----------------------------------------
-    Total                      6.984ns (2.075ns logic, 4.909ns route)
-                                       (29.7% logic, 70.3% route)
+    Total                      7.489ns (2.075ns logic, 5.414ns route)
+                                       (27.7% logic, 72.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -2638,21 +2650,21 @@ Offset:              5.131ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sopc/wishbone_ack_i'
   Total number of paths / destination ports: 60 / 20
 -------------------------------------------------------------------------
-Offset:              5.444ns (Levels of Logic = 2)
-  Source:            sopc/openmips0/wishbone_bus0/wishbone_select_o_2 (LATCH)
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            sopc/openmips0/wishbone_bus0/wishbone_we_o (LATCH)
   Destination:       flash_addr<20> (PAD)
   Source Clock:      sopc/wishbone_ack_i falling
 
-  Data Path: sopc/openmips0/wishbone_bus0/wishbone_select_o_2 to flash_addr<20>
+  Data Path: sopc/openmips0/wishbone_bus0/wishbone_we_o to flash_addr<20>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q             37   0.498   1.591  sopc/openmips0/wishbone_bus0/wishbone_select_o_2 (sopc/openmips0/wishbone_bus0/wishbone_select_o_2)
+     LDC:G->Q             33   0.498   1.534  sopc/openmips0/wishbone_bus0/wishbone_we_o (sopc/openmips0/wishbone_bus0/wishbone_we_o)
      LUT4:I1->O            1   0.205   0.579  sopc/bus_top0/flash0/flash_driver0/Mmux_flash_addr<22:1>110 (flash_addr_10_OBUF)
      OBUF:I->O                 2.571          flash_addr_10_OBUF (flash_addr<10>)
     ----------------------------------------
-    Total                      5.444ns (3.274ns logic, 2.170ns route)
-                                       (60.1% logic, 39.9% route)
+    Total                      5.387ns (3.274ns logic, 2.113ns route)
+                                       (60.8% logic, 39.2% route)
 
 =========================================================================
 
@@ -2664,7 +2676,7 @@ Clock to Setup on destination clock clk
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |    4.274|         |         |         |
+clk                |    4.294|         |         |         |
 sopc/wishbone_ack_i|         |    4.616|         |         |
 sw_dip<31>         |         |    1.179|         |         |
 -------------------+---------+---------+---------+---------+
@@ -2682,9 +2694,9 @@ Clock to Setup on destination clock sopc/bus_top0/bus0/_n0086
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |         |         |    2.091|         |
-sopc/clk_tmp       |         |         |    4.920|         |
-sopc/wishbone_ack_i|         |         |    4.391|         |
+clk                |         |         |    2.453|         |
+sopc/clk_tmp       |         |         |    4.994|         |
+sopc/wishbone_ack_i|         |         |    4.029|         |
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/bus_top0/uart0/u0/ack_G
@@ -2705,45 +2717,50 @@ clk            |         |         |    1.764|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/clk_tmp
--------------------------------------------------------------+---------+---------+---------+---------+
-                                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------------------+---------+---------+---------+---------+
-clk                                                          |   11.016|         |         |         |
-sopc/bus_top0/uart0/u0/ack_G                                 |         |   11.481|         |         |
-sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o    |         |   11.726|         |         |
-sopc/clk_tmp                                                 |   22.507|         |         |         |
-sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o|         |    1.179|         |         |
-sopc/wishbone_ack_i                                          |         |   13.716|         |         |
--------------------------------------------------------------+---------+---------+---------+---------+
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |   11.532|         |         |         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |   11.997|         |         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |   12.242|         |         |
+sopc/clk_tmp                                             |   22.409|         |         |         |
+sopc/openmips0/wishbone_bus0/if_ack                      |    1.216|         |         |         |
+sopc/wishbone_ack_i                                      |         |   15.204|         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/mem0/_n0583
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sopc/clk_tmp   |         |         |    5.780|         |
+sopc/clk_tmp   |         |         |    5.880|         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/if_ack
+---------------------------------------------------------+---------+---------+---------+---------+
+                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------+---------+---------+---------+---------+
+clk                                                      |    4.458|         |         |         |
+sopc/bus_top0/bus0/_n0086                                |         |    1.218|         |         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |    4.924|         |         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |    5.169|         |         |
+sopc/clk_tmp                                             |    5.270|         |         |         |
+sopc/wishbone_ack_i                                      |         |    6.754|         |         |
+---------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/tlb_ce_G
 ---------------------------------------------------------+---------+---------+---------+---------+
                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------+---------+---------+---------+---------+
-clk                                                      |         |         |    3.868|         |
-sopc/bus_top0/uart0/u0/ack_G                             |         |         |    4.333|         |
-sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |    4.578|         |
-sopc/clk_tmp                                             |         |         |    4.680|         |
-sopc/wishbone_ack_i                                      |         |         |    6.164|         |
+clk                                                      |         |         |    4.379|         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |         |    4.845|         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |    5.090|         |
+sopc/clk_tmp                                             |         |         |    5.191|         |
+sopc/wishbone_ack_i                                      |         |         |    6.675|         |
 ---------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock sopc/openmips0/wishbone_bus0/wishbone_ack_i_if_ack_AND_1356_o
--------------------------+---------+---------+---------+---------+
-                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------+---------+---------+---------+---------+
-sopc/bus_top0/bus0/_n0086|         |         |    1.218|         |
--------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sopc/wishbone_ack_i
 -------------------------------------+---------+---------+---------+---------+
@@ -2752,10 +2769,10 @@ Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------------+---------+---------+---------+---------+
 rst                                  |         |         |    1.114|         |
 sopc/bus_top0/bus0/_n0086            |         |         |    1.652|         |
-sopc/clk_tmp                         |         |         |   24.705|         |
+sopc/clk_tmp                         |         |         |   24.351|         |
 sopc/openmips0/mem0/_n0583           |         |         |    1.565|         |
-sopc/openmips0/wishbone_bus0/tlb_ce_G|         |         |    6.122|         |
-sopc/wishbone_ack_i                  |         |         |   15.547|         |
+sopc/openmips0/wishbone_bus0/tlb_ce_G|         |         |    6.142|         |
+sopc/wishbone_ack_i                  |         |         |   16.619|         |
 -------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sw_dip<31>
@@ -2763,26 +2780,26 @@ Clock to Setup on destination clock sw_dip<31>
                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------+---------+---------+---------+---------+
-clk                                                      |         |         |   16.766|         |
+clk                                                      |         |         |   17.278|         |
 sopc/bus_top0/bus0/_n0086                                |         |         |    1.424|         |
-sopc/bus_top0/uart0/u0/ack_G                             |         |         |   17.232|         |
-sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |   17.477|         |
-sopc/clk_tmp                                             |         |         |   31.974|         |
-sopc/openmips0/wishbone_bus0/tlb_ce_G                    |         |         |   10.110|         |
-sopc/wishbone_ack_i                                      |         |         |   22.816|         |
+sopc/bus_top0/uart0/u0/ack_G                             |         |         |   17.744|         |
+sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o|         |         |   17.989|         |
+sopc/clk_tmp                                             |         |         |   31.620|         |
+sopc/openmips0/wishbone_bus0/tlb_ce_G                    |         |         |   10.130|         |
+sopc/wishbone_ack_i                                      |         |         |   23.910|         |
 ---------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 55.00 secs
-Total CPU time to Xst completion: 54.90 secs
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 46.87 secs
  
 --> 
 
-Total memory usage is 347180 kilobytes
+Total memory usage is 348204 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  762 (   0 filtered)
-Number of infos    :   40 (   0 filtered)
+Number of warnings :  761 (   0 filtered)
+Number of infos    :   39 (   0 filtered)
 

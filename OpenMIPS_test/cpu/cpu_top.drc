@@ -1,18 +1,18 @@
 Release 14.2 Drc P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun Dec 27 20:00:14 2015
+Tue Dec 29 10:27:08 2015
 
 drc -z cpu_top.ncd cpu_top.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   sopc/bus_top0/uart0/u0/ack_G is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    sopc/openmips0/wishbone_bus0/tlb_ce_G is sourced by a combinatorial pin. This
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   sopc/bus_top0/uart0/u0/ack_G is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    sopc/bus_top0/uart0/u1/RxD_state[3]_PWR_101_o_Select_45_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to

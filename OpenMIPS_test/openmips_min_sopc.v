@@ -104,8 +104,11 @@ module openmips_min_sopc(
 				end
 			end
 		end else begin
-			// if(break_flag == `False_v)
+			if(break_flag == `False_v) begin
 				clk_tmp <= clk_4;
+			end else begin
+				clk_tmp <= clk_key;
+			end
 		end
 	end
 
